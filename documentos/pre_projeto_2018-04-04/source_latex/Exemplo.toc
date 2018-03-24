@@ -1,0 +1,13 @@
+\select@language {brazilian}
+\select@language {english}
+\select@language {brazilian}
+\contentsline {chapter}{1~Introdu\c c\~ao}{14}{CHAPTER.1}
+\contentsline {section}{\numberline {1.1}Figuras e tabelas}{15}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Formato de Figuras}{16}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Classifica\c c\~ao dos etc.}{17}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Equa\c c\~oes matem\'aticas}{17}{section.1.2}
+\contentsline {section}{\numberline {1.3}Sobre as refer\^encias bibliogr\'aficas}{18}{section.1.3}
+\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{21}{schapter.9}
+\contentsline {chapter}{\xspace {}Gloss\'ario}{23}{schapter.10}
+\contentsline {chapter}{\MakeUppercase {Ap{\^e}ndice} A~--- Nome do Ap\^endice}{24}{CHAPTER.A}
+\contentsline {chapter}{\MakeUppercase {Anexo} A~--- Nome do Anexo}{25}{CHAPTER.A}

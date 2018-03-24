@@ -1,0 +1,194 @@
+No início dos tempos, Donald E. Knuth criou o \TeX. Algum tempo depois, Leslie Lamport criou o \LaTeX\ \cite{lamport94latex} . Graças a eles, não somos obrigados a usar o Word nem o LibreOffice\footnote{Notas de rodapé também podem ser úteis.}.
+
+A única intenção deste texto é mostrar como algumas coisas podem ser feitas. Existem muitos outros livros, manuais e tutoriais completos e muito melhores. Para o pessoal que quer começar a fazer e a apresentar os seus trabalhos de um jeito melhor, no entanto, pode começar por copiar este arquivo e editar sobre ele.
+
+Algumas razões para você usar \LaTeX:
+
+\begin{enumerate}
+    \item Tabelas e figuras são colocadas no texto automaticamente. Você pode dar diretivas, ou pode deixar tudo com o \LaTeX. Não precisa ficar cuidando se vai ficar 		
+    meia página em branco embaixo de uma figura. Em geral, as figuras e tabelas são colocadas o mais perto possível das referências a elas, mas no lugar que fica melhor,
+    do ponto de vista estético.
+
+    \item Referências cruzadas são feitas por meio de rótulos, ou \emph{labels}. Você pode rotular o que quiser, capítulos, seções, figuras, tabelas, equações. Rótulos 
+    são criados com o comando \verb"\label{nome-do-rotulo}". \label{nome-do-rotulo} Quando você quiser referenciar um rótulo, use o comando \verb"\ref{nome-do-rotulo}". 
+    Assim: o rótulo nome-do-rótulo está no item~\ref{nome-do-rotulo} desta lista e na página~\pageref{nome-do-rotulo} deste documento. Também está localizado na
+    Seção~\ref{sec-figuras} do Capítulo~\ref{cap-introducao} deste texto. Referências às páginas são feitas com o comando \verb"\pageref{nome-do-rotulo}".
+
+    \item Todas as numerações (de capítulos, seções, subseções, figuras, equações e páginas) são geradas automaticamente. Assim, você não precisa se preocupar, caso 
+    troque uma figura de lugar ou passe uma seção inteira para um outro capítulo, de ter que verificar se as numerações e referências estão ou não corretas.
+
+    \item A bibliografia, assim como todas as citações bibliográficas, também podem ser gerada automaticamente. 
+\end{enumerate}
+
+
+Em \LaTeX, o número de espaços em branco no arquivo fonte não conta. Assim, colocar    uma    quantidade     maior     de espaços     entre     os caracteres    não     
+                        influi     no                                            resultado       final.
+
+Parágrafos são criados por meio de uma linha em branco no arquivo \texttt{.tex}.
+
+O formato final (gerado como um arquivo com extensão \texttt{.dvi}) se for usado o compilador \texttt{\small latex}, é determinado pelo arquivo de formatação usado, indicado com o comando \texttt{$\backslash$documentclass}. Este arquivo, por exemplo, usa o formato \emph{unipampa}, que formata trabalhos acadêmicos para apresentação na Universidade. O compilador correto para usar neste caso é o \texttt{\small pdflatex}, que gera os arquivos diretamente em formato PDF (\emph{portable document format}). Outros podem ser construídos ou usados. O texto não precisa ser alterado, somente o arquivo de formatação usado.
+
+
+\section{Figuras e tabelas}
+\label{sec-figuras}
+
+Esta sessão faz referência às \figurename s~\ref{fig:estrutura},~\ref{fig:ex1} e~\ref{fig:ex2}, a título de exemplo. A primeira figura apresenta a estrutura de uma figura. A \emph{descrição} (ou \emph{caption}) deve aparecer \textbf{acima} da figura. Abaixo da figura, deve ser indicado a origem da imagem, mesmo se essa for apenas os autores do texto. Note que ambos os ambientes são ``flutuantes''. Ou seja, são colocados no texto na melhor posição possível, a partir das dicas fornecidas (ou não) pelo usuário. Veja que ao lado do início do ambiente encontra-se o texto \texttt{[htbp]}. \texttt{h} significa \emph{here} e indica que a figura deve, preferencialmente, ser colocada no ponto do texto onde a definição aparece; \texttt{t} significa \emph{top} e indica que a figura deve ser colocada no topo da página; \texttt{b} significa \emph{bottom} e indica que a figura deve ser colocada ao final da página; e \texttt{p} significa \emph{page} e indica que a figura deve aparecer sozinha em outra página. Usualmente o arquivo de formatação define como as figuras devem ser colocadas. Use somente se você não gostar do resultado, mas lembre que o \LaTeX\ entende mais de formatação do que você... 
+
+Note como as referências cruzadas são feitas em \LaTeX: cada estrutura a ser referenciada (figuras, tabelas, equações, itens de listas, capítulos, seções, etc.) pode ser rotulada com o comando $\backslash$label\{nome do rótulo\}, em qualquer ambiente numerado. O número capturado é o do ambiente numerado mais próximo (neste caso aqui, seria o número da \sectionname\ Figuras e Tabelas). Quando o rótulo está dentro de um ambiente figure, por exemplo, o número é o nome da figura gerada por este ambiente. Toda a numeração é gerada automaticamente pelo compilador: se você mudar uma figura de lugar, os cálculos serão refeitos e toda a numeração será gerada corretamente. Compile o texto duas vezes seguidas para que todas as referências sejam calculadas corretamente.
+
+A \figurename~\ref{fig:ex1} representa o caso mais comum, onde a figura propriamente dita é importada de um arquivo (neste exemplo em formato \texttt{eps} ou \texttt{pdf}. Veja a \sectionname~\ref{sec:fig_format}). A \figurename~\ref{fig:ex2} exemplifica o uso do environment \texttt{picture}, para desenhar usando o próprio~\LaTeX\ \cite{mittelbach04thelatex, goossens04thelatexgraphics,lemke02zen}.
+
+\begin{figure}[htbp]
+    \caption{Descrição da Figura deve ir no topo}
+    \begin{center}
+        % Aqui vai um includegraphics , um picture environment ou qualquer
+        % outro comando necessário para incorporar o formato de imagem
+        % utilizado.
+        \begin{picture}(100,100)
+                \put(0,0){\line(0,1){100}}
+                \put(0,0){\line(1,0){100}}
+                \put(100,100){\line(0,-1){100}}
+                \put(100,100){\line(-1,0){100}}
+                \put(10,50){Uma Imagem}
+        \end{picture}
+    \end{center}
+    \label{fig:estrutura}
+    \fonte{Os autores}
+\end{figure}
+
+\begin{figure}[b]
+    \caption{Exemplo de figura importada de um arquivo e também exemplo de caption muito grande que ocupa mais de uma linha na Lista~de~Figuras}
+    \centerline{\includegraphics[width=10em]{unipampa.png}}
+    \fonte{http://www.unipampa.edu.br}
+    \label{fig:ex1}
+\end{figure}
+
+\begin{figure}[p]
+    \caption{Exemplo de figura desenhada com o environment \texttt{picture}, que aparece sozinha numa página.}
+    \begin{center}
+        \setlength{\unitlength}{.1em}
+        \begin{picture}(100,100)
+                \put(20,20){\circle{20}}
+                \put(20,20){\small\makebox(0,0){a}}
+                \put(80,80){\circle{20}}
+                \put(80,80){\small\makebox(0,0){b}}
+                \put(28,28){\vector(1,1){44}}
+        \end{picture}
+    \end{center}
+    \fonte{Os autores}
+    \label{fig:ex2}
+\end{figure}
+
+Tabelas são construídas com praticamente os mesmos comandos. Ver as \tablename s~\ref{tab-isto-e-uma-tabela} e \ref{tab-tabela-exemplo}. No exemplo as tabelas estão com posicionamento forçado, mas é melhor não usar. Deixar com o \LaTeX\ é sempre uma melhor política, esteticamente falando.
+
+\begin{table}[h]
+  \caption{Isto é uma tabela}
+  \centering
+  \begin{tabular}{|r|c|l|}
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    \hline
+    Texto & Texto & Texto \\ \hline
+    este texto     & este texto    & este texto \\
+    é posicionado  & é posicionado & é posicionado \\
+    à direita      & no centro     & à esquerda \\ \hline
+  \end{tabular}
+  \fonte{A autora}
+  \label{tab-isto-e-uma-tabela}
+\end{table}
+
+
+\begin{table}[t]
+    \caption{Uma tabela de Exemplo}
+    \begin{center}
+        \begin{tabular}{c|c|p{5cm}}
+            \textit{Col 1}  &   \textit{Col 2}  &   \textit{Col 3} \\
+            \hline
+            \hline
+            Val 1           & Val 2           & Esta coluna funciona como um parágrafo, tendo uma margem definida em 5cm. Quebras de linha funcionam como em qualquer parágrafo do documento. \\
+            Valor Longo     & Val 2             & Val 3 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \fonte{Os autores}
+    \label{tab-tabela-exemplo}
+\end{table}
+
+\subsection{Formato de Figuras}
+\label{sec:fig_format}
+
+O \LaTeX permite utilizar vários formatos de figuras, entre eles \emph{eps}, \emph{pdf}, \emph{jpeg} e \emph{png}. Programas de diagramação como Inkscape (e mesmo LibreOffice) permitem gerar arquivos de imagens vetoriais que podem ser utilizados pelo LaTeX sem dificuldade. Pacotes externos permitem utilizar SVG e outros formatos.
+
+
+
+\subsection{Classificação dos etc.}
+
+O formato adotado pela ABNT prevê apenas três níveis (capítulo, seção e subseção). Assim, \texttt{subsubsection} não deve ser usado. Não só pela recomendação como pela feiúra do estilo. Aliás, evite usar subseções. A quebra em níveis torna a leitura menos fluente e dois níveis, com raríssimas exceções, são suficientes para trabalhos acadêmicos em geral.
+
+Citações têm um formato específico também. Use quando a citação possuir mais do que 3 linhas. Em citações é sempre obrigatório colocar a fonte e o número da página (e não como está aqui...).
+
+\begin{quote}
+Uma citação é um texto copiado ipsis literis de algum outro lugar. Usa-se somente quando se quer apresentar a ideia do autor exatamente como foi produzida, para analisá-la em detalhe.
+\end{quote}
+
+
+\section{Equações matemáticas}
+
+No corpo do texto para escreve-se equações e expressões matemáticas entre dois símbolos \$. Subscritos são feitos com um \emph{underscore} e superscritos com um acento circunflexo. Por exemplo faz-se um $x^2$ com a expressão \verb"$x^2$".
+
+Outras maneiras de se fazer equações são com os comandos \verb"\[" e \verb"\]", que geram uma expressão centralizada. Por exemplo, a expressão \verb"\[\Delta=b^2-4ac\]" gera a seguinte saída:
+
+\[\Delta=b^2-4ac\]
+
+Expressões mais complicadas também podem ser feitas, em modo texto, e geram saídas bonitinhas. Por exemplo:
+
+\[\Phi(x,y,z)=\sqrt[3]{\frac{x^2+y^2+z^2}{(x+y+z)^{1/3}}}\]
+
+Matrizes também podem ser geradas facilmente:
+
+\[M_{m\times n}=\left( \begin{array}{cccc}
+  a_{11} & a_{12} & \ldots & a_{1n} \\
+  a_{21} & a_{22} & \ldots & a_{2n} \\
+  \ldots & \ldots & \ldots & \ldots \\
+  a_{m1} & a_{m2} & \ldots & a_{mn} \\
+  \end{array}\right)\]
+
+Se você precisar numerar equações ou expressões, use o ambiente equation:
+
+\begin{equation}\label{minha-equacao}
+\Theta(\overrightarrow{x})=\frac{\partial\nabla^2}{\partial t}
+\end{equation}
+
+Ele faz o mesmo que \verb"\[\]", mas gera um número que permite
+referências cruzadas. Por exemplo, a Equação~\ref{minha-equacao} é
+bem fácil de fazer, e a Equação~\ref{outra-equacao} também.
+
+\begin{equation}\label{outra-equacao}
+\Theta(\overrightarrow{x})=
+  \left\{\begin{array}{lcl}
+     \frac{x^2+y^2}{x-y} & & x\geq y \\
+     0 & & x = y \\
+     \frac{x^2+y^2}{y-x} & & x\leq y
+  \end{array}\right.
+\end{equation}
+
+\section{Sobre as referências bibliográficas}
+
+A classe \emph{unipampa} faz uso do pacote \emph{abnTeX2} com algumas alterações
+feitas por Sandro Rama Fiorini. Culpe ele se algo der errado. Agradeça a ele
+pelo que der certo. As modificações dão uma camada de tinta NATBIB-style,
+já que o abntex2 usa uns comandos de citação feitos para alienígenas de 5 braços. Exemplos de citação diferentes para a mesma obra (\cite{abramski92handbook1}):
+
+\begin{itemize}
+    \item \emph{cite}: Unicórnios são verdes \cite{abramski92handbook1};
+    \item \emph{citep}:Unicórnios são verdes \citep{abramski92handbook1};
+    \item \emph{citet}: Segundo \citet{abramski92handbook1}, unicórnios são
+                        verdes.
+    \item \emph{citen or citenum}: Segundo \citen{abramski92handbook1},
+        unicórnios são verdes.
+    \item \emph{citeauthor e citeyearpar}: Segundo artigos de
+        \citeauthor{abramski92handbook1}, unicórnios são verdes 
+        \citeyearpar{abramski92handbook1}.
+\end{itemize}
+
+As referências bibliográficas devem ser todas colocadas em um arquivo .bib. Junto com esse pacote também vai um exemplo. Somente as referências citadas no texto com o comando $\backslash$cite ou forçadas a aparecer com o comando $\backslash$nocite aparecerão na lista de referências produzida. Isso permite que você tenha um único arquivo de referências bibliográficas que pode ser usado em qualquer trabalho e incrementado ao longo do tempo. As referências são usadas para qualquer modelo de bibliografia, então podem ser usadas para artigos, apresentações, etc.
+
