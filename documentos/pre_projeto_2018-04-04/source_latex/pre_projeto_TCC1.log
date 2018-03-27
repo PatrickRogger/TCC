@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.23)  24 MAR 2018 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.23)  27 MAR 2018 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,30 +612,30 @@ LaTeX Info: Redefining \hbar on input line 50.
 (./pre_projeto_TCC1.aux)
 \openout1 = `pre_projeto_TCC1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 126.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 125.
+(lastpage)             ! on input line 126.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -657,55 +657,55 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks27
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 125.
-Package tocstyle Info: prepare \l@part for redefinition on input line 125.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 126.
+Package tocstyle Info: prepare \l@part for redefinition on input line 126.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 125.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 125.
-Package tocstyle Info: prepare \l@section for redefinition on input line 125.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 126.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 126.
+Package tocstyle Info: prepare \l@section for redefinition on input line 126.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 12
-5.
+6.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 12
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 12
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 12
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 125.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 126.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 125
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 126.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 126
 .
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-125.
-Package tocstyle Info: prepare \l@table for redefinition on input line 125.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 125.
+126.
+Package tocstyle Info: prepare \l@table for redefinition on input line 126.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 126.
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 125.
+Package hyperref Info: Link coloring ON on input line 126.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -715,9 +715,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count152
 )
-LaTeX Info: Redefining \ref on input line 125.
-LaTeX Info: Redefining \pageref on input line 125.
-LaTeX Info: Redefining \nameref on input line 125.
+LaTeX Info: Redefining \ref on input line 126.
+LaTeX Info: Redefining \pageref on input line 126.
+LaTeX Info: Redefining \nameref on input line 126.
 
 (./pre_projeto_TCC1.out) (./pre_projeto_TCC1.out)
 \@outlinefile=\write3
@@ -775,375 +775,252 @@ e
 ))
 \big@size=\dimen167
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1418) in paragraph at lines 132--132
+Underfull \hbox (badness 1418) in paragraph at lines 133--133
 []\T1/ptm/m/n/12 Trabalho de Conclusão de Curso apresentado
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 132--132
+Underfull \hbox (badness 1248) in paragraph at lines 133--133
 \T1/ptm/m/n/12 ao curso de Bacharelado em Geofísica como
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 132--132
+Underfull \hbox (badness 1270) in paragraph at lines 133--133
 \T1/ptm/m/n/12 requisito parcial para a obtenção do grau de
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 [2
 
 ]
-Overfull \hbox (28.4454pt too wide) in paragraph at lines 132--132
+Overfull \hbox (28.4454pt too wide) in paragraph at lines 133--133
 []\T1/ptm/m/n/12 AB8Cx5 
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 132--132
+Underfull \hbox (badness 1127) in paragraph at lines 133--133
 []\T1/ptm/m/n/12 Desenvolvimento e apli-ca-ção do soft-ware RiMT
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 132--132
+Underfull \hbox (badness 2409) in paragraph at lines 133--133
 []\T1/ptm/m/n/12 ``Orientação: Vi-ni-cius Abreu de Oli-veira; Co-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 132.
+(babel)             in language append on input line 133.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.132 \maketitle
+l.133 \maketitle
                  [2
 
 
 ]
-Overfull \vbox (29.69148pt too high) detected at line 132
+Overfull \vbox (29.69148pt too high) detected at line 133
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 132--132
+Underfull \hbox (badness 1418) in paragraph at lines 133--133
 []\T1/ptm/m/n/12 Trabalho de Conclusão de Curso apresentado
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 132--132
+Underfull \hbox (badness 1248) in paragraph at lines 133--133
 \T1/ptm/m/n/12 ao curso de Bacharelado em Geofísica como
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 132--132
+Underfull \hbox (badness 1270) in paragraph at lines 133--133
 \T1/ptm/m/n/12 requisito parcial para a obtenção do grau de
  []
 
 
-Overfull \vbox (110.77484pt too high) detected at line 132
+Overfull \vbox (110.77484pt too high) detected at line 133
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 132
+Underfull \vbox (badness 10000) detected at line 133
  []
 
 
-Underfull \vbox (badness 10000) detected at line 132
+Underfull \vbox (badness 10000) detected at line 133
  []
 
 
-Overfull \hbox (37.52142pt too wide) in paragraph at lines 132--133
+Overfull \hbox (37.52142pt too wide) in paragraph at lines 133--134
 [][] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 257.
+(babel)             in language append on input line 258.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 257.
+(babel)             in language append on input line 258.
 [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 257.
- (./Introducao.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \vbox (badness 4954) has occurred while \output is active []
-
-
+(babel)             in language append on input line 258.
+ (./cap/Introducao.tex)
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 4
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 30.
+(babel)             in language append on input line 262.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 30.
+(babel)             in language append on input line 262.
 [4
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 262.
+ (./cap/Area.tex
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 266.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 266.
+[5
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 266.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 272.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 296.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 57.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 57.
- [5]
-<unipampa.png, id=118, 263.48438pt x 163.3603pt>
-File: unipampa.png Graphic file (type png)
- <use unipampa.png>
-Package pdftex.def Info: unipampa.png used on input line 61.
-(pdftex.def)             Requested size: 120.0pt x 74.40134pt.
-
-Underfull \hbox (badness 1082) in paragraph at lines 107--108
-[]|\T1/ptm/m/n/12 Esta co-luna fun-ci-ona como
- []
-
-
-Underfull \hbox (badness 5050) in paragraph at lines 107--108
-\T1/ptm/m/n/12 um pa-rá-grafo, tendo uma
- []
-
-
-Underfull \hbox (badness 3209) in paragraph at lines 107--108
-\T1/ptm/m/n/12 mar-gem de-fi-nida em 5cm.
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 116.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 123.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 6
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 126.
+(babel)             in language append on input line 308.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 126.
-[6 <./unipampa.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 134.
+(babel)             in language append on input line 308.
+[6
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 331.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 143.
+(babel)             in language append on input line 331.
  [7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 174.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+(babel)             in language append on input line 331.
+ (./cap/Resultados.tex)
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 8
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 191.
+(babel)             in language append on input line 335.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 191.
-[8])
+(babel)             in language append on input line 335.
+[8
+
+]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 261.
+(babel)             in language append on input line 335.
+ (./cap/Cronograma.tex) (./pre_projeto_TCC1.bbl
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 261.
- [9]
+(babel)             in language append on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 3.
+ [9
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 3.
+)
+
+AED: lastpage setting LastPage
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 10
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 261.
+(babel)             in language append on input line 376.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 261.
-[10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 261.
- (./cap/Area.tex)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 265.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 265.
- [11
+(babel)             in language append on input line 376.
+[10
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 265.
- (./cap/Materiais.tex)
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 12
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 269.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 269.
-[12
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 269.
- (./cap/Resultados.tex)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 273.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 273.
- [13
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 273.
- (./cap/Cronograma.tex) (./pre_projeto_TCC1.bbl
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 14
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 3.
-[14
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 3.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 101.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 101.
- [15
-
-])
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 16
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 317.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 317.
-[16]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 317.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 323.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 323.
- [17
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 323.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 18
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 329.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 329.
-[18
-
-]pdfTeX warning (ext4): destination with the same identifier (name{CHAPTER.A}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.329 \chapter{Nome do Anexo}
-                             
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 329.
- 
-AED: lastpage setting LastPage
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 337.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 337.
-[19
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 337.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+(babel)             in language append on input line 376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (./pre_projeto_TCC1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `pre_projeto_TCC1.out' has not changed.
-(rerunfilecheck)             Checksum: C243BBF38C57C6359FD4737FDADACF0A;2377.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 337.
+(rerunfilecheck)             Checksum: FA54066A05AA8A552F7D68D220F8B5D1;1337.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
  ) 
 Here is how much of TeX's memory you used:
- 19991 strings out of 493029
- 328242 string characters out of 6136234
- 397260 words of memory out of 5000000
- 23226 multiletter control sequences out of 15000+600000
- 58619 words of font info for 96 fonts, out of 8000000 for 9000
+ 19802 strings out of 493029
+ 325043 string characters out of 6136234
+ 393711 words of memory out of 5000000
+ 23092 multiletter control sequences out of 15000+600000
+ 31794 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,14n,45p,10372b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,45p,10372b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/latxfont/lcircle1.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/
-usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on pre_projeto_TCC1.pdf (20 pages, 137195 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol
+/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pre_projeto_TCC1.pdf (11 pages, 78990 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

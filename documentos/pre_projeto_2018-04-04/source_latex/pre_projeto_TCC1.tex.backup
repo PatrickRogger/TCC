@@ -56,7 +56,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Desenvolvimento e aplicação do software RiMT (Roplus Inversion Magnetoteluric}
+\title{Desenvolvimento e aplicação do software RiMT (Roplus Inversion Magnetoteluric)}
 
 \author{Garcia}{Patrick Rogger}
 %\author{Santos}{Maria dos}   % caso haja mais do que um autor; liste todos assim.
@@ -66,12 +66,12 @@
 % Orientação (orientador é obrigatório; co-orientador é opcional)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\advisor[Prof.~Dr.]{Oliveira}{}
-\coadvisor[Prof\textsuperscript{a}.~Dr\textsuperscript{a}.]{Ferreira}{Ana Paula Lüdtke}
+\advisor[Prof.~Dr.]{Oliveira}{Vinicius Abreu de}
+\coadvisor[Prof\textsuperscript{a}.~Dr\textsuperscript{a}.]{Matos}{Andrea Cristina Lima dos Santos}
 
 
 % Se o seu orientador ou co-orientador for mulher, acerte o nome:
-\renewcommand{\advisorname}{Orientadora}
+\renewcommand{\coadvisorname}{Co-orientadora}
 %\renewcommand{\coadvisorname}{Co-orientadora}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,7 +103,7 @@
 
 % O local de realização do trabalho deve ser especificado 
 % com o comando \location. 
-\location{Bagé}{RS}
+\location{Caçapava do Sul}{RS}
 
 %
 % Palavras-chave para o resumo (na língua do documento)
@@ -135,9 +135,9 @@
 % Dedicatoria (opcional)
 %
 
-\begin{dedicatoria}
-Dedico este trabalho ao meu gato, ao meu cachorro e ao meu papagaio.
-\end{dedicatoria}
+%\begin{dedicatoria}
+%Dedico este trabalho ao meu gato, ao meu cachorro e ao meu papagaio.
+%\end{dedicatoria}
 
 %
 % Agradecimentos (opcional)
@@ -149,38 +149,38 @@ Dedico este trabalho ao meu gato, ao meu cachorro e ao meu papagaio.
 % mais limpo, claro e conciso.
 %
 
-\chapter*{Agradecimento}
-Agradeço à Antarctica pelas Brahminhas que eles mandaram.
+%\chapter*{Agradecimento}
+%Agradeço à Antarctica pelas Brahminhas que eles mandaram.
 
 %
 % Epígrafe (opcional)
 %
-\begin{epigrafe}
-``If I have seen farther than others, it is because I stood on the shoulders of giants.''\\
---- Sir~Isaac Newton
-\end{epigrafe}
+%\begin{epigrafe}
+%``If I have seen farther than others, it is because I stood on the shoulders of giants.''\\
+%--- Sir~Isaac Newton
+%\end{epigrafe}
 
 %
 % Resumo na língua do documento (obrigatório). Segundo o manual da UNIPAMPA, deve ser escrito em um único parágrafo:
 %
 
-\begin{abstract}
-Este documento é um exemplo de como formatar documentos para os cursos de graduação e pós-graduação da UNIPAMPA usando as classes \LaTeX\ 
-disponibilizadas pelo UTUG\@ e modificadas pela Prof. Ana Paula Lüdtke Ferreira, para atender às exigências expressas no manual de normalização da UNIPAMPA. Ao mesmo tempo, pode servir de consulta para comandos mais genéricos. \emph{O texto do resumo não deve conter mais do que 500 palavras, mas também não deve ser tão curto quanto esse.}
-\end{abstract}
+%\begin{abstract}
+%Este documento é um exemplo de como formatar documentos para os cursos de graduação e pós-graduação da UNIPAMPA usando as classes \LaTeX\ 
+%disponibilizadas pelo UTUG\@ e modificadas pela Prof. Ana Paula Lüdtke Ferreira, para atender às exigências expressas no manual de normalização da UNIPAMPA. Ao mesmo tempo, pode servir de consulta para comandos mais genéricos. \emph{O texto do resumo não deve conter mais do que 500 palavras, mas também não deve ser tão curto quanto esse.}
+%\end{abstract}
 
 %
 % Resumo na outra língua - se o texto for em Português, o abstract é em Inglês e vice-versa - 
 % como parâmetros devem ser passadas as palavras-chave na outra língua, separadas por vírgulas:
 %
 
-\begin{englishabstract}{Electronic document preparation, \LaTeX, ABNT, UNIPAMPA}
-This document is an example on how to prepare documents at UNIPAMPA
-using the \LaTeX\ classes provided. At the same time, it
-may serve as a guide for general-purpose commands. \emph{The text in
-the abstract should not contain more than 500~words although it must not be
-as short as this one.}
-\end{englishabstract}
+%\begin{englishabstract}{Electronic document preparation, \LaTeX, ABNT, UNIPAMPA}
+%This document is an example on how to prepare documents at UNIPAMPA
+%using the \LaTeX\ classes provided. At the same time, it
+%may serve as a guide for general-purpose commands. \emph{The text in
+%the abstract should not contain more than 500~words although it must not be
+%as short as this one.}
+%\end{englishabstract}
 
 %
 % Lista de figuras
@@ -188,7 +188,7 @@ as short as this one.}
 % Todas as figuras declaradas no texto dentro de um ambiente figure serão numeradas apropriadamente e
 % colocadas automaticamente nesta lista, com o número de página onde aparecem correto:
 %
-\listoffigures
+%\listoffigures
 
 %
 % Lista de tabelas
@@ -197,7 +197,7 @@ as short as this one.}
 % colocadas automaticamente nesta lista, com o número de página onde aparecem correto:
 %
 
-\listoftables
+%\listoftables
 
 % Listas de definições e teoremas, para quem usar o pacote formais, para trabalhos que possuam definições formais e teoremas
 
@@ -211,23 +211,23 @@ as short as this one.}
 % Só não abuse. use somente siglas consagradas. Se quiser economizar na escrita, use o comando
 % \newcommand{\MT}{Máquina de Turing} e use \MT sempre que quiser que o termo apareça completo.
 % Isso torna a leitura do texto mais fluente.
-\begin{listofabbrv}{UNIPAMPA}
-        \item[ABNT]     Associação Brasileira de Normas Técnicas
-        \item[ACM]      Association for Computing Machinery
-        \item[IEEE]     Institute of Electrical and Electronics Engineers 
-        \item[IP]       Internet Protocol
-        \item[RTP]      Real-Time Protocol
-        \item[RSSF]     Rede de Sensores sem Fio
-        \item[SIMD]     Single Instruction Multiple Data
-        \item[UNIPAMPA] Universidade Federal do Pampa
-        \item[UFRGS]    Universidade Federal do Rio Grande do Sul
-\end{listofabbrv}
+%\begin{listofabbrv}{UNIPAMPA}
+%        \item[ABNT]     Associação Brasileira de Normas Técnicas
+%        \item[ACM]      Association for Computing Machinery
+%        \item[IEEE]     Institute of Electrical and Electronics Engineers 
+%        \item[IP]       Internet Protocol
+%        \item[RTP]      Real-Time Protocol
+%        \item[RSSF]     Rede de Sensores sem Fio
+%        \item[SIMD]     Single Instruction Multiple Data
+%        \item[UNIPAMPA] Universidade Federal do Pampa
+%        \item[UFRGS]    Universidade Federal do Rio Grande do Sul
+%\end{listofabbrv}
 
 % Lista de símbolos
-\begin{listofsymbols}{$\alpha\beta\pi\omega$}
-       \item[$\sum{\frac{a}{b}}$] Somatório do produtório
-       \item[$\alpha\beta\pi\omega$] Fator de inconstância do resultado
-\end{listofsymbols}
+%\begin{listofsymbols}{$\alpha\beta\pi\omega$}
+%       \item[$\sum{\frac{a}{b}}$] Somatório do produtório
+%       \item[$\alpha\beta\pi\omega$] Fator de inconstância do resultado
+%\end{listofsymbols}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
@@ -236,7 +236,7 @@ as short as this one.}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\tableofcontents
+%\tableofcontents
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
@@ -256,61 +256,117 @@ as short as this one.}
 
 \chapter{Introdução}
 \label{cap-introducao}
-\input{Introducao}
-%
-% \chapter{Metodologia}
-% \label{cap-metodologia}
-% \input{Metodologia}
+\input{cap/Introducao}
 
-% \chapter{Estado da arte}
-% \label{cap-estado-da-arte}
-% \input{RevisaoBibliografica}
+\chapter{Área de Estudo}
+\label{cap-area}
+\input{cap/Area}
 
-% \chapter{A minha contribuição}
-% \label{cap-minha-contribuicao}
-% \input{MeuTrabalho}
+\chapter{Materiais e Métodos}
+\label{cap-materiais}
 
-% \chapter{Prova de que a minha contribuição é válida}
-% \label{cap-minha-contribuicao}
-% \input{Resultados}
+O método Magnetotelúrico (MT) proposto por \cite{tikhonov50} e \cite{cagniard53}, usa das propriedades eletromagnéticas para estudar a distribuição de 
+resistividade na crosta, podendo variar a sua investigação em dezenas de metros como dezenas de kilometros.
 
-% \chapter{Conclusão} % A normatização da biblioteca diz que em TCC este capítulo deve ser chamado de "Considerações Finais".
-% \label{cap-conclusao-e-trabalhos-futuros}
-% \input{Conclusao}
+\section{Fundamentos do Método}
+\label{embasamento_teorico}
 
-%
+Apoiado nas equações de Maxwell o método MT usa as variações dos campos elétricos e magnéticos naturais da Terra, essas variações tem suas
+origens na interação de ventos solares e tempestades tropicais com a magnetosfera.
+
+A interação gera correntes que penetram no interior da Terra, para simplificar os modelos,
+em forma de ondas planas ortogonais, essas correntes por indução geram novas 
+correntes chamadas de correntes telúricas, que trazem informações das caracteristicas fisicas das litologias.
+
+Uma das caracteristicas é a modulação da frenquência, causada por diferentes tipos
+de litologias, essa frenquência é diretamente relacionada a resistividade do meio.
+
+Para construção do método algumas situações de contorno são propostas:
+
+\begin{enumerate}
+ \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície
+ da Terra
+ \item A Terra se comporta como um condutor ôhmico
+ \item .....
+ \item ......
+ \item ......
+\end{enumerate}
+
+\section{Fundamento Matemático e Leis de Maxwell}
+\label{mat_maxwell}
+
+Como já comentado a base teórica obedece as Leis de Maxwell para união dos campos 
+elétricos e magnéticos.
+
+Esses campos podem ser descritos pelas equações:
+\begin{equation}
+ \nabla \times E=-\frac{\partial B}{\partial t}
+\end{equation}
+\begin{equation}
+ \nabla \times B = \mu J + \mu \varepsilon \frac{\partial E}{\partial t}
+\end{equation}
+
+\begin{equation}
+ \nabla \cdot B = 0
+\end{equation}
+
+\begin{equation}
+ \nabla \cdot E = \frac{\rho}{\varepsilon_0}
+\end{equation}
+
+$B$ $\mapsto$ Campo Magnético [$T$]
+
+$E$ $\mapsto$ Campo Elétrico 
+
+$J$ $\mapsto$ Densidade de Corrente [$A/m$] 
+
+$\rho$ $\mapsto$ Densidade de carga [$C/m$]
+
+$\varepsilon$ $\mapsto$ Permissividade dielétrica do meio [....]
+
+$\mu$ $\mapsto$ Permeabilidade magnética [.....]
+
+
+\chapter{Resultados Esperados}
+\label{cap-resultados}
+\input{cap/Resultados}
+
+\chapter{Cronograma de Atividades}
+\label{cap-cronograma}
+\input{cap/Cronograma}
+
 % O arquivo de formatação abntex2-alf.bst coloca todas as entradas no formato correto.
 %
 
-\nocite{icgt04}
-\nocite{nagl86set}
-\nocite{microsoft05Csharp}
-\nocite{meinke92universal}
-\nocite{marchi04verificacao}
-\nocite{biberstein97coopnthesis}
-\nocite{anderson96model}
-\nocite{alur01partial}
-\nocite{abramski94domain}
-\nocite{abadi97alogic}
+%\nocite{cagniard53}
+%\nocite{nagl86set}
+%\nocite{microsoft05Csharp}
+%\nocite{meinke92universal}
+%\nocite{marchi04verificacao}
+%\nocite{biberstein97coopnthesis}
+%\nocite{anderson96model}
+%\nocite{alur01partial}
+%\nocite{abramski94domain}
+%\nocite{abadi97alogic}
 
 \bibliographystyle{abntex2-alf}
-\bibliography{bibliografia}
+\bibliography{bibliografia2}
 
-\chapter*{Glossário}
+%\chapter*{Glossário}
 
-O glossário é opcional. Se precisar, consulte o manual sobre o seu formato adequado.
+%O glossário é opcional. Se precisar, consulte o manual sobre o seu formato adequado.
 
-\appendix
+%\appendix
 
-\chapter{Nome do Apêndice}
+%\chapter{Nome do Apêndice}
 
-Depois do termo ``appendix'', qualquer capítulo aparecerá na forma correta, com o termo ``Apêndice''. Use apêndices quando houver material produzido pelo autor que ajuda no entendimento do trabalho mas que não faz parte do texto principal. Modelos de questionários utilizados, código fonte de programas, partituras completas, provas de teoremas acessórias, etc.
+%Depois do termo ``appendix'', qualquer capítulo aparecerá na forma correta, com o termo ``Apêndice''. Use apêndices quando houver material produzido pelo autor que ajuda no entendimento do trabalho mas que não faz parte do texto principal. Modelos de questionários utilizados, código fonte de programas, partituras completas, provas de teoremas acessórias, etc.
 
-\annex
+%\annex
 
-\chapter{Nome do Anexo}
+%\chapter{Nome do Anexo}
 
-Depois do termo ``annex'', qualquer capítulo aparecerá na forma correta, com o termo ``Anexo'' no título. Use anexos quando se tratar de material não produzido pelo autor, mas necessário no entendimento do trabalho. Por exemplo, definições matemáticas, sintaxe formal de linguagens de programação, trechos de manuais, etc.
+%Depois do termo ``annex'', qualquer capítulo aparecerá na forma correta, com o termo ``Anexo'' no título. Use anexos quando se tratar de material não produzido pelo autor, mas necessário no entendimento do trabalho. Por exemplo, definições matemáticas, sintaxe formal de linguagens de programação, trechos de manuais, etc.
 
 %
 % Finalização do documento. A partir desse comando qualquer coisa escrita será ignorada:
