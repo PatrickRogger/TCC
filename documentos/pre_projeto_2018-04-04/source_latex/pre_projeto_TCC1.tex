@@ -1,44 +1,4 @@
-%
-% Exemplo genérico de uso da classe unipampa.cls
-%
-% Se você não tem familiaridade com o LaTeX, este arquivo dá algumas orientações.
-% Para um aproveitamento melhor, sugere-se usar o livro LaTeX - A Document Preparation System,
-% de Leslie Lamport. Na Internet estão disponíveis também alguns milhares de tutorias.
-% Na UNIPAMPA, volta e meia tem cursos, fique atento.
-%
-% O símbolo % é um comentário de linha, então tudo que aparecer depois dele não é considerado
-% no texto final. Você pode limpar todos os comentários deste arquivo, depois que colocar os
-% dados corretos, sem prejuízo do texto final.
-%
-
 \documentclass[csgeo,tcc]{unipampa}
-% Para usar o modelo, deve-se informar o curso e o tipo de documento e o tipo de documento que deve ser produzido.
-% Cursos:
-%   * código do curso   -- Usar o código do curso, conforme está registrado no SIE 
-%                         (baec para Engenharia de Computação, por exemplo) quando
-%                         se tratar de curso de graduação; usar a sigla do programa
-%                         quando se tratar de pós-graduação stricto sensu (ppgcap
-%                         para o Programa de Pós-graduação em Computação Aplicada,
-%                         por exemplo; para especializações, definir os campos
-%                         apropriadamente com o comando \course{nome-do-curso}
-%                         (sem o termo ``Especialização'') e \campus{nome-do-campus}.
-%   
-% Tipos de Documento:
-%   * tcc               -- Trabalhos de Conclusão de Curso
-%   * espec             -- Monografias de Especialização
-%   * mestrado          -- Dissertações de Mestrado (acadêmico)
-%   * mestradoprof      -- Dissertações de Mestrado (profissional)
-%   * doutorado         -- Teses de Doutorado
-% 
-% Outras Opções:
-%   * english    -- para textos em inglês
-%   * openright  -- força início de capítulos em páginas ímpares (padrão da biblioteca)
-%   * oneside    -- desliga frente-e-verso
-%   * final      -- versão final do texto
-
-% Programas de pós-graduação com mais de uma área de concentração devem declarar explicitamente
-% a área de concentração da dissertação ou tese, por meio do comando
-%\renewcommand{\areacourse}{Sanidade Animal}
 
 \usepackage[T1]{fontenc}        % pacote para conj. de caracteres correto
 \usepackage[latin1]{inputenc}   % pacote para acentuação
@@ -57,7 +17,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Desenvolvimento e aplicação do software RiMT (Roplus Inversion Magnetoteluric)}
+\title{Desenvolvimento e aplicação do software RiMT (Roplus Inversion Magnetotelluric)}
 
 \author{Garcia}{Patrick Rogger}
 %\author{Santos}{Maria dos}   % caso haja mais do que um autor; liste todos assim.
@@ -131,128 +91,6 @@
 %
 
 \maketitle
-
-%
-% Dedicatoria (opcional)
-%
-
-%\begin{dedicatoria}
-%Dedico este trabalho ao meu gato, ao meu cachorro e ao meu papagaio.
-%\end{dedicatoria}
-
-%
-% Agradecimentos (opcional)
-%
-% Se você tiver muito a agradecer, pode usar um arquivo à parte e incluí-lo
-% no texto, por meio do comando \input{meus-agradecimenos}. O compilador
-% LaTeX buscará o arquivo meus-agradecimentos.tex e incluirá o texto do mesmo
-% neste local. Isso ajuda a tornar o arquivo principal do trabalho (este)
-% mais limpo, claro e conciso.
-%
-
-%\chapter*{Agradecimento}
-%Agradeço à Antarctica pelas Brahminhas que eles mandaram.
-
-%
-% Epígrafe (opcional)
-%
-%\begin{epigrafe}
-%``If I have seen farther than others, it is because I stood on the shoulders of giants.''\\
-%--- Sir~Isaac Newton
-%\end{epigrafe}
-
-%
-% Resumo na língua do documento (obrigatório). Segundo o manual da UNIPAMPA, deve ser escrito em um único parágrafo:
-%
-
-%\begin{abstract}
-%Este documento é um exemplo de como formatar documentos para os cursos de graduação e pós-graduação da UNIPAMPA usando as classes \LaTeX\ 
-%disponibilizadas pelo UTUG\@ e modificadas pela Prof. Ana Paula Lüdtke Ferreira, para atender às exigências expressas no manual de normalização da UNIPAMPA. Ao mesmo tempo, pode servir de consulta para comandos mais genéricos. \emph{O texto do resumo não deve conter mais do que 500 palavras, mas também não deve ser tão curto quanto esse.}
-%\end{abstract}
-
-%
-% Resumo na outra língua - se o texto for em Português, o abstract é em Inglês e vice-versa - 
-% como parâmetros devem ser passadas as palavras-chave na outra língua, separadas por vírgulas:
-%
-
-%\begin{englishabstract}{Electronic document preparation, \LaTeX, ABNT, UNIPAMPA}
-%This document is an example on how to prepare documents at UNIPAMPA
-%using the \LaTeX\ classes provided. At the same time, it
-%may serve as a guide for general-purpose commands. \emph{The text in
-%the abstract should not contain more than 500~words although it must not be
-%as short as this one.}
-%\end{englishabstract}
-
-%
-% Lista de figuras
-%
-% Todas as figuras declaradas no texto dentro de um ambiente figure serão numeradas apropriadamente e
-% colocadas automaticamente nesta lista, com o número de página onde aparecem correto:
-%
-%\listoffigures
-
-%
-% Lista de tabelas
-%
-% Todas as tabelas declaradas no texto dentro de um ambiente table serão numeradas apropriadamente e
-% colocadas automaticamente nesta lista, com o número de página onde aparecem correto:
-%
-
-%\listoftables
-
-% Listas de definições e teoremas, para quem usar o pacote formais, para trabalhos que possuam definições formais e teoremas
-
-%\listofdefinitions
-%\listoftheorems
-
-%
-% Lista de abreviaturas e siglas
-%
-% O parâmetro deve ser a abreviatura mais longa. Essa lista é opcional, mas é muito conveniente.
-% Só não abuse. use somente siglas consagradas. Se quiser economizar na escrita, use o comando
-% \newcommand{\MT}{Máquina de Turing} e use \MT sempre que quiser que o termo apareça completo.
-% Isso torna a leitura do texto mais fluente.
-%\begin{listofabbrv}{UNIPAMPA}
-%        \item[ABNT]     Associação Brasileira de Normas Técnicas
-%        \item[ACM]      Association for Computing Machinery
-%        \item[IEEE]     Institute of Electrical and Electronics Engineers 
-%        \item[IP]       Internet Protocol
-%        \item[RTP]      Real-Time Protocol
-%        \item[RSSF]     Rede de Sensores sem Fio
-%        \item[SIMD]     Single Instruction Multiple Data
-%        \item[UNIPAMPA] Universidade Federal do Pampa
-%        \item[UFRGS]    Universidade Federal do Rio Grande do Sul
-%\end{listofabbrv}
-
-% Lista de símbolos
-%\begin{listofsymbols}{$\alpha\beta\pi\omega$}
-%       \item[$\sum{\frac{a}{b}}$] Somatório do produtório
-%       \item[$\alpha\beta\pi\omega$] Fator de inconstância do resultado
-%\end{listofsymbols}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% Sumário - elemento obrigatório do trabalho - gerado automaticamente com
-%           o comando abaixo.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\tableofcontents
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% Aqui comeca o texto propriamente dito. O texto pode ser todo escrito neste 
-% mesmo arquivo, mas pode-se separar o texto em diversos arquivos, que podem
-% ser incluídos com o comando \input{nome-do-arquivo} (inclui o arquivo com
-% nome nome-do-arquivo.tex), que deve estar no mesmo diretório do texto
-% principal. Se estiver em outro diretório, pode ser incluído também, usando
-% \input{Textos/nome-do-arquivo}. Dessa forma, o arquivo será buscado no
-% subdiretório Textos; se quiser usar caminhos na árvore de diretórios, use
-% \input{../Textos/nome-do-arquivo}, que procura o arquivo que está no diretório
-% Textos, um nível acima na estrutura.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % E aqui vai a parte principal:
 
 \chapter{Introdução}
@@ -288,15 +126,15 @@ Para construção do método algumas situações de contorno são propostas:
  \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície
  da Terra
  \item A Terra se comporta como um condutor ôhmico
- \item .....
- \item ......
- \item ......
+ \item \textcolor{red}{..291....}
+ \item \textcolor{red}{..292....}
+ \item \textcolor{red}{..293....}
 \end{enumerate}
 
 \section{Fundamento Matemático e Leis de Maxwell}
 \label{mat_maxwell}
 
-Como já comentado a base teórica obedece as Leis de Maxwell para união dos campos 
+Como já comentado na secção \ref{embasamento_teorico} a base teórica obedece as Leis de Maxwell para união dos campos. 
 elétricos e magnéticos.
 
 Esses campos podem ser descritos pelas equações:
@@ -306,11 +144,9 @@ Esses campos podem ser descritos pelas equações:
 \begin{equation}
  \nabla \times B = \mu J + \mu \varepsilon \frac{\partial E}{\partial t}
 \end{equation}
-
 \begin{equation}
  \nabla \cdot B = 0
 \end{equation}
-
 \begin{equation}
  \nabla \cdot E = \frac{\rho}{\varepsilon_0}
 \end{equation}
@@ -326,6 +162,37 @@ $\rho$ $\mapsto$ Densidade de carga [$C/m$]
 $\varepsilon$ $\mapsto$ Permissividade dielétrica do meio [\textcolor{red}{...326...}]
 
 $\mu$ $\mapsto$ Permeabilidade magnética [\textcolor{red}{...328...}]
+
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\section{Estrutura do software (RiMT)}
+\label{rimt}
+
+O RiMT será desenvolvido em linguagem Python na sua terceira versão, a compatibilidade,
+a vasta quantidade de pacotes e o grande crescimento foram os fatores que ajudaram na 
+escolha da linguagem.
+A interface gráfica será construida com um pacote para Python chamado Kivy, esse pacote tem licença
+GNU.
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+
+
+
+
+
+
 
 
 \chapter{Resultados Esperados}
@@ -352,25 +219,5 @@ $\mu$ $\mapsto$ Permeabilidade magnética [\textcolor{red}{...328...}]
 
 \bibliographystyle{abntex2-alf}
 \bibliography{bibliografia2}
-
-%\chapter*{Glossário}
-
-%O glossário é opcional. Se precisar, consulte o manual sobre o seu formato adequado.
-
-%\appendix
-
-%\chapter{Nome do Apêndice}
-
-%Depois do termo ``appendix'', qualquer capítulo aparecerá na forma correta, com o termo ``Apêndice''. Use apêndices quando houver material produzido pelo autor que ajuda no entendimento do trabalho mas que não faz parte do texto principal. Modelos de questionários utilizados, código fonte de programas, partituras completas, provas de teoremas acessórias, etc.
-
-%\annex
-
-%\chapter{Nome do Anexo}
-
-%Depois do termo ``annex'', qualquer capítulo aparecerá na forma correta, com o termo ``Anexo'' no título. Use anexos quando se tratar de material não produzido pelo autor, mas necessário no entendimento do trabalho. Por exemplo, definições matemáticas, sintaxe formal de linguagens de programação, trechos de manuais, etc.
-
-%
-% Finalização do documento. A partir desse comando qualquer coisa escrita será ignorada:
-%
 
 \end{document}

@@ -46,6 +46,7 @@
 \usepackage{times}              % pacote para usar fonte Adobe Times
 \usepackage{mathptmx}           % pacote usar fonte Adobe Times nas fórmulas
 
+
 \usepackage[alf,abnt-emphasize=bf]{abntex2cite}	% pacote para usar citações abnt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -287,15 +288,15 @@ Para construção do método algumas situações de contorno são propostas:
  \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície
  da Terra
  \item A Terra se comporta como um condutor ôhmico
- \item .....
- \item ......
- \item ......
+ \item \textcolor{red}{..291....}
+ \item \textcolor{red}{..292....}
+ \item \textcolor{red}{..293....}
 \end{enumerate}
 
 \section{Fundamento Matemático e Leis de Maxwell}
 \label{mat_maxwell}
 
-Como já comentado a base teórica obedece as Leis de Maxwell para união dos campos 
+Como já comentado a base teórica obedece as Leis de Maxwell para união dos campos. 
 elétricos e magnéticos.
 
 Esses campos podem ser descritos pelas equações:
@@ -305,26 +306,47 @@ Esses campos podem ser descritos pelas equações:
 \begin{equation}
  \nabla \times B = \mu J + \mu \varepsilon \frac{\partial E}{\partial t}
 \end{equation}
-
 \begin{equation}
  \nabla \cdot B = 0
 \end{equation}
-
 \begin{equation}
  \nabla \cdot E = \frac{\rho}{\varepsilon_0}
 \end{equation}
 
 $B$ $\mapsto$ Campo Magnético [$T$]
 
-$E$ $\mapsto$ Campo Elétrico 
+$E$ $\mapsto$ Campo Elétrico [\textcolor{red}{..320....}]
 
 $J$ $\mapsto$ Densidade de Corrente [$A/m$] 
 
 $\rho$ $\mapsto$ Densidade de carga [$C/m$]
 
-$\varepsilon$ $\mapsto$ Permissividade dielétrica do meio [....]
+$\varepsilon$ $\mapsto$ Permissividade dielétrica do meio [\textcolor{red}{...326...}]
 
-$\mu$ $\mapsto$ Permeabilidade magnética [.....]
+$\mu$ $\mapsto$ Permeabilidade magnética [\textcolor{red}{...328...}]
+
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\textcolor{red}{\textbf{Continuação Teoria}}
+
+\section{Estrutura do software (RiMT)}
+\label{rimt}
+
+O RiMT será desenvolvido em linguagem Python em sua terceira versão, a compatibilidade,
+a vasta quantidade de pacotes e o grande crescimento foram os fatores que ajudaram na 
+escolha da linguagem.
+
+
+
+
+
+
+
 
 
 \chapter{Resultados Esperados}

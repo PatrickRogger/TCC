@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /home/patrick/TCC/TCC-git
 cp documentos/pre_projeto_2018-04-04/source_latex/pre_projeto_TCC1.pdf ultima_versao.pdf
 
 git status
