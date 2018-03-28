@@ -104,7 +104,7 @@
 \chapter{Materiais e Métodos}
 \label{cap-materiais}
 
-O método Magnetotelúrico (MT) proposto por \cite{tikhonov50} e \cite{cagniard53}, usa das propriedades eletromagnéticas para estudar a distribuição de 
+O método Magnetotelúrico (MT) proposto por \citeauthor{tikhonov50} \citeyearpar{tikhonov50} e \citeauthor{cagniard53} \citeyearpar{cagniard53}, usa das propriedades eletromagnéticas para estudar a distribuição de 
 resistividade na crosta, podendo variar a sua investigação em dezenas de metros como dezenas de kilometros.
 
 \section{Fundamentos do Método}
@@ -118,17 +118,17 @@ em forma de ondas planas ortogonais, essas correntes por indução geram novas
 correntes chamadas de correntes telúricas, que trazem informações das caracteristicas fisicas das litologias.
 
 Uma das caracteristicas é a modulação da frenquência, causada por diferentes tipos
-de litologias, essa frenquência é diretamente relacionada a resistividade do meio.
+de rochas e estruturas, esse fenômeno é diretamente relacionado a resistividade do meio.
 
 Para construção do método algumas situações de contorno são propostas:
 
 \begin{enumerate}
  \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície
- da Terra
- \item A Terra se comporta como um condutor ôhmico
- \item \textcolor{red}{..291....}
- \item \textcolor{red}{..292....}
- \item \textcolor{red}{..293....}
+ da Terra.
+ \item A Terra se comporta como um condutor ôhmico.
+ \item \textcolor{red}{..129....}
+ \item \textcolor{red}{..130....}
+ \item \textcolor{red}{..131....}
 \end{enumerate}
 
 \section{Fundamento Matemático e Leis de Maxwell}
@@ -151,17 +151,20 @@ Esses campos podem ser descritos pelas equações:
  \nabla \cdot E = \frac{\rho}{\varepsilon_0}
 \end{equation}
 
-$B$ $\mapsto$ Campo Magnético [$T$]
+$B$ $\rightarrow$ Campo Magnético [$T$]
 
-$E$ $\mapsto$ Campo Elétrico [\textcolor{red}{..320....}]
+$E$ $\rightarrow$ Campo Elétrico [$V/m$ \textcolor{red}{???}]
 
-$J$ $\mapsto$ Densidade de Corrente [$A/m$] 
+$J$ $\rightarrow$ Densidade de Corrente [$A/m$] 
 
-$\rho$ $\mapsto$ Densidade de carga [$C/m$]
+$\rho$ $\rightarrow$ Densidade de carga [$C/m$]
 
-$\varepsilon$ $\mapsto$ Permissividade dielétrica do meio [\textcolor{red}{...326...}]
+$\varepsilon$ $\rightarrow$ Permissividade dielétrica do meio [$F/m$]
 
-$\mu$ $\mapsto$ Permeabilidade magnética [\textcolor{red}{...328...}]
+$\mu$ $\rightarrow$ Permeabilidade magnética [$H/m$]
+
+$t$ $\rightarrow$ Tempo [$s$]
+
 
 
 \textcolor{red}{\textbf{Continuação Teoria}}
@@ -178,8 +181,24 @@ $\mu$ $\mapsto$ Permeabilidade magnética [\textcolor{red}{...328...}]
 O RiMT será desenvolvido em linguagem Python na sua terceira versão, a compatibilidade,
 a vasta quantidade de pacotes e o grande crescimento foram os fatores que ajudaram na 
 escolha da linguagem.
-A interface gráfica será construida com um pacote para Python chamado Kivy, esse pacote tem licença
-GNU.
+Os resursos e APIs utilizadas na construção do programação serão:
+    \begin{enumerate}
+	\item Kivy 1.10.0 $\rightarrow$ Para a construção da interface gráfica
+	\item MatplotLib 2.2.2 $\rightarrow$ Plotagem dos gráficos em conjunto com a API Kivy
+	\item Numpy e Scipy $\rightarrow$ Processamento dos dados
+	\item Python 3.5 $\rightarrow$ Linguagem base 
+    \end{enumerate}
+A figura \ref{fluxo} mostra o fluxograma da construção do RiMT e a interação das APIs.
+O programa será desenvolvido para distribuições Linux baseadas no Debian. 
+    
+    \begin{figure}
+	\caption{Fluxograma e interação entre as APIs}
+	\includegraphics{fig/fluxograma.png}
+	\fonte{O autor}
+	\label{fluxo}
+    \end{figure}
+
+
 
 \textcolor{red}{\textbf{Continuação Teoria}}
 
