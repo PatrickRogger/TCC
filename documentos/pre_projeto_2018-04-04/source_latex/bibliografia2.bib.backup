@@ -193,3 +193,23 @@
   volume =       {18(3)},
   pages =        {605-635}
 }
+
+@ARTICLE{tikhonov50,
+  AUTHOR =       {A. N. Tikhonov},
+  TITLE =        {On Determining Electrical Characteristics of the Deep Layers of the Earth's Crust},
+  YEAR =         {1950},
+  journal =  	 {Doklady Akademii Nauk SSSR},
+  volume =       {73},
+  pages =        {295-297}
+  
+}
+
+@ARTICLE{egbert97,
+  AUTHOR =       {Gary D. Egbert},
+  TITLE =        {Robust multiple-station magnetotelluric data processing},
+  YEAR =         {1997},
+  journal =  	 {Geophysical Journal International},
+  volume =       {130},
+  pages =        {475-496}
+  
+}

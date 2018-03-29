@@ -11,6 +11,22 @@
   prospecting.
 v. 18(3), p. 605--635, 1953.}
 
+\bibitem[Egbert 1997]{egbert97}
+\abntrefinfo{Egbert}{EGBERT}{1997}
+{EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
+\textbf{Geophysical Journal International}, v.~130, p. 475--496, 1997.}
+
+\bibitem[{KIVY ORGANIZATION} 2018]{kivy110}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018}
+{{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}.
+[S.l.], 2018. Available at $<https://kivy.org/>$. Visited in March, 2018.}
+
+\bibitem[{PYTHON SOFTWARE FOUNDATION} 2018]{python36}
+\abntrefinfo{{PYTHON SOFTWARE FOUNDATION}}{{PYTHON SOFTWARE FOUNDATION}}{2018}
+{{PYTHON SOFTWARE FOUNDATION}. \textbf{Python 3.6.5 documendation}.
+[S.l.], 2018. Available at $<https://docs.python.org/3/>$. Visited in March,
+  2018.}
+
 \bibitem[Tikhonov 1950]{tikhonov50}
 \abntrefinfo{Tikhonov}{TIKHONOV}{1950}
 {TIKHONOV, A.~N. On determining electrical characteristics of the deep layers
