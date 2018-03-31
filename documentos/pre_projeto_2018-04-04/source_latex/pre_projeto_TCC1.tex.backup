@@ -51,18 +51,39 @@
 % INTRODUÇÃO
 \chapter{Introdução}
     \label{cap-introducao}
-	No Brasil o uso do método MT (Magnetotelúrico) é insipiente, seu uso é bem aplicado para a prospecção de
-	hidrocarbonetos e estudos crustais mas o alto custo computacional e o difícil acesso 
-	a softwares de processamento tem deixado o MT restrito ao meio acadêmico e 
-	com pouco uso na indústria.
+    
+	\textcolor{red}{PARAGRAFO INTRODUTÓRIO}
 	
-	Esse trabalho foi pensado primeiramente para tornar o MT mais difuldido, construindo um software com interface 
-	gráfica amigavel e distribuição livre. O RiMT (Roplus inversion Magnetotelluric) nasceu então com esse propósito, compreendendo o processamento de dados
-	MT desde a coleta até o processamento robusto, como escolha de bandas, plotagem de pseudo-secções em função de resistividade e fase tambem fazendo tratamentos 
-	estátisticos como o processamento robusto proposto por \citeauthor{egbert97} \citeyearpar{egbert97}.
 	
-	O programa será construido usando a linguagem Python \cite{python36}, para a construção gráfica
-	será usada a API (\textit{Application Programming Interface}) Kivy \cite{kivy110}, \textcolor{red}{....mais apis...}
+	Apoiado nas leis de Maxwell o método MT (Magnetotelúrico) usa a Terra como 
+	um condutor ôhmico \textcolor{red}{citar} e as variações do seu campo 
+	magnético promovido por ventos solares \textcolor{red}{citar} e tempestades
+	que interagem com a ionosfera \textcolor{red}{citar} para invertigar as 
+	estruturas internas a ela e litologias rasas. 
+	
+	
+	No Brasil o uso do método MT é insipiente, restrito a meio acadêmico e pouco
+	aplicado na industria, porém, pode ser bem aplicado na prospecção de 
+	hidrocarbonetos tendo a sua resolução melhor que a magnetometria
+	e gravimetria \textcolor{red}{citar}, também bem aplicado em estudos crustais
+	apoiando a sismologia devido sua grande prufundidade de investigação, mas o 
+	alto custo de processamento, a falta de \textit{softwares} para trabalhar esses 
+	dados tem cido algumas das causas desse fraco uso.
+	
+	
+	Esse trabalho foi pensado primeiramente para tornar o MT mais difuldido, 
+	construindo um \textit{software} com interface gráfica amigavel e 
+	distribuição livre. O RiMT (Roplus inversion Magnetotelluric) nasceu 
+	então com esse propósito, compreendendo o processamento de dados
+	MT desde a coleta até a primeira visualização dos dados, como escolha 
+	de bandas, plotagem de pseudo-secções em função de resistividade e fase 
+	tambem fazendo tratamentos estátisticos como o processamento robusto 
+	proposto por \citeauthor{egbert97} \citeyearpar{egbert97}.
+	
+	
+	O programa será construido usando a linguagem Python \cite{python36} e a construção da interface gráfica
+	será desenvolvida usando a API \textcolor{red}{(\textit{Application Programming Interface})..(não sei se precisa.)} Kivy \cite{kivy110} dentre outros pacotes, \textcolor{red}{....mais apis...}
+	
 	
 	
 	\textcolor{red}{.................continua}
@@ -92,8 +113,8 @@
     \section{Fundamentos do Método}
 	\label{embasamento_teorico}
 
-	Apoiado nas equações de Maxwell o método MT usa as variações dos campos elétricos e magnéticos naturais da Terra, essas variações tem suas
-	origens na interação de ventos solares e tempestades tropicais com a magnetosfera.
+	%Apoiado nas equações de Maxwell o método MT usa as variações dos campos elétricos e magnéticos naturais da Terra, essas variações tem suas
+	%origens na interação de ventos solares e tempestades tropicais com a magnetosfera.
 
 	A interação gera correntes que penetram no interior da Terra, para simplificar os modelos,
 	em forma de ondas planas ortogonais, essas correntes por indução geram novas 
