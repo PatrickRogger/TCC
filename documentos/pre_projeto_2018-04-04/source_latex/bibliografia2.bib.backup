@@ -186,6 +186,9 @@
   isbn =         {3-540-23207-9}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --------meu
+
+
 @ARTICLE{cagniard53,
   AUTHOR =       {Louis Cagniard},
   TITLE =        {Basic Theory of the Magneto-telluric Method of Geophysical Prospecting},
@@ -212,4 +215,42 @@
   volume =       {130},
   pages =        {475-496}
   
+}
+
+@MANUAL{python36,
+  TITLE =        {Python 3.6.5 documendation},
+  author =       {{PYTHON SOFTWARE FOUNDATION}},
+  organization = {Python Software Foundation},
+  year =         {2018},
+  note =         {Available at $<https://docs.python.org/3/>$. Visited in March, 2018.},
+  
+}
+@MANUAL{kivy110,
+  TITLE =        {Kivy 1.10.1 documendation},
+  author =       {{KIVY ORGANIZATION}},
+  organization = {Kivy Organization},
+  year =         {2018},
+  note =         {Available at $<https://kivy.org/>$. Visited in March, 2018.},
+  
+}
+
+@MASTERSTHESIS{didana2010,
+  AUTHOR =       {Yohannes Lemma Didana},
+  TITLE =        {Multidimensional Inversion of MT data from Krýsuvík High Temperature Geothermal Field, SW Iceland, and study of how 1D and 2D Inversion can Reproduce a given 2D/3D Resistivity Structures Using Synthetic MT Data},
+  SCHOOL =       {Faculty of Earth Sciences University of Iceland},
+  YEAR =         {2010},
+  type =         {Masters Thesis},
+  address =      {Reykjavik, Iceland},
+  month =        {Abril},
+  pages =        {136}
+}
+
+@BOOK{eletromag8hayt,
+  author =       {William H. Hayt Jr. and John A. Buck},
+  TITLE =        {Eletromagnetismo},
+  PUBLISHER =    {AMGH Editora Ltda.},
+  YEAR =         {2013},
+  edition =      {8},
+  address =      {Porto Alegre, Brazil},
+  pages =        {288-290}
 }

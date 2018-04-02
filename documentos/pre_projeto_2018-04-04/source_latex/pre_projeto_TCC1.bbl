@@ -11,15 +11,34 @@
   prospecting.
 v. 18(3), p. 605--635, 1953.}
 
+\bibitem[Didana 2010]{didana2010}
+\abntrefinfo{Didana}{DIDANA}{2010}
+{DIDANA, Y.~L.
+\textbf{Multidimensional Inversion of MT data from Krýsuvík High Temperature
+  Geothermal Field, SW Iceland, and study of how 1D and 2D Inversion can
+  Reproduce a given 2D/3D Resistivity Structures Using Synthetic MT Data}.
+136~p. Dissertation (Masters Thesis) --- Faculty of Earth Sciences University
+  of Iceland, Reykjavik, Iceland, Abril 2010.}
+
 \bibitem[Egbert 1997]{egbert97}
 \abntrefinfo{Egbert}{EGBERT}{1997}
 {EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
 \textbf{Geophysical Journal International}, v.~130, p. 475--496, 1997.}
 
+\bibitem[Hayt and Buck 2013]{eletromag8hayt}
+\abntrefinfo{Hayt and Buck}{HAYT; BUCK}{2013}
+{HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
+  Brazil: AMGH Editora Ltda., 2013.}
+
 \bibitem[{KIVY ORGANIZATION} 2018]{kivy110}
 \abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018}
 {{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}.
 [S.l.], 2018. Available at $<https://kivy.org/>$. Visited in March, 2018.}
+
+\bibitem[Parkinson 1983]{parkinson93}
+\abntrefinfo{Parkinson}{PARKINSON}{1983}
+{PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
+  Academic Press, 1983.}
 
 \bibitem[{PYTHON SOFTWARE FOUNDATION} 2018]{python36}
 \abntrefinfo{{PYTHON SOFTWARE FOUNDATION}}{{PYTHON SOFTWARE FOUNDATION}}{2018}

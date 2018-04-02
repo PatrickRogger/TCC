@@ -52,39 +52,37 @@
 \chapter{Introdução}
     \label{cap-introducao}
     
-	Apoiado nas leis de Maxwell \textcolor{red}{citar}o método MT (Magnetotelúrico) usa a Terra como 
-	um condutor ôhmico \textcolor{red}{citar} e as variações do seu campo 
-	magnético promovido por ventos solares \textcolor{red}{citar} e tempestades equatoriais 
-	que interagem com a ionosfera \textcolor{red}{citar} para invertigar as 
+	Apoiado nas leis de Maxwell o método MT (Magnetotelúrico) usa a Terra como 
+	um condutor ôhmico e as variações do seu campo 
+	magnético promovido por ventos solares \cite{parkinson93} e tempestades equatoriais 
+	que interagem com a ionosfera para invertigar as 
 	estruturas internas da Terra e litologias rasas. 
 	
 	
 	No Brasil o uso do método MT é insipiente, restrito ao meio acadêmico e pouco
 	utilizado na industria, porém, pode ser bem aplicado na prospecção de 
 	hidrocarbonetos, tendo a sua resolução melhor que a magnetometria
-	e gravimetria \textcolor{red}{citar}, também em estudos crustais
-	apoiando a sismologia devido sua grande prufundidade de investigação, mas o 
+	e gravimetria, também em estudos crustais
+	apoiando a sismologia devido sua grande profundidade de investigação, mas o 
 	alto custo de processamento, a falta de \textit{softwares} para trabalhar com os 
-	dados tem cido algumas das causas do fraco uso.
+	dados tem sido algumas das causas do fraco uso.
 	
 	
 	Esse trabalho foi pensado primeiramente para tornar o MT mais difuldido, 
-	construindo um \textit{software} com interface gráfica amigavel e 
+	construindo um \textit{software} com interface gráfica amigável e 
 	distribuição livre. O RiMT (Roplus inversion Magnetotelluric) nasceu 
 	então com esse propósito, compreendendo o processamento de dados
-	MT desde a coleta até a primeira visualização dos dados, como escolha 
+	MT desde a coleta até a primeira visualização dos dados, como: escolha 
 	de bandas, plotagem de pseudo-secções em função de resistividade e fase 
-	tambem fazendo tratamentos estátisticos como o processamento robusto 
+	tambem fazendo tratamentos estátisticos e processamento robusto 
 	proposto por \citeauthor{egbert97} \citeyearpar{egbert97}.
 	
 	
 	O programa será construido usando a linguagem Python \cite{python36} 
 	e a construção da interface gráfica será desenvolvida usando a API
-	\textcolor{red}{(\textit{Application Programming Interface})..(não sei se precisa.)} 
-	Kivy \cite{kivy110} dentre outros pacotes, \textcolor{red}{....mais apis...}
-	A escolha por essa linguagem foi a vasta quantidade de pacotes,  o crescente 
+	Kivy \cite{kivy110} dentre outros pacotes. A escolha por essa linguagem foi a vasta quantidade de pacotes,  o crescente 
 	número de pessoas implementando e a facilidade com que é a construção de seu
-	codígo.
+	código.
 
 % FIM INTRODUÇÃO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,7 +98,7 @@
     \citeauthor{cagniard53} \citeyearpar{cagniard53}, usa das propriedades
     eletromagnéticas para estudar a distribuição de resistividade na crosta, 
     podendo variar a sua investigação em dezenas de metros como dezenas de 
-    kilometros.
+    quilômetros.
 
     \section{Fundamentos do Método}
 	\label{embasamento_teorico}
@@ -109,28 +107,25 @@
 	geram correntes que penetram no interior da Terra, para 
 	simplificar os modelos,	em forma de ondas planas ortogonais, por indução
 	geram novas correntes chamadas de correntes 
-	telúricas, que trazem informações das caracteristicas fisicas das 
+	telúricas, que trazem informações das características físicas das 
 	litologias.
 
-	Uma das caracteristicas é a modulação da frenquência, causada por
+	Uma das características é a modulação da frenquência, causada por
 	diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
 	relacionado a resistividade do meio.
 
 	Para construção do método algumas situações de contorno são propostas:
-
 	\begin{enumerate}
 	    \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície
  		da Terra.
 	    
 	    \item A Terra se comporta como um condutor ôhmico.
-	    \item \textcolor{red}{..129....}
-	    \item \textcolor{red}{..130....}
-	    \item \textcolor{red}{..131....}
+	    \item A Terra é conciderada um semi-espaço isotrópico.
 	\end{enumerate}
 	
 	A equação \ref{rela_prof_periodo} mostra a relação entre a profundidade
 	($\delta_f)$, frequência ($f$) e a resistividade aparente ($\rho_a$), essa 
-	profundidade é chamada de \textit{skin-depth} \textcolor{red}{citar}, e decai com o inverso de $e$.
+	profundidade é chamada de \textit{skin-depth} \cite{eletromag8hayt}, e decai com o inverso de $e$.
 	\begin{equation}
 	 \label{rela_prof_periodo}
 	 \delta_\omega = \sqrt{\frac{2}{\omega \mu \sigma}} \longrightarrow \delta_f = 0,564 \sqrt{\frac{\rho_a}{f}}
@@ -143,16 +138,18 @@
     \section{Fundamento Matemático e Leis de Maxwell}
 	\label{mat_maxwell}
 
-	Usando as leis de Maxwell \textcolor{red}{citar} podemos medir os campos eletricos
+	Usando as leis de Maxwell \cite{eletromag8hayt} podemos medir os campos eletricos
 	e magnéticos separadamento em diferentes componentes e assim unir para obter as 
 	função de \textit{skin-depth}.
 	
 	Os campos podem ser descritos pelas equações para carga e corrente livre
 	(macroscópica):
 	    \begin{equation}
+		\label{rot_elet_max}
 		\nabla \times \vec{\textrm{E}}=-\frac{\partial \vec{\textrm{B}}}{\partial t} 
 	    \end{equation}
 	    \begin{equation}
+		\label{rot_mag_max}
  		\nabla \times \vec{\textrm{H}} = \vec{\textrm{J}} + \frac{\partial \vec{\textrm{D}}}{\partial t}
 	    \end{equation}
 	    \begin{equation}
@@ -179,13 +176,16 @@
 	    Obedecendo as situações de contorno para um meio isotrópico temos as seguintes
 	    relações (equações constitutivas):
 	    \begin{equation}
-	     \vec{\textrm{B}} = \mu \vec{\textrm{H}}
+	      \label{con_B}
+	      \vec{\textrm{B}} = \mu \vec{\textrm{H}}
 	    \end{equation}
 	    \begin{equation}
-	     \vec{\textrm{D}} = \varepsilon  \vec{\textrm{E}}
+	      \label{con_D}
+	      \vec{\textrm{D}} = \varepsilon  \vec{\textrm{E}}
 	    \end{equation}
 	    \begin{equation}
-	     \vec{\textrm{J}} = \sigma \vec{\textrm{E}}
+	      \label{con_J}
+	      \vec{\textrm{J}} = \sigma \vec{\textrm{E}}
 	    \end{equation}
 	    
 	    $\mu$ $\rightarrow$ Permeabilidade Magnética [$H/m$]
@@ -202,6 +202,83 @@
 	    anisotrópico que variam em função do tempo, já considerando para os 
 	    trabalhos de investigação o meio supõe-se ser isotrópico, assim, 
 	    tornando estáticos os tensores.
+	    
+	    Outro conceito importante é o tensor Impedância, ele é descrito como uma
+	    relação entre os campos elétricos e magnéticos, análogo a Lei de Ohm \cite{eletromag8hayt}
+	    que apresentara uma resistência a corrente.
+	    
+	    \begin{equation}
+		\left (\begin{array}{c}
+		 \textrm{E}_x\\
+		 \textrm{E}_y
+		\end{array}\right)
+		=
+		\left (\begin{array}{cc}
+		 \textrm{Z}_{xx} & \textrm{Z}_{xy}\\
+		 \textrm{Z}_{yx} & \textrm{Z}_{yy}
+		\end{array}\right) \left (\begin{array}{c}
+		 \textrm{H}_x\\
+		 \textrm{H}_y
+		\end{array}\right)
+	    \end{equation}
+	    
+	    \begin{equation}
+	     \textrm{E}_x (\omega)=\textrm{Z}_{xx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{xy}(\omega) \textrm{H}_{y}(\omega)
+	    \end{equation}
+	    \begin{equation}
+	     \textrm{E}_y (\omega)=\textrm{Z}_{yx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{yy}(\omega) \textrm{H}_{y}(\omega)
+	    \end{equation}  
+	    
+	    Podemos então reescrever as equações \ref{rot_elet_max}
+	    e \ref{rot_mag_max} usando as equações constitutivas \ref{con_B}, \ref{con_D}
+	    e \ref{con_J}.
+	    \begin{equation}
+	     \nabla \times \vec{\textrm{E}} = - \mu \frac{\partial \vec{\textrm{H}}}{\partial t} 
+	    \end{equation}
+	    \begin{equation}
+	     \nabla \times \vec{\textrm{H}} = \sigma \vec{\textrm{E}} + \varepsilon \frac{\partial \vec{\textrm{E}}}{\partial t} 
+	    \end{equation}
+	    O desenvolvimento das equações estão bem descrita no trabalho de \citeauthor{didana2010}\citeyearpar{didana2010}.
+	    
+	    \subsection{Teoria 1D}
+	    
+	    O modelo de resistividade para a Terra 1D é descrita como a variação da resistividade apenas em profundidade, assim 
+	    o tensor impedância é escrito da seguinte forma: 
+	    \begin{equation}
+	     \textrm{Z}_{1D} = \left (\begin{array}{cc}
+	                              0 & \textrm{Z}_{xy}\\
+	                              -\textrm{Z}_{xy} & 0
+	                              \end{array} \right)
+	    \end{equation}
+	    Assim a partir das soluções das equações diferenciais temos:
+	    \begin{equation}
+	     \textrm{Z}_{xy}(\omega) = \frac{\textrm{E}_x(\omega)}{\textrm{H}_x(\omega)} = \frac{\omega \mu_0}{k}
+	    \end{equation}
+	    Onde $k^2 = i \omega \mu_0 \sigma$, 	    
+	    \subsection{Teoria 2D}
+	    O modelo de Terra 2D é caracterizado pelo contato vertical entre meios de diferentes resistividades. Se o contato é
+	    paralelo ao eixo $x$ então é definido a direção do \textit{strik} no eixo $y$, onde a direção deve ser perpendicular ao plano de contato.
+	    
+	    Devido a essa diferença entre as resistividades polarizamos os campos em TE (Transversal Elétrico) e TM (Transversal Magnético).
+	    Para esse modelo temos o tensor impedância como:
+	    \begin{equation}
+	     \textrm{Z}_{2D} = \left (\begin{array}{cc}
+	                               0 & \textrm{Z}_{xy} \\
+	                               \textrm{Z}_{yx} & 0
+	                              \end{array} \right)
+	    \end{equation}
+	    Assim cada polarização pode ser escrita como:
+	    \begin{equation}
+	     \textrm{TE} = \left \{ \begin{array}{c}
+	            \frac{\partial \textrm{E}_x}{\partial y} = \frac{\partial \textrm{B}_z}{\partial t} = -i\omega \textrm{B}_z \\
+	           \frac{\partial \textrm{E}_x}{\partial z} = \frac{\partial \textrm{B}_y}{\partial t} = i\omega \textrm{B}_y \\
+	           \frac{\partial \textrm{B}_z}{\partial y} - \frac{\partial \textrm{B}_y}{\partial z} = \mu \sigma \textrm{E}_x 
+	           \end{array} \right.
+	    \end{equation}
+
+
+	    
+	    \subsection{Teoria 3D}
 	    
 	    
 	    
@@ -295,22 +372,85 @@
 
 \chapter{Cronograma de Atividades}
     \label{cap-cronograma}
-    \input{cap/Cronograma}
+    %\input{cap/Cronograma}
     
     
     \section{1º Semestre}
     
     \begin{table}[h]
+    \caption{Cronograma - 1º Semestre 2018}
     
     \begin{center}
-    \begin{ta} 
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|c|}
     
+    \hline
+    {\bf Tarefa}                   		& {\bf Jan}& {\bf Fev}& {\bf Mar}& {\bf Abr}& {\bf Mai}& {\bf Jun}\\  
+    \hline
+    {\bf 1.} Revisão Bibliográfica 		& 	X  & 	      & 	 & 	    & 	       & 	  \\ 
+    \hline
+    {\bf 1.1} Magnetotelúrico      		& 	X  & 	X     & X        & 	    & 	       & 	  \\ 
+    \hline
+    {\bf 1.2} Python 3.5           		& 	   &          & X	 &X 	    & 	       & 	  \\ 
+    \hline
+    {\bf 1.2.1} Linguagem           		& 	   & 	      & X	 &X 	    & 	       & 	  \\ 
+    \hline
+    {\bf 1.2.2} Kivy 1.10.0           		& 	   & 	      & X	 & X	    & 	       & 	  \\ 
+    \hline
+    {\bf 1.2.3} Numpy, Scipy, MatplotLib        & 	   & 	      & X	 & X	    & 	       & 	  \\ 
+    \hline
+    {\bf 1.3} Pacote PROC-MT (INPE)           	& 	   & 	      & 	 & 	    & X	       & X	  \\ 
+    \hline
+    {\bf 1.3.1} Ats2asc           		& 	   & 	      & 	 & 	    &X 	       & 	  \\ 
+    \hline
+    {\bf 1.3.2} ProcessamentoZ           	& 	   & 	      & 	 & 	    & 	       & X	  \\ 
+    \hline
+    {\bf 1.3.3} Tojones           		& 	   & 	      & 	 & 	    & 	       & X	  \\ 
+    \hline
+   
+    
+    
+    \end{tabular}
+ 
+   
     \end{center}
 
-     
+    \fonte{O autor}  
     \end{table}
 
+    \section{2º Semestre}
     
+    \begin{table}[h]
+    \caption{Cronograma - 2º Semestre 2018}
+    
+    \begin{center}
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|c|}
+    
+    \hline
+    {\bf Tarefa}                    		 & {\bf Jul}& {\bf Ago}& {\bf Set}& {\bf Out}& {\bf Nov}& {\bf Dez}\\  
+    \hline
+    {\bf 1.} Construção da Interface Gráfica 	 &X 	    & X	       & 	  & 	     & 	        & 	   \\ 
+    \hline
+    {\bf 2.} Desenvolvimento dos Scripts         & 	    & 	       & X	  & 	     & 	        & 	   \\ 
+    \hline
+    {\bf 3.} Fase de testes com Dados Sintéticos & 	    & 	       & 	  & X	     & 	        & 	   \\ 
+    \hline
+    {\bf 4.} Fase de testes com Dados Reais      & 	    & 	       & 	  & 	     &X	        & 	   \\ 
+    \hline
+    {\bf 5.} Liberação do Código                 & 	    & 	       & 	  & 	     & 	        & X	   \\ 
+    \hline
+    
+   
+    
+    
+    \end{tabular}
+ 
+   
+    \end{center}
+
+    \fonte{O autor}  
+    \end{table}
     
     
 
