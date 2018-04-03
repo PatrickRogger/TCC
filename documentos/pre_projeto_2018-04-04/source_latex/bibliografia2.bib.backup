@@ -246,11 +246,28 @@
 }
 
 @BOOK{eletromag8hayt,
-  author =       {William H. Hayt Jr. and John A. Buck},
+  author =       {William H. Hayt and John A. Buck},
   TITLE =        {Eletromagnetismo},
   PUBLISHER =    {AMGH Editora Ltda.},
   YEAR =         {2013},
   edition =      {8},
   address =      {Porto Alegre, Brazil},
-  pages =        {288-290}
+}
+
+@BOOK{parkinson93,
+  author =       { W. D. Parkinson},
+  TITLE =        {Introduction to Geomagnetism},
+  PUBLISHER =    {Scotish Academic Press},
+  YEAR =         {1983},
+  address =      {Edinburgh}
+}
+
+@PHDTHESIS{tese_andrea,
+  author =       {Andréa Cristina Lima Santos},
+  title =        {Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE da Província Borborema},
+  school =       {Instituto de Geociências, Universidade de Brasília},
+  year =         {2012},
+  address =      {Brasília, Brasil},
+  month =        {Março},
+  pages = 	 {159}  
 }

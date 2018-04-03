@@ -35,7 +35,7 @@
 	   
 	  {\bf
 	      CO-ORIENTADORA:}
-	      ANDREA CRISTINA LIMA DOS SANTOS MATOS 
+	      ANDRÉA CRISTINA LIMA DOS SANTOS MATOS 
 	      \vspace{200pt}
 	  
       \bf{
@@ -124,11 +124,11 @@
 	\end{enumerate}
 	
 	A equação \ref{rela_prof_periodo} mostra a relação entre a profundidade
-	($\delta_f)$, frequência ($f$) e a resistividade aparente ($\rho_a$), essa 
+	($\delta_f[m])$, frequência ($f[Hz]$) e a resistividade aparente ($\rho_a[\Omega.m]$), essa 
 	profundidade é chamada de \textit{skin-depth} \cite{eletromag8hayt}, e decai com o inverso de $e$.
 	\begin{equation}
 	 \label{rela_prof_periodo}
-	 \delta_\omega = \sqrt{\frac{2}{\omega \mu \sigma}} \longrightarrow \delta_f = 0,564 \sqrt{\frac{\rho_a}{f}}
+	 \delta_\omega = \sqrt{\frac{2}{\omega \mu \sigma}} \longrightarrow \delta_f \approx 500  \sqrt{\frac{\rho_a}{f}}
 	\end{equation}
 	
 	Essa relação mostra que para uma mesma profundidade variando a resistividade
@@ -138,11 +138,11 @@
     \section{Fundamento Matemático e Leis de Maxwell}
 	\label{mat_maxwell}
 
-	Usando as leis de Maxwell \cite{eletromag8hayt} podemos medir os campos eletricos
+	Usando as leis de Maxwell \cite{eletromag8hayt} podemos medir os campos elétricos
 	e magnéticos separadamento em diferentes componentes e assim unir para obter as 
 	função de \textit{skin-depth}.
 	
-	Os campos podem ser descritos pelas equações para carga e corrente livre
+	Os campos podem ser descritos pelas equações a seguir para carga e corrente livre
 	(macroscópica):
 	    \begin{equation}
 		\label{rot_elet_max}
@@ -239,8 +239,9 @@
 	     \nabla \times \vec{\textrm{H}} = \sigma \vec{\textrm{E}} + \varepsilon \frac{\partial \vec{\textrm{E}}}{\partial t} 
 	    \end{equation}
 	    O desenvolvimento das equações estão bem descrita no trabalho de \citeauthor{didana2010}\citeyearpar{didana2010}.
-	    
-	    \subsection{Teoria 1D}
+	   
+	   
+	   \subsection{Teoria 1D}
 	    
 	    O modelo de resistividade para a Terra 1D é descrita como a variação da resistividade apenas em profundidade, assim 
 	    o tensor impedância é escrito da seguinte forma: 
@@ -254,11 +255,22 @@
 	    \begin{equation}
 	     \textrm{Z}_{xy}(\omega) = \frac{\textrm{E}_x(\omega)}{\textrm{H}_x(\omega)} = \frac{\omega \mu_0}{k}
 	    \end{equation}
-	    Onde $k^2 = i \omega \mu_0 \sigma$, 	    
-	    \subsection{Teoria 2D}
-	    O modelo de Terra 2D é caracterizado pelo contato vertical entre meios de diferentes resistividades. Se o contato é
-	    paralelo ao eixo $x$ então é definido a direção do \textit{strik} no eixo $y$, onde a direção deve ser perpendicular ao plano de contato.
+	    Onde $k^2 = i \omega \mu_0 \sigma$. 
 	    
+	    
+	    \subsection{Teoria 2D}
+	    O modelo de Terra 2D é caracterizado pelo contato vertical entre dois meios de diferentes resistividades. Se o contato é
+	    paralelo ao eixo $x$ então é definido a direção do \textit{strike} no eixo $x$, a direção deve ser paralela ao plano de contato,
+	    ou seja, onde a condutividade é constante (Figura \ref{fig_strike}).
+	    
+	    \begin{figure}[h]
+	        \caption{Modelo de Terra 2D para a resistividade variando na direção $y$}
+	        \begin{center}
+	        \includegraphics[width=12cm]{fig/Tm_Te.png} 
+	        \end{center}
+		\fonte{Adaptado \cite{didana2010}}
+		\label{fig_strike}
+	    \end{figure}
 	    Devido a essa diferença entre as resistividades polarizamos os campos em TE (Transversal Elétrico) e TM (Transversal Magnético).
 	    Para esse modelo temos o tensor impedância como:
 	    \begin{equation}
@@ -284,14 +296,14 @@
 	    \end{equation}
 	    \subsection{Teoria 3D}
 	    
-	    \textcolor{red}{\textbf{Continuação Teoria}}
-
+	    
 	\section{Estrutura do software (RiMT)}
 	    \label{rimt}
 
-	    O RiMT será desenvolvido em linguagem Python na sua terceira versão, a compatibilidade,
-	    a vasta quantidade de pacotes e o grande crescimento foram os fatores que ajudaram na 
-	    escolha da linguagem.
+	    O RiMT será desenvolvido em linguagem Python na sua terceira versão, a
+	    linguagem é gratuita o que torna mais fácil o uso no meio acadêmico, todo
+	    o código será liberado após a conclusão do projeto sobre os termos da licença
+	    GNU. 
 	    Os resursos e APIs utilizadas na construção do programação serão:
 	    
 	    \begin{enumerate}
@@ -301,47 +313,38 @@
 		\item Python 3.5 $\rightarrow$ Linguagem base 
 	    \end{enumerate}
 
-	    A figura \ref{fluxo} mostra o fluxograma da construção do RiMT e a interação das APIs.
+	    A primeira parte do projeto será a construção da interface usando como \textit{kernel}
+	    de processamento os pacotes desenvolvidos pelo grupo GEOMA \citeauthor{geoma} do INPE.
+	    
+	    Na segunda fase será feita a troca do \textit{kernel} para um novo, escrito
+	    somente em Python, essa troca é motivada pelas varias dependências externas que os 
+	    pacotes tinham que tornavam o código muito instável e de difícil aprendizagem, porém,
+	    escrito somente em python o codigo terá uma melhor comunicação e tornando também 
+	    mais rápido, apartir RiMT o usuário final não terá contato com o as linhas de comando.
+	    
 	    O programa será desenvolvido para distribuições Linux baseadas no Debian. 
-	    \begin{figure}[h]
-	        \caption{Fluxograma e interação entre as APIs}
-		\includegraphics{fig/fluxograma.png}
-		\fonte{O autor}
-		\label{fluxo}
-	    \end{figure}
-
-
-
-	\textcolor{red}{\textbf{Continuação Teoria}}
-
-	\textcolor{red}{\textbf{Continuação Teoria}}
-
-	\textcolor{red}{\textbf{Continuação Teoria}}
+	    
+	    Após concluir as duas fases será iniciado o processo de testes com dados
+	    sintéticos, e otimização do código. No final seram processados
+	    os dados do projeto ?Estudos geofísicos e tectônicos na Província Borborema,
+	    Nordeste do Brasil? (MCT/CNPq, 42.0222/2005-7) no nordeste brasileiro, esses dados
+	    já foram processados no trabalho de \citeauthor{tese_andrea} de \citeyearpar{tese_andrea}
+	    utilizando os pacotes do INPE, os dados serão comparados e analisados.
 
 
 % FIM MATERIAS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÁREA DE ESTUDO     ----> OBS. PODE SER TIRADA
-%\chapter{Área de Estudo}
-%    \label{cap-area}
-%    Para validar e testar as rotinas de processamento, serão utilizados os dados 
-%    da campanha \textcolor{red}{citar a campanha do GEOMA projeto} Borborema, 
-%    já processamedos nos trabalhos de: \textcolor{red}{citar tese andrea, tcc alane, mestrado e artigos}
-    
-    
-
-% FIM AREA DE ESTUDO
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RESULTADO ESPERADO
 \chapter{Resultados Esperados}
     \label{cap-resultados}
-    \input{cap/Resultados}
+    No final do projeto serão liberados os códigos para a comunidade geofísica 
+    onde outras pessoas possam contribuir.
+    Como resultado é esperado que a produtividade aumentada, a aprendizagem do método MT seja mais difuldida e que novos trabalhos possam ser feitos usando o programa.
+    
+    \textcolor{red}{não sei mais o que por }
 
 % FIM RESULTADOS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

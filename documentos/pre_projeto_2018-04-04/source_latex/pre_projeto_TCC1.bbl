@@ -11,6 +11,12 @@
   prospecting.
 v. 18(3), p. 605--635, 1953.}
 
+\bibitem[DGE 2018]{geoma}
+\abntrefinfo{DGE}{DGE}{2018}
+{DGE, D. de G.~E. \textbf{Geomagnetismo (GEOMA)}.
+[S.l.], 2018. Available at $<http://www.dge.inpe.br/geoma/>$. Visited in March,
+  2018.}
+
 \bibitem[Didana 2010]{didana2010}
 \abntrefinfo{Didana}{DIDANA}{2010}
 {DIDANA, Y.~L.
@@ -45,6 +51,14 @@ v. 18(3), p. 605--635, 1953.}
 {{PYTHON SOFTWARE FOUNDATION}. \textbf{Python 3.6.5 documendation}.
 [S.l.], 2018. Available at $<https://docs.python.org/3/>$. Visited in March,
   2018.}
+
+\bibitem[Santos 2012]{tese_andrea}
+\abntrefinfo{Santos}{SANTOS}{2012}
+{SANTOS, A. C.~L.
+\textbf{Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE da
+  Província Borborema}.
+159~p. Thesis (PhD) --- Instituto de Geociências, Universidade de Brasília,
+  Brasília, Brasil, Março 2012.}
 
 \bibitem[Tikhonov 1950]{tikhonov50}
 \abntrefinfo{Tikhonov}{TIKHONOV}{1950}
