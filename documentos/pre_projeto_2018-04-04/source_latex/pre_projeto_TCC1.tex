@@ -5,7 +5,7 @@
 \usepackage{graphicx}           % pacote para importar figuras
 \usepackage{times}              % pacote para usar fonte Adobe Times
 \usepackage{mathptmx}           % pacote usar fonte Adobe Times nas fórmulas
-
+\usepackage{amsmath}
 
 \usepackage[alf,abnt-emphasize=bf]{abntex2cite}	% pacote para usar citações abnt
 
@@ -139,10 +139,10 @@
 	\label{mat_maxwell}
 
 	Usando as leis de Maxwell \cite{eletromag8hayt} podemos medir os campos elétricos
-	e magnéticos separadamento em diferentes componentes e assim unir para obter as 
+	e magnéticos separadamente em diferentes componentes e assim unir para obter a 
 	função de \textit{skin-depth}.
 	
-	Os campos podem ser descritos pelas equações a seguir para carga e corrente livre
+	Os campos podem ser descritos pelas equações a seguir para cargas e correntes livres
 	(macroscópica):
 	    \begin{equation}
 		\label{rot_elet_max}
@@ -239,7 +239,13 @@
 	     \nabla \times \vec{\textrm{H}} = \sigma \vec{\textrm{E}} + \varepsilon \frac{\partial \vec{\textrm{E}}}{\partial t} 
 	    \end{equation}
 	    O desenvolvimento das equações estão bem descrita no trabalho de \citeauthor{didana2010}\citeyearpar{didana2010}.
-	   
+	    Apartir do tensor podemos usá-lo para definir a resistividade aparente a partir da equação \ref{rho_a_Z}
+	    
+	    \begin{equation}
+	    \label{rho_a_Z}
+	     \rho_a = \frac{1}{\mu_0 \omega } 	\left | \textrm{Z} \right |^2
+	    \end{equation}
+
 	   
 	   \subsection{Teoria 1D}
 	    
@@ -261,16 +267,16 @@
 	    \subsection{Teoria 2D}
 	    O modelo de Terra 2D é caracterizado pelo contato vertical entre dois meios de diferentes resistividades. Se o contato é
 	    paralelo ao eixo $x$ então é definido a direção do \textit{strike} no eixo $x$, a direção deve ser paralela ao plano de contato,
-	    ou seja, onde a condutividade é constante (Figura \ref{fig_strike}).
+	    ou seja, onde a condutividade é constante.% (Figura \ref{fig_strike}).
 	    
-	    \begin{figure}[h]
-	        \caption{Modelo de Terra 2D para a resistividade variando na direção $y$}
-	        \begin{center}
-	        \includegraphics[width=12cm]{fig/Tm_Te.png} 
-	        \end{center}
-		\fonte{Adaptado \cite{didana2010}}
-		\label{fig_strike}
-	    \end{figure}
+	    %\begin{figure}[h]
+	        %\caption{Modelo de Terra 2D para a resistividade variando na direção $y$}
+	        %\begin{center}
+	        %\includegraphics[width=12cm]{fig/Tm_Te.png} 
+	        %\end{center}
+		%\fonte{Adaptado \cite{didana2010}}
+		%\label{fig_strike}
+	    %\end{figure}
 	    Devido a essa diferença entre as resistividades polarizamos os campos em TE (Transversal Elétrico) e TM (Transversal Magnético).
 	    Para esse modelo temos o tensor impedância como:
 	    \begin{equation}
@@ -282,20 +288,24 @@
 	    Assim cada polarização pode ser escrita como:
 	    \begin{equation}
 	     \textrm{TE} = \left \{ \begin{array}{l}
-	            \frac{\partial \textrm{E}_x}{\partial y} = \frac{\partial \textrm{B}_z}{\partial t} = -i\omega \textrm{B}_z \\
-	           \frac{\partial \textrm{E}_x}{\partial z} = \frac{\partial \textrm{B}_y}{\partial t} = i\omega \textrm{B}_y \\
-	           \frac{\partial \textrm{B}_z}{\partial y} - \frac{\partial \textrm{B}_y}{\partial z} = \mu \sigma \textrm{E}_x 
+	            \dfrac{\partial \textrm{E}_x}{\partial y} = \dfrac{\partial \textrm{B}_z}{\partial t} = -i\omega \textrm{B}_z \\
+	           \dfrac{\partial \textrm{E}_x}{\partial z} = \dfrac{\partial \textrm{B}_y}{\partial t} = i\omega \textrm{B}_y \\
+	           \dfrac{\partial \textrm{B}_z}{\partial y} - \dfrac{\partial \textrm{B}_y}{\partial z} = \mu \sigma \textrm{E}_x 
 	           \end{array} \right.
 	    \end{equation}
 	    \begin{equation}
 	     \textrm{TM} = \left \{ \begin{array}{l}
-	            \frac{\partial \textrm{B}_x}{\partial y} = \mu \sigma \textrm{E}_z \\
-	           -\frac{\partial \textrm{B}_x}{\partial z} = \mu \sigma \textrm{E}_y \\
-	           \frac{\partial \textrm{E}_z}{\partial y} - \frac{\partial \textrm{E}_y}{\partial z} = i \omega \textrm{B}_x 
+	            \dfrac{\partial \textrm{B}_x}{\partial y} = \mu \sigma \textrm{E}_z \\
+	           -\dfrac{\partial \textrm{B}_x}{\partial z} = \mu \sigma \textrm{E}_y \\
+	           \dfrac{\partial \textrm{E}_z}{\partial y} - \dfrac{\partial \textrm{E}_y}{\partial z} = i \omega \textrm{B}_x 
 	           \end{array} \right.
 	    \end{equation}
 	    \subsection{Teoria 3D}
 	    
+	    Na maioria das condições geológicas o modelo se comporta como 3D, isso implica que a 
+	    condutividade varia ao longo das três direções ($\sigma = \sigma_{x,y,z}$).
+	    
+	    A matriz do tensao é então calculada com todos os termos, sem nenhum 0.
 	    
 	\section{Estrutura do software (RiMT)}
 	    \label{rimt}
@@ -326,8 +336,8 @@
 	    
 	    Após concluir as duas fases será iniciado o processo de testes com dados
 	    sintéticos, e otimização do código. No final seram processados
-	    os dados do projeto ?Estudos geofísicos e tectônicos na Província Borborema,
-	    Nordeste do Brasil? (MCT/CNPq, 42.0222/2005-7) no nordeste brasileiro, esses dados
+	    os dados do projeto Estudos geofísicos e tectônicos na Província Borborema,
+	    Nordeste do Brasil (MCT/CNPq, 42.0222/2005-7) no nordeste brasileiro, esses dados
 	    já foram processados no trabalho de \citeauthor{tese_andrea} de \citeyearpar{tese_andrea}
 	    utilizando os pacotes do INPE, os dados serão comparados e analisados.
 
@@ -340,11 +350,10 @@
 % RESULTADO ESPERADO
 \chapter{Resultados Esperados}
     \label{cap-resultados}
-    No final do projeto serão liberados os códigos para a comunidade geofísica 
-    onde outras pessoas possam contribuir.
-    Como resultado é esperado que a produtividade aumentada, a aprendizagem do método MT seja mais difuldida e que novos trabalhos possam ser feitos usando o programa.
+    Espera-se ao final desse trabalho de conclusão de curso criar uma interface gráfica para processamento de dados MT.
     
-    \textcolor{red}{não sei mais o que por }
+    Essa interface será disponibilizada para a comunidade geofísica.
+    
 
 % FIM RESULTADOS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
