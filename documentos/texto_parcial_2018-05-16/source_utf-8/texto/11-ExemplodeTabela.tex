@@ -1,0 +1,25 @@
+\chapter{Exemplo de Tabela}
+\label{cap-tabs}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% Para gerar tabelas mais facilmente utilize o site https://www.tablesgenerator.com/  %
+% Porém para manter a configuração centralizada da tabela, copie do site apenas a     %
+% partir de "\begin{tabular} até o final da tabela, NÃO SUBSTITUINDO o \end{tabular}%}%
+% ou substitua porém lembre-se de incluir um %} ao final do comando.                  %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+\begin{table}[h]
+\centering
+\caption{Exemplo de Tabela usando o Latex}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccl@{}}
+\toprule
+\textbf{Um}                                              & \textbf{Exemplo}                                                                & \textbf{de}                                                                      & \textbf{Tabela} &  \\ \midrule
+\begin{tabular}[c]{@{}c@{}}coluna1\\ linha1\end{tabular} & \begin{tabular}[c]{@{}c@{}}coluna2\\ linha1\end{tabular}                        & \cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}c@{}}coluna3\\ linha1\end{tabular} & x               &  \\
+\begin{tabular}[c]{@{}c@{}}coluna1\\ linha2\end{tabular} & {\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}coluna2\\ linha2\end{tabular}} & \begin{tabular}[c]{@{}c@{}}coluna3\\ linha2\end{tabular}                         & x               &  \\
+\begin{tabular}[c]{@{}c@{}}coluna1\\ linha3\end{tabular} & \begin{tabular}[c]{@{}c@{}}coluna2\\ linha3\end{tabular}                        & {\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}coluna3\\ linha3\end{tabular}}  & x               &  \\ \bottomrule
+\end{tabular}%
+}
+\fonte{autor.}
+\end{table}
