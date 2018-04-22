@@ -824,7 +824,7 @@
 % informados definindo-se o comando \titlepagespecificinfo. Veja os
 % arquivos .def incluï¿½dos com a classe.
 %==============================================================================
-\newlength{\titlepagewinwidth}\setlength{\titlepagewinwidth}{95mm}
+\newlength{\titlepagewinwidth}\setlength{\titlepagewinwidth}{150mm} %95
 \newlength{\titlepagewinheight}\setlength{\titlepagewinheight}{64mm}
 \newlength{\titlepagewinvoffset}\setlength{\titlepagewinvoffset}{112mm}
 \newlength{\approvalpagewinvoffset}\setlength{\approvalpagewinvoffset}{30mm}

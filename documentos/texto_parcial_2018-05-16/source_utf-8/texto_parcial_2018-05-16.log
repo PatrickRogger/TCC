@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.23)  14 APR 2018 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.23)  19 APR 2018 01:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,30 +1018,30 @@ LaTeX Info: Redefining \] on input line 2736.
 (./texto_parcial_2018-05-16.aux)
 \openout1 = `texto_parcial_2018-05-16.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 110.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 108.
+(lastpage)             ! on input line 110.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1079,56 +1079,56 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
-Package tocstyle Info: prepare \l@part for redefinition on input line 108.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 110.
+Package tocstyle Info: prepare \l@part for redefinition on input line 110.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 108.
-Package tocstyle Info: prepare \l@section for redefinition on input line 108.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 10
-8.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 110.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 110.
+Package tocstyle Info: prepare \l@section for redefinition on input line 110.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 11
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 10
-8.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 11
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 10
-8.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 11
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 10
-8.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 11
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 108.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 110.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 108
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 110
 .
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-108.
-Package tocstyle Info: prepare \l@table for redefinition on input line 108.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 108.
+110.
+Package tocstyle Info: prepare \l@table for redefinition on input line 110.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 110.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 108.
+Package hyperref Info: Link coloring ON on input line 110.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1138,9 +1138,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 108.
-LaTeX Info: Redefining \pageref on input line 108.
-LaTeX Info: Redefining \nameref on input line 108.
+LaTeX Info: Redefining \ref on input line 110.
+LaTeX Info: Redefining \pageref on input line 110.
+LaTeX Info: Redefining \nameref on input line 110.
 
 (./texto_parcial_2018-05-16.out) (./texto_parcial_2018-05-16.out)
 \@outlinefile=\write3
@@ -1182,161 +1182,161 @@ LaTeX Info: Redefining \nameref on input line 108.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 108.
+LaTeX Info: Redefining \selectfont on input line 110.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1418) in paragraph at lines 109--109
+Underfull \hbox (badness 1418) in paragraph at lines 111--111
 []\T1/ptm/m/n/12 Trabalho de Conclusão de Curso apresentado
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 109--109
+Underfull \hbox (badness 1248) in paragraph at lines 111--111
 \T1/ptm/m/n/12 ao curso de Bacharelado em Geofísica como
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 109--109
+Underfull \hbox (badness 1270) in paragraph at lines 111--111
 \T1/ptm/m/n/12 requisito parcial para a obtenção do grau de
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 [2
 
 ]
-Underfull \hbox (badness 2134) in paragraph at lines 109--109
-[]\T1/ptm/m/n/12 TÍTULO DA DIS-SER-TA-ÇÃO / Pa-trick Rog-ger
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]\T1/ptm/m/n/12 Desenvolvimento de Soft-ware li-vre para
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 109--109
+Underfull \hbox (badness 1019) in paragraph at lines 111--111
 []\T1/ptm/m/n/12 Trabalho de Con-clu-são de Curso (Gra-du-a-ção) --
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 109--109
+Underfull \hbox (badness 2409) in paragraph at lines 111--111
 []\T1/ptm/m/n/12 ``Orientação: Vi-ni-cius Abreu de Oli-veira; Co-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 111.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \maketitle
+l.111 \maketitle
                  [2
 
 
 ]
-Underfull \vbox (badness 10000) detected at line 109
+Overfull \vbox (1.2481pt too high) detected at line 111
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 109--109
+Underfull \hbox (badness 1418) in paragraph at lines 111--111
 []\T1/ptm/m/n/12 Trabalho de Conclusão de Curso apresentado
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 109--109
+Underfull \hbox (badness 1248) in paragraph at lines 111--111
 \T1/ptm/m/n/12 ao curso de Bacharelado em Geofísica como
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 109--109
+Underfull \hbox (badness 1270) in paragraph at lines 111--111
 \T1/ptm/m/n/12 requisito parcial para a obtenção do grau de
  []
 
 
-Overfull \vbox (110.77484pt too high) detected at line 109
+Overfull \vbox (110.77484pt too high) detected at line 111
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 109
+Underfull \vbox (badness 10000) detected at line 111
  []
 
 
-Underfull \vbox (badness 10000) detected at line 109
+Underfull \vbox (badness 10000) detected at line 111
  []
 
 
-Overfull \hbox (37.52142pt too wide) in paragraph at lines 109--110
+Overfull \hbox (37.52142pt too wide) in paragraph at lines 111--112
 [][] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 160.
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 173.
 [4
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 186.
  [5
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 186.
  (./texto_parcial_2018-05-16.lof)
 \tf@lof=\write4
 \openout4 = `texto_parcial_2018-05-16.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 187.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 187.
  [6
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 187.
  (./texto_parcial_2018-05-16.lot
 number indent by \l@... (lot, 1):  18.0pt
 text indent by \l@... (lot, 1):  27.60004pt
@@ -1357,32 +1357,32 @@ number noindent (lot, 1): 0.0pt
 \openout5 = `texto_parcial_2018-05-16.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 209.
  [7
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 225.
  [8
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 239.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 239.
  [9
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 239.
  (./texto_parcial_2018-05-16.toc
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
@@ -1529,8 +1529,12 @@ Package babel Info: Redefining portuges shorthand "|
 [12
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining portuges shorthand "|
@@ -1555,16 +1559,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 174.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 210.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 217.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 217.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
- [15])
+(babel)             in language  on input line 217.
+ [15]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 217.
+)
 (./texto/Resultados.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 16
@@ -1608,30 +1613,30 @@ Package babel Info: Redefining portuges shorthand "|
 ) 
 AED: lastpage setting LastPage
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 351.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 351.
 [19
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+(babel)             in language  on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
  (./texto_parcial_2018-05-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
 Package rerunfilecheck Info: File `texto_parcial_2018-05-16.out' has not change
 d.
 (rerunfilecheck)             Checksum: 65B997678B5EC824F7A743E4311BC07A;3027.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
  ) 
 Here is how much of TeX's memory you used:
- 21023 strings out of 493029
- 341318 string characters out of 6136234
- 412958 words of memory out of 5000000
- 24200 multiletter control sequences out of 15000+600000
- 41017 words of font info for 66 fonts, out of 8000000 for 9000
+ 21049 strings out of 493029
+ 341695 string characters out of 6136234
+ 413001 words of memory out of 5000000
+ 24223 multiletter control sequences out of 15000+600000
+ 54591 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,14n,45p,10407b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1643,10 +1648,10 @@ urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on texto_parcial_2018-05-16.pdf (20 pages, 116945 bytes).
+Output written on texto_parcial_2018-05-16.pdf (20 pages, 116214 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 87 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
