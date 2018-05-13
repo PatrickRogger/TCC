@@ -19,8 +19,8 @@
 \contentsline {section}{\numberline {3.7}Ferramentas de Desenvolvimento do \textit {Software}}{18}{section.3.7}
 \contentsline {subsection}{\numberline {3.7.1}Linguagem PYTHON}{18}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}M\IeC {\'o}dulos e Pacotes}{19}{subsection.3.7.2}
-\contentsline {subsubsection}{\numberline {3.7.2.1}Kivy}{19}{subsubsection.3.7.2.1}
-\contentsline {subsubsection}{\numberline {3.7.2.2}Scipy, MatplotLib, Numpy}{20}{subsubsection.3.7.2.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}Kivy}{20}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}SciPy, MatPlotLib, NumPy}{20}{subsubsection.3.7.2.2}
 \contentsline {subsection}{\numberline {3.7.3}Pacotes de Processamentos do grupo Geoma - INPE}{22}{subsection.3.7.3}
 \contentsline {section}{\numberline {3.8}Arquitetura do \textit {Software}}{22}{section.3.8}
 \contentsline {chapter}{4~Algoritmos e Processamentos}{23}{CHAPTER.4}

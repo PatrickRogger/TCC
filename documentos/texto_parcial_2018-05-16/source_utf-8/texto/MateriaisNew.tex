@@ -11,15 +11,22 @@
     
     As flutuações no campo magnético terrestre geram campos elétricos na alta atmosfera que induzem correntes magnéticas, as ondas eletromagnéticas então penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias. 
     
-    Uma das características é a modulação da frenquência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
+    Uma das características é a modulação da frequência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
 	relacionado a resistividade do meio. \textcolor{red}{citar}
     
-    As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$, ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem como o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais.\textcolor{red}{citar  relação, e regras meio isotrpico}
+    As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$, ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem como o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais. Para o estudo do \MT são feitas as seguintes suposições:
+    
+    \begin{enumerate}
+	    \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície da Terra.	    
+	    \item A Terra se comporta como um condutor ôhmico.
+	    \item A Terra é considerada um semi-espaço isotrópico.
+	\end{enumerate}   
+    
     
 %RESISTIVIDADE ==============================================================================================================================================
     \section{Resistividade dos Materiais}
     
-    Para o \MT a propriedade de contraste investigada é a condutividade[$\sigma$] ou resistividade[$\rho$] sendo essa o inverso da condutividade.
+    Para o \MT a propriedade investigação e contraste é a condutividade ($\sigma$) ou resistividade ($\rho$) sendo essa o inverso da condutividade.
     A resistividade é uma propriedade particular de cada material, ou seja, a partir de uma resistividade podemos estimar a qual material ela pertence\footnote{Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.
     
     Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material esse gera uma resistência a passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\textcolor{red}{citar}.
@@ -48,7 +55,7 @@
     \end{figure}
     
     A figura \ref{tabela_resistividade} mostra a distribuição de resistividade para diversos materiais geológicos. 
-    Portanto podemos identificar a partir de um contexto geológico quais litologias pertence a cada resistividade encontrada, por exemplo, uma litologia que tenha reistividade em torno de  $100 \, \Omega m$ e outra com $3000 \, \Omega m $ pode ser caracterízada como um arenito e uma rocha ignea respectivamente. 
+    Portanto podemos identificar a partir de um contexto geológico quais litologias pertence a cada resistividade encontrada, por exemplo, uma litologia que tenha resistividade em torno de  $100 \, \Omega m$ e outra com $3000 \, \Omega m $ pode ser caracterizada como um arenito e uma rocha ígnea respectivamente. 
     
     \begin{figure}[h]
         \centering
@@ -65,9 +72,9 @@
 % Eletromagneticos
 %===================================================================================================================================================
     \section{Fundamentos Teóricos dos Métodos Eletromagnéticos}
-        Apoiado nas leis de Maxwell \cite{eletromag8hayt} podemos medir os campos elétricos e magnéticos separadamente em diferentes componentes e assim unir para obter a função de \textit{skin-depth}.
+        Usando as leis de Maxwell \cite{eletromag8hayt} podemos medir os campos elétricos e magnéticos e a partir deles estimar a resistividade dos meios litológicos em sub-superfície.
 	
-        Os campos podem ser descritos pelas equações a seguir\footnote{Para cargas e correntes livres
+        Os campos podem ser descritos pelas seguintes equações\footnote{Para cargas e correntes livres
         (macroscópica)}:
             \begin{equation}
                 \label{rot_elet_max}
@@ -189,11 +196,14 @@
     
     \section{Ferramentas de Desenvolvimento do \textit{Software}}
     
-        O desenvolvimento do \textit{software} foi baseado na filosofia de \textit{Software Livre} \textcolor{red}{citar} onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos \citar{procurar o termo correto em ingles} e a simplicidade da implementação do código.  
+        O desenvolvimento do \textit{software} foi baseado na filosofia de \textit{Software Livre} \cite{soft_free} onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos e a simplicidade da implementação do código.  
         
         \subsection{Linguagem PYTHON}
             \label{lim_python}
-            \citar{ Falar um pouco da historia do python}
+            
+            Criada nos anos 80 por Guido Van Rossum no CWI (\en{Centrum Wishunde \& Informatica}) em Amsterdã, Holanda a linguagem Python foi idealizada no grupo de desenvolvimento da linguagem ABC do CWI, rapidamente ela começou a ter destaque. Na década de 90 foi criada a \en{Python Software Activity} que começou a ser a mantenedora por exemplo do python.org, nesse período apenas o criador tomava decisões e era desenvolvedor da linguagem, finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
+            
+            Python é uma linguagem de alto nível onde seu código deve ser organizado favorecendo a interpretação ao mesmo tempo simples.
             
             Exemplos de código Python:
 
@@ -212,7 +222,7 @@
             Operações Matemáticas:
             
             As variáveis no código não precisam ser declaradas para um 
-            tipo específico (Ex.: \textit{float, int, string}), deixando assim o código mais fluido.\citar{melhorar} 
+            tipo específico (Ex.: \textit{float, int, string}), deixando assim o código mais fluido. 
             \begin{quote}
             
              \codbox{\ini a = 2                               \\
@@ -244,16 +254,16 @@
         \subsection{Módulos e Pacotes}
             
             A vasta quantidade de pacotes de terceiros para Python é o que faz a linguagem tão rica, os 
-            pacotes facilitam a implementação do código, por exemplo, que for preciso calcular o espectro de 
-            frequência de um conjunto de dados não será necessário implementar todo o algoritmo para efetuar o calculo, resolver as integrais e assim por diante, mas sim podemos utilizar o pacote \verb|scipy| e importarmos a função \verb|dnff()| que já foi implementada e executar em nosso código, esse processo economiza tempo em desenvolvimento.           
+            pacotes facilitam a implementação do código, por exemplo, se for preciso calcular o espectro de 
+            frequência de um conjunto de dados, não será necessário implementar todo o algoritmo para efetuar o calculo, resolver as integrais e assim por diante, mas sim podemos utilizar o pacote \verb|scipy| e importarmos a função \verb|dnff| que já foi implementada e executar em nosso código, esse processo economiza tempo em desenvolvimento.           
             
             \subsubsection{Kivy}
             
             
             \label{lim_kivy}
-            Kivy é um \textit{framework} criado em 2010 pela KIVY ORGANIZATION \cite{kivy} e \textit{opensource} para o desenvolvimento de interfaces gráficas, a escolha dessa interface foi a alta compatibilidade entre sistemas operacionais e todo o processamento para desenhar a tela é feita no chip gráfico liberando então mais processamento pela CPU.
+            Kivy é um \textit{framework} criado em 2010 pela KIVY ORGANIZATION \cite{kivy} e \textit{Open Source} para o desenvolvimento de interfaces gráficas, a escolha dessa interface foi a alta compatibilidade entre sistemas operacionais e todo o processamento para desenhar a tela é feita no chip gráfico liberando então mais processamento pela CPU.
             
-            Kivy também é uma linguagem de programação que permite a criação da interface de forma mais fácil, similar ao QT \citar{citar} ela usa uma linguagem de marcação e indentada onde as propriedades dos \textit{widgets} (Objetos interativos com o usuário) são adicionadas colocando-as a baixo e com espaçamento de 4 espaços do \textit{widget}. 
+            Kivy também é uma linguagem de programação que permite a criação da interface de forma mais fácil, similar ao QT \cite{qt} ela usa uma linguagem de marcação e indentada onde as propriedades dos \textit{widgets} (Objetos interativos com o usuário) são adicionadas colocando-as a baixo e com espaçamento de 4 espaços do \textit{widget}. 
                         
             Exemplo do Kivy dentro do código Python:
             \begin{quote}
@@ -279,12 +289,12 @@
 
 
             
-            \subsubsection{Scipy, MatplotLib, Numpy}
+            \subsubsection{SciPy, MatPlotLib, NumPy}
             \label{lim_scipy}
             
-            Scipy é um ecossistema de ferramentas para processamento de dados científicos contando com ferramentes de manipulação de matrizes, plotagem de gráficos, interpolação dentro outras ferramentas.
+            SciPy é um ecossistema de ferramentas para processamento de dados científicos contando com ferramentes de manipulação de matrizes, plotagem de gráficos, interpolação dentro outras ferramentas \cite{scipy}.
             
-            Desenvolvido pela \citar{achar a organização} o ecossistema é de código aberto as principais ferramentas são: Numpy \citar{numpy} para trabalhos com vetores e matrizes, Matplotlib \citar{matplotlib} são ferramentas para plotagem de dados e o próprio Scipy para interpolação, cálculo de espectro de frequência dentre outras.
+            O ecossistema é de código aberto e as principais ferramentas são: NumPy para trabalhos com vetores e matrizes, MatPlotLib são ferramentas para plotagem de dados e o próprio SciPy para interpolação, cálculo de espectro de frequência dentre outras.
             
             A tabela \ref{pontos_ex_inter} apresenta 9 pontos distribuídos numa matriz quadrada de ordem 3, onde, a posição (2,2) possui uma anomalia, o código \citar{\ref{lim_scipy}.1} mostra como fazer a interpolação dos pontos e como plotar o resultado (figura \ref{fig_ex_inter}).
             
@@ -332,7 +342,7 @@
              }                                            \citar{\codnum{\ref{lim_scipy}.1}}
             \end{quote}
             
-            Exemplo Scipy:
+            Exemplo SciPy:
             
             \begin{quote}
              \codbox{\ini \cl{from} scipy \cl{import} interpolate              \\
@@ -361,13 +371,13 @@
                      \ini  plt.contourf(xi, yi, zi, zn)                        \\
                      \ini  plt.colorbar()                                      \\ 
                      \ini  plt.grid()                                          \\
-                     \ini  plt.set\_cmap(\st{'jet'})                            \\
-                     \ini  plt.show()                                           \\
+                     \ini  plt.set\_cmap(\st{'jet'})                           \\
+                     \ini  plt.show()                                          \\
              }                                                                   \citar{\codnum{cont. \ref{lim_scipy}.1}}
             \end{quote}
             
             \begin{figure}[H]
-                \caption{Exemplo dos pontos interpolados usando Scipy e plotados usando Matplotlib}
+                \caption{Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib}
                 \begin{center}
                     \includegraphics[width=10cm]{texto/fig/plot_ex.png} 
                 \end{center}

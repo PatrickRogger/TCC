@@ -20,25 +20,46 @@ v. 18(3), p. 605--635, 1953.}
 136~p. Dissertation (Masters Thesis) --- Faculty of Earth Sciences University
   of Iceland, Reykjavik, Iceland, Abril 2010.}
 
+\bibitem[Drake 2018]{python36}
+\abntrefinfo{Drake}{DRAKE}{2018}
+{DRAKE, F.~L. \textbf{Python 3.6.5 Documendation}. 2018.
+[Online; accessed March, 2018].
+Available from Internet: \url{https://docs.python.org/3/}.}
+
 \bibitem[Egbert 1997]{egbert97}
 \abntrefinfo{Egbert}{EGBERT}{1997}
 {EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
 \textbf{Geophysical Journal International}, v.~130, p. 475--496, 1997.}
+
+\bibitem[{FREE SOFTWARE FOUNDATION} 2018]{soft_free}
+\abntrefinfo{{FREE SOFTWARE FOUNDATION}}{{FREE SOFTWARE FOUNDATION}}{2018}
+{{FREE SOFTWARE FOUNDATION}. \textbf{Licença de Software Livre}. 2018.
+[Online; accessed May, 2018].
+Available from Internet: \url{https://www.gnu.org/philosophy/free-sw.html}.}
 
 \bibitem[Hayt and Buck 2013]{eletromag8hayt}
 \abntrefinfo{Hayt and Buck}{HAYT; BUCK}{2013}
 {HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
   Brazil: AMGH Editora Ltda., 2013.}
 
-\bibitem[{KIVY ORGANIZATION} 2018]{kivy}
-\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
-{{KIVY ORGANIZATION}. \textbf{Kivy}.
-[S.l.], 2018. Available at $<https://kivy.org/>$. Visited in May, 2018.}
+\bibitem[Jones et al. 2001]{scipy}
+\abntrefinfo{Jones et al.}{JONES et al.}{2001}
+{JONES, E. et al. \textbf{{SciPy}: Open source scientific tools for {Python}}.
+  2001.
+[Online; accessed May, 2018].
+Available from Internet: \url{http://www.scipy.org/}.}
 
 \bibitem[{KIVY ORGANIZATION} 2018]{kivy110}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
+{{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}. 2018.
+[Online; accessed March, 2018].
+Available from Internet: \url{https://kivy.org/docs/api-kivy.html}.}
+
+\bibitem[{KIVY ORGANIZATION} 2018]{kivy}
 \abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018b}
-{{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}.
-[S.l.], 2018. Available at $<https://kivy.org/>$. Visited in March, 2018.}
+{{KIVY ORGANIZATION}. \textbf{Kivy Organization}. 2018.
+[Online; accessed March, 2018].
+Available from Internet: \url{https://kivy.org/}.}
 
 \bibitem[Palacky 1987]{eletromag_met}
 \abntrefinfo{Palacky}{PALACKY}{1987}
@@ -50,16 +71,16 @@ v. 18(3), p. 605--635, 1953.}
 {PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
   Academic Press, 1983.}
 
-\bibitem[{PYTHON SOFTWARE FOUNDATION} 2018]{python36}
-\abntrefinfo{{PYTHON SOFTWARE FOUNDATION}}{{PYTHON SOFTWARE FOUNDATION}}{2018}
-{{PYTHON SOFTWARE FOUNDATION}. \textbf{Python 3.6.5 documendation}.
-[S.l.], 2018. Available at $<https://docs.python.org/3/>$. Visited in March,
-  2018.}
-
 \bibitem[Telford 1990]{telford}
 \abntrefinfo{Telford}{TELFORD}{1990}
 {TELFORD, W.~M. \textbf{Applied Geophysics}. New York, USA: British Library
   Cataloguind, 1990.}
+
+\bibitem[{THE QT COMPANY} 2018]{qt}
+\abntrefinfo{{THE QT COMPANY}}{{THE QT COMPANY}}{2018}
+{{THE QT COMPANY}. \textbf{Site Oficial Qt}. 2018.
+[Online; accessed May, 2018].
+Available from Internet: \url{https://www.qt.io/}.}
 
 \bibitem[Tikhonov 1950]{tikhonov50}
 \abntrefinfo{Tikhonov}{TIKHONOV}{1950}
