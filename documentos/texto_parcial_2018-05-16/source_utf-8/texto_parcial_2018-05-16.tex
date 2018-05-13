@@ -5,18 +5,42 @@
 \usepackage{chngcntr}                                       % pacote que permite a mudança da contagem das figuras e tabelas
 \counterwithout{figure}{chapter}                            % contagem contínua das figuras [Não especificado nas normas, porém de preferência do autor]
 \usepackage{times}                                          % pacote para usar fonte Adobe Times
+
 \usepackage{mathptmx}                                       % pacote usar fonte Adobe Times nas fórmulas
 \usepackage[alf,abnt-emphasize=bf]{abntex2cite}	           % pacote para usar citações abnt
 \usepackage{ragged2e}                                       % pacote para prevenir hifenização e melhorar disposição de objetos
-\hyphenpenalty=10000                                        % penalização de hifenização, força texto justificado
+%\hyphenpenalty=10000                                        % penalização de hifenização, força texto justificado
 \usepackage{booktabs}                                       % pacote que melhora a qualidade das tabelas geradas pelo LaTeX
 \usepackage[table]{xcolor}                                  % pacote para utlização de cores personalizadas
 \usepackage[labelsep=endash]{caption}                       % pacote para customização de títulos ou legendas de figuras 
 \usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{verbatim}
 
 % ATALHOS =================================================================================================================
 
 \newcommand{\gC}{\,$^{\rm o}{\rm C}$}                       %% macro para o símbolo de grau
+\newcommand{\rot}[1]{\nabla \times \textrm{#1}}
+\newcommand{\MT}{magnetotelúrico }
+\newcommand{\citar}[1]{\textcolor{red}{#1}}
+
+% ATALHOS PARA CODIGO FONTE
+\newcommand{\codnum}[1]{\begin{flushright} \normalsize (#1) \end{flushright}}   %numera os scripts
+\newcommand{\codbox}[1]{{\fontfamily{pcr}\selectfont #1}}                       %ambiente para escrever codigo fonte. OBS deve estar dentro do ambiente quote
+\newcommand{\cc}[1]{\textcolor{gray}{\textit{\# #1}}}                           %cor para comentarios (cinza)
+\newcommand{\f}[1]{\textbf{\textcolor{OliveGreen}{#1}}}                         %cor para funcoes (verde)
+\newcommand{\cl}[1]{\textbf{\textcolor{BurntOrange}{#1}}}                       %cor para classes (laranja)
+\newcommand{\ob}[1]{\textcolor{Blue}{#1}}
+\newcommand{\st}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\ini}{>{}>{}> \, }                                                  % produz >>>
+\newcommand{\init}{>{}>{}> \, \, \, \, \,}                                      % produz >>> tabulado 1vez
+%\newcommand{\init2}{>{}>{}> \, \, \, \, \, \, \, \, \,}                        % produz >>> tabulado 2vez
+%\newcommand{\init3}{>{}>{}> \, \, \, \, \, \, \, \, \, \, \, \, \,}            % produz >>> tabulado 3vez
+
+
+
+
+
 
 % =========================================================================================================================
 
@@ -84,7 +108,6 @@
 	\keyword{Kivy}	
 	\keyword{Magnetotelúrico}
 	\keyword{Python3}
-	\keyword{RiMT}
 	\keyword{Software Livre}
 % ======================================================================================================================
 
@@ -118,7 +141,7 @@
 % DEDICATORIA ==========================================================================================================
 
 	%\begin{dedicatoria} 
-		%Escreva aqui sua dedicatória
+	%	
 	%\end{dedicatoria}
 % =======================================================================================================================
 
@@ -132,7 +155,7 @@
 % AGRADECIMENTOS ========================================================================================================
 	
 	%\chapter*{Agradecimento}
-	%Escreva aqui seus agradecimentos.
+	% 
 % ========================================================================================================================
 
 
@@ -143,8 +166,8 @@
 
 % EPIGRADE ================================================================================================================
 	%\begin{epigrafe}
-		%``Escreva aqui o epígrafe desejado.''\\
-		%--- autor da frase
+	%	``Moça bonita, moça bem feita.''\\
+	%	--- Sr. Madruga
 	%\end{epigrafe}
 % ========================================================================================================================
 
@@ -225,6 +248,7 @@
 \begin{listofsymbols}{$\alpha\beta\pi\omega$}
        \item[$\rho$]          			  Resistividade
        \item[$\nabla$]    				  Nabla
+       \item[$\rot{B}$]					  Mag
        
 \end{listofsymbols}
 % =============================================================================================================================
@@ -253,19 +277,22 @@
 
 
 % CAPITULO 2 ===================================================================================================================
-	\input{texto/02-Materiais}
+	\input{texto/Objetivos}
+	\input{texto/Justificativa}
+	\input{texto/MateriaisNew}
+	
 
 
 % CAPITULO 3 ===================================================================================================================
-	\input{texto/Resultados}
-
+	\input{texto/Algoritmos}
+	
 
 % CAPITULO 4 ===================================================================================================================
-	\input{texto/Cronograma}
-
+	\input{texto/Resultados}
+	
 
 % CAPITULO 5 ===================================================================================================================
-	%\input{texto/05-Revisaobibliografica}
+	\input{texto/Cronograma}
 
 
 % CAPITULO 6 ===================================================================================================================
@@ -301,7 +328,7 @@
 
 % BIBLIOGRAFIA ===================================================================================================================
 \bibliographystyle{abntex2-alf}
-\bibliography{texto/bibliografia}
+\bibliography{biblio.bib}
 % ===================================================================================================================
 
 

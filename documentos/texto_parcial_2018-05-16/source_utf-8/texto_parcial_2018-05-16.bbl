@@ -11,12 +11,6 @@
   prospecting.
 v. 18(3), p. 605--635, 1953.}
 
-\bibitem[DGE 2018]{geoma}
-\abntrefinfo{DGE}{DGE}{2018}
-{DGE, D. de G.~E. \textbf{Geomagnetismo (GEOMA)}.
-[S.l.], 2018. Available at $<http://www.dge.inpe.br/geoma/>$. Visited in March,
-  2018.}
-
 \bibitem[Didana 2010]{didana2010}
 \abntrefinfo{Didana}{DIDANA}{2010}
 {DIDANA, Y.~L.
@@ -36,10 +30,20 @@ v. 18(3), p. 605--635, 1953.}
 {HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
   Brazil: AMGH Editora Ltda., 2013.}
 
+\bibitem[{KIVY ORGANIZATION} 2018]{kivy}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
+{{KIVY ORGANIZATION}. \textbf{Kivy}.
+[S.l.], 2018. Available at $<https://kivy.org/>$. Visited in May, 2018.}
+
 \bibitem[{KIVY ORGANIZATION} 2018]{kivy110}
-\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018b}
 {{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}.
 [S.l.], 2018. Available at $<https://kivy.org/>$. Visited in March, 2018.}
+
+\bibitem[Palacky 1987]{eletromag_met}
+\abntrefinfo{Palacky}{PALACKY}{1987}
+{PALACKY, G.~J. \textbf{Electromagnetic Methods in applied Geophysics}. 1. ed.
+  [S.l.]: Society of Exploration Geophysicists, 1987. 53-130~p.}
 
 \bibitem[Parkinson 1983]{parkinson93}
 \abntrefinfo{Parkinson}{PARKINSON}{1983}
@@ -52,13 +56,10 @@ v. 18(3), p. 605--635, 1953.}
 [S.l.], 2018. Available at $<https://docs.python.org/3/>$. Visited in March,
   2018.}
 
-\bibitem[Santos 2012]{tese_andrea}
-\abntrefinfo{Santos}{SANTOS}{2012}
-{SANTOS, A. C.~L.
-\textbf{Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE
-  da Província Borborema}.
-159~p. Thesis (PhD) --- Instituto de Geociências, Universidade de Brasília,
-  Brasília, Brasil, Março 2012.}
+\bibitem[Telford 1990]{telford}
+\abntrefinfo{Telford}{TELFORD}{1990}
+{TELFORD, W.~M. \textbf{Applied Geophysics}. New York, USA: British Library
+  Cataloguind, 1990.}
 
 \bibitem[Tikhonov 1950]{tikhonov50}
 \abntrefinfo{Tikhonov}{TIKHONOV}{1950}
