@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 01:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 01:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1969,24 +1969,23 @@ Package pdftex.def Info: texto/fig/hello_world_kivy.png used on input line 284.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 297.
  [17 <./texto/fig/hello_world_kivy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
-
- []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 18
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 361.
 [18]
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+
+ []
+
 <texto/fig/plot_ex.png, id=372, 458.9145pt x 346.896pt>
 File: texto/fig/plot_ex.png Graphic file (type png)
 <use texto/fig/plot_ex.png>
@@ -2114,11 +2113,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
 Here is how much of TeX's memory you used:
  22806 strings out of 492982
  380738 string characters out of 6134897
- 463883 words of memory out of 5000000
+ 463871 words of memory out of 5000000
  25960 multiletter control sequences out of 15000+600000
  588235 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,14n,45p,10407b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,45p,10407b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -2131,7 +2130,7 @@ e/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on texto_parcial_2018-05-16.pdf (25 pages, 514554 bytes).
+Output written on texto_parcial_2018-05-16.pdf (25 pages, 514564 bytes).
 PDF statistics:
  474 PDF objects out of 1000 (max. 8388607)
  419 compressed objects within 5 object streams

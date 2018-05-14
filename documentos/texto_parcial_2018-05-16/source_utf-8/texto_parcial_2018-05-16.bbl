@@ -78,6 +78,12 @@ Available from Internet: \url{https://kivy.org/}.}
 {PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
   Academic Press, 1983.}
 
+\bibitem[{QT COMPANY} 2018]{qt}
+\abntrefinfo{{QT COMPANY}}{{QT COMPANY}}{2018}
+{{QT COMPANY}. \textbf{Site Oficial Qt}. 2018.
+[Online; accessed May, 2018].
+Available from Internet: \url{https://www.qt.io/}.}
+
 \bibitem[Santos 2012]{tese_andrea}
 \abntrefinfo{Santos}{SANTOS}{2012}
 {SANTOS, A. C.~L.
@@ -90,12 +96,6 @@ Available from Internet: \url{https://kivy.org/}.}
 \abntrefinfo{Telford}{TELFORD}{1990}
 {TELFORD, W.~M. \textbf{Applied Geophysics}. New York, USA: British Library
   Cataloguind, 1990.}
-
-\bibitem[{THE QT COMPANY} 2018]{qt}
-\abntrefinfo{{THE QT COMPANY}}{{THE QT COMPANY}}{2018}
-{{THE QT COMPANY}. \textbf{Site Oficial Qt}. 2018.
-[Online; accessed May, 2018].
-Available from Internet: \url{https://www.qt.io/}.}
 
 \bibitem[Tikhonov 1950]{tikhonov50}
 \abntrefinfo{Tikhonov}{TIKHONOV}{1950}
