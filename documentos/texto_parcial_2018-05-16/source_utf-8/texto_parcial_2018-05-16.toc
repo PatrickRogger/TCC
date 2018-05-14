@@ -1,8 +1,8 @@
 \babel@toc {brazilian}{}
 \babel@toc {english}{}
 \babel@toc {brazilian}{}
-\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o}{11}{CHAPTER.1}
-\contentsline {chapter}{2~Objetivos}{12}{CHAPTER.2}
+\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\ OK}{11}{CHAPTER.1}
+\contentsline {chapter}{2~Objetivos \tmspace +\thinmuskip {.1667em} \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{12}{CHAPTER.2}
 \contentsline {section}{\numberline {2.1}Objetivos Gerais}{12}{section.2.1}
 \contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{12}{section.2.2}
 \contentsline {chapter}{3~Materiais e M\IeC {\'e}todos}{13}{CHAPTER.3}
@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {3.8}Arquitetura do \textit {Software}}{22}{section.3.8}
 \contentsline {chapter}{4~Algoritmos e Processamentos}{23}{CHAPTER.4}
 \contentsline {chapter}{5~Resultados Esperados}{24}{CHAPTER.5}
-\contentsline {chapter}{6~Cronograma de Atividades}{25}{CHAPTER.6}
+\contentsline {chapter}{6~Cronograma de Atividades \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{25}{CHAPTER.6}
 \contentsline {section}{\numberline {6.1}1\IeC {\textordmasculine } Semestre}{25}{section.6.1}
 \contentsline {section}{\numberline {6.2}2\IeC {\textordmasculine } Semestre}{25}{section.6.2}
 \contentsline {chapter}{\xspace {}Refer{\^e}ncias}{26}{schapter.8}

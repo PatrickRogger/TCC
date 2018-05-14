@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.1 }
 
+\bibitem[Barbosa et al. 2018]{alane}
+\abntrefinfo{Barbosa et al.}{BARBOSA et al.}{2018}
+{BARBOSA, A.~N. et al. Estudo magnetotel{\'u}rico na regi{\~a}o centro-sul da
+  prov{\'i}ncia borborema.
+\textbf{Anais do Sal{\~a}o Internacional de Ensino, Pesquisa e Extens{\~a}o},
+  v.~9, n.~3, 2018.}
+
 \bibitem[Cagniard 1953]{cagniard53}
 \abntrefinfo{Cagniard}{CAGNIARD}{1953}
 {CAGNIARD, L. Basic theory of the magneto-telluric method of geophysical
@@ -70,6 +77,14 @@ Available from Internet: \url{https://kivy.org/}.}
 \abntrefinfo{Parkinson}{PARKINSON}{1983}
 {PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
   Academic Press, 1983.}
+
+\bibitem[Santos 2012]{tese_andrea}
+\abntrefinfo{Santos}{SANTOS}{2012}
+{SANTOS, A. C.~L.
+\textbf{Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE
+  da Província Borborema}.
+159~p. Thesis (PhD) --- Instituto de Geociências, Universidade de Brasília,
+  Brasília, Brasil, Março 2012.}
 
 \bibitem[Telford 1990]{telford}
 \abntrefinfo{Telford}{TELFORD}{1990}

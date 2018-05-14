@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  13 MAY 2018 20:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  13 MAY 2018 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1694,6 +1694,47 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 4.
+
 ) (./texto/Objetivos.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
@@ -1704,12 +1745,42 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
-)
-(./texto/MateriaisNew.tex
+) (./texto/MateriaisNew.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 12
  []
@@ -1743,7 +1814,7 @@ Package babel Info: Redefining portuges shorthand "|
  [13
 
 ]
-<texto/fig/resisti_telford.png, id=289, 169.97714pt x 278.14441pt>
+<texto/fig/resisti_telford.png, id=297, 169.97714pt x 278.14441pt>
 File: texto/fig/resisti_telford.png Graphic file (type png)
 <use texto/fig/resisti_telford.png>
 Package pdftex.def Info: texto/fig/resisti_telford.png used on input line 52.
@@ -1758,7 +1829,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 [14 <./texto/fig/resisti_telford.png>]
-<texto/fig/resistividade_tabela.png, id=305, 322.3242pt x 183.3249pt>
+<texto/fig/resistividade_tabela.png, id=314, 322.3242pt x 183.3249pt>
 File: texto/fig/resistividade_tabela.png Graphic file (type png)
 <use texto/fig/resistividade_tabela.png>
 Package pdftex.def Info: texto/fig/resistividade_tabela.png used on input line 
@@ -1797,7 +1868,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
 [16]
-<texto/fig/Tm_Te.png, id=331, 244.0317pt x 158.994pt>
+<texto/fig/Tm_Te.png, id=339, 244.0317pt x 158.994pt>
 File: texto/fig/Tm_Te.png Graphic file (type png)
 <use texto/fig/Tm_Te.png>
 Package pdftex.def Info: texto/fig/Tm_Te.png used on input line 163.
@@ -1836,6 +1907,11 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.03749> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 218.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.03749> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 218.
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 254.
 Package babel Info: Redefining portuges shorthand "|
@@ -1844,8 +1920,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
- [19]
-<texto/fig/hello_world_kivy.png, id=371, 305.09985pt x 222.5916pt>
+[19]
+<texto/fig/hello_world_kivy.png, id=379, 305.09985pt x 222.5916pt>
 File: texto/fig/hello_world_kivy.png Graphic file (type png)
 <use texto/fig/hello_world_kivy.png>
 Package pdftex.def Info: texto/fig/hello_world_kivy.png used on input line 284.
@@ -1863,20 +1939,24 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 298.
 [20 <./texto/fig/hello_world_kivy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 376.
- [21]
-<texto/fig/plot_ex.png, id=393, 458.9145pt x 346.896pt>
+(babel)             in language  on input line 380.
+[21]
+<texto/fig/plot_ex.png, id=401, 458.9145pt x 346.896pt>
 File: texto/fig/plot_ex.png Graphic file (type png)
 <use texto/fig/plot_ex.png>
-Package pdftex.def Info: texto/fig/plot_ex.png used on input line 382.
+Package pdftex.def Info: texto/fig/plot_ex.png used on input line 386.
 (pdftex.def)             Requested size: 284.52756pt x 215.07858pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 389.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 393.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 397.
 ) (./texto/Algoritmos.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 22
@@ -1914,6 +1994,42 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 3.
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining portuges shorthand "|
@@ -1944,6 +2060,11 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 380.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+ [27]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
  (./texto_parcial_2018-05-16.aux)
@@ -1951,17 +2072,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
 Package rerunfilecheck Info: File `texto_parcial_2018-05-16.out' has not change
 d.
-(rerunfilecheck)             Checksum: 919DB9B673092F45EC0DEAD171B22054;6396.
+(rerunfilecheck)             Checksum: AF49E0ED37182FDB7C9219B2F7C53318;6482.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
  ) 
 Here is how much of TeX's memory you used:
- 22807 strings out of 492982
- 380721 string characters out of 6134897
- 465504 words of memory out of 5000000
- 25956 multiletter control sequences out of 15000+600000
+ 22820 strings out of 492982
+ 380908 string characters out of 6134897
+ 465842 words of memory out of 5000000
+ 25966 multiletter control sequences out of 15000+600000
  588235 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,14n,45p,10407b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,45p,10407b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1974,10 +2095,10 @@ e/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on texto_parcial_2018-05-16.pdf (27 pages, 515244 bytes).
+Output written on texto_parcial_2018-05-16.pdf (28 pages, 516077 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

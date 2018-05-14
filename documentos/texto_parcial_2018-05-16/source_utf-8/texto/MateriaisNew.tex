@@ -12,7 +12,7 @@
     As flutuações no campo magnético terrestre geram campos elétricos na alta atmosfera que induzem correntes magnéticas, as ondas eletromagnéticas então penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias. 
     
     Uma das características é a modulação da frequência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
-	relacionado a resistividade do meio. \textcolor{red}{citar}
+	relacionado a resistividade do meio.
     
     As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$, ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem como o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais. Para o estudo do \MT são feitas as seguintes suposições:
     
@@ -29,7 +29,7 @@
     Para o \MT a propriedade investigação e contraste é a condutividade ($\sigma$) ou resistividade ($\rho$) sendo essa o inverso da condutividade.
     A resistividade é uma propriedade particular de cada material, ou seja, a partir de uma resistividade podemos estimar a qual material ela pertence\footnote{Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.
     
-    Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material esse gera uma resistência a passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\textcolor{red}{citar}.
+    Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material esse gera uma resistência a passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\cite{eletromag8hayt}.
     
     \begin{equation}
      \label{lei_de_ohm}
@@ -215,7 +215,7 @@
              \codbox{\ini   \cc{Comentários}                  \\
                      \ini   \f{print} ('Hello Word')          \\
                      Hello World
-                     }                                          \citar{\codnum{\ref{lim_python}.1}}
+                     }                                          \codnum{\ref{lim_python}.1}
 
             \end{quote}
             
@@ -234,13 +234,13 @@
                      2.5                                      \\
                      %\ini \cl{class} Tela(App):              \\
                      %\init  \cl{return} Tela
-                     }                                          \citar{\codnum{\ref{lim_python}.2}}
+                     }                                          \codnum{\ref{lim_python}.2}
             \end{quote}
             
             Importando Módulos:
             
             Módulos são estruturas que podemos importar objetos de um código a outro,
-            no script \citar{\ref{lim_python}.3} importamos o valor de $\pi$ que esta contido na variável \verb|pi| dentro do pacote \verb|math|. 
+            no script \ref{lim_python}.3 importamos o valor de $\pi$ que esta contido na variável \verb|pi| dentro do pacote \verb|math|. 
             
             \begin{quote}
              \codbox{\ini \cl{import} math                    \\
@@ -248,7 +248,7 @@
                      \ini pi = math.pi                        \\
                      \ini \f{print}(pi)                       \\
                      3.141592653589793
-                    }                                           \citar{\codnum{\ref{lim_python}.3}}
+                    }                                           \codnum{\ref{lim_python}.3}
             \end{quote}
             
         \subsection{Módulos e Pacotes}
@@ -275,7 +275,7 @@
                      \init \,\,\,\,\,\,     \cl{return} Button(\ob{text}=\st{'Hello Word')} \\
                      \ini                                                         \\
                      \ini Test().run()                                            
-             }                                                                    \citar{\codnum{\ref{lim_kivy}.1}}
+             }                                                                    \codnum{\ref{lim_kivy}.1}
             \end{quote}
             
             \begin{figure}[h]
@@ -296,19 +296,17 @@
             
             O ecossistema é de código aberto e as principais ferramentas são: NumPy para trabalhos com vetores e matrizes, MatPlotLib são ferramentas para plotagem de dados e o próprio SciPy para interpolação, cálculo de espectro de frequência dentre outras.
             
-            A tabela \ref{pontos_ex_inter} apresenta 9 pontos distribuídos numa matriz quadrada de ordem 3, onde, a posição (2,2) possui uma anomalia, o código \citar{\ref{lim_scipy}.1} mostra como fazer a interpolação dos pontos e como plotar o resultado (figura \ref{fig_ex_inter}).
-            
+            A tabela \ref{pontos_ex_inter} apresenta 9 pontos distribuídos numa matriz quadrada de ordem 3, onde, a posição (2,2) possui uma anomalia, o código \ref{lim_scipy}.1 mostra como fazer a interpolação dos pontos e como plotar o resultado (figura \ref{fig_ex_inter}).
             
             \begin{table}[H]
-                
+                \centering
                 \caption{Distribuição de pontos com valor anômalo ao centro.}
                 \label{pontos_ex_inter}
-                \begin{center}
-                    \centering
-                    \begin{tabular}{l|ccc}
-                        \hline
-                        {\bf Ponto} & {\bf x} & {\bf y} & {\bf z}\\
-                        \hline
+                \resizebox{.22\textwidth}{!}{%
+                \begin{tabular}{@{}cccl@{}}
+                    \toprule
+                    \textbf{Pontos}  & \textbf{x}   & \textbf{y}   & \textbf{z}  \\
+                    \midrule
                         1&1       &   1     &  1     \\
                         %\hline
                         2&2       &   1     &  1     \\
@@ -326,11 +324,17 @@
                         8&2       &   3     &  1     \\
                         %\hline
                         9&3       &   3     &  1     \\
-                        \hline
-                    \end{tabular}
-                \end{center}
+                    \bottomrule
+                \end{tabular}%
+                }
                 \fonte{O Autor, 2018}
             \end{table}
+            
+            
+            
+            
+            
+            
             
             Exemplo Numpy:
             \begin{quote}
@@ -339,7 +343,7 @@
                      \ini  x = np.array([1,2,3,1,2,3,1,2,3])  \\
                      \ini  y = np.array([1,1,1,2,2,2,3,3,3])  \\
                      \ini  z = np.array([1,1,1,1,3,1,1,1,1])                                                                  
-             }                                            \citar{\codnum{\ref{lim_scipy}.1}}
+             }                                            \codnum{\ref{lim_scipy}.1}
             \end{quote}
             
             Exemplo SciPy:
@@ -354,7 +358,7 @@
                      \ini                                                      \\
                      \ini  \cc{ Interpolate}                                   \\
                      \ini  zi = griddata((x,y),z,(xi,yi),\ob{method}=\st{'cubic'})       
-             }                                                                    \citar{\codnum{cont. \ref{lim_scipy}.1}}
+             }                                                                    \codnum{cont. \ref{lim_scipy}.1}
             \end{quote}
             
             Exemplo Matplotlib:
@@ -373,7 +377,7 @@
                      \ini  plt.grid()                                          \\
                      \ini  plt.set\_cmap(\st{'jet'})                           \\
                      \ini  plt.show()                                          \\
-             }                                                                   \citar{\codnum{cont. \ref{lim_scipy}.1}}
+             }                                                                   \codnum{cont. \ref{lim_scipy}.1}
             \end{quote}
             
             \begin{figure}[H]
