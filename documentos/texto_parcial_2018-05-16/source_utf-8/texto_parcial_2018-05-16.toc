@@ -1,31 +1,29 @@
 \babel@toc {brazilian}{}
-\babel@toc {english}{}
-\babel@toc {brazilian}{}
-\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\ OK}{11}{CHAPTER.1}
-\contentsline {chapter}{2~Objetivos \tmspace +\thinmuskip {.1667em} \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{12}{CHAPTER.2}
-\contentsline {section}{\numberline {2.1}Objetivos Gerais}{12}{section.2.1}
-\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{12}{section.2.2}
-\contentsline {chapter}{3~Materiais e M\IeC {\'e}todos}{13}{CHAPTER.3}
-\contentsline {section}{\numberline {3.1}Origem das Correntes Tel\IeC {\'u}ricas}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Resistividade dos Materiais}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Fundamentos Te\IeC {\'o}ricos dos M\IeC {\'e}todos Eletromagn\IeC {\'e}ticos}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{17}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Modelo de Dimens\IeC {\~o}es MT}{17}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Terra 1D}{17}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Terra 2D}{17}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Terra 3D}{18}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Processamento das Series Temporais (mudar o titulo)}{18}{section.3.6}
-\contentsline {section}{\numberline {3.7}Ferramentas de Desenvolvimento do \textit {Software}}{18}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Linguagem PYTHON}{18}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}M\IeC {\'o}dulos e Pacotes}{19}{subsection.3.7.2}
-\contentsline {subsubsection}{\numberline {3.7.2.1}Kivy}{20}{subsubsection.3.7.2.1}
-\contentsline {subsubsection}{\numberline {3.7.2.2}SciPy, MatPlotLib, NumPy}{20}{subsubsection.3.7.2.2}
-\contentsline {subsection}{\numberline {3.7.3}Pacotes de Processamentos do grupo Geoma - INPE}{22}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Arquitetura do \textit {Software}}{22}{section.3.8}
-\contentsline {chapter}{4~Algoritmos e Processamentos}{23}{CHAPTER.4}
-\contentsline {chapter}{5~Resultados Esperados}{24}{CHAPTER.5}
-\contentsline {chapter}{6~Cronograma de Atividades \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{25}{CHAPTER.6}
-\contentsline {section}{\numberline {6.1}1\IeC {\textordmasculine } Semestre}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}2\IeC {\textordmasculine } Semestre}{25}{section.6.2}
-\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{26}{schapter.8}
+\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\ OK}{7}{CHAPTER.1}
+\contentsline {chapter}{2~Objetivos \tmspace +\thinmuskip {.1667em} \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{8}{CHAPTER.2}
+\contentsline {section}{\numberline {2.1}Objetivos Gerais}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{8}{section.2.2}
+\contentsline {chapter}{3~Justificativa \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{9}{CHAPTER.3}
+\contentsline {chapter}{4~Materiais e M\IeC {\'e}todos}{10}{CHAPTER.4}
+\contentsline {section}{\numberline {4.1}Origem das Correntes Tel\IeC {\'u}ricas}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}Resistividade dos Materiais}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Fundamentos Te\IeC {\'o}ricos dos M\IeC {\'e}todos Eletromagn\IeC {\'e}ticos}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{14}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{14}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Modelo de Dimens\IeC {\~o}es MT}{14}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Terra 1D}{14}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Terra 2D}{14}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Terra 3D}{15}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Processamento das Series Temporais (mudar o titulo)}{15}{section.4.6}
+\contentsline {section}{\numberline {4.7}Ferramentas de Desenvolvimento do \textit {Software} \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{15}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Linguagem PYTHON}{15}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}M\IeC {\'o}dulos e Pacotes}{16}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Kivy}{17}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}SciPy, MatPlotLib, NumPy}{17}{subsubsection.4.7.2.2}
+\contentsline {subsection}{\numberline {4.7.3}Pacotes de Processamentos do grupo Geoma - INPE}{19}{subsection.4.7.3}
+\contentsline {chapter}{5~Algoritmos e Processamentos}{20}{CHAPTER.5}
+\contentsline {chapter}{6~Resultados Esperados}{21}{CHAPTER.6}
+\contentsline {chapter}{7~Cronograma de Atividades \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{22}{CHAPTER.7}
+\contentsline {section}{\numberline {7.1}1\IeC {\textordmasculine } Semestre}{22}{section.7.1}
+\contentsline {section}{\numberline {7.2}2\IeC {\textordmasculine } Semestre}{22}{section.7.2}
+\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{23}{schapter.4}
