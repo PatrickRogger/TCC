@@ -6,11 +6,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Arranjo para medir a resistividade ($\rho $) de um material\relax }}{11}{figure.4.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Resistividade dos Materiais Geol\IeC {\'o}gicos\relax }}{12}{figure.4.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Modelo de Terra 2D para a resistividade variando na dire\IeC {\c c}\IeC {\~a}o $y$\relax }}{14}{figure.4.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo Janela com Kivy implementada somente com c\IeC {\'o}digo Python\relax }}{17}{figure.4.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib\relax }}{19}{figure.4.5}
+\contentsline {figure}{\numberline {1}{\ignorespaces Arranjo para medir a resistividade ($\rho $) de um material\relax }}{10}{figure.4.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Resistividade dos Materiais Geol\IeC {\'o}gicos\relax }}{11}{figure.4.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Modelo de Terra 2D para a resistividade variando na dire\IeC {\c c}\IeC {\~a}o $y$\relax }}{13}{figure.4.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de janela com Kivy implementada somente com c\IeC {\'o}digo Python\relax }}{16}{figure.4.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib\relax }}{18}{figure.4.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

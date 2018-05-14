@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 01:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1243,114 +1243,19 @@ LaTeX Info: Redefining \nameref on input line 135.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 135.
+ (./texto/capa.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 36.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
-
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1418) in paragraph at lines 136--136
-[]\T1/ptm/m/n/12 Trabalho de Conclusão de Curso apresentado
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 136--136
-\T1/ptm/m/n/12 ao curso de Bacharelado em Geofísica como
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 136--136
-\T1/ptm/m/n/12 requisito parcial para a obtenção do grau de
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-[2
-
-]
-Underfull \hbox (badness 2409) in paragraph at lines 136--136
-[]\T1/ptm/m/n/12 ``Orientação: Vi-ni-cius Abreu de Oli-veira; Co-
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.136 \maketitle
-                 [2
-
-
-]
-Overfull \vbox (1.2481pt too high) detected at line 136
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 136--136
-[]\T1/ptm/m/n/12 Trabalho de Conclusão de Curso apresentado
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 136--136
-\T1/ptm/m/n/12 ao curso de Bacharelado em Geofísica como
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 136--136
-\T1/ptm/m/n/12 requisito parcial para a obtenção do grau de
- []
-
-
-Overfull \vbox (110.77484pt too high) detected at line 136
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
-
- []
-
-
-Underfull \vbox (badness 10000) detected at line 136
- []
-
-
-Underfull \vbox (badness 10000) detected at line 136
- []
-
-
-Overfull \hbox (37.52142pt too wide) in paragraph at lines 136--137
-[][] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 211.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 211.
-[3
-
-]
+ [2]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 211.
  (./texto_parcial_2018-05-16.lof
@@ -1397,7 +1302,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 212.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 212.
- [4
+ [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1432,7 +1337,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
- [5
+ [4
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1650,7 +1555,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
- [6
+ [5
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1697,11 +1602,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removed on input line 4.
 
 ) (./texto/Objetivos.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 6
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
- [7
+[6
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1742,15 +1651,11 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
 ) (./texto/Justificativa.tex
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 8
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-[8
+ [7
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1782,11 +1687,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removed on input line 1.
 
 ) (./texto/MateriaisNew.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 8
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [9
+[8
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1804,29 +1713,29 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 32.
+ [9
+
+]
+<texto/fig/resisti_telford.png, id=256, 169.97714pt x 278.14441pt>
+File: texto/fig/resisti_telford.png Graphic file (type png)
+<use texto/fig/resisti_telford.png>
+Package pdftex.def Info: texto/fig/resisti_telford.png used on input line 52.
+(pdftex.def)             Requested size: 113.81102pt x 186.2327pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 10
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 32.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 32.
-[10
-
-]
-<texto/fig/resisti_telford.png, id=265, 169.97714pt x 278.14441pt>
-File: texto/fig/resisti_telford.png Graphic file (type png)
-<use texto/fig/resisti_telford.png>
-Package pdftex.def Info: texto/fig/resisti_telford.png used on input line 52.
-(pdftex.def)             Requested size: 113.81102pt x 186.2327pt.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
- [11 <./texto/fig/resisti_telford.png>]
-<texto/fig/resistividade_tabela.png, id=282, 322.3242pt x 183.3249pt>
+[10 <./texto/fig/resisti_telford.png>]
+<texto/fig/resistividade_tabela.png, id=273, 322.3242pt x 183.3249pt>
 File: texto/fig/resistividade_tabela.png Graphic file (type png)
 <use texto/fig/resistividade_tabela.png>
 Package pdftex.def Info: texto/fig/resistividade_tabela.png used on input line 
@@ -1837,16 +1746,11 @@ Package babel Info: Redefining portuges shorthand "|
 
 Underfull \vbox (badness 3250) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 12
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 92.
-[12 <./texto/fig/resistividade_tabela.png>]
+ [11 <./texto/fig/resistividade_tabela.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
@@ -1860,26 +1764,26 @@ Package babel Info: Redefining portuges shorthand "|
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 12
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
- [13]
-<texto/fig/Tm_Te.png, id=310, 244.0317pt x 158.994pt>
+[12]
+<texto/fig/Tm_Te.png, id=300, 244.0317pt x 158.994pt>
 File: texto/fig/Tm_Te.png Graphic file (type png)
 <use texto/fig/Tm_Te.png>
 Package pdftex.def Info: texto/fig/Tm_Te.png used on input line 163.
 (pdftex.def)             Requested size: 341.43306pt x 222.4809pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 14
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
-[14 <./texto/fig/Tm_Te.png>]
+ [13 <./texto/fig/Tm_Te.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
@@ -1927,14 +1831,18 @@ Package babel Info: Redefining portuges shorthand "|
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 207.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 207.
- [15]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 213.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 14
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 207.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 207.
+[14]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 213.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.03749> not available
@@ -1950,17 +1858,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 254.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 260.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 16
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
-[16]
-<texto/fig/hello_world_kivy.png, id=349, 305.09985pt x 222.5916pt>
+[15]
+<texto/fig/hello_world_kivy.png, id=340, 305.09985pt x 222.5916pt>
 File: texto/fig/hello_world_kivy.png Graphic file (type png)
 <use texto/fig/hello_world_kivy.png>
 Package pdftex.def Info: texto/fig/hello_world_kivy.png used on input line 284.
@@ -1968,25 +1871,26 @@ Package pdftex.def Info: texto/fig/hello_world_kivy.png used on input line 284.
 (pdftex.def)             Requested size: 199.16928pt x 145.30777pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 297.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 297.
- [17 <./texto/fig/hello_world_kivy.png>]
+
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 18
+\T1/ptm/m/n/10.95 16
  []
 
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 297.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 297.
+[16 <./texto/fig/hello_world_kivy.png>]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
-[18]
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 375--375
 
  []
 
-<texto/fig/plot_ex.png, id=372, 458.9145pt x 346.896pt>
+<texto/fig/plot_ex.png, id=362, 458.9145pt x 346.896pt>
 File: texto/fig/plot_ex.png Graphic file (type png)
 <use texto/fig/plot_ex.png>
 Package pdftex.def Info: texto/fig/plot_ex.png used on input line 381.
@@ -1994,34 +1898,73 @@ Package pdftex.def Info: texto/fig/plot_ex.png used on input line 381.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 388.
 ) (./texto/Algoritmos.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 18
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [19 <./texto/fig/plot_ex.png>]
+[18 <./texto/fig/plot_ex.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-)
-(./texto/Resultados.tex
+) (./texto/Resultados.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+ [19
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 2.
+
+) (./texto/Cronograma.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 20
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 2.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 2.
+(babel)             in language  on input line 3.
 [20
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 2.
-) (./texto/Cronograma.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 3.
- [21
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2067,37 +2010,34 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 35.
 ) (./texto_parcial_2018-05-16.bbl
-Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 22
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
-[22
+ [21
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 ) 
 AED: lastpage setting LastPage
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
-[23
 
-]
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 24
+\T1/ptm/m/n/10.95 22
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 380.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 380.
-[24]
+[22
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 380.
+ [23]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 380.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
@@ -2107,17 +2047,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
 Package rerunfilecheck Info: File `texto_parcial_2018-05-16.out' has not change
 d.
-(rerunfilecheck)             Checksum: 1EF3FF0E700C22812981862AA2FEE9C0;5927.
+(rerunfilecheck)             Checksum: 9D86EF3837C1C8C4280E5FF5AD5E15C2;5953.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
  ) 
 Here is how much of TeX's memory you used:
- 22806 strings out of 492982
- 380738 string characters out of 6134897
- 463871 words of memory out of 5000000
+ 22808 strings out of 492982
+ 380765 string characters out of 6134897
+ 463884 words of memory out of 5000000
  25960 multiletter control sequences out of 15000+600000
  588235 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,14n,45p,10407b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,12n,45p,10407b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -2130,10 +2070,10 @@ e/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on texto_parcial_2018-05-16.pdf (25 pages, 514564 bytes).
+Output written on texto_parcial_2018-05-16.pdf (23 pages, 512176 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 465 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
  274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
