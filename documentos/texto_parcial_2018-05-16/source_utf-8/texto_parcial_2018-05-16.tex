@@ -19,11 +19,14 @@
 
 % ATALHOS =================================================================================================================
 
-\newcommand{\rot}[1]{\nabla \times \textrm{#1}}
+\newcommand{\rot}[1]{\nabla \times \vec{\textrm{#1}}}
 \newcommand{\MT}{magnetotelúrico }                                              % mt -> magnetotelúrico
 \newcommand{\citar}[1]{\textcolor{red}{#1}}                                     % marca em vermelho locais para correção
 \newcommand{\en}[1]{\textit{#1}}                                                % marca em italico termos em ingles
 \newcommand{\ven}[1]{\vec{\textrm{#1}}}                                         % Coloca o vetor em cima da incognita 
+\newcommand{\parct}[1]{\dfrac{\partial \vec{\textrm{#1}}}{\partial t}}            % derivada Parcial de t
+\newcommand{\parctto}[1]{\dfrac{\partial^2 \vec{\textrm{#1}}}{\partial t^2}}            % derivada Parcial de t
+
 
 
 
@@ -234,12 +237,12 @@
 
 \begin{listofabbrv}{UNIPAMPA}
         
-        \item[MT]           {Magnetotelúrico}        
         \item[API]          {Application Programming Interface}
         \item[CWI]          {Centrum Wishunde \& Informatica}
-        \item[INPE]         {Instituto Nacional de Pesquisas Espaciais}
         \item[GEOMA]        {Grupo de Geomagnetismo}
-      
+        \item[INPE]         {Instituto Nacional de Pesquisas Espaciais}
+        \item[MT]           {Magnetotelúrico}        
+        
 \end{listofabbrv}
 % =============================================================================================================================
 
@@ -253,7 +256,7 @@
 
 \begin{listofsymbols}{$\alpha\beta\pi\omega$}
        \item[$\sigma$]                  Condutividade
-       \item[$\rho\footnote{Demonstrado na decução de resistividade dos materiais}$]                  Resistividade
+       \item[$\rho$]                    Resistividade
        \item[$V$]                       Diferença de Potencial
        \item[$i$]                       Corrente
        \item[$R$]                       Resistência
@@ -261,11 +264,12 @@
        \item[$L$]                       Comprimento
        \item[$\nabla \times$]           Rotacional
        \item[$\nabla \cdot$]            Divergente
-       \item[$\ven{E}$]                 Compo Elétrico
-       \item[$\ven{H}$]                 Compo Magnetizante
+       \item[$\ven{E}$]                 Campo Elétrico
+       \item[$\ven{H}$]                 Campo Magnetizante
+       \item[$\ven{B}$]                 Campo Magnético
        \item[$\ven{J}$]                 Densidade de Corrente
        \item[$\ven{D}$]                 Campo de Deslocamento Elétrico
-       \item[$\rho\footnote{Demonstrado na decução de campos eletromagnéticos}$]                      Densidade de Carga
+       \item[$\rho_f$]                  Densidade de Carga
        \item[$t$]                       Tempo
        \item[$\mu$]                     Permissividade Magnética
        \item[$\varepsilon$]             Permissividade Elétrica

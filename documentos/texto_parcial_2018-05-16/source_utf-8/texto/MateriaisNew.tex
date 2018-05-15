@@ -88,7 +88,8 @@
                 \nabla \cdot \vec{\textrm{B}} = 0
             \end{equation}
             \begin{equation}
-                \nabla \cdot \vec{\textrm{D}} = \rho
+                \label{div_d}
+                \nabla \cdot \vec{\textrm{D}} = \rho_f
             \end{equation}
 
             $\vec{\textrm{E}}$ $\rightarrow$ Campo Elétrico [$V/m$]
@@ -101,7 +102,7 @@
 	    
             $\vec{\textrm{D}}$ $\rightarrow$ Campo de Deslocamento Elétrico [$C/m^2$]
 	    
-            $\rho$ $\rightarrow$ Densidade de Carga [$C/m^3$]
+            $\rho_f$ $\rightarrow$ Densidade de Carga [$C/m^3$]
 	    
             $t$ $\rightarrow$ Tempo [$s$]
 
@@ -134,8 +135,65 @@
             trabalhos de investigação o meio supõe-se ser isotrópico, assim, 
             tornando estáticos os tensores.
 	
-    
-    
+            Através das propriedades dos meios isotrópicos podemos reescrever as equações \ref{rot_elet_max} e \ref{rot_mag_max} usando as equações constitutivas \ref{con_B}, \ref{con_D} e \ref{con_J}.
+            
+            \begin{equation}
+                \label{rot_elet_con}
+                \rot{E} = - \mu \parct{H}
+            \end{equation}
+            
+            \begin{equation}
+                \label{rot_mag_con}
+                \rot{H} = \sigma \ven{E} + \varepsilon \parct{E}
+            \end{equation}
+            
+            Derivando a equação \ref{rot_mag_con} no tempo, multiplicando por $\mu$ e usando a equação \ref{rot_elet_con} temos:
+            
+            
+\begin{align*}
+\dfrac{\partial (\nabla \times \vec{\textrm{H}})}{\partial t} & = \dfrac{\partial (\sigma \ven{E})}{\partial t} + \dfrac{\partial}{\partial t} \bigg(\varepsilon \parct{E}\bigg)\\[10pt]
+             \dfrac{\nabla \times \partial \ven{H}}{\partial t} & = \sigma \parct{E} + \varepsilon \parctto{E} \\[10pt]
+             \mu \dfrac{\nabla \times \partial \ven{H}}{\partial t} & = \mu \sigma \parct{E} + \mu \varepsilon \parctto{E} \\[10pt]
+             -\dfrac{\mu}{\mu} \nabla \times \rot{E} & = \mu \sigma \parct{E} + \mu \varepsilon \parctto{E}
+             \end{align*}
+             \begin{equation}
+                \label{menos_rot_e}
+              - \nabla \times \rot{E} = \mu \sigma \parct{E} + \mu \varepsilon \parctto{E}
+             \end{equation}
+                
+            Usando a identidade vetorial:
+            
+            \begin{equation}
+             \nabla \times \rot{A} = -\nabla^2 \ven{A} + \nabla(\nabla \cdot \ven{A})
+            \end{equation}
+            
+            Podemos reescrever a equação \ref{div_d} considerando que para meios homogêneos e isotrópicos não há troca de carga entre ele e a densidade de carga, $\rho_f$, é zero assim:
+            
+            \begin{equation}
+             \nabla \cdot \ven{E} = 0
+            \end{equation}
+            
+            Portanto:
+            
+            \begin{equation}
+             \label{rot_rot_e}
+             \nabla \times \rot{E} = -\nabla^2 \ven{E} + \nabla(\nabla \cdot \ven{E});\,\,\,\,\,\,\, \textrm{onde}\,\,\,\,\,\,\,   \nabla(\nabla \cdot \ven{E})=0
+            \end{equation}
+            
+            Substituindo [\ref{rot_rot_e}] em [\ref{menos_rot_e}] temos:
+            
+            \begin{equation}
+             \nabla^2 \ven{E} - \mu \sigma \parct{E} - \mu \varepsilon \parctto{E} = 0
+            \end{equation}
+            
+            De forma análoga podemos verificar que:
+            
+            \begin{equation}
+             \nabla^2 \ven{H} - \mu \sigma \parct{H} - \mu \varepsilon \parctto{H} = 0
+            \end{equation}
+
+            \citar{continua ......}
+ 
     
     
     
@@ -194,6 +252,11 @@
     
     \section{Processamento das Series Temporais (mudar o titulo)}
     
+    
+    
+    
+    
+%========================================================================================================================================================    
     \section{Ferramentas de Desenvolvimento do \textit{Software} \,\,\,\,\,\,\, OK}
     
         O desenvolvimento do \textit{software} foi baseado na filosofia de \textit{Software Livre} \cite{soft_free} onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos e a simplicidade da implementação do código.  
