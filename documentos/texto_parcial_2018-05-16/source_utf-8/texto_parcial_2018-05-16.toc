@@ -22,6 +22,11 @@
 \contentsline {subsubsection}{\numberline {4.7.2.2}SciPy, MatPlotLib, NumPy}{18}{subsubsection.4.7.2.2}
 \contentsline {subsection}{\numberline {4.7.3}Pacotes de Processamentos do grupo Geoma - INPE}{20}{subsection.4.7.3}
 \contentsline {chapter}{5~Algoritmos e Processamentos}{21}{CHAPTER.5}
+\contentsline {section}{\numberline {5.1}Arquitetura do Programa e Depend\IeC {\^e}ncias}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Convers\IeC {\~a}o dos Dados}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Processamento Estat\IeC {\'\i }sticos}{21}{section.5.3}
+\contentsline {section}{\numberline {5.4}Plotagem das Bandas de Frequ\IeC {\^e}ncias}{21}{section.5.4}
+\contentsline {section}{\numberline {5.5}Cria\IeC {\c c}\IeC {\~a}o do Arquivo de Sa\IeC {\'\i }da Padr\IeC {\~a}o}{21}{section.5.5}
 \contentsline {chapter}{6~Resultados Esperados \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{22}{CHAPTER.6}
 \contentsline {chapter}{7~Cronograma de Atividades \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{23}{CHAPTER.7}
 \contentsline {section}{\numberline {7.1}1\IeC {\textordmasculine } Semestre}{23}{section.7.1}

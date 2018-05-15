@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  15 MAY 2018 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1530,6 +1530,34 @@ text indent calculated (toc, 0): 18.0pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 39.0pt
 number noindent (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 39.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 39.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 39.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 39.0pt
+number noindent (toc, 1): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
@@ -1552,7 +1580,7 @@ number indent calculated (toc, 1): 18.0pt
 text noindent (toc, 1): 39.0pt
 number noindent (toc, 1): 0.0pt
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
 number indent by \l@... (toc, 1):  18.0pt
 text indent by \l@... (toc, 1):  27.60004pt
 number indent by parent (toc, 1):  18.0pt
@@ -1738,7 +1766,7 @@ Package babel Info: Redefining portuges shorthand "|
  [11
 
 ]
-<texto/fig/resisti_telford.png, id=281, 169.97714pt x 278.14441pt>
+<texto/fig/resisti_telford.png, id=301, 169.97714pt x 278.14441pt>
 File: texto/fig/resisti_telford.png Graphic file (type png)
 <use texto/fig/resisti_telford.png>
 Package pdftex.def Info: texto/fig/resisti_telford.png used on input line 52.
@@ -1753,7 +1781,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 [12 <./texto/fig/resisti_telford.png>]
-<texto/fig/resistividade_tabela.png, id=297, 322.3242pt x 183.3249pt>
+<texto/fig/resistividade_tabela.png, id=318, 322.3242pt x 183.3249pt>
 File: texto/fig/resistividade_tabela.png Graphic file (type png)
 <use texto/fig/resistividade_tabela.png>
 Package pdftex.def Info: texto/fig/resistividade_tabela.png used on input line 
@@ -1792,7 +1820,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
 [14]
-<texto/fig/Tm_Te.png, id=323, 244.0317pt x 158.994pt>
+<texto/fig/Tm_Te.png, id=343, 244.0317pt x 158.994pt>
 File: texto/fig/Tm_Te.png Graphic file (type png)
 <use texto/fig/Tm_Te.png>
 Package pdftex.def Info: texto/fig/Tm_Te.png used on input line 163.
@@ -1881,7 +1909,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
 [17]
-<texto/fig/hello_world_kivy.png, id=362, 305.09985pt x 222.5916pt>
+<texto/fig/hello_world_kivy.png, id=382, 305.09985pt x 222.5916pt>
 File: texto/fig/hello_world_kivy.png Graphic file (type png)
 <use texto/fig/hello_world_kivy.png>
 Package pdftex.def Info: texto/fig/hello_world_kivy.png used on input line 284.
@@ -1908,7 +1936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--375
 
  []
 
-<texto/fig/plot_ex.png, id=385, 458.9145pt x 346.896pt>
+<texto/fig/plot_ex.png, id=405, 458.9145pt x 346.896pt>
 File: texto/fig/plot_ex.png Graphic file (type png)
 <use texto/fig/plot_ex.png>
 Package pdftex.def Info: texto/fig/plot_ex.png used on input line 381.
@@ -1927,6 +1955,16 @@ Package babel Info: Redefining portuges shorthand "|
 [20 <./texto/fig/plot_ex.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 12.
 ) (./texto/Resultados.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
@@ -2063,16 +2101,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./texto_parcial_2018-05-16.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
-Package rerunfilecheck Info: File `texto_parcial_2018-05-16.out' has not change
-d.
-(rerunfilecheck)             Checksum: 76705170FD9A9338F222C52BDA7AF90F;6311.
+
+
+Package rerunfilecheck Warning: File `texto_parcial_2018-05-16.out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `texto_parcial_2018-05-16.out':
+(rerunfilecheck)             Before: 0CF1AF2BEC0D9F5624A265A391D4D768;7253
+(rerunfilecheck)             After:  DDBB6E95691DED9220F2763ECFFB5880;7528.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 22819 strings out of 492982
- 380892 string characters out of 6134897
- 463896 words of memory out of 5000000
- 25963 multiletter control sequences out of 15000+600000
+ 22828 strings out of 492982
+ 380997 string characters out of 6134897
+ 463899 words of memory out of 5000000
+ 25967 multiletter control sequences out of 15000+600000
  588235 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,12n,45p,10407b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2094,10 +2139,10 @@ texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on texto_parcial_2018-05-16.pdf (25 pages, 514372 bytes).
+Output written on texto_parcial_2018-05-16.pdf (25 pages, 515658 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 434 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 512 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 322 words of extra memory for PDF output out of 10000 (max. 10000000)
 
