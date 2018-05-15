@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  14 MAY 2018 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,30 +1078,30 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 (./texto_parcial_2018-05-16.aux)
 \openout1 = `texto_parcial_2018-05-16.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 135.
+(lastpage)             ! on input line 136.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1139,56 +1139,56 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 135.
-Package tocstyle Info: prepare \l@part for redefinition on input line 135.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 136.
+Package tocstyle Info: prepare \l@part for redefinition on input line 136.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 135.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 135.
-Package tocstyle Info: prepare \l@section for redefinition on input line 135.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 136.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 136.
+Package tocstyle Info: prepare \l@section for redefinition on input line 136.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 13
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 13
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 13
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 13
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 135.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 136.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 135.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 135.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 135.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 135
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 136.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 136
 .
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-135.
-Package tocstyle Info: prepare \l@table for redefinition on input line 135.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 135.
+136.
+Package tocstyle Info: prepare \l@table for redefinition on input line 136.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 136.
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 135.
+Package hyperref Info: Link coloring ON on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1198,9 +1198,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count296
 )
-LaTeX Info: Redefining \ref on input line 135.
-LaTeX Info: Redefining \pageref on input line 135.
-LaTeX Info: Redefining \nameref on input line 135.
+LaTeX Info: Redefining \ref on input line 136.
+LaTeX Info: Redefining \pageref on input line 136.
+LaTeX Info: Redefining \nameref on input line 136.
 
 (./texto_parcial_2018-05-16.out) (./texto_parcial_2018-05-16.out)
 \@outlinefile=\write3
@@ -1242,7 +1242,7 @@ LaTeX Info: Redefining \nameref on input line 135.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 135.
+LaTeX Info: Redefining \selectfont on input line 136.
  (./texto/capa.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
@@ -1252,12 +1252,12 @@ Package babel Info: Redefining portuges shorthand "|
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 212.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 212.
  [2]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 212.
  (./texto_parcial_2018-05-16.lof
 number indent by \l@... (lof, 1):  18.0pt
 text indent by \l@... (lof, 1):  27.60004pt
@@ -1299,14 +1299,14 @@ number noindent (lof, 1): 0.0pt
 \openout4 = `texto_parcial_2018-05-16.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
+(babel)             in language  on input line 213.
  [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
+(babel)             in language  on input line 213.
  (./texto_parcial_2018-05-16.lot
 number indent by \l@... (lot, 1):  18.0pt
 text indent by \l@... (lot, 1):  27.60004pt
@@ -1334,14 +1334,38 @@ number noindent (lot, 1): 0.0pt
 \openout5 = `texto_parcial_2018-05-16.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 235.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 235.
  [4
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 235.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+ [5
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 288.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 288.
+ [6
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 288.
  (./texto_parcial_2018-05-16.toc
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
@@ -1555,7 +1579,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
- [5
+ [7
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1603,14 +1627,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./texto/Objetivos.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 6
+\T1/ptm/m/n/10.95 8
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
-[6
+[8
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1655,7 +1679,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [7
+ [9
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1688,14 +1712,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./texto/MateriaisNew.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 8
+\T1/ptm/m/n/10.95 10
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-[8
+[10
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1704,12 +1728,6 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1717,25 +1735,25 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 32.
- [9
+ [11
 
 ]
-<texto/fig/resisti_telford.png, id=256, 169.97714pt x 278.14441pt>
+<texto/fig/resisti_telford.png, id=281, 169.97714pt x 278.14441pt>
 File: texto/fig/resisti_telford.png Graphic file (type png)
 <use texto/fig/resisti_telford.png>
 Package pdftex.def Info: texto/fig/resisti_telford.png used on input line 52.
 (pdftex.def)             Requested size: 113.81102pt x 186.2327pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 10
+\T1/ptm/m/n/10.95 12
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 59.
-[10 <./texto/fig/resisti_telford.png>]
-<texto/fig/resistividade_tabela.png, id=273, 322.3242pt x 183.3249pt>
+[12 <./texto/fig/resisti_telford.png>]
+<texto/fig/resistividade_tabela.png, id=297, 322.3242pt x 183.3249pt>
 File: texto/fig/resistividade_tabela.png Graphic file (type png)
 <use texto/fig/resistividade_tabela.png>
 Package pdftex.def Info: texto/fig/resistividade_tabela.png used on input line 
@@ -1750,7 +1768,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 92.
- [11 <./texto/fig/resistividade_tabela.png>]
+ [13 <./texto/fig/resistividade_tabela.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
@@ -1766,15 +1784,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 12
+\T1/ptm/m/n/10.95 14
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 159.
-[12]
-<texto/fig/Tm_Te.png, id=300, 244.0317pt x 158.994pt>
+[14]
+<texto/fig/Tm_Te.png, id=323, 244.0317pt x 158.994pt>
 File: texto/fig/Tm_Te.png Graphic file (type png)
 <use texto/fig/Tm_Te.png>
 Package pdftex.def Info: texto/fig/Tm_Te.png used on input line 163.
@@ -1783,7 +1801,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
- [13 <./texto/fig/Tm_Te.png>]
+ [15 <./texto/fig/Tm_Te.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
@@ -1833,14 +1851,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 14
+\T1/ptm/m/n/10.95 16
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 207.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 207.
-[14]
+[16]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 213.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1862,8 +1880,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 265.
-[15]
-<texto/fig/hello_world_kivy.png, id=340, 305.09985pt x 222.5916pt>
+[17]
+<texto/fig/hello_world_kivy.png, id=362, 305.09985pt x 222.5916pt>
 File: texto/fig/hello_world_kivy.png Graphic file (type png)
 <use texto/fig/hello_world_kivy.png>
 Package pdftex.def Info: texto/fig/hello_world_kivy.png used on input line 284.
@@ -1873,24 +1891,24 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 16
+\T1/ptm/m/n/10.95 18
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 297.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 297.
-[16 <./texto/fig/hello_world_kivy.png>]
+[18 <./texto/fig/hello_world_kivy.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
- [17]
+ [19]
 Underfull \hbox (badness 10000) in paragraph at lines 375--375
 
  []
 
-<texto/fig/plot_ex.png, id=362, 458.9145pt x 346.896pt>
+<texto/fig/plot_ex.png, id=385, 458.9145pt x 346.896pt>
 File: texto/fig/plot_ex.png Graphic file (type png)
 <use texto/fig/plot_ex.png>
 Package pdftex.def Info: texto/fig/plot_ex.png used on input line 381.
@@ -1899,14 +1917,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 388.
 ) (./texto/Algoritmos.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 18
+\T1/ptm/m/n/10.95 20
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-[18 <./texto/fig/plot_ex.png>]
+[20 <./texto/fig/plot_ex.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 ) (./texto/Resultados.tex
@@ -1914,7 +1932,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
- [19
+ [21
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -1957,14 +1975,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./texto/Cronograma.tex
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 20
+\T1/ptm/m/n/10.95 22
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
-[20
+[22
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2014,7 +2032,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
- [21
+ [23
 
 ]
 Package babel Info: Redefining portuges shorthand "|
@@ -2023,57 +2041,63 @@ Package babel Info: Redefining portuges shorthand "|
 AED: lastpage setting LastPage
 
 Underfull \hbox (badness 10000) has occurred while \output is active
-\T1/ptm/m/n/10.95 22
+\T1/ptm/m/n/10.95 24
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 403.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
-[22
+(babel)             in language  on input line 403.
+[24
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 403.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
- [23]
+(babel)             in language  on input line 403.
+ [25]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 380.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
+(babel)             in language  on input line 403.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./texto_parcial_2018-05-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `texto_parcial_2018-05-16.out' has not change
 d.
-(rerunfilecheck)             Checksum: 9D86EF3837C1C8C4280E5FF5AD5E15C2;5953.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
+(rerunfilecheck)             Checksum: 76705170FD9A9338F222C52BDA7AF90F;6311.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 22808 strings out of 492982
- 380765 string characters out of 6134897
- 463884 words of memory out of 5000000
- 25960 multiletter control sequences out of 15000+600000
+ 22819 strings out of 492982
+ 380892 string characters out of 6134897
+ 463896 words of memory out of 5000000
+ 25963 multiletter control sequences out of 15000+600000
  588235 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,12n,45p,10407b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/u
-crr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on texto_parcial_2018-05-16.pdf (23 pages, 512176 bytes).
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucr
+r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on texto_parcial_2018-05-16.pdf (25 pages, 514372 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 434 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
