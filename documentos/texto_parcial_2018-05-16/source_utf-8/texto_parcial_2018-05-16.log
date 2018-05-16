@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  16 MAY 2018 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.1)  16 MAY 2018 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2114,28 +2114,28 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 410.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 410.
 [26
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 410.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 410.
  [27]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 409.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 409.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
+(babel)             in language  on input line 410.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
  (./texto_parcial_2018-05-16.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 410.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
 Package rerunfilecheck Info: File `texto_parcial_2018-05-16.out' has not change
 d.
 (rerunfilecheck)             Checksum: DDBB6E95691DED9220F2763ECFFB5880;7528.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 409.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 410.
  ) 
 Here is how much of TeX's memory you used:
  22854 strings out of 492982

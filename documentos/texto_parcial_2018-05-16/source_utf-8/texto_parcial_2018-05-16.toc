@@ -31,4 +31,5 @@
 \contentsline {chapter}{7~Cronograma de Atividades \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{25}{CHAPTER.7}
 \contentsline {section}{\numberline {7.1}1\IeC {\textordmasculine } Semestre}{25}{section.7.1}
 \contentsline {section}{\numberline {7.2}2\IeC {\textordmasculine } Semestre}{25}{section.7.2}
+\babel@toc {brazilian}{}
 \contentsline {chapter}{\xspace {}Refer{\^e}ncias}{26}{schapter.6}
