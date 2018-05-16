@@ -9,12 +9,14 @@
     
     \section{Origem das Correntes Telúricas}
     
-    As flutuações no campo magnético terrestre geram campos elétricos na alta atmosfera que induzem correntes magnéticas, as ondas eletromagnéticas então penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias. 
+    As flutuações no campo magnético terrestre geram campos elétricos na alta atmosfera que induzem correntes magnéticas.
+    
+    As ondas eletromagnéticas penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias. \citar{fonte}
     
     Uma das características é a modulação da frequência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
-	relacionado a resistividade do meio.
-    
-    As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$, ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem como o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais. Para o estudo do \MT são feitas as seguintes suposições:
+	relacionado a resistividade do meio. As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$.
+	
+	Ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem como o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais. Para o estudo do \MT são feitas as seguintes suposições:
     
     \begin{enumerate}
 	    \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície da Terra.	    
@@ -26,19 +28,21 @@
 %RESISTIVIDADE ==============================================================================================================================================
     \section{Resistividade dos Materiais}
     
-    Para o \MT a propriedade investigação e contraste é a condutividade ($\sigma$) ou resistividade ($\rho$) sendo essa o inverso da condutividade.
-    A resistividade é uma propriedade particular de cada material, ou seja, a partir de uma resistividade podemos estimar a qual material ela pertence\footnote{Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.
+    Para o \MT a propriedade investigação e contraste é a condutividade ($\sigma$) ou resistividade ($\rho$) sendo essa o inverso da primeira.
+    A resistividade é uma propriedade particular de um determinado material, ou seja, a partir de uma resistividade podemos estimar a qual material ela pertence\footnote{Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.
     
     Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material esse gera uma resistência a passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\cite{eletromag8hayt}.
     
     \begin{equation}
-     \label{lei_de_ohm}
-     V = R i
+        \label{lei_de_ohm}
+        V = R i
     \end{equation}
     
-    Onde $V$ é a diferença de potencial (V), $i$ é a corrente (A) e $R$ é a resistência ($\Omega$), materiais que obedecem essa lei são chamados de materiais ômicos, a Terra é considerada um material ôhmico, porem para a investigação geofísica a resistência não é uma propriedade viável, visto  que depende muito da geometria do problema, assim foi proposto a resistividade, onde, um mesmo material terá a sua resistividade igual independente da geometria.
+    Onde $V$ é a diferença de potencial (Volts - V), $i$ é a corrente (Ampère - A) e $R$ é a resistência (Ohms - $\Omega$), materiais que obedecem essa lei são chamados de materiais ômicos.
     
-    A resistividade então é definida pela \textcolor{red}{ que o material oferece para um comprimento (equação \ref{resistividade})........ mudar isso e colocar igual do livro}, a figura \ref{fig_resistividade} mostra um circuito para se obter a resistividade, sendo A a área ($m^2$), R a resistência ($\Omega$), L o comprimento ($m$) e $\rho$ a resistividade dada em $\Omega m$. 
+    A Terra pode ser considerada como um material ôhmico. No entanto para a investigação geofísica a resistência não é uma propriedade viável, visto  que depende muito da geometria do problema, assim foi proposto a resistividade, onde, um mesmo material terá a sua resistividade igual independente da geometria.
+    
+    A figura \ref{fig_resistividade} mostra um circuito para se obter a resistividade, sendo A a área [$m^2$], R a resistência [$\Omega$], L o comprimento [$m$] e $\rho$ a resistividade dada em $\Omega m$. 
     
     \begin{equation}
         \label{resistividade}
@@ -55,7 +59,9 @@
     \end{figure}
     
     A figura \ref{tabela_resistividade} mostra a distribuição de resistividade para diversos materiais geológicos. 
-    Portanto podemos identificar a partir de um contexto geológico quais litologias pertence a cada resistividade encontrada, por exemplo, uma litologia que tenha resistividade em torno de  $100 \, \Omega m$ e outra com $3000 \, \Omega m $ pode ser caracterizada como um arenito e uma rocha ígnea respectivamente. 
+    Portanto podemos identificar a partir de um contexto geológico quais litologias pertence a cada resistividade encontrada.
+    
+    Por exemplo, uma litologia que tenha resistividade em torno de  $100 \, \Omega m$ e outra com $3000 \, \Omega m $ pode ser caracterizada como um arenito e uma rocha ígnea respectivamente. 
     
     \begin{figure}[h]
         \centering
@@ -91,20 +97,22 @@
                 \label{div_d}
                 \nabla \cdot \vec{\textrm{D}} = \rho_f
             \end{equation}
-
-            $\vec{\textrm{E}}$ $\rightarrow$ Campo Elétrico [$V/m$]
+            
+            \noindent Onde,
+            
+            {\footnotesize \noindent $\vec{\textrm{E}}$ $\rightarrow$ Campo Elétrico [$V/m$]
 	    
-            $\vec{\textrm{B}}$ $\rightarrow$ Campo Magnético [$T$]
+            \noindent $\vec{\textrm{B}}$ $\rightarrow$ Campo Magnético [$T$]
 	    
-            $\vec{\textrm{H}}$ $\rightarrow$ Campo Magnetizante [$A/m$]
+            \noindent $\vec{\textrm{H}}$ $\rightarrow$ Campo Magnetizante [$A/m$]
 	    
-            $\vec{\textrm{J}}$ $\rightarrow$ Densidade de Corrente [$A/m^2$]
+            \noindent $\vec{\textrm{J}}$ $\rightarrow$ Densidade de Corrente [$A/m^2$]
 	    
-            $\vec{\textrm{D}}$ $\rightarrow$ Campo de Deslocamento Elétrico [$C/m^2$]
+            \noindent $\vec{\textrm{D}}$ $\rightarrow$ Campo de Deslocamento Elétrico [$C/m^2$]
 	    
-            $\rho_f$ $\rightarrow$ Densidade de Carga [$C/m^3$]
+            \noindent $\rho_f$ $\rightarrow$ Densidade de Carga [$C/m^3$]
 	    
-            $t$ $\rightarrow$ Tempo [$s$]
+            \noindent $t$ $\rightarrow$ Tempo [$s$]}
 
             Obedecendo as relações de contorno para um meio isotrópico temos as seguintes
             relações (equações constitutivas):
@@ -121,17 +129,19 @@
                 \vec{\textrm{J}} = \sigma \vec{\textrm{E}}
             \end{equation}
 	    
-            $\mu$ $\rightarrow$ Permeabilidade Magnética [$H/m$]
+            {\footnotesize \noindent $\mu$ $\rightarrow$ Permeabilidade Magnética [$H/m$]
 	    
-            $\varepsilon$ $\rightarrow$ Permissividade Elétrica [$F/m$]
+            \noindent $\varepsilon$ $\rightarrow$ Permissividade Elétrica [$F/m$]
 	    
-            $\sigma$ $\rightarrow$ Condutividade Elétrica [$S/m$]
+            \noindent $\sigma$ $\rightarrow$ Condutividade Elétrica [$S/m$]}
 	    
             Cada escalar das equações anteriores são características que dependem do meio em que a onda se propaga.
 	    
             Para a crosta $\mu = 1,2566\textrm{x}10^{-6} H/m$ e $\varepsilon = 8,85
-            \textrm{x}10^{-12} F/m$ esses parâmetros funcionam como tensores em um meio
-            anisotrópico que variam em função do tempo, já considerando para os 
+            \textrm{x}10^{-12} F/m$; esses parâmetros funcionam como tensores em um meio
+            anisotrópico que variam em função do tempo.
+            
+            Considerando para os 
             trabalhos de investigação o meio supõe-se ser isotrópico, assim, 
             tornando estáticos os tensores.
 	
@@ -167,7 +177,7 @@
              \nabla \times \rot{A} = -\nabla^2 \ven{A} + \nabla(\nabla \cdot \ven{A})
             \end{equation}
             
-            Podemos reescrever a equação \ref{div_d} considerando que para meios homogêneos e isotrópicos não há troca de carga entre ele e a densidade de carga, $\rho_f$, é zero assim:
+            Podemos reescrever a equação \ref{div_d} considerando, que para meios homogêneos e isotrópicos não há troca de carga entre ele e a densidade de carga, $\rho_f$, é zero assim:
             
             \begin{equation}
              \nabla \cdot \ven{E} = 0
@@ -209,13 +219,17 @@
     
     \section{Modelo de Dimensões MT}
         \subsection{Terra 1D}
+        
+        Para o modelo de Terra 1D considera que a resistividade varia apenas em uma direção, ou seja, a resistividade varia com a profundidade.
+        
+        A matriz impedância para essa situação 
         \subsection{Terra 2D}
         
         O modelo de Terra 2D é caracterizado pelo contato vertical entre dois meios de diferentes resistividades. Se o contato é
 	    paralelo ao eixo $x$ então é definido a direção do \textit{strike} no eixo $x$, a direção deve ser paralela ao plano de contato,
 	    ou seja, onde a condutividade é constante.% (Figura \ref{fig_strike}).
 	    
-	    \begin{figure}[h]
+	    \begin{figure}[H]
 	        \caption{Modelo de Terra 2D para a resistividade variando na direção $y$}
 	        \begin{center}
 	        \includegraphics[width=12cm]{texto/fig/Tm_Te.png} 
@@ -264,16 +278,17 @@
         \subsection{Linguagem PYTHON}
             \label{lim_python}
             
-            Criada nos anos 80 por Guido Van Rossum no CWI (\en{Centrum Wishunde \& Informatica}) em Amsterdã, Holanda a linguagem Python foi idealizada no grupo de desenvolvimento da linguagem ABC do CWI, rapidamente ela começou a ter destaque. Na década de 90 foi criada a \en{Python Software Activity} que começou a ser a mantenedora por exemplo do python.org, nesse período apenas o criador tomava decisões e era desenvolvedor da linguagem, finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
+            Criada nos anos 80 por Guido Van Rossum no CWI (\en{Centrum Wishunde \& Informatica}) em Amsterdã, Holanda a linguagem Python foi idealizada no grupo de desenvolvimento da linguagem ABC do CWI, onde rapidamente começou a se destacar.
             
-            Python é uma linguagem de alto nível onde seu código deve ser organizado favorecendo a interpretação ao mesmo tempo simples.
+            Na década de 90 foi criada a \en{Python Software Activity} que começou a cuidar dos interesses da linguagem, nesse período apenas o criador Guido Van tomava as decisões e cuidava do desenvolvedor. Finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
+            
+            Python é uma linguagem de alto nível onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
             
             Exemplos de código Python:
 
             Mostrar conteúdo na Tela:
-            
-            Como comentado, o código tem fácil leitura, para imprimir um conteúdo na tela 
-            podemos simplesmente usar o comando \verb|print|, aproximando muito da linguagem falada.  
+            Como comentado, o código tem fácil leitura, para imprimir um conteúdo na tela, por exemplo, 
+            podemos simplesmente usar o comando \verb|print|, aproximando muito da língua inglesa.  
             \begin{quote}
              \codbox{\ini   \cc{Comentários}                  \\
                      \ini   \f{print} ('Hello World')          \\
@@ -285,7 +300,7 @@
             Operações Matemáticas:
             
             As variáveis no código não precisam ser declaradas para um 
-            tipo específico (Ex.: \textit{float, int, string}), deixando assim o código mais fluido. 
+            tipo específico (Ex.: \textit{float, int, string}), como em outras linguagens, o que deixa o código mais fluido. 
             \begin{quote}
             
              \codbox{\ini a = 2                               \\
@@ -316,9 +331,10 @@
             
         \subsection{Módulos e Pacotes}
             
-            A vasta quantidade de pacotes de terceiros para Python é o que faz a linguagem tão rica, os 
+            A vasta quantidade de pacotes de terceiros para Python é o que faz a linguagem tão rica.
+            De fato, os 
             pacotes facilitam a implementação do código, por exemplo, se for preciso calcular o espectro de 
-            frequência de um conjunto de dados, não será necessário implementar todo o algoritmo para efetuar o calculo, resolver as integrais e assim por diante, mas sim podemos utilizar o pacote \verb|scipy| e importarmos a função \verb|fftpack| que já foi implementada e executar em nosso código, esse processo economiza tempo em desenvolvimento.           
+            frequência de um conjunto de dados, não será necessário implementar todo o algoritmo para efetuar o cálculo, resolver as integrais e assim por diante, mas sim podemos utilizar o pacote \verb|scipy| e importarmos a função \verb|fftpack| que já foi implementada e executar em nosso código, esse processo economiza tempo em desenvolvimento.           
             
             \subsubsection{Kivy}
             
@@ -341,7 +357,7 @@
              }                                                                    \codnum{\ref{lim_kivy}.1}
             \end{quote}
             
-            \begin{figure}[h]
+            \begin{figure}[H]
                 \caption{Exemplo de janela com Kivy implementada somente com código Python}
                 \begin{center}
                     \includegraphics[width=7cm]{texto/fig/hello_world_kivy.png} 
@@ -450,5 +466,9 @@
             
         \subsection{Pacotes de Processamentos do grupo Geoma - INPE}
     
+        O grupo Geoma do INPE (Institudo Nacional de Pesquisas Espaciais) oferece um treinamento para processamento do \MT para alunos e colaboradores.
         
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos pelo \citar{Dr. Marcelo Banik de Pádua....}
+        
+        A natureza dos pacotes são \en{scripts} em \en{Shell} que utilizam o programa GMT para plotagem dos gráficos e o núcleo de processamento dos dados são as rotinas propostas por \citeauthor{egbert97} e \citar{JONES}, disponíveis \citar{no site ou pela fundação.... tem que ver o que é}
     
