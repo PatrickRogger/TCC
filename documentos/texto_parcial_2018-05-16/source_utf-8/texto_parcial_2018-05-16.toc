@@ -1,9 +1,9 @@
 \babel@toc {brazilian}{}
-\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\ OK}{8}{CHAPTER.1}
-\contentsline {chapter}{2~Objetivos \tmspace +\thinmuskip {.1667em} \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{9}{CHAPTER.2}
+\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o}{8}{CHAPTER.1}
+\contentsline {chapter}{2~Objetivos}{9}{CHAPTER.2}
 \contentsline {section}{\numberline {2.1}Objetivos Gerais}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{9}{section.2.2}
-\contentsline {chapter}{3~Justificativa \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{10}{CHAPTER.3}
+\contentsline {chapter}{3~Justificativa}{10}{CHAPTER.3}
 \contentsline {chapter}{4~Materiais e M\IeC {\'e}todos}{11}{CHAPTER.4}
 \contentsline {section}{\numberline {4.1}Origem das Correntes Tel\IeC {\'u}ricas}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Resistividade dos Materiais}{11}{section.4.2}
@@ -12,24 +12,18 @@
 \contentsline {subsection}{\numberline {4.4.1}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{16}{subsection.4.4.1}
 \contentsline {section}{\numberline {4.5}Modelo de Dimens\IeC {\~o}es MT}{16}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Terra 1D}{16}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Terra 2D}{16}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Terra 3D}{17}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Processamento das Series Temporais (mudar o titulo)}{17}{section.4.6}
-\contentsline {section}{\numberline {4.7}Ferramentas de Desenvolvimento do \textit {Software} \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{17}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Linguagem PYTHON}{17}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}M\IeC {\'o}dulos e Pacotes}{18}{subsection.4.7.2}
-\contentsline {subsubsection}{\numberline {4.7.2.1}Kivy}{19}{subsubsection.4.7.2.1}
-\contentsline {subsubsection}{\numberline {4.7.2.2}SciPy, MatPlotLib, NumPy}{20}{subsubsection.4.7.2.2}
-\contentsline {subsection}{\numberline {4.7.3}Pacotes de Processamentos do grupo Geoma - INPE}{22}{subsection.4.7.3}
-\contentsline {chapter}{5~Algoritmos e Processamentos}{23}{CHAPTER.5}
-\contentsline {section}{\numberline {5.1}Arquitetura do Programa e Depend\IeC {\^e}ncias}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Convers\IeC {\~a}o dos Dados}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}Processamento Estat\IeC {\'\i }sticos}{23}{section.5.3}
-\contentsline {section}{\numberline {5.4}Plotagem das Bandas de Frequ\IeC {\^e}ncias}{23}{section.5.4}
-\contentsline {section}{\numberline {5.5}Cria\IeC {\c c}\IeC {\~a}o do Arquivo de Sa\IeC {\'\i }da Padr\IeC {\~a}o}{23}{section.5.5}
-\contentsline {chapter}{6~Resultados Esperados \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{24}{CHAPTER.6}
-\contentsline {chapter}{7~Cronograma de Atividades \tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em}\tmspace +\thinmuskip {.1667em} OK}{25}{CHAPTER.7}
-\contentsline {section}{\numberline {7.1}1\IeC {\textordmasculine } Semestre}{25}{section.7.1}
-\contentsline {section}{\numberline {7.2}2\IeC {\textordmasculine } Semestre}{25}{section.7.2}
+\contentsline {subsection}{\numberline {4.5.2}Terra 2D}{18}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Terra 3D}{19}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Ferramentas de Desenvolvimento do \textit {Software}}{19}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Linguagem PYTHON}{19}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}M\IeC {\'o}dulos e Pacotes}{20}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Kivy}{21}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}SciPy, MatPlotLib, NumPy}{21}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Pacotes de Processamentos do grupo Geoma - INPE}{23}{subsection.4.6.3}
+\contentsline {chapter}{5~Algoritmos e Processamentos}{25}{CHAPTER.5}
+\contentsline {chapter}{6~Resultados Esperados}{26}{CHAPTER.6}
+\contentsline {chapter}{7~Cronograma de Atividades}{27}{CHAPTER.7}
+\contentsline {section}{\numberline {7.1}1\IeC {\textordmasculine } Semestre}{27}{section.7.1}
+\contentsline {section}{\numberline {7.2}2\IeC {\textordmasculine } Semestre}{27}{section.7.2}
 \babel@toc {brazilian}{}
-\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{26}{schapter.6}
+\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{28}{schapter.6}

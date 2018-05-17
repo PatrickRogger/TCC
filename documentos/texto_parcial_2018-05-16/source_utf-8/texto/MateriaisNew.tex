@@ -11,7 +11,7 @@
     
     As flutuações no campo magnético terrestre geram campos elétricos na alta atmosfera que induzem correntes magnéticas.
     
-    As ondas eletromagnéticas penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias. \citar{fonte}
+    As ondas eletromagnéticas penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias \cite{tikhonov50} e \cite{cagniard53}.
     
     Uma das características é a modulação da frequência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
 	relacionado a resistividade do meio. As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$.
@@ -202,7 +202,20 @@
              \nabla^2 \ven{H} - \mu \sigma \parct{H} - \mu \varepsilon \parctto{H} = 0
             \end{equation}
 
-            \citar{continua ......}
+            Seguindo a dedução das equações como demostrado no trabalho de \citeauthor{didana2010} em \citeyearpar{didana2010}, podemos verificar que:
+            
+            \begin{equation}
+            \label{Ex_AB}
+             \textrm{E}_x = A e^{-\imath k z} + \textrm{B} e^{\imath k z}
+            \end{equation}
+            
+            \begin{equation}
+            \label{Hy_AB}
+             \textrm{H}_y = \dfrac{k}{\omega \mu_0} (A e^{-\imath k z} + \textrm{B} e^{\imath k z})
+            \end{equation}
+
+            Onde $k^2 = \imath \omega \mu_0 \sigma$.
+
  
     
     
@@ -211,18 +224,101 @@
 %===================================================================================================================
     \section{Resposta do Método Magnetotelúrico}
         \subsection{Impedância Eletromagnética}
-        
-        
-        
-    
+        Outro conceito importante é o tensor Impedância, ele é descrito como uma
+	    relação entre os campos elétricos e magnéticos, análogo a Lei de Ohm \cite{eletromag8hayt}
+	    que apresenta resistência a passagem de corrente.
+	    
+	    \begin{equation}
+		\left (\begin{array}{c}
+		 \textrm{E}_x\\
+		 \textrm{E}_y
+		\end{array}\right)
+		=
+		\left (\begin{array}{cc}
+		 \textrm{Z}_{xx} & \textrm{Z}_{xy}\\
+		 \textrm{Z}_{yx} & \textrm{Z}_{yy}
+		\end{array}\right) \left (\begin{array}{c}
+		 \textrm{H}_x\\
+		 \textrm{H}_y
+		\end{array}\right)
+	    \end{equation}
+	    
+	    \begin{equation}
+	    \label{Ex_Z}
+	     \textrm{E}_x (\omega)=\textrm{Z}_{xx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{xy}(\omega) \textrm{H}_{y}(\omega)
+	    \end{equation}
+	    \begin{equation}
+	    \label{Ey_Z}
+	     \textrm{E}_y (\omega)=\textrm{Z}_{yx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{yy}(\omega) \textrm{H}_{y}(\omega)
+	    \end{equation}  
     
     
     \section{Modelo de Dimensões MT}
+    
+        
         \subsection{Terra 1D}
         
-        Para o modelo de Terra 1D considera que a resistividade varia apenas em uma direção, ou seja, a resistividade varia com a profundidade.
+        Para o modelo de Terra 1D considera-se que a resistividade varia apenas em uma direção, ou seja, a resistividade varia com a profundidade.        
+        A matriz impedância para esse modelo tem a sua diagonal principal igual a zero.
+        \begin{equation}
+         \textrm{Z}_{1 D} = \left ( \begin{array}{cc}
+                                     0 & \textrm{Z}_{xy} \\
+                                    -\textrm{Z}_{yx} & 0
+                                     \end{array}  \right)
+        \end{equation}
         
-        A matriz impedância para essa situação 
+        Isso significa que a resistividade nas duas direções não iguais porem a fase entre elas são opostas.
+        
+        Substituindo [\ref{Ex_AB}] e [\ref{Hy_AB}] na equação \ref{Ex_Z}, obtemos:
+        
+        \begin{equation}
+        \label{Zxy}
+         \textrm{Z}_{xy}(\omega) = \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} = \dfrac{\omega \mu_0}{k}
+        \end{equation}
+        
+        Elevando o módulo ao quadrado da equação \ref{Zxy}, temos:
+        
+        \begin{equation}
+         \left | \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \right | ^2 = \left | \dfrac{\omega \mu_0}{k} \right | ^2 = \dfrac{\omega \mu_0}{\sigma}
+        \end{equation}
+        
+        Portanto:
+        
+        \begin{equation}
+         \dfrac{1}{\sigma} = \dfrac{1}{\omega \mu_0} \left | \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \right | ^2 = \rho
+        \end{equation}
+        
+        A onda sofre influência de todas as camadas que percorre isso significa que a resistividade é classificada como aparente onde ela representa a resistividade de todo o pacote, assim:
+        
+        \begin{equation}
+         \rho_a = \dfrac{1}{\omega \mu_0} \left | \textrm{Z} \right | ^2
+        \end{equation}
+        
+        A fase do tensor impedância é definido como sendo o arco tangente da parte imaginária sobre a parte real na matriz complexa do tensor.
+        
+        \begin{equation}
+         \phi = \textrm{arctg} \left ( \dfrac{\textrm{Im \, Z}}{\textrm{Re \, Z}} \right )
+        \end{equation}
+        
+        A equação \ref{rela_prof_periodo} mostra a relação entre a profundidade
+	($\delta_f[m])$, frequência ($f[Hz]$) e a resistividade aparente ($\rho_a[\Omega.m]$), essa 
+	profundidade é chamada de \textit{skin-depth} \cite{eletromag8hayt}, e decai com o inverso de $e$.
+	\begin{align*}
+	 \delta_\omega & = \dfrac{1}{\textrm{Re}(k)} \\
+	  \delta_\omega & = \dfrac{1}{\textrm{Re} \left (\sqrt{\imath \omega \mu_0 \sigma} \right)}  \\
+	  \delta_\omega & = \sqrt{ \left (\dfrac{2}{\omega \mu_0 \sigma} \right )}
+	\end{align*}
+
+	
+	\begin{equation}
+	 \label{rela_prof_periodo}
+	 \delta_\omega = \sqrt{\frac{2}{\omega \mu \sigma}} \longrightarrow \delta_f \approx 500  \sqrt{\frac{\rho_a}{f}}
+	\end{equation}
+	
+	Essa relação mostra que para uma mesma profundidade variando à resistividade
+	aparente a frequência é alterada.
+        
+   
         \subsection{Terra 2D}
         
         O modelo de Terra 2D é caracterizado pelo contato vertical entre dois meios de diferentes resistividades. Se o contato é
@@ -248,30 +344,28 @@
 	    Assim cada polarização pode ser escrita como:
 	    \begin{equation}
 	     \textrm{TE} = \left \{ \begin{array}{l}
-	            \dfrac{\partial \textrm{E}_x}{\partial y} = \dfrac{\partial \textrm{B}_z}{\partial t} = -i\omega \textrm{B}_z \\
-	           \dfrac{\partial \textrm{E}_x}{\partial z} = \dfrac{\partial \textrm{B}_y}{\partial t} = i\omega \textrm{B}_y \\
+	            \dfrac{\partial \textrm{E}_x}{\partial y} = \dfrac{\partial \textrm{B}_z}{\partial t} = -i\omega \textrm{B}_z \\[10pt]
+	           \dfrac{\partial \textrm{E}_x}{\partial z} = \dfrac{\partial \textrm{B}_y}{\partial t} = i\omega \textrm{B}_y \\[10pt]
 	           \dfrac{\partial \textrm{B}_z}{\partial y} - \dfrac{\partial \textrm{B}_y}{\partial z} = \mu \sigma \textrm{E}_x 
 	           \end{array} \right.
 	    \end{equation}
 	    \begin{equation}
 	     \textrm{TM} = \left \{ \begin{array}{l}
-	            \dfrac{\partial \textrm{B}_x}{\partial y} = \mu \sigma \textrm{E}_z \\
-	           -\dfrac{\partial \textrm{B}_x}{\partial z} = \mu \sigma \textrm{E}_y \\
+	            \dfrac{\partial \textrm{B}_x}{\partial y} = \mu \sigma \textrm{E}_z \\[10pt]
+	           -\dfrac{\partial \textrm{B}_x}{\partial z} = \mu \sigma \textrm{E}_y \\[10pt]
 	           \dfrac{\partial \textrm{E}_z}{\partial y} - \dfrac{\partial \textrm{E}_y}{\partial z} = i \omega \textrm{B}_x 
 	           \end{array} \right.
 	    \end{equation}
         
         
         \subsection{Terra 3D}
-    
-    \section{Processamento das Series Temporais (mudar o titulo)}
-    
-    
-    
-    
+        Na maioria das condições geológicas o modelo se comporta como 3D, isso implica que a 
+	    condutividade varia ao longo das três direções ($\sigma = \sigma_{x,y,z}$).
+	    
+	    A matriz do tensor impedância é então calculada com todos os termos, sem nenhum 0.    
     
 %========================================================================================================================================================    
-    \section{Ferramentas de Desenvolvimento do \textit{Software} \,\,\,\,\,\,\, OK}
+    \section{Ferramentas de Desenvolvimento do \textit{Software}}
     
         O desenvolvimento do \textit{software} foi baseado na filosofia de \textit{Software Livre} \cite{soft_free} onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos e a simplicidade da implementação do código.  
         
@@ -282,7 +376,7 @@
             
             Na década de 90 foi criada a \en{Python Software Activity} que começou a cuidar dos interesses da linguagem, nesse período apenas o criador Guido Van tomava as decisões e cuidava do desenvolvedor. Finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
             
-            Python é uma linguagem de alto nível onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
+            Python é uma linguagem de alto nível\footnote{Esta relacionada a abstração da linguagem, alto nível significa mais longe da linguagem de código de máquina} onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
             
             Exemplos de código Python:
 
@@ -340,7 +434,7 @@
             
             
             \label{lim_kivy}
-            Kivy é um \textit{framework} criado em 2010 pela KIVY ORGANIZATION \cite{kivy} e \textit{Open Source} para o desenvolvimento de interfaces gráficas, a escolha dessa interface foi a alta compatibilidade entre sistemas operacionais e todo o processamento para desenhar a tela é feita no chip gráfico liberando então mais processamento pela CPU.
+            Kivy é um \textit{framework} criado em 2010 pela KIVY ORGANIZATION \cite{kivy} e \textit{Open Source} para o desenvolvimento de interfaces gráficas, a escolha dessa interface foi a alta compatibilidade entre sistemas operacionais e todo o processamento nativo para desenhar a tela é feita no chip gráfico liberando então mais processamento pela CPU.
             
             Kivy também é uma linguagem de programação que permite a criação da interface de forma mais fácil, similar ao QT \cite{qt} ela usa uma linguagem de marcação e indentada onde as propriedades dos \textit{widgets} (Objetos interativos com o usuário) são adicionadas colocando-as a baixo e com espaçamento de 4 espaços do \textit{widget}. 
                         
@@ -468,7 +562,7 @@
     
         O grupo Geoma do INPE (Institudo Nacional de Pesquisas Espaciais) oferece um treinamento para processamento do \MT para alunos e colaboradores.
         
-        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos pelo \citar{Dr. Marcelo Banik de Pádua....}
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos pelo Dr. Marcelo Banik de Pádua obtidos diretamente pelo autor.
         
-        A natureza dos pacotes são \en{scripts} em \en{Shell} que utilizam o programa GMT para plotagem dos gráficos e o núcleo de processamento dos dados são as rotinas propostas por \citeauthor{egbert97} e \citar{JONES}, disponíveis \citar{no site ou pela fundação.... tem que ver o que é}
+        A natureza dos pacotes são \en{scripts} em \en{Shell} que utilizam o programa GMT \cite{gmt} para plotagem dos gráficos e o núcleo de processamento dos dados são as rotinas propostas por \citeauthor{egbert97} e nos trabalhos de Alan Jones, disponíveis no site \citeauthor{mtnet}
     
