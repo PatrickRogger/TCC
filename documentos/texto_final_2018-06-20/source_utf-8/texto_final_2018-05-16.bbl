@@ -1,0 +1,131 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.1 }
+
+\bibitem[Barbosa et al. 2018]{alane}
+\abntrefinfo{Barbosa et al.}{BARBOSA et al.}{2018}
+{BARBOSA, A.~N. et al. Estudo magnetotel{\'u}rico na regi{\~a}o centro-sul da
+  prov{\'i}ncia borborema.
+\textbf{Anais do Sal{\~a}o Internacional de Ensino, Pesquisa e Extens{\~a}o},
+  v.~9, n.~3, 2018.}
+
+\bibitem[Cagniard 1953]{cagniard53}
+\abntrefinfo{Cagniard}{CAGNIARD}{1953}
+{CAGNIARD, L. Basic theory of the magneto-telluric method of geophysical
+  prospecting.
+v. 18(3), p. 605--635, 1953.}
+
+\bibitem[Didana 2010]{didana2010}
+\abntrefinfo{Didana}{DIDANA}{2010}
+{DIDANA, Y.~L.
+\textbf{Multidimensional Inversion of MT data from Krýsuvík High Temperature
+  Geothermal Field, SW Iceland, and study of how 1D and 2D Inversion can
+  Reproduce a given 2D/3D Resistivity Structures Using Synthetic MT Data}.
+136~p. Dissertation (Masters Thesis) --- Faculty of Earth Sciences University
+  of Iceland, Reykjavik, Iceland, Abril 2010.}
+
+\bibitem[Drake 2018]{python36}
+\abntrefinfo{Drake}{DRAKE}{2018}
+{DRAKE, F.~L. \textbf{Python 3.6.5 Documendation}. 2018.
+[Online; acessado em Março, 2018].
+Available from Internet: \url{https://docs.python.org/3/}.}
+
+\bibitem[Egbert 1997]{egbert97}
+\abntrefinfo{Egbert}{EGBERT}{1997}
+{EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
+\textbf{Geophysical Journal International}, v.~130, p. 475--496, 1997.}
+
+\bibitem[{FREE SOFTWARE FOUNDATION} 2018]{soft_free}
+\abntrefinfo{{FREE SOFTWARE FOUNDATION}}{{FREE SOFTWARE FOUNDATION}}{2018}
+{{FREE SOFTWARE FOUNDATION}. \textbf{Licença de Software Livre}. 2018.
+[Online; acessado em Maio, 2018].
+Available from Internet: \url{https://www.gnu.org/philosophy/free-sw.html}.}
+
+\bibitem[Hayt and Buck 2013]{eletromag8hayt}
+\abntrefinfo{Hayt and Buck}{HAYT; BUCK}{2013}
+{HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
+  Brazil: AMGH Editora Ltda., 2013.}
+
+\bibitem[Jones 1999]{tsformat}
+\abntrefinfo{Jones}{JONES}{1999}
+{JONES, A.~G. \textbf{TS Format v1.3}. 1999.
+[Online; acessado em Junho, 2018].
+Available from Internet: \url{http://mtnet.info/docs/ts\_format.txt}.}
+
+\bibitem[Jones et al. 2001]{scipy}
+\abntrefinfo{Jones et al.}{JONES et al.}{2001}
+{JONES, E. et al. \textbf{{SciPy}: Open source scientific tools for {Python}}.
+  2001.
+[Online; acessado em Maio, 2018].
+Available from Internet: \url{http://www.scipy.org/}.}
+
+\bibitem[{KIVY ORGANIZATION} 2018]{kivy110}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
+{{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}. 2018.
+[Online; acessado em Março, 2018].
+Available from Internet: \url{https://kivy.org/docs/api-kivy.html}.}
+
+\bibitem[{KIVY ORGANIZATION} 2018]{kivy}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018b}
+{{KIVY ORGANIZATION}. \textbf{Kivy Organization}. 2018.
+[Online; acessado em Março, 2018].
+Available from Internet: \url{https://kivy.org/}.}
+
+\bibitem[{MTnet} 2018]{mtnet}
+\abntrefinfo{{MTnet}}{{MTnet}}{2018}
+{{MTnet}. \textbf{MTnet}. 2018.
+[Online; acessado em Maio, 2018].
+Available from Internet: \url{http://mtnet.info/main/source.html}.}
+
+\bibitem[{NATIONAL SCIENCE FOUNDATION} 2018]{gmt}
+\abntrefinfo{{NATIONAL SCIENCE FOUNDATION}}{{NATIONAL SCIENCE
+  FOUNDATION}}{2018}
+{{NATIONAL SCIENCE FOUNDATION}. \textbf{The Generic Mapping Tools}. 2018.
+[Online; acessado em Maio, 2018].
+Available from Internet: \url{http://gmt.soest.hawaii.edu/}.}
+
+\bibitem[Nyquist 1928]{nyquist28}
+\abntrefinfo{Nyquist}{NYQUIST}{1928}
+{NYQUIST, H. Certain topics in telegraph transmission theory.
+\textbf{Transactions of the American Institute of Electrical Engineers}, IEEE,
+  v.~47, n.~2, p. 617--644, 1928.}
+
+\bibitem[Palacky 1987]{eletromag_met}
+\abntrefinfo{Palacky}{PALACKY}{1987}
+{PALACKY, G.~J. \textbf{Electromagnetic Methods in applied Geophysics}. 1. ed.
+  [S.l.]: Society of Exploration Geophysicists, 1987. 53-130~p.}
+
+\bibitem[Parkinson 1983]{parkinson93}
+\abntrefinfo{Parkinson}{PARKINSON}{1983}
+{PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
+  Academic Press, 1983.}
+
+\bibitem[{QT COMPANY} 2018]{qt}
+\abntrefinfo{{QT COMPANY}}{{QT COMPANY}}{2018}
+{{QT COMPANY}. \textbf{Site Oficial Qt}. 2018.
+[Online; acessado em Maio, 2018].
+Available from Internet: \url{https://www.qt.io/}.}
+
+\bibitem[Santos-Matos 2012]{tese_andrea}
+\abntrefinfo{Santos-Matos}{SANTOS-MATOS}{2012}
+{SANTOS-MATOS, A. C.~L.
+\textbf{Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE
+  da Província Borborema}.
+159~p. Thesis (PhD) --- Instituto de Geociências, Universidade de Brasília,
+  Brasília, Brasil, Março 2012.}
+
+\bibitem[Telford 1990]{telford}
+\abntrefinfo{Telford}{TELFORD}{1990}
+{TELFORD, W.~M. \textbf{Applied Geophysics}. New York, USA: British Library
+  Cataloguind, 1990.}
+
+\bibitem[Tikhonov 1950]{tikhonov50}
+\abntrefinfo{Tikhonov}{TIKHONOV}{1950}
+{TIKHONOV, A.~N. On determining electrical characteristics of the deep layers
+  of the earth's crust.
+\textbf{Doklady Akademii Nauk SSSR}, v.~73, p. 295--297, 1950.}
+
+\end{thebibliography}

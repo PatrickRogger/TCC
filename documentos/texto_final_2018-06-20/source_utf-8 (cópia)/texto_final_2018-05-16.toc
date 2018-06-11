@@ -1,0 +1,30 @@
+\babel@toc {brazilian}{}
+\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o}{9}{CHAPTER.1}
+\contentsline {chapter}{2~Objetivos}{10}{CHAPTER.2}
+\contentsline {section}{\numberline {2.1}Objetivos Gerais}{10}{section.2.1}
+\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{10}{section.2.2}
+\contentsline {chapter}{3~Justificativa}{11}{CHAPTER.3}
+\contentsline {chapter}{4~Fundamentos do M\IeC {\'e}todo magnetotel\IeC {\'u}rico }{12}{CHAPTER.4}
+\contentsline {section}{\numberline {4.1}Origem das Correntes Tel\IeC {\'u}ricas}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Resistividade dos Materiais}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Fundamentos Te\IeC {\'o}ricos dos M\IeC {\'e}todos Eletromagn\IeC {\'e}ticos}{14}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{17}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{17}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Modelo de Dimens\IeC {\~o}es MT}{17}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Terra 1D}{17}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Terra 2D}{19}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Terra 3D}{20}{subsection.4.5.3}
+\contentsline {chapter}{5~\textit {Softwares} Utilizados em Dados magnetotel\IeC {\'u}rico }{21}{CHAPTER.5}
+\contentsline {subsection}{\numberline {5.0.1}Pacotes de Processamentos do grupo Geoma - INPE}{21}{subsection.5.0.1}
+\contentsline {chapter}{6~Proposta de \textit {Software} Livre Integrador}{22}{CHAPTER.6}
+\contentsline {subsection}{\numberline {6.0.1}Linguagem PYTHON}{22}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}M\IeC {\'o}dulos e Pacotes}{23}{subsection.6.0.2}
+\contentsline {subsubsection}{\numberline {6.0.2.1}Kivy}{23}{subsubsection.6.0.2.1}
+\contentsline {subsubsection}{\numberline {6.0.2.2}SciPy, MatPlotLib, NumPy}{24}{subsubsection.6.0.2.2}
+\contentsline {chapter}{7~Algoritmos e Processamentos}{27}{CHAPTER.7}
+\contentsline {chapter}{8~Resultados Esperados}{28}{CHAPTER.8}
+\contentsline {chapter}{9~Cronograma de Atividades}{29}{CHAPTER.9}
+\contentsline {section}{\numberline {9.1}1\IeC {\textordmasculine } Semestre}{29}{section.9.1}
+\contentsline {section}{\numberline {9.2}2\IeC {\textordmasculine } Semestre}{29}{section.9.2}
+\babel@toc {brazilian}{}
+\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{30}{schapter.6}

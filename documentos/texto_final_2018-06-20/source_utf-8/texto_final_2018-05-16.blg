@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: texto_final_2018-05-16.aux
+White space in argument---line 148 of file texto_final_2018-05-16.aux
+ : \citation{Pensando
+ :                    no que colocar mais aqui....}
+I'm skipping whatever remains of this command
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: biblio.bib.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 22 entries,
+            6711 wiz_defined-function locations,
+            1312 strings with 11895 characters,
+and the built_in function-call counts, 19293 in all, are:
+= -- 1959
+> -- 376
+< -- 285
++ -- 445
+- -- 119
+* -- 1173
+:= -- 2599
+add.period$ -- 83
+call.type$ -- 22
+change.case$ -- 160
+chr.to.int$ -- 41
+cite$ -- 20
+duplicate$ -- 1472
+empty$ -- 1216
+format.name$ -- 560
+if$ -- 4204
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 370
+newline$ -- 115
+num.names$ -- 100
+pop$ -- 450
+preamble$ -- 1
+purify$ -- 71
+quote$ -- 0
+skip$ -- 1617
+stack$ -- 1
+substring$ -- 784
+swap$ -- 568
+text.length$ -- 20
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 5
+warning$ -- 0
+while$ -- 138
+width$ -- 0
+write$ -- 317
+(There was 1 error message)
