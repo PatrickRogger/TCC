@@ -16,7 +16,7 @@
     Uma das características é a modulação da frequência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
 	relacionado a resistividade elétrica do meio. As frequências das ondas são baixas variando de 1 $mHz$ à 10 $kHz$.
 	
-	Ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem como o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais. Para o estudo do \MT são feitas as seguintes suposições:
+	Ondas com frequências menores que 1 $Hz$ tem origem nos ventos solares que interagem com o campo magnético terrestre, já ondas com frequências maiores de 1 $Hz$ são provocadas por tempestades equatoriais. Para o estudo do \MT são feitas as seguintes suposições:
     
     \begin{enumerate}
 	    \item Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície da Terra.	    
@@ -31,7 +31,7 @@
     Para o \MT a propriedade de investigação e contraste é a condutividade elétrica ($\sigma$) ou resistividade elétrica ($\rho$) sendo essa o inverso da primeira.
     A resistividade elétrica é uma propriedade particular de um determinado material, ou seja, a partir de uma resistividade elétrica podemos estimar a qual material ela pertence\footnote{Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.
     
-    Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material esse gera uma resistência a passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\cite{eletromag8hayt}.
+    Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material, esse gera uma resistência à passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\cite{eletromag8hayt}.
     
     \begin{equation}
         \label{lei_de_ohm}
@@ -40,7 +40,7 @@
     
     Onde $V$ é a diferença de potencial (Volts - V), $i$ é a corrente (Ampère - A) e $R$ é a resistência (Ohms - $\Omega$), materiais que obedecem essa lei são chamados de materiais ômicos.
     
-    A Terra pode ser considerada como um material ôhmico. No entanto para a investigação geofísica a resistência não é uma propriedade viável, visto  que depende muito da geometria do problema, assim foi proposto a resistividade elétrica, onde, um mesmo material terá a sua resistividade elétrica igual independente da geometria.
+    A Terra pode ser considerada como um material ôhmico. No entanto para a investigação geofísica a resistência não é uma propriedade viável, visto  que depende muito da geometria do problema, assim foi proposto a resistividade elétrica, onde, um mesmo material terá a sua resistividade elétrica igual, independente da geometria.
     
     A figura \ref{fig_resistividade} mostra um circuito para se obter a resistividade elétrica de um material, sendo A a área [$m^2$], R a resistência [$\Omega$], L o comprimento [$m$] e $\rho$ a resistividade elétrica dada em $\Omega m$. 
     
@@ -59,7 +59,7 @@
     \end{figure}
     
     A figura \ref{tabela_resistividade} mostra a distribuição de resistividade elétrica para diversos materiais geológicos. 
-    Portanto podemos identificar a partir de um contexto geológico quais litologias pertence a cada resistividade elétrica encontrada.
+    Portanto podemos identificar a partir de um contexto geológico quais litologias pertencem a cada resistividade elétrica encontrada.
     
     Por exemplo, uma litologia que tenha resistividade elétrica em torno de  $100 \, \Omega m$ e outra com $3000 \, \Omega m $ pode ser caracterizada como um arenito e uma rocha ígnea respectivamente. 
     
@@ -134,23 +134,13 @@
             
             \begin{table}[H]
              \begin{tabular*}{1cm}{p{0.05cm}p{0.1cm}p{10cm}}
-               {\footnotesize $\mu$}  & {\footnotesize $\rightarrow$} & {\footnotesize Permeabilidade Magnética [$H/m$] }\\
+               {\footnotesize $\mu$}          & {\footnotesize $\rightarrow$} & {\footnotesize Permeabilidade Magnética [$H/m$] }\\
                {\footnotesize $\varepsilon$}  & {\footnotesize $\rightarrow$} & {\footnotesize Permissividade Elétrica [$F/m$] }\\
-               {\footnotesize $\sigma$}  & {\footnotesize $\rightarrow$} & {\footnotesize Condutividade Elétrica [$S/m$]} \\
+               {\footnotesize $\sigma$}       & {\footnotesize $\rightarrow$} & {\footnotesize Condutividade Elétrica [$S/m$]} \\
              \end{tabular*}
 
             \end{table}}
 	    
-	    
-	    
-	    
-	    
-	    
-            %{\footnotesize \noindent $\mu$ $\rightarrow$ Permeabilidade Magnética [$H/m$]
-	    
-            %\noindent $\varepsilon$ $\rightarrow$ Permissividade Elétrica [$F/m$]
-	    
-            %\noindent $\sigma$ $\rightarrow$ Condutividade Elétrica [$S/m$]}
 	    
             Cada escalar das equações anteriores são características que dependem do meio em que a onda se propaga.
 	    
@@ -380,21 +370,23 @@
         Na maioria das condições geológicas o modelo se comporta como 3D, isso implica que a 
 	    condutividade elétrica varia ao longo das três direções ($\sigma = \sigma_{x,y,z}$).
 	    
-	    A matriz do tensor impedância é então calculada com todos os termos, sem nenhum 0.    
+	    A matriz do tensor impedância é então calculada com todos os termos.    
 
 %=======================================================================================================================================================	    
     \chapter{\en{Softwares} Utilizados em Dados MT}
         \label{cap-proc_mt}
             
-        Neste capítulo será discutido e mostrado como vinha sendo processados os dados \MT desde a etapa de coleta dos dados até a produção de pseudo-secções.  
+        Neste capítulo será discutido e mostrado como vinham sendo processados os dados \MT desde a etapa de coleta dos dados, até a produção de pseudo-secções. 
+        
+        Os programas utilizados são disponibilizados pelo \en{site} \citeauthor{mtnet}, \citeyearpar{mtnet}. O \en{site} MTnet é uma comunidade que une diversos programas para processamento de dados MT, para fins acadêmicos  
         
     \section{Aquisição de Dados MT}
-    
-        Como o MT utiliza as faixas de frequências das ondas e as mesmas variam entre 1 $mHz$ e 10 $kHz$\footnote{Para aquisição Banda Larga}, é importante a escolha da taxa de aquisição dos dados, por exemplo, a frequência de 1 $mHz$ tem o período equivalente a 1000 $s$ ou seja leva cerca de 17 minutos para que seja registrado um comprimento de onda em conta partida para 10 $kHz$ leva apenas 1 milissegundo.
+        \label{sec_aquisicao_dados}
+        Como o MT utiliza as faixas de frequências das ondas e as mesmas variam entre 1 $mHz$ e 10 $kHz$\footnote{Para aquisição Banda Larga}, é importante a escolha da taxa de aquisição dos dados, por exemplo, a frequência de 1 $mHz$ tem o período equivalente a 1000 $s$, ou seja, leva cerca de 17 minutos para que seja registrado um comprimento de onda em contra partida para 10 $kHz$ leva apenas 1 milissegundo.
         
-        Para que seja contornado a problemática da aquisição são realizadas varias tomadas de aquisição chamadas de bandas e cada uma é configurada com uma taxa de aquisição diferente, a figura \citar{\ref{fig_taxa_aquisicao}} ilustra como cada frequência pode ser suficientemente representada em função da frequência de Nyquist \cite{nyquist28} e a tabela \ref{tab_taxa_aquisicao} mostra as taxas de aquisições frequentemente usadas. 
+        Para que seja contornado a problemática da aquisição são realizadas varias tomadas de aquisições chamadas de bandas e cada uma é configurada com uma taxa de aquisição diferente, a figura \citar{\ref{fig_taxa_aquisicao}} ilustra como cada frequência pode ser suficientemente representada em função da frequência de Nyquist \cite{nyquist28} e a tabela \ref{tab_taxa_aquisicao} mostra as taxas de aquisições frequentemente usadas. 
         
-        \begin{center} [FIGURA TAXA DE AQUISICAO]\end{center}
+        \begin{center} [FIGURA TAXA DE AQUISICAO figtaxaaquisicao]\end{center}
                                                   
         \begin{table}[H]
                 \centering
@@ -403,17 +395,17 @@
                 \resizebox{0.5\textwidth}{!}{%
                 \begin{tabular}{@{}ccc@{}}
                     \toprule
-                    \textbf{Equipamento}  & \textbf{Banda}   & \textbf{\citar{Taxa de Aquisição}}   \\
+                    \textbf{Equipamento}  & \textbf{Banda}   & \textbf{Taxa de Aquisição [$H_z$]}   \\
                     \midrule
-                                  &   A       &   1     \\
-                                  &   B       &   1     \\
-                          ADU06   &   F       &   1     \\
-                                  &   C       &   2     \\
-                                  &   D       &   2     \\
-                                  &   65536H  &   2     \\
-                          ADU07   &   4096H   &   3     \\
-                                  &   128H    &   3     \\
-                                  &   4H      &   3     \\
+                                  &   A       &   65536     \\
+                                  &   B       &   4096      \\
+                          ADU06   &   F       &   Livre     \\
+                                  &   C       &   64        \\
+                                  &   D       &   2         \\
+                                  &   65536H  &   65536     \\
+                          ADU07   &   4096H   &   4096      \\
+                                  &   128H    &   128       \\
+                                  &   4H      &   4         \\
                     \bottomrule
                 \end{tabular}%
                 }
@@ -428,43 +420,79 @@
             \centering
 	        \caption{Series Temporais das cinco componentes contidas no arquivo TS}
 	        \begin{center}
-	        \includegraphics[width=16cm]{texto/fig/campos_divididos.png} 
+	        \includegraphics[width=13cm]{texto/fig/campos_divididos.png} 
 	        \end{center}
 		\fonte{O Autor, 2018}
 	    \end{figure}
         
         \subsection{Estrutura do Aquivo TS}
             \label{subsec-arquivoTS}    
-            Os arquivos .TS são arquivos binários e são estruturados em 3 blocos; comentários, informações e dados.
+            Os arquivos .TS (Time Series) são arquivos binários e estruturados em 3 blocos; comentários, informações e dados.
             \begin{itemize}
-             \item O Bloco de comentários é marcado pelo símbolo \en{\#} e todas essas linhas será ignorada pelo programa.
-             \item   O Bloco de informações contém todas as propriedades da aquisição, como: coordenadas, elevação, declinação magnética, nome da estações, dentre outras.
+             \item O Bloco de comentários é marcado pelo símbolo \en{\#} e todas essas linhas serão ignoradas pelo programa.
+             \item   O Bloco de informações contém todas as propriedades da aquisição, como: coordenadas, elevação, declinação magnética, nome da estação, dentre outras.
              \item O bloco de dados contém 5 colunas e cada valor sendo igual ao registrado pelos sensores, a sequência das colunas são: $\textrm{H}_x,\, \textrm{H}_y, \, \textrm{H}_z, \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$ \cite{tsformat}.
             \end{itemize}
-
-            \citar{Pensando no que colocar mais aqui....}
 
     
     \section{Fluxo de Processamento de Dados MT}
        
+        Como discutido na subsecção \ref{subsec-Impedancia} a matriz impedância é obtida através das componentes $\textrm{H}_x,\, \textrm{H}_y,  \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$ porém as mesmas devem estar no domínio da frequência angular, também discutido na secção \ref{sec_aquisicao_dados} as séries temporais são obtidas com taxas de aquisições diferentes, isso implica que o tempo de leitura também será diferente, esse fato propicia que sejam feitas várias leituras com mesma taxa no mesmo ponto, essas leituras são chamas de rodadas. 
+        
+        O chamado pré-processamento compreende essas etapas, convertendo os dados de binários para ASCII, para que possam ser manipulados facilmente, após, é feito a transformada de Fourier \citar{citar} para mudar o domínio dos dados de tempo para frequência angular, tratamento com filtros e escolhas das melhores rodadas, ou seja, as séries que tiverem a maior coerência e menor ruído.
+        
+        A figura \ref{fig_fluxo_classico} ilustra todas as etapas de pré-processamento e as subsecções a seguir mostra quais os programas utilizados atualmente e como eles atuam sobre os dados.  
     
-    
+    \begin{center} [FIGURA FLUXO CLASSICO --figfluxoclassico--]\end{center}
     
     \subsection{Conversão de Dados Binários}
+    \label{subsec-conver-dados}
+    Os arquivos TS são Binários não formatados, cada linha do arquivo é composta por 80 carácteres. 
+    
+    O comando \verb|ats2asc| é usado para a conversão dos dados, ele efetua a leitura do arquivo, a conversão para ASCII e a separação do arquivo em diferentes diretórios.
+    
+    A separação do arquivo é dada pela seguinte forma:
+    
+    \begin{enumerate}
+     \item Diretório DATA/ 
+     \subitem Arquivos asc $\rightarrow$ Contém as leituras dos sensores.
+     \subitem Arquivos clk $\rightarrow$ Contém a hora que foi iniciada a rodada e também a hora de uma estação para referência remota.
+     \item Diretório SP/
+     \subitem Aquivos sp $\rightarrow$ Contém os parâmetros da aquisição.
+    \end{enumerate}
+
+    %Sintaxe do comando \verb|ats2asc|:
+    %\begin{quote}
+    % \codbox{ ats2asc \f{-{}-site-name} name\_site \cl{PATH\_site} 
+    %        } \codnum{\ref{subsec-conver-dados}.1}
+    %\end{quote}
     
     \subsection{Dnff}
     
+            O programa Dnff faz parte do pacote EMTF \citar{citar  o cpacote EMTF} desenvolvido por Gary D. Egbert, o pacote EMTF compõem rotinas de mudança de domínio dos dados e processamentos estatísticos para remoção de ruídos.
+            
+            O Dnff é responsável por fazer a transformada discreta de Fourier sobre os dados e aplica os coeficientes de Fourier \citar{a documentação} que ajustam os problemas de reverberação.
+
     \subsection{TranMT}
     
-    \subsection{Formatos de Arquivos Para Dados MT}
+            O programa TranMT também faz parte do pacote EMTF e é responsável por fazer os tratamentos estáticos sobre o dado, removendo \en{outliers} (Pontos muito distantes da curva de tendência) e aumentar a relação sinal/ruído.
+            
+            A saída do programa TranMT são arquivos ZSS (formato padrão adotado por Egbert) contendo os valores de impedância e fase para cada janela\footnote{As janelas podem ser configuradas pelo usuário ajustando a melhor representação dos dados em função da taxa de amostragem} de dados,   
+            
+            
+    \subsection{ToJones}
     
+            O programa Tojones(\citar{tojones}) extrai as informações dos arquivos ZSS de diferentes janelas e mescla os mesmo em um único arquivo J-format, onde, esses arquivos são usados para plotar as pseudo-secções e outras rotinas como o Rho+ (\citar{citar rhoplus} e programas de inversão.
+            
     \section{Pacotes de Processamentos do grupo Geoma - INPE}
     
         O grupo Geoma do INPE (Institudo Nacional de Pesquisas Espaciais) oferece um treinamento para processamento do \MT para alunos e colaboradores.
         
-        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos pelo Dr. Marcelo Banik de Pádua obtidos diretamente pelo autor.
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos pelo Dr. Marcelo Banik de Pádua obtidos sobre comunicação privada pelo autor.
         
-        A natureza dos pacotes são \en{scripts} em \en{Shell} que utilizam o programa GMT \cite{gmt} para plotagem dos gráficos e o núcleo de processamento dos dados são as rotinas propostas por \citeauthor{egbert97} e nos trabalhos de Alan Jones, disponíveis no site \citeauthor{mtnet}
+        Os \en{script} auxiliam na utilização dos programas, pois, a saída de um programa é a entrada de outro. Um exemplo é o programa processamentoZ que prepara os dados para as rotinas Dnff e TranMT, ele ajusta os parâmetros necessários para esses programas e trabalha com os dados de forma padrão auxiliando o usuário na utilização dos pacotes. 
+        
+        A natureza dos pacotes são \en{scripts} escritos em \en{Shell}, \en{Python}, \en{C++} que utilizam o programa GMT \cite{gmt} para plotagem dos gráficos.
     
     
 
@@ -473,21 +501,22 @@
 %========================================================================================================================================================    
     \chapter{Proposta de \en{Software} Livre Integrador}
     
-        O desenvolvimento do \textit{software} foi baseado na filosofia de \textit{Software Livre} \cite{soft_free} onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos e a simplicidade da implementação do código.  
+        O desenvolvimento do \textit{software}, chamado de PampaMT, foi baseado na filosofia de \textit{Software Livre} \cite{soft_free} onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos e a simplicidade da implementação do código.  
         
         \section{Linguagem PYTHON}
             \label{lim_python}
             
             Criada nos anos 80 por Guido Van Rossum no CWI (\en{Centrum Wishunde \& Informatica}) em Amsterdã, Holanda a linguagem Python foi idealizada no grupo de desenvolvimento da linguagem ABC do CWI, onde rapidamente começou a se destacar.
             
-            Na década de 90 foi criada a \en{Python Software Activity} que começou a cuidar dos interesses da linguagem, nesse período apenas o criador Guido Van tomava as decisões e cuidava do desenvolvedor. Finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
+            Na década de 90 foi criada a \en{Python Software Activity} que começou a cuidar dos interesses da linguagem, nesse período apenas o criador Guido Van tomava as decisões e cuidava do desenvolvimento. Finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
             
             Python é uma linguagem de alto nível\footnote{Esta relacionada a abstração da linguagem, alto nível significa mais longe da linguagem de código de máquina} onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
             
             Exemplos de código Python:
 
             Mostrar conteúdo na Tela:
-            Como comentado, o código tem fácil leitura, para imprimir um conteúdo na tela, por exemplo, 
+            
+            Como comentado, o código tem fácil leitura. Para imprimir um conteúdo na tela, por exemplo, 
             podemos simplesmente usar o comando \verb|print|, aproximando muito da língua inglesa.  
             \begin{quote}
              \codbox{\ini   \cc{Comentários}                  \\
@@ -657,27 +686,39 @@
             \begin{figure}[H]
                 \caption{Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib}
                 \begin{center}
-                    \includegraphics[width=10cm]{texto/fig/plot_ex.png} 
+                    \includegraphics[width=9cm]{texto/fig/plot_ex.png} 
                 \end{center}
                 \fonte{O Autor, 2018}
                 \label{fig_ex_inter} 
             \end{figure}
     
-\section{Arquitetura do Programa e Abordagem dos fluxos de Processamento}
-\label{cap-algoritmos}
-    
-    O \MT segue algumas etapas de processamento, dentre elas: a conversão dos dados de binário para ASCII, processamentos estatísticos para remoção de ruídos, separação de melhores bandas adquiridas em diferentes faixas de frequência e a geração de um arquivo padrão já com diversas informações processadas. Essas etapas são chamadas de pré-processamento e são elas que consomem a maior parte do tempo de computação ao todo.
-    
-    O programa então desenvolvido nesse trabalho de conclusão de curso foca nessas etapas de processamento. %As secções a seguir mostram como cada epata será abordada dentro do fluxo de processamento do programa.
-    
-    \subsection{Arquitetura do Programa e Dependências}
-    \subsection{Conversão dos Dados}
-    \subsection{Processamento Estatísticos}
-    \subsection{Plotagem das Bandas de Frequências}
-    \subsection{Criação do Arquivo de Saída Padrão}
+    \section{Arquitetura do Programa e Abordagem dos fluxos de Processamento}
+        \label{cap-algoritmos}
     
     
+    O PampaMT trabalhara com os dados seguindo os fluxos de processamentos comentado no capitulo \ref{cap-proc_mt}, atualmente o maior consumo de tempo de processamento são destinados à essas etapas. O programa desenvolvido focará em melhorar o tempo de processamento, visualização dos dados e aprendizagem.
+    
+    O fluxograma \ref{fig_influ_mainpy} ilustra as etapas de inicialização pensados para o programa e como será a execução do pacote EMTF sobre os dados.
+    
+    Como já discutido as etapas de processamento serão feitas através de interface gráfica e o programa processamentoZ será reescrito para aumentar a compatibilidade no fluxo.
+    
+    O fluxograma \ref{fig_influ_pampamtpy} mostra o processo principal do programa, onde o usuário poderá escolher quais janelas plotar com o intervalo de períodos escolhidos e no final das escolhas executar o Tojones finalizando o processo, compreendendo então todas as etapas propostas no trabalho.
     
     
-    
-    
+    \begin{figure}[H]
+                \caption{Fluxograma de Inicialização do PampaMT}
+                \begin{center}
+                    \includegraphics[width=13cm]{texto/fig/mainpy.png} 
+                \end{center}
+                \fonte{O Autor, 2018}
+                \label{fig_influ_mainpy} 
+            \end{figure}
+            
+    \begin{figure}[H]
+                \caption{Fluxograma Tela Principal PampaMT}
+                \begin{center}
+                    \includegraphics[width=15cm]{texto/fig/PampaMTpy.png} 
+                \end{center}
+                \fonte{O Autor, 2018}
+                \label{fig_influ_pampamtpy} 
+            \end{figure}

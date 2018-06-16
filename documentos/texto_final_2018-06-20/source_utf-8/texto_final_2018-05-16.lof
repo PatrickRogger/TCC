@@ -9,15 +9,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Arranjo para medir a resistividade el\IeC {\'e}trica ($\rho $) de um material\relax }}{13}{figure.4.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Resistividade El\IeC {\'e}trica dos Materiais Geol\IeC {\'o}gicos\relax }}{14}{figure.4.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Modelo de Terra 2D para a resistividade el\IeC {\'e}trica variando na dire\IeC {\c c}\IeC {\~a}o $y$\relax }}{19}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Arranjo para medir a resistividade el\IeC {\'e}trica ($\rho $) de um material\relax }}{16}{figure.4.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Resistividade El\IeC {\'e}trica dos Materiais Geol\IeC {\'o}gicos\relax }}{17}{figure.4.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Modelo de Terra 2D para a resistividade el\IeC {\'e}trica variando na dire\IeC {\c c}\IeC {\~a}o $y$\relax }}{22}{figure.4.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Series Temporais das cinco componentes contidas no arquivo TS\relax }}{22}{figure.5.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4}{\ignorespaces Series Temporais das cinco componentes contidas no arquivo TS\relax }}{25}{figure.5.4}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo de janela com Kivy implementada somente com c\IeC {\'o}digo Python\relax }}{29}{figure.6.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib\relax }}{31}{figure.6.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo de janela com Kivy implementada somente com c\IeC {\'o}digo Python\relax }}{28}{figure.6.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib\relax }}{30}{figure.6.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Fluxograma de Inicializa\IeC {\c c}\IeC {\~a}o do PampaMT\relax }}{31}{figure.6.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Fluxograma Tela Principal PampaMT\relax }}{32}{figure.6.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {brazilian}{}
