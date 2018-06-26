@@ -1,10 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: texto_final_2018-05-16.aux
-White space in argument---line 148 of file texto_final_2018-05-16.aux
- : \citation{Pensando
- :                    no que colocar mais aqui....}
-I'm skipping whatever remains of this command
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -26,45 +22,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 22 entries,
+You've used 25 entries,
             6711 wiz_defined-function locations,
-            1312 strings with 11895 characters,
-and the built_in function-call counts, 19293 in all, are:
-= -- 1959
-> -- 376
-< -- 285
-+ -- 445
-- -- 119
-* -- 1173
-:= -- 2599
-add.period$ -- 83
-call.type$ -- 22
-change.case$ -- 160
-chr.to.int$ -- 41
-cite$ -- 20
-duplicate$ -- 1472
-empty$ -- 1216
-format.name$ -- 560
-if$ -- 4204
-int.to.chr$ -- 2
+            1321 strings with 12140 characters,
+and the built_in function-call counts, 23462 in all, are:
+= -- 2462
+> -- 454
+< -- 394
++ -- 589
+- -- 144
+* -- 1416
+:= -- 3118
+add.period$ -- 98
+call.type$ -- 25
+change.case$ -- 188
+chr.to.int$ -- 40
+cite$ -- 23
+duplicate$ -- 1889
+empty$ -- 1392
+format.name$ -- 677
+if$ -- 5039
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 370
-newline$ -- 115
-num.names$ -- 100
-pop$ -- 450
+missing$ -- 425
+newline$ -- 132
+num.names$ -- 115
+pop$ -- 535
 preamble$ -- 1
-purify$ -- 71
+purify$ -- 82
 quote$ -- 0
-skip$ -- 1617
+skip$ -- 2053
 stack$ -- 1
-substring$ -- 784
-swap$ -- 568
+substring$ -- 922
+swap$ -- 706
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 5
 warning$ -- 0
-while$ -- 138
+while$ -- 156
 width$ -- 0
-write$ -- 317
-(There was 1 error message)
+write$ -- 358

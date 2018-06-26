@@ -31,7 +31,7 @@
     Para o \MT a propriedade de investigação e contraste é a condutividade elétrica ($\sigma$) ou resistividade elétrica ($\rho$) sendo essa o inverso da primeira.
     A resistividade elétrica é uma propriedade particular de um determinado material, ou seja, a partir de uma resistividade elétrica podemos estimar a qual material ela pertence\footnote{Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.
     
-    Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material, esse gera uma resistência à passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm})\cite{eletromag8hayt}.
+    Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material, esse gera uma resistência à passagem de corrente, essa relação é chamada de lei de Ohm (equação \ref{lei_de_ohm}) \cite{eletromag8hayt}.
     
     \begin{equation}
         \label{lei_de_ohm}
@@ -142,13 +142,9 @@
             \end{table}}
 	    
 	    
-            Cada escalar das equações anteriores são características que dependem do meio em que a onda se propaga.
-	    
-            Para a crosta $\mu = 1,2566\textrm{x}10^{-6} H/m$ e $\varepsilon = 8,85
+            Cada escalar das equações anteriores são características que dependem do meio em que a onda se propaga. Para a crosta $\mu = 1,2566\textrm{x}10^{-6} H/m$ e $\varepsilon = 8,85
             \textrm{x}10^{-12} F/m$; esses parâmetros funcionam como tensores em um meio
-            anisotrópico que variam em função do tempo.
-            
-            Considerando para os 
+            anisotrópico que variam em função do tempo. Considerando para os 
             trabalhos de investigação o meio supõe-se ser isotrópico, assim, 
             tornando estáticos os tensores.
 	
@@ -223,7 +219,7 @@
 
             Onde $k^2 = \imath \omega \mu_0 \sigma$.
 
- 
+            Os coeficientes $A$ e $B$ são parâmetros e ajustem e dependem da condição de contorno dos dados. 
     
     
     
@@ -235,6 +231,11 @@
         Outro conceito importante é o tensor Impedância, ele é descrito como uma
 	    relação entre os campos elétricos e magnéticos, análogo a Lei de Ohm \cite{eletromag8hayt}
 	    que apresenta resistência a passagem de corrente.
+	    
+	    O tensor impedância é descrito em função da frequencia angular, através da transformada de Fourier \cite{fourier}.
+	    
+	    A transformada de Fourier gera um número complexo, portando o tensor recebe um valor real e outro imaginário.    
+	    
 	    
 	    \begin{equation}
 		\left (\begin{array}{c}
@@ -266,7 +267,7 @@
         
         \subsection{Terra 1D}
         
-        Para o modelo de Terra 1D considera-se que a resistividade elétrica varia apenas em uma direção, ou seja, a resistividade elétrica varia com a profundidade.        
+        Para o modelo de Terra 1D considera-se que a resistividade elétrica varia apenas em uma direção, em outras palavras, a resistividade elétrica varia com a profundidade.        
         A matriz impedância para esse modelo tem a sua diagonal principal igual a zero.
         \begin{equation}
          \textrm{Z}_{1 D} = \left ( \begin{array}{cc}
@@ -275,7 +276,7 @@
                                      \end{array}  \right)
         \end{equation}
         
-        Isso significa que a resistividade elétrica nas duas direções não iguais porem a fase entre elas são opostas.
+        Isso significa que a resistividade elétrica nas duas direções são iguais porem a fase entre elas são opostas.
         
         Substituindo [\ref{Ex_AB}] e [\ref{Hy_AB}] na equação \ref{Ex_Z}, obtemos:
         
@@ -296,7 +297,7 @@
          \dfrac{1}{\sigma} = \dfrac{1}{\omega \mu_0} \left | \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \right | ^2 = \rho
         \end{equation}
         
-        A onda sofre influência de todas as camadas que percorre isso significa que a resistividade elétrica é classificada como aparente onde ela representa a resistividade elétrica de todo o pacote, assim:
+        A onda sofre influência de todas as camadas que percorre, sendo assim, a resistividade elétrica é classificada como aparente nos pontos em que ela representa o valor de todo o pacote, assim:
         
         \begin{equation}
          \rho_a = \dfrac{1}{\omega \mu_0} \left | \textrm{Z} \right | ^2
@@ -310,7 +311,8 @@
         
         A equação \ref{rela_prof_periodo} mostra a relação entre a profundidade
 	($\delta_f[m])$, frequência ($f[Hz]$) e a resistividade aparente ($\rho_a[\Omega.m]$), essa 
-	profundidade é chamada de \textit{skin-depth} \cite{eletromag8hayt}, e decai com o inverso de $e$.
+	profundidade é chamada de \textit{skin-depth} \cite{eletromag8hayt}.
+	
 	\begin{align*}
 	 \delta_\omega & = \dfrac{1}{\textrm{Re}(k)} \\
 	  \delta_\omega & = \dfrac{1}{\textrm{Re} \left (\sqrt{\imath \omega \mu_0 \sigma} \right)}  \\
@@ -336,7 +338,7 @@
 	    \begin{figure}[H]
 	        \caption{Modelo de Terra 2D para a resistividade elétrica variando na direção $y$}
 	        \begin{center}
-	        \includegraphics[width=12cm]{texto/fig/Tm_Te.png} 
+	        \includegraphics[width=10cm]{texto/fig/Tm_Te.png} 
 	        \end{center}
 		\fonte{Adaptado \cite{didana2010}}
 		\label{fig_strike}
@@ -370,7 +372,14 @@
         Na maioria das condições geológicas o modelo se comporta como 3D, isso implica que a 
 	    condutividade elétrica varia ao longo das três direções ($\sigma = \sigma_{x,y,z}$).
 	    
-	    A matriz do tensor impedância é então calculada com todos os termos.    
+	    A matriz do tensor impedância é então calculada com todos os termos. 
+	    
+	     \begin{equation}
+	     \textrm{Z}_{3D} = \left (\begin{array}{cc}
+	                               \textrm{Z}_{xx} & \textrm{Z}_{xy} \\
+	                               \textrm{Z}_{yx} & \textrm{Z}_{yy}
+	                              \end{array} \right)
+	    \end{equation}
 
 %=======================================================================================================================================================	    
     \chapter{\en{Softwares} Utilizados em Dados MT}
@@ -382,12 +391,12 @@
         
     \section{Aquisição de Dados MT}
         \label{sec_aquisicao_dados}
-        Como o MT utiliza as faixas de frequências das ondas e as mesmas variam entre 1 $mHz$ e 10 $kHz$\footnote{Para aquisição Banda Larga}, é importante a escolha da taxa de aquisição dos dados, por exemplo, a frequência de 1 $mHz$ tem o período equivalente a 1000 $s$, ou seja, leva cerca de 17 minutos para que seja registrado um comprimento de onda em contra partida para 10 $kHz$ leva apenas 1 milissegundo.
+        O MT utiliza as frequências das ondas, isolando-as para obter um valor de resistividade, essas variam entre 1 $mHz$ e 10 $kHz$\footnote{Para aquisição Banda Larga} dentro do espectro eletromagnético.
         
-        Para que seja contornado a problemática da aquisição são realizadas varias tomadas de aquisições chamadas de bandas e cada uma é configurada com uma taxa de aquisição diferente, a figura \citar{\ref{fig_taxa_aquisicao}} ilustra como cada frequência pode ser suficientemente representada em função da frequência de Nyquist \cite{nyquist28} e a tabela \ref{tab_taxa_aquisicao} mostra as taxas de aquisições frequentemente usadas. 
+        A escolha da taxa de aquisição dos dados é um fator importante, pois há um grande intervalo de períodos. Por exemplo, a frequência de 1 $mHz$ tem o período equivalente a 1000 $s$, ou seja, leva cerca de 17 minutos para que seja registrado um comprimento de onda em contra partida para 10 $kHz$ leva apenas 1 milissegundo.
         
-        \begin{center} [FIGURA TAXA DE AQUISICAO figtaxaaquisicao]\end{center}
-                                                  
+        Para que seja contornada a problemática da aquisição são realizadas varias tomadas chamadas de bandas e cada uma é configurada com uma taxa de aquisição diferente, a tabela \ref{tab_taxa_aquisicao} mostra as taxas de aquisições frequentemente usadas. 
+        
         \begin{table}[H]
                 \centering
                 \caption{Taxas de Aquisições frequentemente usadas para equipamentos ADU06 e ADU07.}
@@ -414,7 +423,7 @@
         
         Como discutido na subsecção \ref{subsec-Impedancia} para se obter a matriz impedância é necessário efetuar a aquisição das componentes dos campos elétricos e magnéticos separadamente.
         
-        Essas componentes são registradas em $[mV/Km]$ e em $[nT]$ para os campos elétricos e magnéticos respectivamente e são chamadas de séries temporais, as cinco séries temporais ($\textrm{E}_x,\, \textrm{E}_y, \, \textrm{H}_x, \, \textrm{H}_y \, \, \textrm{e} \, \, \textrm{H}_z$) são armazenadas em um arquivo binário com extensão padrão TS.
+        Essas componentes são registradas em $[mV/Km]$ e em $[nT]$ para os campos elétricos e magnéticos respectivamente e são chamadas de séries temporais. As cinco séries temporais ($\textrm{E}_x,\, \textrm{E}_y, \, \textrm{H}_x, \, \textrm{H}_y \, \, \textrm{e} \, \, \textrm{H}_z$) são armazenadas em um arquivo binário com extensão padrão TS.
         
         \begin{figure}[H]
             \centering
@@ -427,29 +436,36 @@
         
         \subsection{Estrutura do Aquivo TS}
             \label{subsec-arquivoTS}    
-            Os arquivos .TS (Time Series) são arquivos binários e estruturados em 3 blocos; comentários, informações e dados.
+            Os arquivos .TS (\en{Time Series}) são arquivos binários e estruturados em 3 blocos; comentários, informações e dados  \cite{tsformat}.
             \begin{itemize}
              \item O Bloco de comentários é marcado pelo símbolo \en{\#} e todas essas linhas serão ignoradas pelo programa.
              \item   O Bloco de informações contém todas as propriedades da aquisição, como: coordenadas, elevação, declinação magnética, nome da estação, dentre outras.
-             \item O bloco de dados contém 5 colunas e cada valor sendo igual ao registrado pelos sensores, a sequência das colunas são: $\textrm{H}_x,\, \textrm{H}_y, \, \textrm{H}_z, \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$ \cite{tsformat}.
+             \item O bloco de dados contém 5 colunas e cada valor sendo igual ao registrado pelos sensores, a sequência das colunas são: $\textrm{H}_x,\, \textrm{H}_y, \, \textrm{H}_z, \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$.
             \end{itemize}
 
     
     \section{Fluxo de Processamento de Dados MT}
        
-        Como discutido na subsecção \ref{subsec-Impedancia} a matriz impedância é obtida através das componentes $\textrm{H}_x,\, \textrm{H}_y,  \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$ porém as mesmas devem estar no domínio da frequência angular, também discutido na secção \ref{sec_aquisicao_dados} as séries temporais são obtidas com taxas de aquisições diferentes, isso implica que o tempo de leitura também será diferente, esse fato propicia que sejam feitas várias leituras com mesma taxa no mesmo ponto, essas leituras são chamas de rodadas. 
+        Como visto anteriormente (subsecção \ref{subsec-Impedancia}) a matriz impedância é obtida através das componentes $\textrm{H}_x,\, \textrm{H}_y,  \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$. Porém as mesmas devem estar no domínio da frequência angular, discutido na secção \ref{sec_aquisicao_dados}. As séries temporais são obtidas com taxas de aquisições diferentes, isso implica que o tempo de leitura também será diferente, esse fato propicia que sejam feitas várias leituras com mesma taxa no mesmo ponto, essas leituras são chamas de rodadas. 
         
-        O chamado pré-processamento compreende essas etapas, convertendo os dados de binários para ASCII, para que possam ser manipulados facilmente, após, é feito a transformada de Fourier \citar{citar} para mudar o domínio dos dados de tempo para frequência angular, tratamento com filtros e escolhas das melhores rodadas, ou seja, as séries que tiverem a maior coerência e menor ruído.
+        O pré-processamento compreende essas etapas: converter os dados de binários para ASCII, para que possam ser manipulados facilmente; utilizar a transformada de Fourier para mudar o domínio dos dados de tempo para frequência angular; filtrar e escolher as melhores rodadas, ou seja, as séries que tiverem a maior coerência e menor ruído.
         
         A figura \ref{fig_fluxo_classico} ilustra todas as etapas de pré-processamento e as subsecções a seguir mostra quais os programas utilizados atualmente e como eles atuam sobre os dados.  
     
-    \begin{center} [FIGURA FLUXO CLASSICO --figfluxoclassico--]\end{center}
-    
+        
+    \begin{figure}[H]
+                \caption{Fluxograma de Processamento Clássico}
+                \begin{center}
+                    \includegraphics[width=16cm]{texto/fig/fluxograma.png} \end{center}
+                \fonte{O Autor, 2018}
+                \label{fig_fluxo_classico} 
+            \end{figure}
+ 
     \subsection{Conversão de Dados Binários}
     \label{subsec-conver-dados}
-    Os arquivos TS são Binários não formatados, cada linha do arquivo é composta por 80 carácteres. 
+    Os arquivos TS são Binários não formatados, sendo que cada linha do arquivo é composta por 80 carácteres. 
     
-    O comando \verb|ats2asc| é usado para a conversão dos dados, ele efetua a leitura do arquivo, a conversão para ASCII e a separação do arquivo em diferentes diretórios.
+    O comando \verb|ats2asc| \cite{emtf} é usado para a conversão dos dados, ele efetua a leitura do arquivo, a conversão para ASCII e a separação do arquivo em diferentes diretórios.
     
     A separação do arquivo é dada pela seguinte forma:
     
@@ -469,20 +485,20 @@
     
     \subsection{Dnff}
     
-            O programa Dnff faz parte do pacote EMTF \citar{citar  o cpacote EMTF} desenvolvido por Gary D. Egbert, o pacote EMTF compõem rotinas de mudança de domínio dos dados e processamentos estatísticos para remoção de ruídos.
+            O programa Dnff faz parte do pacote EMTF \cite{emtf} desenvolvido por Gary D. Egbert, o pacote EMTF compõem rotinas de mudança de domínio dos dados e processamentos estatísticos para remoção de ruídos.
             
-            O Dnff é responsável por fazer a transformada discreta de Fourier sobre os dados e aplica os coeficientes de Fourier \citar{a documentação} que ajustam os problemas de reverberação.
+            O Dnff é responsável por fazer a transformada discreta de Fourier sobre os dados e aplica os coeficientes de Fourier que ajustam os problemas de reverberação.
 
     \subsection{TranMT}
     
-            O programa TranMT também faz parte do pacote EMTF e é responsável por fazer os tratamentos estáticos sobre o dado, removendo \en{outliers} (Pontos muito distantes da curva de tendência) e aumentar a relação sinal/ruído.
+            O programa TranMT também faz parte do pacote EMTF e é responsável por fazer os tratamentos estáticos sobre o dado, removendo \en{outliers} (pontos muito distantes da curva de tendência) e aumentar a relação sinal/ruído.
             
-            A saída do programa TranMT são arquivos ZSS (formato padrão adotado por Egbert) contendo os valores de impedância e fase para cada janela\footnote{As janelas podem ser configuradas pelo usuário ajustando a melhor representação dos dados em função da taxa de amostragem} de dados,   
+            A saída do programa TranMT são arquivos ZSS (formato padrão adotado por Egbert) contendo os valores de impedância e fase para cada janela. As janelas são como taxas de aquisições dentro dos arquivos obtidos em campo, essas podem ser configuradas pelo usuário ajustando a melhor representação dos dados em função da taxa de amostragem de aquisição em campo.   
             
             
     \subsection{ToJones}
     
-            O programa Tojones(\citar{tojones}) extrai as informações dos arquivos ZSS de diferentes janelas e mescla os mesmo em um único arquivo J-format, onde, esses arquivos são usados para plotar as pseudo-secções e outras rotinas como o Rho+ (\citar{citar rhoplus} e programas de inversão.
+            O programa Tojones \cite{tojones} extrai as informações dos arquivos ZSS de diferentes janelas e mescla os mesmo em um único arquivo J-format, onde, esses arquivos são usados para plotar as pseudo-secções e outras rotinas como o Rho+ \cite{rhoplus} e programas de inversão.
             
     \section{Pacotes de Processamentos do grupo Geoma - INPE}
     
@@ -490,9 +506,11 @@
         
         Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos pelo Dr. Marcelo Banik de Pádua obtidos sobre comunicação privada pelo autor.
         
-        Os \en{script} auxiliam na utilização dos programas, pois, a saída de um programa é a entrada de outro. Um exemplo é o programa processamentoZ que prepara os dados para as rotinas Dnff e TranMT, ele ajusta os parâmetros necessários para esses programas e trabalha com os dados de forma padrão auxiliando o usuário na utilização dos pacotes. 
-        
         A natureza dos pacotes são \en{scripts} escritos em \en{Shell}, \en{Python}, \en{C++} que utilizam o programa GMT \cite{gmt} para plotagem dos gráficos.
+        
+        Os \en{script} auxiliam na utilização dos programas já citados, visto que a saída de um programa é a entrada do próximo. Um exemplo é o programa processamentoZ que prepara os dados para as rotinas Dnff e TranMT, ele ajusta os parâmetros necessários para esses programas e trabalha com os dados de forma padrão auxiliando o usuário na utilização dos pacotes. 
+        
+       
     
     
 
@@ -510,7 +528,7 @@
             
             Na década de 90 foi criada a \en{Python Software Activity} que começou a cuidar dos interesses da linguagem, nesse período apenas o criador Guido Van tomava as decisões e cuidava do desenvolvimento. Finalmente em 2001 é fundada a \en{Python Software Foundation} que mantém a linguagem e todos os direitos sobre ela \cite{python36}.  
             
-            Python é uma linguagem de alto nível\footnote{Esta relacionada a abstração da linguagem, alto nível significa mais longe da linguagem de código de máquina} onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
+            Python é uma linguagem de alto nível\footnote{Está relacionada a abstração da linguagem, alto nível significa mais longe da linguagem de código de máquina} onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
             
             Exemplos de código Python:
 
@@ -696,29 +714,44 @@
         \label{cap-algoritmos}
     
     
-    O PampaMT trabalhara com os dados seguindo os fluxos de processamentos comentado no capitulo \ref{cap-proc_mt}, atualmente o maior consumo de tempo de processamento são destinados à essas etapas. O programa desenvolvido focará em melhorar o tempo de processamento, visualização dos dados e aprendizagem.
+    O PampaMT trabalhará com os dados seguindo os fluxos de processamentos comentado no capitulo \ref{cap-proc_mt}, atualmente o maior consumo de tempo de processamento são destinados a essas etapas. O programa desenvolvido focará em melhorar o tempo de processamento, visualização dos dados e aprendizagem.
     
-    O fluxograma \ref{fig_influ_mainpy} ilustra as etapas de inicialização pensados para o programa e como será a execução do pacote EMTF sobre os dados.
+    O fluxograma da figura \ref{fig_influ_mainpy} ilustra as etapas de inicialização pensados para o programa e como será a execução do pacote EMTF sobre os dados.
     
     Como já discutido as etapas de processamento serão feitas através de interface gráfica e o programa processamentoZ será reescrito para aumentar a compatibilidade no fluxo.
     
-    O fluxograma \ref{fig_influ_pampamtpy} mostra o processo principal do programa, onde o usuário poderá escolher quais janelas plotar com o intervalo de períodos escolhidos e no final das escolhas executar o Tojones finalizando o processo, compreendendo então todas as etapas propostas no trabalho.
+    O fluxograma da figura \ref{fig_influ_pampamtpy} mostra o processo principal do programa, onde o usuário poderá:
+    \begin{enumerate}
+     \item Plotar as janelas
+     \item Escolher os períodos para cada janela
+     \item Executar o processamentoZ para novas rodadas
+     \item Executar o Tojones sobre as janelas escolhidas
+    \end{enumerate}
+
+    Após o Tojones é finalizado o processo, compreendendo então todas as etapas propostas no trabalho.
+    
+  
     
     
-    \begin{figure}[H]
-                \caption{Fluxograma de Inicialização do PampaMT}
-                \begin{center}
-                    \includegraphics[width=13cm]{texto/fig/mainpy.png} 
-                \end{center}
-                \fonte{O Autor, 2018}
-                \label{fig_influ_mainpy} 
-            \end{figure}
-            
+    
     \begin{figure}[H]
                 \caption{Fluxograma Tela Principal PampaMT}
                 \begin{center}
-                    \includegraphics[width=15cm]{texto/fig/PampaMTpy.png} 
+                    \includegraphics[width=15cm]{texto/fig/PampaMTpy2.png} 
                 \end{center}
                 \fonte{O Autor, 2018}
                 \label{fig_influ_pampamtpy} 
             \end{figure}
+            
+            
+    \begin{landscape}
+    
+    \begin{figure}[H]
+                \caption{Fluxograma de Inicialização do PampaMT}
+                \begin{center}
+                    \includegraphics[width=21cm]{texto/fig/mainpy.eps} 
+                \end{center}
+                \fonte{O Autor, 2018}
+                \label{fig_influ_mainpy} 
+            \end{figure}
+    \end{landscape} 

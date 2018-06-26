@@ -10,18 +10,18 @@
 \contentsline {section}{\numberline {4.3}Fundamentos Te\IeC {\'o}ricos dos M\IeC {\'e}todos Eletromagn\IeC {\'e}ticos}{14}{section.4.3}
 \contentsline {section}{\numberline {4.4}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{17}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{17}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Modelo de Dimens\IeC {\~o}es MT}{17}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Terra 1D}{17}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.5}Modelo de Dimens\IeC {\~o}es MT}{18}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Terra 1D}{18}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Terra 2D}{19}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}Terra 3D}{20}{subsection.4.5.3}
 \contentsline {chapter}{5~\textit {Softwares} Utilizados em Dados MT}{21}{CHAPTER.5}
 \contentsline {section}{\numberline {5.1}Aquisi\IeC {\c c}\IeC {\~a}o de Dados MT}{21}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Estrutura do Aquivo TS}{23}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Estrutura do Aquivo TS}{22}{subsection.5.1.1}
 \contentsline {section}{\numberline {5.2}Fluxo de Processamento de Dados MT}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Convers\IeC {\~a}o de Dados Bin\IeC {\'a}rios}{23}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Convers\IeC {\~a}o de Dados Bin\IeC {\'a}rios}{24}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Dnff}{24}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}TranMT}{24}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}ToJones}{24}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.4}ToJones}{25}{subsection.5.2.4}
 \contentsline {section}{\numberline {5.3}Pacotes de Processamentos do grupo Geoma - INPE}{25}{section.5.3}
 \contentsline {chapter}{6~Proposta de \textit {Software} Livre Integrador}{26}{CHAPTER.6}
 \contentsline {section}{\numberline {6.1}Linguagem PYTHON}{26}{section.6.1}

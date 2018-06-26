@@ -340,15 +340,15 @@ FUNCTION {bbl.missing.year}
   {""}       %#0
  if$}
 FUNCTION {bbl.monography} { "Monografia" }
-FUNCTION {bbl.mthesis} { "Dissertation" }
+FUNCTION {bbl.mthesis} { "Dissertação" }
 FUNCTION {bbl.no.address} {"[S.l.]"} %Sine loco
 FUNCTION {bbl.no.address.no.publisher} {"[S.l.: s.n.]"} 
 FUNCTION {bbl.no.publisher} {"[s.n.]"} %sine nomine
 FUNCTION {bbl.number} { iso.abbreviation {"no."} {"n."} if$ }
 FUNCTION {bbl.nr} { "n." }
 FUNCTION {bbl.of} { "of" }
-FUNCTION {bbl.phd} { "PhD" }
-FUNCTION {bbl.phdthesis} { "Thesis" }
+FUNCTION {bbl.phd} { "Doutorado" }
+FUNCTION {bbl.phdthesis} { "Tese" }
 FUNCTION {bbl.pages}
   {pagename empty$
     { "p." }
@@ -363,7 +363,7 @@ FUNCTION {bbl.techrep} { "Tech. Rep." }
 FUNCTION {bbl.url.accessdate}
   {iso.abbreviation { "Cited "} {"Accessed in: "} if$}
 FUNCTION {bbl.url.available}
-{ iso.abbreviation {"Available from Internet: "} {"Available from Internet: "} if$}
+{ iso.abbreviation {"Disponível na Internet: "} {"Disponível na Internet: "} if$}
 FUNCTION {bbl.void} {""}
 FUNCTION {bbl.volume} { iso.abbreviation {"vol."} {"v."} if$ }
 

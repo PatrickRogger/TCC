@@ -12,6 +12,11 @@
 \textbf{Anais do Sal{\~a}o Internacional de Ensino, Pesquisa e Extens{\~a}o},
   v.~9, n.~3, 2018.}
 
+\bibitem[Bracewell and Bracewell 1986]{fourier}
+\abntrefinfo{Bracewell and Bracewell}{BRACEWELL; BRACEWELL}{1986}
+{BRACEWELL, R.~N.; BRACEWELL, R.~N. \textbf{The Fourier transform and its
+  applications}. [S.l.]: McGraw-Hill New York, 1986.}
+
 \bibitem[Cagniard 1953]{cagniard53}
 \abntrefinfo{Cagniard}{CAGNIARD}{1953}
 {CAGNIARD, L. Basic theory of the magneto-telluric method of geophysical
@@ -24,17 +29,23 @@ v. 18(3), p. 605--635, 1953.}
 \textbf{Multidimensional Inversion of MT data from Krýsuvík High Temperature
   Geothermal Field, SW Iceland, and study of how 1D and 2D Inversion can
   Reproduce a given 2D/3D Resistivity Structures Using Synthetic MT Data}.
-136~p. Dissertation (Masters Thesis) --- Faculty of Earth Sciences University
-  of Iceland, Reykjavik, Iceland, Abril 2010.}
+136~p. Dissertação (Mestrado) --- Faculty of Earth Sciences University of
+  Iceland, Reykjavik, Iceland, Abril 2010.}
 
 \bibitem[Drake 2018]{python36}
 \abntrefinfo{Drake}{DRAKE}{2018}
 {DRAKE, F.~L. \textbf{Python 3.6.5 Documendation}. 2018.
 [Online; acessado em Março, 2018].
-Available from Internet: \url{https://docs.python.org/3/}.}
+Disponível na Internet: \url{https://docs.python.org/3/}.}
+
+\bibitem[Egbert 1997]{emtf}
+\abntrefinfo{Egbert}{EGBERT}{1997a}
+{EGBERT, G.~D. \textbf{Gary Egbert's Processing Codes}. 1997.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: \url{http://mtnet.info/programs/egbert.html}.}
 
 \bibitem[Egbert 1997]{egbert97}
-\abntrefinfo{Egbert}{EGBERT}{1997}
+\abntrefinfo{Egbert}{EGBERT}{1997b}
 {EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
 \textbf{Geophysical Journal International}, v.~130, p. 475--496, 1997.}
 
@@ -42,61 +53,68 @@ Available from Internet: \url{https://docs.python.org/3/}.}
 \abntrefinfo{{FREE SOFTWARE FOUNDATION}}{{FREE SOFTWARE FOUNDATION}}{2018}
 {{FREE SOFTWARE FOUNDATION}. \textbf{Licença de Software Livre}. 2018.
 [Online; acessado em Maio, 2018].
-Available from Internet: \url{https://www.gnu.org/philosophy/free-sw.html}.}
+Disponível na Internet: \url{https://www.gnu.org/philosophy/free-sw.html}.}
 
 \bibitem[Hayt and Buck 2013]{eletromag8hayt}
 \abntrefinfo{Hayt and Buck}{HAYT; BUCK}{2013}
 {HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
   Brazil: AMGH Editora Ltda., 2013.}
 
+\bibitem[Jones 1994]{tojones}
+\abntrefinfo{Jones}{JONES}{1994}
+{JONES, A.~G. \textbf{Magnetotelluric Data File J-format}. 1994.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: \url{http://mtnet.info/docs/jformat.txt}.}
+
 \bibitem[Jones 1999]{tsformat}
 \abntrefinfo{Jones}{JONES}{1999}
 {JONES, A.~G. \textbf{TS Format v1.3}. 1999.
 [Online; acessado em Junho, 2018].
-Available from Internet: \url{http://mtnet.info/docs/ts\_format.txt}.}
+Disponível na Internet: \url{http://mtnet.info/docs/ts\_format.txt}.}
 
 \bibitem[Jones et al. 2001]{scipy}
 \abntrefinfo{Jones et al.}{JONES et al.}{2001}
 {JONES, E. et al. \textbf{{SciPy}: Open source scientific tools for {Python}}.
   2001.
 [Online; acessado em Maio, 2018].
-Available from Internet: \url{http://www.scipy.org/}.}
+Disponível na Internet: \url{http://www.scipy.org/}.}
 
 \bibitem[{KIVY ORGANIZATION} 2018]{kivy110}
 \abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
 {{KIVY ORGANIZATION}. \textbf{Kivy 1.10.1 documendation}. 2018.
 [Online; acessado em Março, 2018].
-Available from Internet: \url{https://kivy.org/docs/api-kivy.html}.}
+Disponível na Internet: \url{https://kivy.org/docs/api-kivy.html}.}
 
 \bibitem[{KIVY ORGANIZATION} 2018]{kivy}
 \abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018b}
 {{KIVY ORGANIZATION}. \textbf{Kivy Organization}. 2018.
 [Online; acessado em Março, 2018].
-Available from Internet: \url{https://kivy.org/}.}
+Disponível na Internet: \url{https://kivy.org/}.}
 
 \bibitem[{MTnet} 2018]{mtnet}
 \abntrefinfo{{MTnet}}{{MTnet}}{2018}
 {{MTnet}. \textbf{MTnet}. 2018.
 [Online; acessado em Maio, 2018].
-Available from Internet: \url{http://mtnet.info/main/source.html}.}
+Disponível na Internet: \url{http://mtnet.info/main/source.html}.}
 
 \bibitem[{NATIONAL SCIENCE FOUNDATION} 2018]{gmt}
 \abntrefinfo{{NATIONAL SCIENCE FOUNDATION}}{{NATIONAL SCIENCE
   FOUNDATION}}{2018}
 {{NATIONAL SCIENCE FOUNDATION}. \textbf{The Generic Mapping Tools}. 2018.
 [Online; acessado em Maio, 2018].
-Available from Internet: \url{http://gmt.soest.hawaii.edu/}.}
-
-\bibitem[Nyquist 1928]{nyquist28}
-\abntrefinfo{Nyquist}{NYQUIST}{1928}
-{NYQUIST, H. Certain topics in telegraph transmission theory.
-\textbf{Transactions of the American Institute of Electrical Engineers}, IEEE,
-  v.~47, n.~2, p. 617--644, 1928.}
+Disponível na Internet: \url{http://gmt.soest.hawaii.edu/}.}
 
 \bibitem[Palacky 1987]{eletromag_met}
 \abntrefinfo{Palacky}{PALACKY}{1987}
-{PALACKY, G.~J. \textbf{Electromagnetic Methods in applied Geophysics}. 1. ed.
-  [S.l.]: Society of Exploration Geophysicists, 1987. 53-130~p.}
+{PALACKY, G.~J. \textbf{Electromagnetic Methods
+  ihttp://mtnet.info/programs/egbert.htmln applied Geophysics}. 1. ed. [S.l.]:
+  Society of Exploration Geophysicists, 1987. 53-130~p.}
+
+\bibitem[Parker and Booker 1997]{rhoplus}
+\abntrefinfo{Parker and Booker}{PARKER; BOOKER}{1997}
+{PARKER, B.; BOOKER, J. \textbf{Rho+ Code}. 1997.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: \url{http://mtnet.info/programs/rhoplus.zip}.}
 
 \bibitem[Parkinson 1983]{parkinson93}
 \abntrefinfo{Parkinson}{PARKINSON}{1983}
@@ -107,15 +125,15 @@ Available from Internet: \url{http://gmt.soest.hawaii.edu/}.}
 \abntrefinfo{{QT COMPANY}}{{QT COMPANY}}{2018}
 {{QT COMPANY}. \textbf{Site Oficial Qt}. 2018.
 [Online; acessado em Maio, 2018].
-Available from Internet: \url{https://www.qt.io/}.}
+Disponível na Internet: \url{https://www.qt.io/}.}
 
 \bibitem[Santos-Matos 2012]{tese_andrea}
 \abntrefinfo{Santos-Matos}{SANTOS-MATOS}{2012}
 {SANTOS-MATOS, A. C.~L.
 \textbf{Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE
   da Província Borborema}.
-159~p. Thesis (PhD) --- Instituto de Geociências, Universidade de Brasília,
-  Brasília, Brasil, Março 2012.}
+159~p. Tese (Doutorado) --- Instituto de Geociências, Universidade de
+  Brasília, Brasília, Brasil, Março 2012.}
 
 \bibitem[Telford 1990]{telford}
 \abntrefinfo{Telford}{TELFORD}{1990}
