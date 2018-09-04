@@ -1,0 +1,2566 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2018 (Released Feb 1, 2018) -->
+<HTML>
+<HEAD>
+<TITLE>Desenvolvimento de Software livre para processamentos de Dados Magnetotelúricos</TITLE>
+<META NAME="description" CONTENT="Desenvolvimento de Software livre para processamentos de Dados Magnetotelúricos">
+<META NAME="keywords" CONTENT="texto_final_2018-05-16">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="texto_final_2018-05-16.css">
+
+</HEAD>
+
+<BODY >
+
+<P>
+
+<P>
+
+    <DIV ALIGN="CENTER">
+<B>	  <BIG CLASS="LARGE">UNIVERSIDADE FEDERAL DO PAMPA
+</BIG></B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B><BIG CLASS="LARGE"><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</BIG></B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B><BIG CLASS="LARGE">PATRICK ROGGER GARCIA
+</BIG></B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B><BIG CLASS="LARGE">
+	      <BIG CLASS="LARGE">DESENVOLVIMENTO DE SOFTWARE LIVRE PARA PROCESSAMENTOS DE DADOS MAGNETOTELÚRICOS
+	  </BIG></BIG></B>
+</DIV>
+<P>
+<DIV ALIGN="CENTER"><B>
+	  Caçapava do Sul
+</B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B>2018
+
+</B></DIV>
+
+<P>
+
+    <DIV ALIGN="CENTER">
+<B>	  <BIG CLASS="LARGE">UNIVERSIDADE FEDERAL DO PAMPA
+</BIG></B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B><BIG CLASS="LARGE"><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</BIG></B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B><BIG CLASS="LARGE">PATRICK ROGGER GARCIA
+</BIG></B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B><BIG CLASS="LARGE">
+	      <BIG CLASS="LARGE">DESENVOLVIMENTO DE SOFTWARE LIVRE PARA PROCESSAMENTOS DE DADOS MAGNETOTELÚRICOS
+	  </BIG></BIG></B>
+</DIV>
+<P>
+<DIV ALIGN="CENTER"><B>	      ORIENTADOR:</B>
+	      VINICIUS ABREU DE OLIVEIRA
+</DIV>
+<P>
+<DIV ALIGN="CENTER"><B>	      CO-ORIENTADORA:</B>
+	      ANDRÉA CRISTINA LIMA DOS SANTOS MATOS 
+	      <BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</DIV>
+<P>
+<DIV ALIGN="CENTER"><B>
+	  Caçapava do Sul
+</B></DIV>
+<P>
+<DIV ALIGN="CENTER"><B>2018
+
+</B></DIV>
+
+<P>
+
+<H3>Abstract:</H3>
+<DIV CLASS="ABSTRACT"> 
+            Este trabalho se trata da construção de um <SPAN  CLASS="textit">Software</SPAN> para o processamento de dados magnetotelúrico , esse projeto foi pensado visto a carência de programas para o trabalho com este método geofísico, o programa aqui apresentado tratará dos dados desde a coleta, através de equipamentos do tipo Metronix ADU06 ou ADU07, até as etapas de visualização dos dados passando por processamentos estatísticos, conversão de formatos de arquivos e processamento robusto.
+    Todo o programa será desenvolvido utilizando a linguagem de programação Python sob a licença de <SPAN  CLASS="textit">software</SPAN> Livre, o programa unirá inúmeros <SPAN  CLASS="textit">scripts</SPAN> e rotinas consagradas no processamento de dados magnetotelúrico. Estes processamentos serão feitos através de uma interface gráfica, visando então facilitar as etapas de processamentos para os usuários, pois isso vinham sendo feitas através apenas de linhas de comando.    </DIV>
+<P>
+
+<P>
+<BR>
+
+<H2><A NAME="SECTION00100000000000000000">
+List of Figures</A>
+</H2><OL>
+<LI><A NAME="tex2html3"
+  HREF="texto_final_2018-05-16.html#458">Arranjo para medir a resistividade elétrica (<SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$\rho $"></SPAN>) de um material</A>
+<LI><A NAME="tex2html4"
+  HREF="texto_final_2018-05-16.html#466">Resistividade Elétrica dos Materiais Geológicos</A>
+<LI><A NAME="tex2html6"
+  HREF="texto_final_2018-05-16.html#779">Modelo de Terra 2D para a resistividade elétrica variando na direção <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$y$"></SPAN></A>
+<LI><A NAME="tex2html9"
+  HREF="texto_final_2018-05-16.html#884">Series Temporais das cinco componentes contidas no arquivo TS</A>
+<LI><A NAME="tex2html10"
+  HREF="texto_final_2018-05-16.html#913">Fluxograma de Processamento Clássico</A>
+<LI><A NAME="tex2html12"
+  HREF="texto_final_2018-05-16.html#990">Exemplo de janela com Kivy implementada somente com código Python</A>
+<LI><A NAME="tex2html14"
+  HREF="texto_final_2018-05-16.html#1041">Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib</A>
+<LI><A NAME="tex2html15"
+  HREF="texto_final_2018-05-16.html#1056">Fluxograma Tela Principal PampaMT</A></OL><BR>
+
+<H2><A NAME="SECTION00200000000000000000">
+List of Tables</A>
+</H2><OL>
+<LI><A NAME="tex2html8"
+  HREF="texto_final_2018-05-16.html#863">Taxas de Aquisições frequentemente usadas para equipamentos ADU06 e ADU07.</A>
+<LI><A NAME="tex2html13"
+  HREF="texto_final_2018-05-16.html#1004">Distribuição de pontos com valor anômalo ao centro.</A>
+<LI><A NAME="tex2html16"
+  HREF="texto_final_2018-05-16.html#2104">Cronograma - 1º Semestre 2018</A>
+<LI><A NAME="tex2html17"
+  HREF="texto_final_2018-05-16.html#2126">Cronograma - 2º Semestre 2018</A></OL>
+<P>
+<BR>
+<IMG
+ WIDTH="527" HEIGHT="602" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="\begin{listofabbrv}{UNIPAMPA}
+\par
+\item[API] {\textit{Application Programming I...
+...TM] {Transversal Magnético}
+\item[TS] {\textit{Time Series}}
+\end{listofabbrv}">
+<BR>
+
+<P>
+<BR>
+<IMG
+ WIDTH="376" HEIGHT="826" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="\begin{listofsymbols}{$\alpha\beta\pi\omega$}
+\item[$\sigma$] Condutividade El�...
+...gnética
+\item[$\varepsilon$] Permissividade Elétrica
+\par
+\end{listofsymbols}">
+<BR>
+
+<P>
+<BR>
+
+<H2><A NAME="SECTION00300000000000000000">
+Contents</A>
+</H2>
+<!--Table of Contents-->
+
+<UL CLASS="TofC">
+<LI><A NAME="tex2html68"
+  HREF="texto_final_2018-05-16.html#SECTION00100000000000000000">List of Figures</A>
+<LI><A NAME="tex2html69"
+  HREF="texto_final_2018-05-16.html#SECTION00200000000000000000">List of Tables</A>
+<LI><A NAME="tex2html70"
+  HREF="texto_final_2018-05-16.html#SECTION00400000000000000000">Introdução</A>
+<LI><A NAME="tex2html71"
+  HREF="texto_final_2018-05-16.html#SECTION00500000000000000000">Objetivos</A>
+<UL>
+<LI><A NAME="tex2html72"
+  HREF="texto_final_2018-05-16.html#SECTION00510000000000000000">Objetivos Gerais</A>
+<LI><A NAME="tex2html73"
+  HREF="texto_final_2018-05-16.html#SECTION00520000000000000000">Objetivos Específicos</A>
+</UL><BR>
+<LI><A NAME="tex2html74"
+  HREF="texto_final_2018-05-16.html#SECTION00600000000000000000">Justificativa</A>
+<LI><A NAME="tex2html75"
+  HREF="texto_final_2018-05-16.html#SECTION00700000000000000000">Fundamentos do Método magnetotelúrico </A>
+<UL>
+<LI><A NAME="tex2html76"
+  HREF="texto_final_2018-05-16.html#SECTION00710000000000000000">Origem das Correntes Telúricas</A>
+<LI><A NAME="tex2html77"
+  HREF="texto_final_2018-05-16.html#SECTION00720000000000000000">Resistividade dos Materiais</A>
+<LI><A NAME="tex2html78"
+  HREF="texto_final_2018-05-16.html#SECTION00730000000000000000">Fundamentos Teóricos dos Métodos Eletromagnéticos</A>
+<LI><A NAME="tex2html79"
+  HREF="texto_final_2018-05-16.html#SECTION00740000000000000000">Resposta do Método Magnetotelúrico</A>
+<UL>
+<LI><A NAME="tex2html80"
+  HREF="texto_final_2018-05-16.html#SECTION00741000000000000000">Impedância Eletromagnética</A>
+</UL>
+<LI><A NAME="tex2html81"
+  HREF="texto_final_2018-05-16.html#SECTION00750000000000000000">Modelo de Dimensões MT</A>
+<UL>
+<LI><A NAME="tex2html82"
+  HREF="texto_final_2018-05-16.html#SECTION00751000000000000000">Terra 1D</A>
+<LI><A NAME="tex2html83"
+  HREF="texto_final_2018-05-16.html#SECTION00752000000000000000">Terra 2D</A>
+<LI><A NAME="tex2html84"
+  HREF="texto_final_2018-05-16.html#SECTION00753000000000000000">Terra 3D</A>
+</UL>
+</UL><BR>
+<LI><A NAME="tex2html85"
+  HREF="texto_final_2018-05-16.html#SECTION00800000000000000000">Softwares Utilizados em Dados MT</A>
+<UL>
+<LI><A NAME="tex2html86"
+  HREF="texto_final_2018-05-16.html#SECTION00810000000000000000">Aquisição de Dados MT</A>
+<UL>
+<LI><A NAME="tex2html87"
+  HREF="texto_final_2018-05-16.html#SECTION00811000000000000000">Estrutura do Aquivo TS</A>
+</UL>
+<LI><A NAME="tex2html88"
+  HREF="texto_final_2018-05-16.html#SECTION00820000000000000000">Fluxo de Processamento de Dados MT</A>
+<UL>
+<LI><A NAME="tex2html89"
+  HREF="texto_final_2018-05-16.html#SECTION00821000000000000000">Conversão de Dados Binários</A>
+<LI><A NAME="tex2html90"
+  HREF="texto_final_2018-05-16.html#SECTION00822000000000000000">Dnff</A>
+<LI><A NAME="tex2html91"
+  HREF="texto_final_2018-05-16.html#SECTION00823000000000000000">TranMT</A>
+<LI><A NAME="tex2html92"
+  HREF="texto_final_2018-05-16.html#SECTION00824000000000000000">ToJones</A>
+</UL>
+<LI><A NAME="tex2html93"
+  HREF="texto_final_2018-05-16.html#SECTION00830000000000000000">Pacotes de Processamentos do grupo Geoma - INPE</A>
+</UL><BR>
+<LI><A NAME="tex2html94"
+  HREF="texto_final_2018-05-16.html#SECTION00900000000000000000">Proposta de Software Livre Integrador</A>
+<UL>
+<LI><A NAME="tex2html95"
+  HREF="texto_final_2018-05-16.html#SECTION00910000000000000000">Linguagem PYTHON</A>
+<LI><A NAME="tex2html96"
+  HREF="texto_final_2018-05-16.html#SECTION00920000000000000000">Módulos e Pacotes</A>
+<UL>
+<LI><A NAME="tex2html97"
+  HREF="texto_final_2018-05-16.html#SECTION00921000000000000000">Kivy</A>
+<LI><A NAME="tex2html98"
+  HREF="texto_final_2018-05-16.html#SECTION00922000000000000000">SciPy, MatPlotLib, NumPy</A>
+</UL>
+<LI><A NAME="tex2html99"
+  HREF="texto_final_2018-05-16.html#SECTION00930000000000000000">Arquitetura do Programa e Abordagem dos fluxos de Processamento</A>
+</UL><BR>
+<LI><A NAME="tex2html100"
+  HREF="texto_final_2018-05-16.html#SECTION001000000000000000000">Resultados Esperados</A>
+<LI><A NAME="tex2html101"
+  HREF="texto_final_2018-05-16.html#SECTION001100000000000000000">Cronograma de Atividades</A>
+<UL>
+<LI><A NAME="tex2html102"
+  HREF="texto_final_2018-05-16.html#SECTION001110000000000000000">1º Semestre</A>
+<LI><A NAME="tex2html103"
+  HREF="texto_final_2018-05-16.html#SECTION001120000000000000000">2º Semestre</A>
+</UL><BR>
+<LI><A NAME="tex2html104"
+  HREF="texto_final_2018-05-16.html#SECTION001200000000000000000">Bibliography</A>
+</UL>
+<!--End of Table of Contents-->
+<P>
+utf8                                
+
+<P>
+
+<P>
+
+<H1><A NAME="SECTION00400000000000000000"></A>
+    <A NAME="cap-introducao"></A><BR>
+Introdução
+</H1>
+
+<P>
+Apoiado nas leis de Maxwell o método MT (Magnetotelúrico) usa a Terra como 
+	um condutor ôhmico e as variações do seu campo 
+	magnético gerado por ventos solares [<A
+ HREF="texto_final_2018-05-16.html#parkinson93">Parkinson 1983</A>] e tempestades equatoriais 
+	que interagem com a ionosfera para investigar as 
+	estruturas internas da Terra e litologias rasas. 
+
+<P>
+No Brasil o uso do método MT é insipiente, restrito ao meio acadêmico e pouco
+	utilizado na indústria, porém, pode ser bem aplicado na prospecção de 
+	hidrocarbonetos, sendo a sua resolução melhor que a magnetometria
+	e gravimetria, também em estudos crustais
+	apoiando a sismologia devido sua grande profundidade de investigação, mas o 
+	alto custo de processamento e a falta de <SPAN  CLASS="textit">softwares</SPAN> para trabalhar com os 
+	dados tem sido algumas das causas do pouco uso.
+
+<P>
+Esse trabalho foi inicialmente pensado para tornar o MT mais difundido, 
+	desenvolvendo um <SPAN  CLASS="textit">software</SPAN> com interface gráfica e 
+	distribuição livre. Assim o projeto nasceu 
+	com esse propósito, compreendendo o processamento de dados
+	MT desde a coleta até a primeira visualização dos dados, como: escolha 
+	de bandas, plotagem de pseudo-secções em função de resistividade e fase, além de fazer tratamentos estatísticos e processamento robusto 
+	proposto por egbert97 egbert97.
+
+<P>
+O programa será construído usando a linguagem Python [<A
+ HREF="texto_final_2018-05-16.html#python36">Drake 2018</A>] 
+	e a construção da interface gráfica será desenvolvida usando a API
+	Kivy [<A
+ HREF="texto_final_2018-05-16.html#kivy110">KIVY ORGANIZATION 2018</A>] dentre outros pacotes. A escolha por essa linguagem foi a vasta quantidade de pacotes,  o crescente 
+	número de pessoas implementando e a facilidade da construção do código.
+
+<P>
+
+<P>
+
+<P>
+
+<H1><A NAME="SECTION00500000000000000000"></A>
+<A NAME="cap-objetivos"></A><BR>
+Objetivos
+</H1>
+
+<P>
+
+<H1><A NAME="SECTION00510000000000000000"></A>
+<A NAME="cap-objetivos_gerais"></A><BR>
+Objetivos Gerais
+</H1>
+
+<P>
+O objeto de estudo desse trabalho é o desenvolvimento de um <SPAN  CLASS="textit">Software</SPAN> Livre, em <SPAN  CLASS="textit">Python</SPAN> para tratamentos e processamentos de dados magnetotelúrico .
+
+<P>
+
+<H1><A NAME="SECTION00520000000000000000"></A>
+<A NAME="cap-objetivos_especificos"></A><BR>
+Objetivos Específicos
+</H1>
+
+<P>
+O MT é um método geofísico que trabalha com propriedades eletromagnéticas, essa característica torna o processamento dos dados extremamente trabalhoso e com alto custo computacional, o trabalho então propõe:
+
+<P>
+
+<UL>
+<LI>Criação de novos algoritmos escritos em Python.
+</LI>
+<LI>Otimização dos códigos frente as novas tecnologias.
+</LI>
+<LI>Obter secções lito-geofísicas de resistividade para a região de estudo.
+</LI>
+<LI>Comparar os resultados obtidos com trabalhos já consolidados<A NAME="tex2html1"
+  HREF="#foot400"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A>.
+    
+</LI>
+</UL>
+	
+<H1><A NAME="SECTION00600000000000000000"></A>
+<A NAME="cap-justificativa"></A><BR>
+Justificativa
+</H1>
+
+<P>
+Esse trabalho foi pensado para auxiliar a expansão do magnetotelúrico , hoje existem vários programas proprietários para processamento destes tipos de dados, mas, são programas de alto custo e fechados, isto é, não possuem transparência dos fluxos de processamentos dentro do programa. O processamento hoje usado na maioria dos trabalhos usam como base os algoritmos propostos por egbert97 para a primeira fase de processamento e a rotina To Jones [<A
+ HREF="texto_final_2018-05-16.html#egbert97">Egbert 1997</A>] para compilação dos dados em arquivos manipuláveis.
+
+<P>
+Esses processos atualmente são feitos através de linhas de comando unindo diversos programas separados, o que torna o procedimento muito instável provocando diversos tipos de erros além de não prever outros. 
+<P>
+O programa proposto aqui pretende ser escrito em apenas uma linguagem e utilizar pacotes nativamente compatíveis, o que prevê erros de compatibilidades e torna a manutenção do código mais fácil, uma vez que estes não serão compilados.
+
+<P>
+Outra forma de beneficiar a utilização do programa se dará pela construção de uma interface gráfica para todos os processos, tornando assim mais fácil utilizar e prevenir erros provocados pelo usuário.    
+
+<P>
+	
+<H1><A NAME="SECTION00700000000000000000"></A>
+    <A NAME="cap-fundamentosMT"></A><BR>
+Fundamentos do Método magnetotelúrico 
+</H1>    
+
+<P>
+O método magnetotelúrico proposto por tikhonov50 tikhonov50 e
+    cagniard53 cagniard53, usa as propriedades
+    eletromagnéticas para estudar a distribuição de resistividade elétrica na crosta, 
+    podendo variar a sua investigação de dezenas de metros a dezenas de 
+    quilômetros.
+
+<P>
+
+<H1><A NAME="SECTION00710000000000000000">
+Origem das Correntes Telúricas</A>
+</H1>
+
+<P>
+As flutuações no campo magnético terrestre geram campos elétricos na alta atmosfera que induzem correntes magnéticas.
+
+<P>
+As ondas eletromagnéticas penetram no interior da Terra na forma de ondas planas ortogonais que induzem novas correntes chamadas de corrente telúricas que trazem informações das características físicas das litologias [<A
+ HREF="texto_final_2018-05-16.html#tikhonov50">Tikhonov 1950</A>] e [<A
+ HREF="texto_final_2018-05-16.html#cagniard53">Cagniard 1953</A>].
+
+<P>
+Uma das características é a modulação da frequência, causada por diferentes tipos de rochas e estruturas, esse fenômeno é diretamente 
+	relacionado a resistividade elétrica do meio. As frequências das ondas são baixas variando de 1 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$mHz$"></SPAN> à 10 <SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$kHz$"></SPAN>.
+
+<P>
+Ondas com frequências menores que 1 <SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$Hz$"></SPAN> tem origem nos ventos solares que interagem com o campo magnético terrestre, já ondas com frequências maiores de 1 <SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$Hz$"></SPAN> são provocadas por tempestades equatoriais. Para o estudo do magnetotelúrico são feitas as seguintes suposições:
+
+<P>
+
+<OL>
+<LI>Ondas geradas na ionosfera, distantes o suficientes, penetram ortogonais à superfície da Terra.	    
+</LI>
+<LI>A Terra se comporta como um condutor ôhmico.
+</LI>
+<LI>A Terra é considerada um semi-espaço isotrópico.
+	
+</LI>
+</OL>   
+
+<P>
+
+<H1><A NAME="SECTION00720000000000000000">
+Resistividade dos Materiais</A>
+</H1>
+
+<P>
+Para o magnetotelúrico a propriedade de investigação e contraste é a condutividade elétrica (<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\sigma$"></SPAN>) ou resistividade elétrica (<SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$\rho $"></SPAN>) sendo essa o inverso da primeira.
+    A resistividade elétrica é uma propriedade particular de um determinado material, ou seja, a partir de uma resistividade elétrica podemos estimar a qual material ela pertence<A NAME="tex2html2"
+  HREF="#foot443"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A>.
+
+<P>
+Em 1827, Georg Ohm verificou de forma empírica que aplicando uma diferença de potencial em um material, esse gera uma resistência à passagem de corrente, essa relação é chamada de lei de Ohm (equação <A HREF="#lei_de_ohm">4.1</A>) [<A
+ HREF="texto_final_2018-05-16.html#eletromag8hayt">Hayt and Buck 2013</A>].
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="lei_de_ohm"></A><!-- MATH
+ \begin{equation}
+V = R i
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$\displaystyle V = R i$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Onde <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$V$"></SPAN> é a diferença de potencial (Volts - V), <SPAN CLASS="MATH"><IMG
+ WIDTH="10" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$i$"></SPAN> é a corrente (Ampère - A) e <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$R$"></SPAN> é a resistência (Ohms - <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\Omega$"></SPAN>), materiais que obedecem essa lei são chamados de materiais ômicos.
+
+<P>
+A Terra pode ser considerada como um material ôhmico. No entanto para a investigação geofísica a resistência não é uma propriedade viável, visto  que depende muito da geometria do problema, assim foi proposto a resistividade elétrica, onde, um mesmo material terá a sua resistividade elétrica igual, independente da geometria.
+
+<P>
+A figura <A HREF="#fig_resistividade">1</A> mostra um circuito para se obter a resistividade elétrica de um material, sendo A a área [<SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$m^2$"></SPAN>], R a resistência [<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\Omega$"></SPAN>], L o comprimento [<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$m$"></SPAN>] e <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$\rho $"></SPAN> a resistividade elétrica dada em <SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$\Omega m$"></SPAN>. 
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="resistividade"></A><!-- MATH
+ \begin{equation}
+\rho = \dfrac{R A}{L}\, \, \, ;\, \, \, \, \, \, \, \, \, \, \, \, \, \,  R = \dfrac{V}{i}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="163" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$\displaystyle \rho = \dfrac{R A}{L}\, \, \, ;\, \, \, \, \, \, \, \, \, \, \, \, \, \, R = \dfrac{V}{i}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig_resistividade"></A><A NAME="458"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Arranjo para medir a resistividade elétrica (<SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$\rho $"></SPAN>) de um material</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+
+</DIV>        
+        <DIV CLASS="centerline" ID="par4327" ALIGN="CENTER">
+<IMG
+  WIDTH="158" HEIGHT="258" ALIGN="BOTTOM" BORDER="0"
+ SRC="./resisti_telford.png"
+ ALT="Image resisti_telford"></DIV>
+        Adaptado telford, telford</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+A figura <A HREF="#tabela_resistividade">2</A> mostra a distribuição de resistividade elétrica para diversos materiais geológicos. 
+    Portanto podemos identificar a partir de um contexto geológico quais litologias pertencem a cada resistividade elétrica encontrada.
+
+<P>
+Por exemplo, uma litologia que tenha resistividade elétrica em torno de  <!-- MATH
+ $100 \, \Omega m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$100 \, \Omega m$"></SPAN> e outra com <!-- MATH
+ $3000 \, \Omega m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$3000 \, \Omega m $"></SPAN> pode ser caracterizada como um arenito e uma rocha ígnea respectivamente. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="tabela_resistividade"></A><A NAME="466"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Resistividade Elétrica dos Materiais Geológicos</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+
+</DIV>        
+        <DIV CLASS="centerline" ID="par4335" ALIGN="CENTER">
+<IMG
+  WIDTH="552" HEIGHT="314" ALIGN="BOTTOM" BORDER="0"
+ SRC="./resistividade_tabela.png"
+ ALT="Image resistividade_tabela"></DIV>
+        Adaptado eletromag_met, eletromag_met</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00730000000000000000">
+Fundamentos Teóricos dos Métodos Eletromagnéticos</A>
+</H1>
+        Usando as leis de Maxwell [<A
+ HREF="texto_final_2018-05-16.html#eletromag8hayt">Hayt and Buck 2013</A>] podemos medir os campos elétricos e magnéticos e a partir deles estimar a resistividade elétrica dos meios litológicos em sub-superfície.
+
+<P>
+Os campos podem ser descritos pelas seguintes equações<A NAME="tex2html5"
+  HREF="#foot474"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A>:
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="rot_elet_max"></A><!-- MATH
+ \begin{equation}
+\nabla \times \vec{\textrm{E}}=-\frac{\partial \vec{\textrm{B}}}{\partial t}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="117" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$\displaystyle \nabla \times \vec{\textrm{E}}=-\frac{\partial \vec{\textrm{B}}}{\partial t}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">3</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="rot_mag_max"></A><!-- MATH
+ \begin{equation}
+\nabla \times \vec{\textrm{H}} = \vec{\textrm{J}} + \frac{\partial \vec{\textrm{D}}}{\partial t}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="133" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$\displaystyle \nabla \times \vec{\textrm{H}} = \vec{\textrm{J}} + \frac{\partial \vec{\textrm{D}}}{\partial t}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">4</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\nabla \cdot \vec{\textrm{B}} = 0
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$\displaystyle \nabla \cdot \vec{\textrm{B}} = 0$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">5</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="div_d"></A><!-- MATH
+ \begin{equation}
+\nabla \cdot \vec{\textrm{D}} = \rho_f
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="86" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$\displaystyle \nabla \cdot \vec{\textrm{D}} = \rho_f$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">6</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Onde,
+
+<P>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="309" HEIGHT="158" BORDER="0"
+ SRC="img24.png"
+ ALT="\begin{table}\begin{tabular*}{1cm}{p{0.05cm}p{0.1cm}p{10cm}}
+{\footnotesize$\ve...
+...size$\rightarrow$} &amp; {\footnotesize Tempo [$s$]}
+\end{tabular*}\par
+\end{table}">
+</DIV><BR>
+
+<P>
+Obedecendo as relações de contorno para um meio isotrópico temos as seguintes
+            relações (equações constitutivas):
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="con_B"></A><!-- MATH
+ \begin{equation}
+\vec{\textrm{B}} = \mu \vec{\textrm{H}}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\displaystyle \vec{\textrm{B}} = \mu \vec{\textrm{H}}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">7</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="con_D"></A><!-- MATH
+ \begin{equation}
+\vec{\textrm{D}} = \varepsilon  \vec{\textrm{E}}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\displaystyle \vec{\textrm{D}} = \varepsilon \vec{\textrm{E}}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">8</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+            <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="con_J"></A><!-- MATH
+ \begin{equation}
+\vec{\textrm{J}} = \sigma \vec{\textrm{E}}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$\displaystyle \vec{\textrm{J}} = \sigma \vec{\textrm{E}}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">9</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="261" HEIGHT="62" BORDER="0"
+ SRC="img28.png"
+ ALT="\begin{table}\begin{tabular*}{1cm}{p{0.05cm}p{0.1cm}p{10cm}}
+{\footnotesize$\mu...
+...ootnotesize Condutividade Elétrica [$S/m$]} \\
+\end{tabular*}\par
+\end{table}">
+</DIV><BR>
+
+<P>
+Cada escalar das equações anteriores são características que dependem do meio em que a onda se propaga. Para a crosta <!-- MATH
+ $\mu = 1,2566\textrm{x}10^{-6} H/m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="182" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$\mu = 1,2566\textrm{x}10^{-6} H/m$"></SPAN> e <!-- MATH
+ $\varepsilon = 8,85
+            \textrm{x}10^{-12} F/m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="166" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$\varepsilon = 8,85
+\textrm{x}10^{-12} F/m$"></SPAN>; esses parâmetros funcionam como tensores em um meio
+            anisotrópico que variam em função do tempo. Considerando para os 
+            trabalhos de investigação o meio supõe-se ser isotrópico, assim, 
+            tornando estáticos os tensores.
+
+<P>
+Através das propriedades dos meios isotrópicos podemos reescrever as equações <A HREF="#rot_elet_max">4.3</A> e <A HREF="#rot_mag_max">4.4</A> usando as equações constitutivas <A HREF="#con_B">4.7</A>, <A HREF="#con_D">4.8</A> e <A HREF="#con_J">4.9</A>.
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="rot_elet_con"></A><!-- MATH
+ \begin{equation}
+\nabla \times \vec{\textrm{E}} = - \mu \dfrac{\partial \vec{\textrm{H}}}{\partial t}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="131" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$\displaystyle \nabla \times \vec{\textrm{E}} = - \mu \dfrac{\partial \vec{\textrm{H}}}{\partial t}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="rot_mag_con"></A><!-- MATH
+ \begin{equation}
+\nabla \times \vec{\textrm{H}} = \sigma \vec{\textrm{E}} + \varepsilon \dfrac{\partial \vec{\textrm{E}}}{\partial t}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="158" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$\displaystyle \nabla \times \vec{\textrm{H}} = \sigma \vec{\textrm{E}} + \varepsilon \dfrac{\partial \vec{\textrm{E}}}{\partial t}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">11</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Derivando a equação <A HREF="#rot_mag_con">4.11</A> no tempo, multiplicando por <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$\mu$"></SPAN> e usando a equação <A HREF="#rot_elet_con">4.10</A> temos:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><TABLE CELLPADDING="0" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$\displaystyle \dfrac{\partial (\nabla \times \vec{\textrm{H}})}{\partial t}$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="187" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$\displaystyle = \dfrac{\partial (\sigma \vec{\textrm{E}})}{\partial t} + \dfrac...
+...artial t} \bigg(\varepsilon \dfrac{\partial \vec{\textrm{E}}}{\partial t}\bigg)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$\displaystyle \dfrac{\nabla \times \partial \vec{\textrm{H}}}{\partial t}$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="130" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$\displaystyle = \sigma \dfrac{\partial \vec{\textrm{E}}}{\partial t} + \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$\displaystyle \mu \dfrac{\nabla \times \partial \vec{\textrm{H}}}{\partial t}$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="156" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\displaystyle = \mu \sigma \dfrac{\partial \vec{\textrm{E}}}{\partial t} + \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="116" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$\displaystyle -\dfrac{\mu}{\mu} \nabla \times \nabla \times \vec{\textrm{E}}$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="156" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\displaystyle = \mu \sigma \dfrac{\partial \vec{\textrm{E}}}{\partial t} + \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+             <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="menos_rot_e"></A><!-- MATH
+ \begin{equation}
+- \nabla \times \nabla \times \vec{\textrm{E}} = \mu \sigma \dfrac{\partial \vec{\textrm{E}}}{\partial t} + \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="254" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$\displaystyle - \nabla \times \nabla \times \vec{\textrm{E}} = \mu \sigma \dfra...
+...\partial t} + \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Usando a identidade vetorial:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\nabla \times \nabla \times \vec{\textrm{A}} = -\nabla^2 \vec{\textrm{A}} + \nabla(\nabla \cdot \vec{\textrm{A}})
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="246" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\displaystyle \nabla \times \nabla \times \vec{\textrm{A}} = -\nabla^2 \vec{\textrm{A}} + \nabla(\nabla \cdot \vec{\textrm{A}})$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">13</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Podemos reescrever a equação <A HREF="#div_d">4.6</A> considerando, que para meios homogêneos e isotrópicos não há troca de carga entre ele e a densidade de carga, <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$\rho_f$"></SPAN>, é zero assim:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\nabla \cdot \vec{\textrm{E}} = 0
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$\displaystyle \nabla \cdot \vec{\textrm{E}} = 0$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">14</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Portanto:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="rot_rot_e"></A><!-- MATH
+ \begin{equation}
+\nabla \times \nabla \times \vec{\textrm{E}} = -\nabla^2 \vec{\textrm{E}} + \nabla(\nabla \cdot \vec{\textrm{E}});\,\,\,\,\,\,\, \textrm{onde}\,\,\,\,\,\,\,   \nabla(\nabla \cdot \vec{\textrm{E}})=0
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="411" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$\displaystyle \nabla \times \nabla \times \vec{\textrm{E}} = -\nabla^2 \vec{\te...
+...,\,\,\,\,\, \textrm{onde}\,\,\,\,\,\,\, \nabla(\nabla \cdot \vec{\textrm{E}})=0$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">15</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Substituindo [<A HREF="#rot_rot_e">4.15</A>] em [<A HREF="#menos_rot_e">4.12</A>] temos:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\nabla^2 \vec{\textrm{E}} - \mu \sigma \dfrac{\partial \vec{\textrm{E}}}{\partial t} - \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2} = 0
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="223" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$\displaystyle \nabla^2 \vec{\textrm{E}} - \mu \sigma \dfrac{\partial \vec{\text...
+...tial t} - \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{E}}}{\partial t^2} = 0$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">16</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+De forma análoga podemos verificar que:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\nabla^2 \vec{\textrm{H}} - \mu \sigma \dfrac{\partial \vec{\textrm{H}}}{\partial t} - \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{H}}}{\partial t^2} = 0
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="230" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$\displaystyle \nabla^2 \vec{\textrm{H}} - \mu \sigma \dfrac{\partial \vec{\text...
+...tial t} - \mu \varepsilon \dfrac{\partial^2 \vec{\textrm{H}}}{\partial t^2} = 0$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">17</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Seguindo a dedução das equações como demostrado no trabalho de didana2010 em didana2010, podemos verificar que:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="Ex_AB"></A><!-- MATH
+ \begin{equation}
+\textrm{E}_x = A e^{-\imath k z} + \textrm{B} e^{\imath k z}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="153" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$\displaystyle \textrm{E}_x = A e^{-\imath k z} + \textrm{B} e^{\imath k z}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">18</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="Hy_AB"></A><!-- MATH
+ \begin{equation}
+\textrm{H}_y = \dfrac{k}{\omega \mu_0} (A e^{-\imath k z} + \textrm{B} e^{\imath k z})
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="208" HEIGHT="61" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$\displaystyle \textrm{H}_y = \dfrac{k}{\omega \mu_0} (A e^{-\imath k z} + \textrm{B} e^{\imath k z})$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">19</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Onde <!-- MATH
+ $k^2 = \imath \omega \mu_0 \sigma$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="98" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$k^2 = \imath \omega \mu_0 \sigma$"></SPAN>.
+
+<P>
+Os coeficientes <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="$A$"></SPAN> e <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.png"
+ ALT="$B$"></SPAN> são parâmetros e ajustem e dependem da condição de contorno dos dados. 
+
+<P>
+
+<H1><A NAME="SECTION00740000000000000000">
+Resposta do Método Magnetotelúrico</A>
+</H1>
+        
+<H2><A NAME="SECTION00741000000000000000"></A>
+        <A NAME="subsec-Impedancia"></A><BR>
+Impedância Eletromagnética
+</H2>
+        Outro conceito importante é o tensor Impedância, ele é descrito como uma
+	    relação entre os campos elétricos e magnéticos, análogo a Lei de Ohm [<A
+ HREF="texto_final_2018-05-16.html#eletromag8hayt">Hayt and Buck 2013</A>]
+	    que apresenta resistência a passagem de corrente.
+
+<P>
+O tensor impedância é descrito em função da frequencia angular, através da transformada de Fourier [<A
+ HREF="texto_final_2018-05-16.html#fourier">Bracewell and Bracewell 1986</A>].
+
+<P>
+A transformada de Fourier gera um número complexo, portando o tensor recebe um valor real e outro imaginário.    
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left (\begin{array}{c}
+		 \textrm{E}_x\\
+		 \textrm{E}_y
+		\end{array}\right)
+		=
+		\left (\begin{array}{cc}
+		 \textrm{Z}_{xx} & \textrm{Z}_{xy}\\
+		 \textrm{Z}_{yx} & \textrm{Z}_{yy}
+		\end{array}\right) \left (\begin{array}{c}
+		 \textrm{H}_x\\
+		 \textrm{H}_y
+		\end{array}\right)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="284" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$\displaystyle \left (\begin{array}{c}
+\textrm{E}_x\\
+\textrm{E}_y
+\end{array}\...
+...\right) \left (\begin{array}{c}
+\textrm{H}_x\\
+\textrm{H}_y
+\end{array}\right)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">20</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="Ex_Z"></A><!-- MATH
+ \begin{equation}
+\textrm{E}_x (\omega)=\textrm{Z}_{xx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{xy}(\omega) \textrm{H}_{y}(\omega)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="307" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$\displaystyle \textrm{E}_x (\omega)=\textrm{Z}_{xx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{xy}(\omega) \textrm{H}_{y}(\omega)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">21</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+	    <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="Ey_Z"></A><!-- MATH
+ \begin{equation}
+\textrm{E}_y (\omega)=\textrm{Z}_{yx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{yy}(\omega) \textrm{H}_{y}(\omega)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="307" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$\displaystyle \textrm{E}_y (\omega)=\textrm{Z}_{yx}(\omega) \textrm{H}_{x}(\omega) + \textrm{Z}_{yy}(\omega) \textrm{H}_{y}(\omega)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">22</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>  
+
+<P>
+
+<H1><A NAME="SECTION00750000000000000000">
+Modelo de Dimensões MT</A>
+</H1>
+
+<P>
+
+<H2><A NAME="SECTION00751000000000000000">
+Terra 1D</A>
+</H2>
+
+<P>
+Para o modelo de Terra 1D considera-se que a resistividade elétrica varia apenas em uma direção, em outras palavras, a resistividade elétrica varia com a profundidade.        
+        A matriz impedância para esse modelo tem a sua diagonal principal igual a zero.
+        <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\textrm{Z}_{1 D} = \left ( \begin{array}{cc}
+                                     0 & \textrm{Z}_{xy} \\
+                                    -\textrm{Z}_{yx} & 0
+                                     \end{array}  \right)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="189" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$\displaystyle \textrm{Z}_{1 D} = \left ( \begin{array}{cc}
+0 &amp; \textrm{Z}_{xy} \\
+-\textrm{Z}_{yx} &amp; 0
+\end{array} \right)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">23</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Isso significa que a resistividade elétrica nas duas direções são iguais porem a fase entre elas são opostas.
+
+<P>
+Substituindo [<A HREF="#Ex_AB">4.18</A>] e [<A HREF="#Hy_AB">4.19</A>] na equação <A HREF="#Ex_Z">4.21</A>, obtemos:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="Zxy"></A><!-- MATH
+ \begin{equation}
+\textrm{Z}_{xy}(\omega) = \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} = \dfrac{\omega \mu_0}{k}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="198" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.png"
+ ALT="$\displaystyle \textrm{Z}_{xy}(\omega) = \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} = \dfrac{\omega \mu_0}{k}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">24</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Elevando o módulo ao quadrado da equação <A HREF="#Zxy">4.24</A>, temos:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left | \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \right | ^2 = \left | \dfrac{\omega \mu_0}{k} \right | ^2 = \dfrac{\omega \mu_0}{\sigma}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="223" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.png"
+ ALT="$\displaystyle \left \vert \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \r...
+...ft \vert \dfrac{\omega \mu_0}{k} \right \vert ^2 = \dfrac{\omega \mu_0}{\sigma}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">25</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Portanto:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\dfrac{1}{\sigma} = \dfrac{1}{\omega \mu_0} \left | \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \right | ^2 = \rho
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="196" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.png"
+ ALT="$\displaystyle \dfrac{1}{\sigma} = \dfrac{1}{\omega \mu_0} \left \vert \dfrac{\textrm{E}_x(\omega)}{\textrm{H}_y(\omega)} \right \vert ^2 = \rho$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">26</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+A onda sofre influência de todas as camadas que percorre, sendo assim, a resistividade elétrica é classificada como aparente nos pontos em que ela representa o valor de todo o pacote, assim:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\rho_a = \dfrac{1}{\omega \mu_0} \left | \textrm{Z} \right | ^2
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="117" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.png"
+ ALT="$\displaystyle \rho_a = \dfrac{1}{\omega \mu_0} \left \vert \textrm{Z} \right \vert ^2$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">27</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+A fase do tensor impedância é definido como sendo o arco tangente da parte imaginária sobre a parte real na matriz complexa do tensor.
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\phi = \textrm{arctg} \left ( \dfrac{\textrm{Im \, Z}}{\textrm{Re \, Z}} \right )
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="158" HEIGHT="66" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$\displaystyle \phi = \textrm{arctg} \left ( \dfrac{\textrm{Im \, Z}}{\textrm{Re \, Z}} \right )$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">28</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+A equação <A HREF="#rela_prof_periodo">4.29</A> mostra a relação entre a profundidade
+	(<!-- MATH
+ $\delta_f[m])$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.png"
+ ALT="$\delta_f[m])$"></SPAN>, frequência (<SPAN CLASS="MATH"><IMG
+ WIDTH="49" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.png"
+ ALT="$f[Hz]$"></SPAN>) e a resistividade aparente (<!-- MATH
+ $\rho_a[\Omega.m]$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.png"
+ ALT="$\rho_a[\Omega.m]$"></SPAN>), essa 
+	profundidade é chamada de <SPAN  CLASS="textit">skin-depth</SPAN> [<A
+ HREF="texto_final_2018-05-16.html#eletromag8hayt">Hayt and Buck 2013</A>].
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><TABLE CELLPADDING="0" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$\displaystyle \delta_\omega$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$\displaystyle = \dfrac{1}{\textrm{Re}(k)}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$\displaystyle \delta_\omega$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="137" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.png"
+ ALT="$\displaystyle = \dfrac{1}{\textrm{Re} \left (\sqrt{\imath \omega \mu_0 \sigma} \right)}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$\displaystyle \delta_\omega$"></SPAN></TD>
+<TD NOWRAP ALIGN="LEFT"><SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="80" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.png"
+ ALT="$\displaystyle = \sqrt{ \left (\dfrac{2}{\omega \mu_0 \sigma} \right )}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="rela_prof_periodo"></A><!-- MATH
+ \begin{equation}
+\delta_\omega = \sqrt{\frac{2}{\omega \mu \sigma}} \longrightarrow \delta_f \approx 500  \sqrt{\frac{\rho_a}{f}}
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="265" HEIGHT="79" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.png"
+ ALT="$\displaystyle \delta_\omega = \sqrt{\frac{2}{\omega \mu \sigma}} \longrightarrow \delta_f \approx 500 \sqrt{\frac{\rho_a}{f}}$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">29</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Essa relação mostra que para uma mesma profundidade variando à resistividade
+	aparente a frequência é alterada.
+
+<P>
+
+<H2><A NAME="SECTION00752000000000000000">
+Terra 2D</A>
+</H2>
+
+<P>
+O modelo de Terra 2D é caracterizado pelo contato vertical entre dois meios de diferentes resistividades elétricas. Se o contato é
+	    paralelo ao eixo <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.png"
+ ALT="$x$"></SPAN> então é definido a direção do <SPAN  CLASS="textit">strike</SPAN> no eixo <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.png"
+ ALT="$x$"></SPAN>, a direção deve ser paralela ao plano de contato,
+	    ou seja, onde a condutividade elétrica é constante.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig_strike"></A><A NAME="779"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Modelo de Terra 2D para a resistividade elétrica variando na direção <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$y$"></SPAN></CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<IMG
+  WIDTH="394" HEIGHT="230" ALIGN="BOTTOM" BORDER="0"
+ SRC="./Tm_Te.png"
+ ALT="Image Tm_Te"> 
+	        
+</DIV>
+		Adaptado [<A
+ HREF="texto_final_2018-05-16.html#didana2010">Didana 2010</A>]</TD></TR>
+</TABLE>
+</DIV>
+
+	    Devido a essa diferença entre as resistividades elétricas polarizamos os campos em TE (Transversal Elétrico) e TM (Transversal Magnético).
+	    Para esse modelo temos o tensor impedância como:
+	    <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\textrm{Z}_{2D} = \left (\begin{array}{cc}
+	                               0 & \textrm{Z}_{xy} \\
+	                               \textrm{Z}_{yx} & 0
+	                              \end{array} \right)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="174" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img71.png"
+ ALT="$\displaystyle \textrm{Z}_{2D} = \left (\begin{array}{cc}
+0 &amp; \textrm{Z}_{xy} \\
+\textrm{Z}_{yx} &amp; 0
+\end{array} \right)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">30</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+Assim cada polarização pode ser escrita como:
+	    <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\textrm{TE} = \left \{ \begin{array}{l}
+	            \dfrac{\partial \textrm{E}_x}{\partial y} = \dfrac{\partial \textrm{B}_z}{\partial t} = -i\omega \textrm{B}_z \\[10pt]
+	           \dfrac{\partial \textrm{E}_x}{\partial z} = \dfrac{\partial \textrm{B}_y}{\partial t} = i\omega \textrm{B}_y \\[10pt]
+	           \dfrac{\partial \textrm{B}_z}{\partial y} - \dfrac{\partial \textrm{B}_y}{\partial z} = \mu \sigma \textrm{E}_x
+	           \end{array} \right.
+	    
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="256" HEIGHT="168" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.png"
+ ALT="$\displaystyle \textrm{TE} = \left \{ \begin{array}{l}
+\dfrac{\partial \textrm{E...
+...partial \textrm{B}_y}{\partial z} = \mu \sigma \textrm{E}_x
+\end{array} \right.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">31</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+	    <P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\textrm{TM} = \left \{ \begin{array}{l}
+	            \dfrac{\partial \textrm{B}_x}{\partial y} = \mu \sigma \textrm{E}_z \\[10pt]
+	           -\dfrac{\partial \textrm{B}_x}{\partial z} = \mu \sigma \textrm{E}_y \\[10pt]
+	           \dfrac{\partial \textrm{E}_z}{\partial y} - \dfrac{\partial \textrm{E}_y}{\partial z} = i \omega \textrm{B}_x
+	           \end{array} \right.
+	    
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="243" HEIGHT="168" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.png"
+ ALT="$\displaystyle \textrm{TM} = \left \{ \begin{array}{l}
+\dfrac{\partial \textrm{B...
+...{\partial \textrm{E}_y}{\partial z} = i \omega \textrm{B}_x
+\end{array} \right.$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">32</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00753000000000000000">
+Terra 3D</A>
+</H2>
+        Na maioria das condições geológicas o modelo se comporta como 3D, isso implica que a 
+	    condutividade elétrica varia ao longo das três direções (<!-- MATH
+ $\sigma = \sigma_{x,y,z}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="79" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.png"
+ ALT="$\sigma = \sigma_{x,y,z}$"></SPAN>).
+
+<P>
+A matriz do tensor impedância é então calculada com todos os termos. 
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\textrm{Z}_{3D} = \left (\begin{array}{cc}
+	                               \textrm{Z}_{xx} & \textrm{Z}_{xy} \\
+	                               \textrm{Z}_{yx} & \textrm{Z}_{yy}
+	                              \end{array} \right)
+\end{equation}
+ -->
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG
+ WIDTH="174" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.png"
+ ALT="$\displaystyle \textrm{Z}_{3D} = \left (\begin{array}{cc}
+\textrm{Z}_{xx} &amp; \textrm{Z}_{xy} \\
+\textrm{Z}_{yx} &amp; \textrm{Z}_{yy}
+\end{array} \right)$"></SPAN></TD>
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
+(<SPAN CLASS="eqn-number">33</SPAN>)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+
+<H1><A NAME="SECTION00800000000000000000"></A>
+        <A NAME="cap-proc_mt"></A><BR>
+<SPAN  CLASS="textit">Softwares</SPAN> Utilizados em Dados MT
+</H1>
+
+<P>
+Neste capítulo será discutido e mostrado como vinham sendo processados os dados magnetotelúrico desde a etapa de coleta dos dados, até a produção de pseudo-secções. 
+
+<P>
+Os programas utilizados são disponibilizados pelo <SPAN  CLASS="textit">site</SPAN> mtnet, mtnet. O <SPAN  CLASS="textit">site</SPAN> MTnet é uma comunidade que une diversos programas para processamento de dados MT, para fins acadêmicos  
+
+<P>
+
+<H1><A NAME="SECTION00810000000000000000"></A>
+        <A NAME="sec_aquisicao_dados"></A><BR>
+Aquisição de Dados MT
+</H1>
+        O MT utiliza as frequências das ondas, isolando-as para obter um valor de resistividade, essas variam entre 1 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$mHz$"></SPAN> e 10 <SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$kHz$"></SPAN><A NAME="tex2html7"
+  HREF="#foot860"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A> dentro do espectro eletromagnético.
+
+<P>
+A escolha da taxa de aquisição dos dados é um fator importante, pois há um grande intervalo de períodos. Por exemplo, a frequência de 1 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$mHz$"></SPAN> tem o período equivalente a 1000 <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.png"
+ ALT="$s$"></SPAN>, ou seja, leva cerca de 17 minutos para que seja registrado um comprimento de onda em contra partida para 10 <SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$kHz$"></SPAN> leva apenas 1 milissegundo.
+
+<P>
+Para que seja contornada a problemática da aquisição são realizadas varias tomadas chamadas de bandas e cada uma é configurada com uma taxa de aquisição diferente, a tabela <A HREF="#tab_taxa_aquisicao">5.1</A> mostra as taxas de aquisições frequentemente usadas. 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="863"></A>
+<TABLE>
+<CAPTION><STRONG>Table:</STRONG>
+Taxas de Aquisições frequentemente usadas para equipamentos ADU06 e ADU07.</CAPTION>
+<TR><TD>                <DIV ALIGN="CENTER">
+
+</DIV>                
+                <A NAME="tab_taxa_aquisicao"></A>                <!-- MATH
+ $\resizebox{0.5\textwidth}{!}{%
+                \begin{tabular}{@{}ccc@{}}
+\toprule
+\textbf{Equipamento}  & \textbf{Banda}   & \textbf{Taxa de Aquisição [$H_z$]}   \\
+\midrule
+&   A       &   65536     \\
+&   B       &   4096      \\
+ADU06   &   F       &   Livre     \\
+&   C       &   64        \\
+&   D       &   2         \\
+&   65536H  &   65536     \\
+ADU07   &   4096H   &   4096      \\
+&   128H    &   128       \\
+&   4H      &   4         \\
+\bottomrule
+\end{tabular}%
+                }$
+ -->
+<IMG
+ WIDTH="279" HEIGHT="244" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.png"
+ ALT="\resizebox{0.5\textwidth}{!}{%
+\begin{tabular}{@{}ccc@{}}
+\toprule
+\textbf{Equi...
+...7 &amp; 4096H &amp; 4096 \\
+&amp; 128H &amp; 128 \\
+&amp; 4H &amp; 4 \\
+\bottomrule
+\end{tabular}%
+}">
+                O Autor, 2018
+            </TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+
+<P>
+Como discutido na subsecção <A HREF="#subsec-Impedancia">4.4.1</A> para se obter a matriz impedância é necessário efetuar a aquisição das componentes dos campos elétricos e magnéticos separadamente.
+
+<P>
+Essas componentes são registradas em <SPAN CLASS="MATH"><IMG
+ WIDTH="79" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.png"
+ ALT="$[mV/Km]$"></SPAN> e em <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.png"
+ ALT="$[nT]$"></SPAN> para os campos elétricos e magnéticos respectivamente e são chamadas de séries temporais. As cinco séries temporais (<!-- MATH
+ $\textrm{E}_x,\, \textrm{E}_y, \, \textrm{H}_x, \, \textrm{H}_y \, \, \textrm{e} \, \, \textrm{H}_z$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="150" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\textrm{E}_x,\, \textrm{E}_y, \, \textrm{H}_x, \, \textrm{H}_y \, \, \textrm{e} \, \, \textrm{H}_z$"></SPAN>) são armazenadas em um arquivo binário com extensão padrão TS.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="884"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+Series Temporais das cinco componentes contidas no arquivo TS</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+
+</DIV>	        
+	        <DIV ALIGN="CENTER">
+<IMG
+  WIDTH="512" HEIGHT="325" ALIGN="BOTTOM" BORDER="0"
+ SRC="./campos_divididos.png"
+ ALT="Image campos_divididos"> 
+	        
+</DIV>
+		O Autor, 2018</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<H2><A NAME="SECTION00811000000000000000"></A>
+            <A NAME="subsec-arquivoTS"></A><BR>
+Estrutura do Aquivo TS
+</H2>    
+            Os arquivos .TS (<SPAN  CLASS="textit">Time Series</SPAN>) são arquivos binários e estruturados em 3 blocos; comentários, informações e dados  [<A
+ HREF="texto_final_2018-05-16.html#tsformat">Jones 1999</A>].
+            
+<UL>
+<LI>O Bloco de comentários é marcado pelo símbolo <SPAN  CLASS="textit">#</SPAN> e todas essas linhas serão ignoradas pelo programa.
+</LI>
+<LI>O Bloco de informações contém todas as propriedades da aquisição, como: coordenadas, elevação, declinação magnética, nome da estação, dentre outras.
+</LI>
+<LI>O bloco de dados contém 5 colunas e cada valor sendo igual ao registrado pelos sensores, a sequência das colunas são: <!-- MATH
+ $\textrm{H}_x,\, \textrm{H}_y, \, \textrm{H}_z, \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="150" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.png"
+ ALT="$\textrm{H}_x,\, \textrm{H}_y, \, \textrm{H}_z, \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$"></SPAN>.
+            
+</LI>
+</UL>
+
+<P>
+
+<H1><A NAME="SECTION00820000000000000000">
+Fluxo de Processamento de Dados MT</A>
+</H1>
+
+<P>
+Como visto anteriormente (subsecção <A HREF="#subsec-Impedancia">4.4.1</A>) a matriz impedância é obtida através das componentes <!-- MATH
+ $\textrm{H}_x,\, \textrm{H}_y,  \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="120" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$\textrm{H}_x,\, \textrm{H}_y, \, \textrm{E}_x \, \, \textrm{e} \, \, \textrm{E}_y$"></SPAN>. Porém as mesmas devem estar no domínio da frequência angular, discutido na secção <A HREF="#sec_aquisicao_dados">5.1</A>. As séries temporais são obtidas com taxas de aquisições diferentes, isso implica que o tempo de leitura também será diferente, esse fato propicia que sejam feitas várias leituras com mesma taxa no mesmo ponto, essas leituras são chamas de rodadas. 
+
+<P>
+O pré-processamento compreende essas etapas: converter os dados de binários para ASCII, para que possam ser manipulados facilmente; utilizar a transformada de Fourier para mudar o domínio dos dados de tempo para frequência angular; filtrar e escolher as melhores rodadas, ou seja, as séries que tiverem a maior coerência e menor ruído.
+
+<P>
+A figura <A HREF="#fig_fluxo_classico">5</A> ilustra todas as etapas de pré-processamento e as subsecções a seguir mostra quais os programas utilizados atualmente e como eles atuam sobre os dados.  
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig_fluxo_classico"></A><A NAME="913"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Fluxograma de Processamento Clássico</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<IMG
+  WIDTH="630" HEIGHT="335" ALIGN="BOTTOM" BORDER="0"
+ SRC="./fluxograma.png"
+ ALT="Image fluxograma"> 
+</DIV>
+                O Autor, 2018</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<H2><A NAME="SECTION00821000000000000000"></A>
+    <A NAME="subsec-conver-dados"></A><BR>
+Conversão de Dados Binários
+</H2>
+    Os arquivos TS são Binários não formatados, sendo que cada linha do arquivo é composta por 80 carácteres. 
+
+<P>
+O comando <code>ats2asc</code> [<A
+ HREF="texto_final_2018-05-16.html#emtf">Egbert 1997</A>] é usado para a conversão dos dados, ele efetua a leitura do arquivo, a conversão para ASCII e a separação do arquivo em diferentes diretórios.
+
+<P>
+A separação do arquivo é dada pela seguinte forma:
+
+<P>
+
+<OL>
+<LI>Diretório DATA/ 
+     Arquivos asc <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img83.png"
+ ALT="$\rightarrow$"></SPAN> Contém as leituras dos sensores.
+     Arquivos clk <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img83.png"
+ ALT="$\rightarrow$"></SPAN> Contém a hora que foi iniciada a rodada e também a hora de uma estação para referência remota.
+</LI>
+<LI>Diretório SP/
+     Aquivos sp <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img83.png"
+ ALT="$\rightarrow$"></SPAN> Contém os parâmetros da aquisição.
+    
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00822000000000000000">
+Dnff</A>
+</H2>
+
+<P>
+O programa Dnff faz parte do pacote EMTF [<A
+ HREF="texto_final_2018-05-16.html#emtf">Egbert 1997</A>] desenvolvido por Gary D. Egbert, o pacote EMTF compõem rotinas de mudança de domínio dos dados e processamentos estatísticos para remoção de ruídos.
+
+<P>
+O Dnff é responsável por fazer a transformada discreta de Fourier sobre os dados e aplica os coeficientes de Fourier que ajustam os problemas de reverberação.
+
+<P>
+
+<H2><A NAME="SECTION00823000000000000000">
+TranMT</A>
+</H2>
+
+<P>
+O programa TranMT também faz parte do pacote EMTF e é responsável por fazer os tratamentos estáticos sobre o dado, removendo <SPAN  CLASS="textit">outliers</SPAN> (pontos muito distantes da curva de tendência) e aumentar a relação sinal/ruído.
+
+<P>
+A saída do programa TranMT são arquivos ZSS (formato padrão adotado por Egbert) contendo os valores de impedância e fase para cada janela. As janelas são como taxas de aquisições dentro dos arquivos obtidos em campo, essas podem ser configuradas pelo usuário ajustando a melhor representação dos dados em função da taxa de amostragem de aquisição em campo.   
+
+<P>
+
+<H2><A NAME="SECTION00824000000000000000">
+ToJones</A>
+</H2>
+
+<P>
+O programa Tojones [<A
+ HREF="texto_final_2018-05-16.html#tojones">Jones 1994</A>] extrai as informações dos arquivos ZSS de diferentes janelas e mescla os mesmo em um único arquivo J-format, onde, esses arquivos são usados para plotar as pseudo-secções e outras rotinas como o Rho+ [<A
+ HREF="texto_final_2018-05-16.html#rhoplus">Parker and Booker 1997</A>] e programas de inversão.
+
+<P>
+
+<H1><A NAME="SECTION00830000000000000000">
+Pacotes de Processamentos do grupo Geoma - INPE</A>
+</H1>
+
+<P>
+O grupo Geoma do INPE (Institudo Nacional de Pesquisas Espaciais) oferece um treinamento para processamento do magnetotelúrico para alunos e colaboradores.
+
+<P>
+Os <SPAN  CLASS="textit">scripts</SPAN> oferecidos para o processamento MT foram desenvolvidos pelo Dr. Marcelo Banik de Pádua obtidos sobre comunicação privada pelo autor.
+
+<P>
+A natureza dos pacotes são <SPAN  CLASS="textit">scripts</SPAN> escritos em <SPAN  CLASS="textit">Shell</SPAN>, <SPAN  CLASS="textit">Python</SPAN>, <SPAN  CLASS="textit">C++</SPAN> que utilizam o programa GMT [<A
+ HREF="texto_final_2018-05-16.html#gmt">NATIONAL SCIENCE FOUNDATION 2018</A>] para plotagem dos gráficos.
+
+<P>
+Os <SPAN  CLASS="textit">script</SPAN> auxiliam na utilização dos programas já citados, visto que a saída de um programa é a entrada do próximo. Um exemplo é o programa processamentoZ que prepara os dados para as rotinas Dnff e TranMT, ele ajusta os parâmetros necessários para esses programas e trabalha com os dados de forma padrão auxiliando o usuário na utilização dos pacotes. 
+
+<P>
+
+<H1><A NAME="SECTION00900000000000000000">
+Proposta de <SPAN  CLASS="textit">Software</SPAN> Livre Integrador</A>
+</H1>
+
+<P>
+O desenvolvimento do <SPAN  CLASS="textit">software</SPAN>, chamado de PampaMT, foi baseado na filosofia de <SPAN  CLASS="textit">Software Livre</SPAN> [<A
+ HREF="texto_final_2018-05-16.html#soft_free">FREE SOFTWARE FOUNDATION 2018</A>] onde o código fonte será liberado e distribuído para a comunidade geofísica. A linguagem base escolhida para o projeto foi o Python, visto as vastas bibliotecas para trabalhar com dados científicos e a simplicidade da implementação do código.  
+
+<P>
+
+<H1><A NAME="SECTION00910000000000000000"></A>
+            <A NAME="lim_python"></A><BR>
+Linguagem PYTHON
+</H1>
+
+<P>
+Criada nos anos 80 por Guido Van Rossum no CWI (<SPAN  CLASS="textit">Centrum Wishunde &amp; Informatica</SPAN>) em Amsterdã, Holanda a linguagem Python foi idealizada no grupo de desenvolvimento da linguagem ABC do CWI, onde rapidamente começou a se destacar.
+
+<P>
+Na década de 90 foi criada a <SPAN  CLASS="textit">Python Software Activity</SPAN> que começou a cuidar dos interesses da linguagem, nesse período apenas o criador Guido Van tomava as decisões e cuidava do desenvolvimento. Finalmente em 2001 é fundada a <SPAN  CLASS="textit">Python Software Foundation</SPAN> que mantém a linguagem e todos os direitos sobre ela [<A
+ HREF="texto_final_2018-05-16.html#python36">Drake 2018</A>].  
+
+<P>
+Python é uma linguagem de alto nível<A NAME="tex2html11"
+  HREF="#foot950"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A> onde seu código deve ser organizado favorecendo a interpretação e sendo ao mesmo tempo simples.
+
+<P>
+Exemplos de código Python:
+
+<P>
+Mostrar conteúdo na Tela:
+
+<P>
+Como comentado, o código tem fácil leitura. Para imprimir um conteúdo na tela, por exemplo, 
+            podemos simplesmente usar o comando <code>print</code>, aproximando muito da língua inglesa.  
+            <BLOCKQUOTE>
+pcr&gt;&gt;&gt; &nbsp; gray<SPAN  CLASS="textit"># Comentários</SPAN>                  
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">OliveGreenprint</SPAN> ('Hello World')         
+<BR>                     Hello World
+                                                               
+<DIV ALIGN="RIGHT">
+(<A HREF="#lim_python">6.1</A>.1) 
+</DIV>
+</BLOCKQUOTE>
+<P>
+
+<P>
+Operações Matemáticas:
+
+<P>
+As variáveis no código não precisam ser declaradas para um 
+            tipo específico (Ex.: <SPAN  CLASS="textit">float, int, string</SPAN>), como em outras linguagens, o que deixa o código mais fluido. 
+            
+<P>
+<BLOCKQUOTE>pcr&gt;&gt;&gt; &nbsp; a = 2                               
+<BR>                     &gt;&gt;&gt; &nbsp; b = 5                               
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">OliveGreenprint</SPAN>(a + b)                    
+<BR>                     7                                        
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">OliveGreenprint</SPAN>(b / a)                    
+<BR>                     2.5                                      
+<BR>                                                               
+<DIV ALIGN="RIGHT">
+(<A HREF="#lim_python">6.1</A>.2) 
+</DIV>
+</BLOCKQUOTE>
+
+<P>
+Importando Módulos:
+
+<P>
+Módulos são estruturas que podemos importar objetos de um código a outro,
+            no script <A HREF="#lim_python">6.1</A>.3 importamos o valor de <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.png"
+ ALT="$\pi$"></SPAN> que esta contido na variável <code>pi</code> dentro do pacote <code>math</code>. 
+
+<P>
+<BLOCKQUOTE>
+pcr&gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> math                    
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; pi = math.pi                        
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">OliveGreenprint</SPAN>(pi)                       
+<BR>                     3.141592653589793
+                                                               
+<DIV ALIGN="RIGHT">
+(<A HREF="#lim_python">6.1</A>.3) 
+</DIV>
+</BLOCKQUOTE>
+
+<P>
+
+<H1><A NAME="SECTION00920000000000000000">
+Módulos e Pacotes</A>
+</H1>
+
+<P>
+A vasta quantidade de pacotes de terceiros para Python é o que faz a linguagem tão rica.
+            De fato, os 
+            pacotes facilitam a implementação do código, por exemplo, se for preciso calcular o espectro de 
+            frequência de um conjunto de dados, não será necessário implementar todo o algoritmo para efetuar o cálculo, resolver as integrais e assim por diante, mas sim podemos utilizar o pacote <code>scipy</code> e importarmos a função <code>fftpack</code> que já foi implementada e executar em nosso código, esse processo economiza tempo em desenvolvimento.           
+
+<P>
+
+<H2><A NAME="SECTION00921000000000000000">
+Kivy</A>
+</H2>
+
+<P>
+<A NAME="lim_kivy"></A>            Kivy é um <SPAN  CLASS="textit">framework</SPAN> criado em 2010 pela KIVY ORGANIZATION [<A
+ HREF="texto_final_2018-05-16.html#kivy">KIVY ORGANIZATION 2018</A>] e <SPAN  CLASS="textit">Open Source</SPAN> para o desenvolvimento de interfaces gráficas, a escolha dessa interface foi a alta compatibilidade entre sistemas operacionais e todo o processamento nativo para desenhar a tela é feita no chip gráfico liberando então mais processamento pela CPU.
+
+<P>
+Kivy também é uma linguagem de programação que permite a criação da interface de forma mais fácil, similar ao QT [<A
+ HREF="texto_final_2018-05-16.html#qt">QT COMPANY 2018</A>] ela usa uma linguagem de marcação e indentada onde as propriedades dos <SPAN  CLASS="textit">widgets</SPAN> (Objetos interativos com o usuário) são adicionadas colocando-as a baixo e com espaçamento de 4 espaços do <SPAN  CLASS="textit">widget</SPAN>. 
+
+<P>
+Exemplo do Kivy dentro do código Python:
+            <BLOCKQUOTE>
+pcr&gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangefrom</SPAN> kivy.app <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> App                      
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangefrom</SPAN> kivy.uix.button <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> Button            
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangeclass</SPAN> Test(App):                              
+<BR>                     &gt;&gt;&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<SPAN  CLASS="textbf">BurntOrangedef</SPAN> build(self):                         
+<BR>                     &gt;&gt;&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <SPAN  CLASS="textbf">BurntOrangereturn</SPAN> Button(Bluetext=OliveGreen'Hello World') 
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; Test().run()                                            
+                                                                                 
+<DIV ALIGN="RIGHT">
+(<A HREF="#lim_kivy">6.2.1</A>.1) 
+</DIV>
+</BLOCKQUOTE>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="janela_kivy"></A><A NAME="990"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+Exemplo de janela com Kivy implementada somente com código Python</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<IMG
+  WIDTH="276" HEIGHT="202" ALIGN="BOTTOM" BORDER="0"
+ SRC="./hello_world_kivy.png"
+ ALT="Image hello_world_kivy"> 
+                
+</DIV>
+                O Autor, 2018</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<H2><A NAME="SECTION00922000000000000000"></A>
+            <A NAME="lim_scipy"></A><BR>
+SciPy, MatPlotLib, NumPy
+</H2>
+
+<P>
+SciPy é um ecossistema de ferramentas para processamento de dados científicos contando com ferramentes de manipulação de matrizes, plotagem de gráficos, interpolação dentro outras ferramentas [<A
+ HREF="texto_final_2018-05-16.html#scipy">Jones et al. 2001</A>].
+
+<P>
+O ecossistema é de código aberto e as principais ferramentas são: NumPy para trabalhos com vetores e matrizes, MatPlotLib são ferramentas para plotagem de dados e o próprio SciPy para interpolação, cálculo de espectro de frequência dentre outras.
+
+<P>
+A tabela <A HREF="#pontos_ex_inter">6.1</A> apresenta 9 pontos distribuídos numa matriz quadrada de ordem 3, onde, a posição (2,2) possui uma anomalia, o código <A HREF="#lim_scipy">6.2.2</A>.1 mostra como fazer a interpolação dos pontos e como plotar o resultado (figura <A HREF="#fig_ex_inter">7</A>).
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="1004"></A>
+<TABLE>
+<CAPTION><STRONG>Table:</STRONG>
+Distribuição de pontos com valor anômalo ao centro.</CAPTION>
+<TR><TD>                <DIV ALIGN="CENTER">
+
+</DIV>                
+                <A NAME="pontos_ex_inter"></A>                <!-- MATH
+ $\resizebox{.22\textwidth}{!}{%
+                \begin{tabular}{@{}cccl@{}}
+\toprule
+\textbf{Pontos}  & \textbf{x}   & \textbf{y}   & \textbf{z}  \\
+\midrule
+1&1       &   1     &  1     \\
+%\hline
+                        2&2       &   1     &  1     \\
+%\hline
+                        3&3       &   1     &  1     \\
+%\hline
+                        4&1       &   2     &  1     \\
+%\hline
+                        5&2       &   2     &  3     \\
+%\hline
+                        6&3       &   2     &  1     \\
+%\hline
+                        7&1       &   3     &  1     \\
+%\hline
+                        8&2       &   3     &  1     \\
+%\hline
+                        9&3       &   3     &  1     \\
+\bottomrule
+\end{tabular}%
+                }$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="302" ALIGN="BOTTOM" BORDER="0"
+ SRC="img85.png"
+ ALT="\resizebox{.22\textwidth}{!}{%
+\begin{tabular}{@{}cccl@{}}
+\toprule
+\textbf{Pon...
+...
+%\hline
+8&amp;2 &amp; 3 &amp; 1 \\
+%\hline
+9&amp;3 &amp; 3 &amp; 1 \\
+\bottomrule
+\end{tabular}%
+}">
+                O Autor, 2018
+            </TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+
+<P>
+Exemplo Numpy:
+            <BLOCKQUOTE>
+pcr&gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> Numpy <SPAN  CLASS="textbf">BurntOrangeas</SPAN> np        
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; x = np.array([1,2,3,1,2,3,1,2,3])  
+<BR>                     &gt;&gt;&gt; &nbsp; y = np.array([1,1,1,2,2,2,3,3,3])  
+<BR>                     &gt;&gt;&gt; &nbsp; z = np.array([1,1,1,1,3,1,1,1,1])                                                                  
+                                                         
+<DIV ALIGN="RIGHT">
+(<A HREF="#lim_scipy">6.2.2</A>.1) 
+</DIV>
+</BLOCKQUOTE>
+
+<P>
+Exemplo SciPy:
+
+<P>
+<BLOCKQUOTE>
+pcr&gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangefrom</SPAN> scipy <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> interpolate              
+<BR>                     &gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangefrom</SPAN> scipy.interpolate <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> griddata     
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; xi = np.arange(x.min(), x.max(), .01)               
+<BR>                     &gt;&gt;&gt; &nbsp; yi = np.arange(y.min(), y.max(), .01)               
+<BR>                     &gt;&gt;&gt; &nbsp; xi,yi = meshgrid(xi,yi)                             
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; gray<SPAN  CLASS="textit">#  Interpolate</SPAN>                                   
+<BR>                     &gt;&gt;&gt; &nbsp; zi = griddata((x,y),z,(xi,yi),Bluemethod=OliveGreen'cubic')       
+                                                                                 
+<DIV ALIGN="RIGHT">
+(cont. <A HREF="#lim_scipy">6.2.2</A>.1) 
+</DIV>
+</BLOCKQUOTE>
+
+<P>
+Exemplo Matplotlib:
+
+<P>
+<BLOCKQUOTE>
+pcr&gt;&gt;&gt; &nbsp; <SPAN  CLASS="textbf">BurntOrangeimport</SPAN> matplotlib.pyplot <SPAN  CLASS="textbf">BurntOrangeas</SPAN> plt            
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; plt.figure(1)                                       
+<BR>                     &gt;&gt;&gt; &nbsp; plt.subplot(111)                                    
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; zn = np.arange(z.min(), z.max() + 0.01, .01)        
+<BR>                     &gt;&gt;&gt; &nbsp; 
+<BR>                     &gt;&gt;&gt; &nbsp; plt.plot(x, y, OliveGreen'kx')                           
+<BR>                     &gt;&gt;&gt; &nbsp; plt.contourf(xi, yi, zi, zn)                        
+<BR>                     &gt;&gt;&gt; &nbsp; plt.colorbar()                                      
+<BR>                     &gt;&gt;&gt; &nbsp; plt.grid()                                          
+<BR>                     &gt;&gt;&gt; &nbsp; plt.set_cmap(OliveGreen'jet')                           
+<BR>                     &gt;&gt;&gt; &nbsp; plt.show()                                          
+<BR>                                                                                
+<DIV ALIGN="RIGHT">
+(cont. <A HREF="#lim_scipy">6.2.2</A>.1) 
+</DIV>
+</BLOCKQUOTE>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig_ex_inter"></A><A NAME="1041"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 7:</STRONG>
+Exemplo dos pontos interpolados usando SciPy e plotados usando MatPlotLib</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<IMG
+  WIDTH="355" HEIGHT="268" ALIGN="BOTTOM" BORDER="0"
+ SRC="./plot_ex.png"
+ ALT="Image plot_ex"> 
+                
+</DIV>
+                O Autor, 2018</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<H1><A NAME="SECTION00930000000000000000"></A>
+        <A NAME="cap-algoritmos"></A><BR>
+Arquitetura do Programa e Abordagem dos fluxos de Processamento
+</H1>
+
+<P>
+O PampaMT trabalhará com os dados seguindo os fluxos de processamentos comentado no capitulo <A HREF="#cap-proc_mt">5</A>, atualmente o maior consumo de tempo de processamento são destinados a essas etapas. O programa desenvolvido focará em melhorar o tempo de processamento, visualização dos dados e aprendizagem.
+
+<P>
+O fluxograma da figura <A HREF="#fig_influ_mainpy">9</A> ilustra as etapas de inicialização pensados para o programa e como será a execução do pacote EMTF sobre os dados.
+
+<P>
+Como já discutido as etapas de processamento serão feitas através de interface gráfica e o programa processamentoZ será reescrito para aumentar a compatibilidade no fluxo.
+
+<P>
+O fluxograma da figura <A HREF="#fig_influ_pampamtpy">8</A> mostra o processo principal do programa, onde o usuário poderá:
+    
+<OL>
+<LI>Plotar as janelas
+</LI>
+<LI>Escolher os períodos para cada janela
+</LI>
+<LI>Executar o processamentoZ para novas rodadas
+</LI>
+<LI>Executar o Tojones sobre as janelas escolhidas
+    
+</LI>
+</OL>
+
+<P>
+Após o Tojones é finalizado o processo, compreendendo então todas as etapas propostas no trabalho.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig_influ_pampamtpy"></A><A NAME="1056"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8:</STRONG>
+Fluxograma Tela Principal PampaMT</CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<IMG
+  WIDTH="591" HEIGHT="739" ALIGN="BOTTOM" BORDER="0"
+ SRC="./PampaMTpy2.png"
+ ALT="Image PampaMTpy2"> 
+                
+</DIV>
+                O Autor, 2018</TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+<BR>
+<A NAME="fig_influ_mainpy"></A><IMG
+ WIDTH="1069" HEIGHT="656" ALIGN="BOTTOM" BORDER="0"
+ SRC="img86.png"
+ ALT="\begin{landscape}
+% latex2html id marker 1063\par
+\begin{figure}[H]
+\caption{...
+...mainpy.eps}
+\end{center} \fonte{O Autor, 2018}
+\end{figure} \end{landscape}">
+<BR> 
+
+<P>
+
+<H1><A NAME="SECTION001000000000000000000"></A>
+    <A NAME="cap-resultados"></A><BR>
+Resultados Esperados
+</H1>
+    Espera-se ao final desse trabalho de conclusão de curso criar um programa para processamento do método magnetotelúrico , escrito em Python e de fácil usabilidade.
+
+<P>
+Também melhorar a compatibilidade com os diversos sistemas operacionais e distribuir sobre a licença de <SPAN  CLASS="textit">software livre</SPAN> para a comunidade geofísica. O que deve possibilitar a expansão no magnetotelúrico na academia visto que qualquer pessoa terá acesso ao programa.
+
+<P>
+Ao final comparar os resultados obtidos com o programa em relação a forma que vinha sendo trabalhada até então. As principais comparações serão: tempo de processamento, visualização, tempo de aprendizagem para uso da plataforma, coerência entre resultados e manipulação da forma de visualização. 
+
+<P>
+
+<P>
+
+<H1><A NAME="SECTION001100000000000000000"></A>
+    <A NAME="cap-cronograma"></A><BR>
+Cronograma de Atividades
+</H1>
+
+<P>
+
+<H1><A NAME="SECTION001110000000000000000">
+1º Semestre</A>
+</H1>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="2104"></A>
+<TABLE>
+<CAPTION><STRONG>Table:</STRONG>
+Cronograma - 1º Semestre 2018</CAPTION>
+<TR><TD>                <DIV ALIGN="CENTER">
+
+</DIV>                
+
+<P>
+<!-- MATH
+ $\resizebox{\textwidth}{!}{%
+                \begin{tabular}{@{}lccccccl@{}}
+\toprule
+\textbf{Tarefa}  & {\bf Jan}& {\bf Fev}& {\bf Mar}& {\bf Abr}& {\bf Mai}& {\bf Jun} &  \\
+\midrule
+\par
+{\bf 1.} Revisão Bibliográfica 		& 	X  & 	      & 	 & 	    & 	       & 	  \\
+\par
+{\bf 1.1} Magnetotelúrico      		& 	X  & 	X     & X        & 	    & 	       & 	  \\
+%\hline
+                        {\bf 1.2} Python 3.5           		& 	   &          & X	 &X 	    & 	       & 	  \\
+%\hline
+                        {\bf 1.3} Pacote PROC-MT (INPE)           	& 	   & 	      & 	 & 	    & X	       & X	  \\
+\par
+\bottomrule
+\end{tabular}%
+                }$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="187" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.png"
+ ALT="\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccccl@{}}
+\toprule
+\textbf{Ta...
+....3} Pacote PROC-MT (INPE) &amp; &amp; &amp; &amp; &amp; X &amp; X \\
+\par
+\bottomrule
+\end{tabular}%
+}">
+                O Autor, 2018
+            </TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+
+<P>
+
+<H1><A NAME="SECTION001120000000000000000">
+2º Semestre</A>
+</H1>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="2126"></A>
+<TABLE>
+<CAPTION><STRONG>Table:</STRONG>
+Cronograma - 2º Semestre 2018</CAPTION>
+<TR><TD>                <DIV ALIGN="CENTER">
+
+</DIV>                
+
+<P>
+<!-- MATH
+ $\resizebox{\textwidth}{!}{%
+                \begin{tabular}{@{}lccccccl@{}}
+\toprule
+\textbf{Tarefa}  & {\bf Jul}& {\bf Ago}& {\bf Set}& {\bf Out}& {\bf Nov}& {\bf Dez} &  \\
+\midrule
+\par
+{\bf 1.} Construção da Interface Gráfica 	 &X 	    & X	       & 	  & 	     & 	        & 	   \\
+\par
+{\bf 2.} Desenvolvimento dos Scripts         & 	    & 	       & X	  & 	     & 	        & 	   \\
+\par
+{\bf 3.} Fase de testes com Dados Sintéticos & 	    & 	       & 	  & X	     & 	        & 	   \\
+\par
+{\bf 4.} Fase de testes com Dados Reais      & 	    & 	       & 	  & 	     &X	        & 	   \\
+\par
+{\bf 5.} Liberação do Código                 & 	    & 	       & 	  & 	     & 	        & X	   \\
+\par
+\bottomrule
+\end{tabular}%
+                }$
+ -->
+<IMG
+ WIDTH="557" HEIGHT="198" ALIGN="BOTTOM" BORDER="0"
+ SRC="img88.png"
+ ALT="\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccccl@{}}
+\toprule
+\textbf{Ta...
+... 5.} Liberação do Código &amp; &amp; &amp; &amp; &amp; &amp; X \\
+\par
+\bottomrule
+\end{tabular}%
+}">
+                O Autor, 2018
+            </TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+
+<P>
+
+<H2><A NAME="SECTION001200000000000000000">
+Bibliography</A>
+</H2><DL COMPACT><DD><P></P><DT><A NAME="alane">Barbosa et al. 2018</A>
+<DD>
+
+BARBOSA, A.&nbsp;N. et al. Estudo magnetotel&#250;rico na regi&#227;o centro-sul da
+  prov&#237;ncia borborema.
+<SPAN  CLASS="textbf">Anais do Sal&#227;o Internacional de Ensino, Pesquisa e Extens&#227;o</SPAN>,
+  v.&nbsp;9, n.&nbsp;3, 2018.
+
+<P></P><DT><A NAME="fourier">Bracewell and Bracewell 1986</A>
+<DD>
+
+BRACEWELL, R.&nbsp;N.; BRACEWELL, R.&nbsp;N. <SPAN  CLASS="textbf">The Fourier transform and its
+  applications</SPAN>. [S.l.]: McGraw-Hill New York, 1986.
+
+<P></P><DT><A NAME="cagniard53">Cagniard 1953</A>
+<DD>
+
+CAGNIARD, L. Basic theory of the magneto-telluric method of geophysical
+  prospecting.
+v. 18(3), p. 605-635, 1953.
+
+<P></P><DT><A NAME="didana2010">Didana 2010</A>
+<DD>
+
+DIDANA, Y.&nbsp;L.
+<SPAN  CLASS="textbf">Multidimensional Inversion of MT data from Krýsuvík High Temperature
+  Geothermal Field, SW Iceland, and study of how 1D and 2D Inversion can
+  Reproduce a given 2D/3D Resistivity Structures Using Synthetic MT Data</SPAN>.
+136&nbsp;p. Dissertação (Mestrado) -- Faculty of Earth Sciences University of
+  Iceland, Reykjavik, Iceland, Abril 2010.
+
+<P></P><DT><A NAME="python36">Drake 2018</A>
+<DD>
+
+DRAKE, F.&nbsp;L. <SPAN  CLASS="textbf">Python 3.6.5 Documendation</SPAN>. 2018.
+[Online; acessado em Março, 2018].
+Disponível na Internet: <TT><A NAME="tex2html18"
+  HREF="https://docs.python.org/3/">https://docs.python.org/3/</A></TT>.
+
+<P></P><DT><A NAME="emtf">Egbert 1997</A>
+<DD>
+
+EGBERT, G.&nbsp;D. <SPAN  CLASS="textbf">Gary Egbert's Processing Codes</SPAN>. 1997.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: <TT><A NAME="tex2html19"
+  HREF="http://mtnet.info/programs/egbert.html">http://mtnet.info/programs/egbert.html</A></TT>.
+
+<P></P><DT><A NAME="egbert97">Egbert 1997</A>
+<DD>
+
+EGBERT, G.&nbsp;D. Robust multiple-station magnetotelluric data processing.
+<SPAN  CLASS="textbf">Geophysical Journal International</SPAN>, v.&nbsp;130, p. 475-496, 1997.
+
+<P></P><DT><A NAME="soft_free">FREE SOFTWARE FOUNDATION 2018</A>
+<DD>
+
+FREE SOFTWARE FOUNDATION. <SPAN  CLASS="textbf">Licença de Software Livre</SPAN>. 2018.
+[Online; acessado em Maio, 2018].
+Disponível na Internet: <TT><A NAME="tex2html20"
+  HREF="https://www.gnu.org/philosophy/free-sw.html">https://www.gnu.org/philosophy/free-sw.html</A></TT>.
+
+<P></P><DT><A NAME="eletromag8hayt">Hayt and Buck 2013</A>
+<DD>
+
+HAYT, W.&nbsp;H.; BUCK, J.&nbsp;A. <SPAN  CLASS="textbf">Eletromagnetismo</SPAN>. 8. ed. Porto Alegre,
+  Brazil: AMGH Editora Ltda., 2013.
+
+<P></P><DT><A NAME="tojones">Jones 1994</A>
+<DD>
+
+JONES, A.&nbsp;G. <SPAN  CLASS="textbf">Magnetotelluric Data File J-format</SPAN>. 1994.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: <TT><A NAME="tex2html21"
+  HREF="http://mtnet.info/docs/jformat.txt">http://mtnet.info/docs/jformat.txt</A></TT>.
+
+<P></P><DT><A NAME="tsformat">Jones 1999</A>
+<DD>
+
+JONES, A.&nbsp;G. <SPAN  CLASS="textbf">TS Format v1.3</SPAN>. 1999.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: <TT><A NAME="tex2html22"
+  HREF="http://mtnet.info/docs/ts_format.txt">http://mtnet.info/docs/ts_format.txt</A></TT>.
+
+<P></P><DT><A NAME="scipy">Jones et al. 2001</A>
+<DD>
+
+JONES, E. et al. <SPAN  CLASS="textbf">SciPy: Open source scientific tools for Python</SPAN>.
+  2001.
+[Online; acessado em Maio, 2018].
+Disponível na Internet: <TT><A NAME="tex2html23"
+  HREF="http://www.scipy.org/">http://www.scipy.org/</A></TT>.
+
+<P></P><DT><A NAME="kivy110">KIVY ORGANIZATION 2018</A>
+<DD>
+
+KIVY ORGANIZATION. <SPAN  CLASS="textbf">Kivy 1.10.1 documendation</SPAN>. 2018.
+[Online; acessado em Março, 2018].
+Disponível na Internet: <TT><A NAME="tex2html24"
+  HREF="https://kivy.org/docs/api-kivy.html">https://kivy.org/docs/api-kivy.html</A></TT>.
+
+<P></P><DT><A NAME="kivy">KIVY ORGANIZATION 2018</A>
+<DD>
+
+KIVY ORGANIZATION. <SPAN  CLASS="textbf">Kivy Organization</SPAN>. 2018.
+[Online; acessado em Março, 2018].
+Disponível na Internet: <TT><A NAME="tex2html25"
+  HREF="https://kivy.org/">https://kivy.org/</A></TT>.
+
+<P></P><DT><A NAME="mtnet">MTnet 2018</A>
+<DD>
+
+MTnet. <SPAN  CLASS="textbf">MTnet</SPAN>. 2018.
+[Online; acessado em Maio, 2018].
+Disponível na Internet: <TT><A NAME="tex2html26"
+  HREF="http://mtnet.info/main/source.html">http://mtnet.info/main/source.html</A></TT>.
+
+<P></P><DT><A NAME="gmt">NATIONAL SCIENCE FOUNDATION 2018</A>
+<DD>
+
+NATIONAL SCIENCE FOUNDATION. <SPAN  CLASS="textbf">The Generic Mapping Tools</SPAN>. 2018.
+[Online; acessado em Maio, 2018].
+Disponível na Internet: <TT><A NAME="tex2html27"
+  HREF="http://gmt.soest.hawaii.edu/">http://gmt.soest.hawaii.edu/</A></TT>.
+
+<P></P><DT><A NAME="eletromag_met">Palacky 1987</A>
+<DD>
+
+PALACKY, G.&nbsp;J. <SPAN  CLASS="textbf">Electromagnetic Methods
+  ihttp://mtnet.info/programs/egbert.htmln applied Geophysics</SPAN>. 1. ed. [S.l.]:
+  Society of Exploration Geophysicists, 1987. 53-130&nbsp;p.
+
+<P></P><DT><A NAME="rhoplus">Parker and Booker 1997</A>
+<DD>
+
+PARKER, B.; BOOKER, J. <SPAN  CLASS="textbf">Rho+ Code</SPAN>. 1997.
+[Online; acessado em Junho, 2018].
+Disponível na Internet: <TT><A NAME="tex2html28"
+  HREF="http://mtnet.info/programs/rhoplus.zip">http://mtnet.info/programs/rhoplus.zip</A></TT>.
+
+<P></P><DT><A NAME="parkinson93">Parkinson 1983</A>
+<DD>
+
+PARKINSON, W.&nbsp;D. <SPAN  CLASS="textbf">Introduction to Geomagnetism</SPAN>. Edinburgh: Scotish
+  Academic Press, 1983.
+
+<P></P><DT><A NAME="qt">QT COMPANY 2018</A>
+<DD>
+
+QT COMPANY. <SPAN  CLASS="textbf">Site Oficial Qt</SPAN>. 2018.
+[Online; acessado em Maio, 2018].
+Disponível na Internet: <TT><A NAME="tex2html29"
+  HREF="https://www.qt.io/">https://www.qt.io/</A></TT>.
+
+<P></P><DT><A NAME="tese_andrea">Santos-Matos 2012</A>
+<DD>
+
+SANTOS-MATOS, A. C.&nbsp;L.
+<SPAN  CLASS="textbf">Imagiamento Magnetotelúrico de Estruturas da Litosfera na Porção SE
+  da Província Borborema</SPAN>.
+159&nbsp;p. Tese (Doutorado) -- Instituto de Geociências, Universidade de
+  Brasília, Brasília, Brasil, Março 2012.
+
+<P></P><DT><A NAME="telford">Telford 1990</A>
+<DD>
+
+TELFORD, W.&nbsp;M. <SPAN  CLASS="textbf">Applied Geophysics</SPAN>. New York, USA: British Library
+  Cataloguind, 1990.
+
+<P></P><DT><A NAME="tikhonov50">Tikhonov 1950</A>
+<DD>
+
+TIKHONOV, A.&nbsp;N. On determining electrical characteristics of the deep layers
+  of the earth's crust.
+<SPAN  CLASS="textbf">Doklady Akademii Nauk SSSR</SPAN>, v.&nbsp;73, p. 295-297, 1950.
+</DL>
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot400">... consolidados</A><A
+ HREF="texto_final_2018-05-16.html#tex2html1"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A></DT>
+<DD>[<A
+ HREF="texto_final_2018-05-16.html#tese_andrea">Santos-Matos 2012</A>] e [<A
+ HREF="texto_final_2018-05-16.html#alane">Barbosa et al. 2018</A>]
+
+</DD>
+<DT><A NAME="foot443">... pertence</A><A
+ HREF="texto_final_2018-05-16.html#tex2html2"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A></DT>
+<DD>Para os meios geológicos essa propriedade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.
+
+</DD>
+<DT><A NAME="foot474">... equações</A><A
+ HREF="texto_final_2018-05-16.html#tex2html5"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A></DT>
+<DD>Para cargas e correntes livres
+        (macroscópica)
+
+</DD>
+<DT><A NAME="foot860">...#tex2html_wrap_inline4458#</A><A
+ HREF="texto_final_2018-05-16.html#tex2html7"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A></DT>
+<DD>Para aquisição Banda Larga
+
+</DD>
+<DT><A NAME="foot950">... nível</A><A
+ HREF="texto_final_2018-05-16.html#tex2html11"><SUP><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="footnote.png"></SUP></A></DT>
+<DD>Está relacionada a abstração da linguagem, alto nível significa mais longe da linguagem de código de máquina
+
+</DD>
+</DL><BR><HR>
+
+</BODY>
+</HTML>

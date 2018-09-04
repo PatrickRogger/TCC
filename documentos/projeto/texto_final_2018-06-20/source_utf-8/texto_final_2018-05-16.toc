@@ -1,0 +1,37 @@
+\babel@toc {brazilian}{}
+\contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o}{10}{CHAPTER.1}
+\contentsline {chapter}{2~Objetivos}{11}{CHAPTER.2}
+\contentsline {section}{\numberline {2.1}Objetivos Gerais}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{11}{section.2.2}
+\contentsline {chapter}{3~Justificativa}{12}{CHAPTER.3}
+\contentsline {chapter}{4~Fundamentos do M\IeC {\'e}todo magnetotel\IeC {\'u}rico }{13}{CHAPTER.4}
+\contentsline {section}{\numberline {4.1}Origem das Correntes Tel\IeC {\'u}ricas}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Resistividade dos Materiais}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Fundamentos Te\IeC {\'o}ricos dos M\IeC {\'e}todos Eletromagn\IeC {\'e}ticos}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{18}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{18}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Modelo de Dimens\IeC {\~o}es MT}{18}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Terra 1D}{18}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Terra 2D}{20}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Terra 3D}{21}{subsection.4.5.3}
+\contentsline {chapter}{5~\textit {Softwares} Utilizados em Dados MT}{22}{CHAPTER.5}
+\contentsline {section}{\numberline {5.1}Aquisi\IeC {\c c}\IeC {\~a}o de Dados MT}{22}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Estrutura do Aquivo TS}{23}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Fluxo de Processamento de Dados MT}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Convers\IeC {\~a}o de Dados Bin\IeC {\'a}rios}{24}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Dnff}{25}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}TranMT}{25}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}ToJones}{26}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Pacotes de Processamentos do grupo Geoma - INPE}{26}{section.5.3}
+\contentsline {chapter}{6~Proposta de \textit {Software} Livre Integrador}{27}{CHAPTER.6}
+\contentsline {section}{\numberline {6.1}Linguagem PYTHON}{27}{section.6.1}
+\contentsline {section}{\numberline {6.2}M\IeC {\'o}dulos e Pacotes}{28}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Kivy}{28}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}SciPy, MatPlotLib, NumPy}{29}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Arquitetura do Programa e Abordagem dos fluxos de Processamento}{31}{section.6.3}
+\contentsline {chapter}{7~Resultados Esperados}{34}{CHAPTER.7}
+\contentsline {chapter}{8~Cronograma de Atividades}{35}{CHAPTER.8}
+\contentsline {section}{\numberline {8.1}1\IeC {\textordmasculine } Semestre}{35}{section.8.1}
+\contentsline {section}{\numberline {8.2}2\IeC {\textordmasculine } Semestre}{35}{section.8.2}
+\babel@toc {brazilian}{}
+\contentsline {chapter}{\xspace {}Refer{\^e}ncias}{36}{schapter.7}

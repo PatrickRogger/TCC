@@ -1,0 +1,427 @@
+\documentclass[csgeo,tcc, twoside]{unipampa}                                          
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}                                    
+\usepackage{graphicx}                                       % pacote para importar figuras
+\usepackage{chngcntr}                                       % pacote que permite a mudança da contagem das figuras e tabelas
+\counterwithout{figure}{chapter}                            % contagem contínua das figuras [Não especificado nas normas, porém de preferência do autor]
+\usepackage{times}                                          % pacote para usar fonte Adobe Times
+\usepackage{mathptmx}                                       % pacote usar fonte Adobe Times nas fórmulas
+\usepackage[alf,abnt-emphasize=bf]{abntex2cite}	            % pacote para usar citações abnt
+\usepackage{ragged2e}                                       % pacote para prevenir hifenização e melhorar disposição de objetos
+%\hyphenpenalty=10000                                       % penalização de hifenização, força texto justificado
+\usepackage{booktabs}                                       % pacote que melhora a qualidade das tabelas geradas pelo LaTeX
+\usepackage[table]{xcolor}                                  % pacote para utlização de cores personalizadas
+\usepackage[labelsep=endash]{caption}                       % pacote para customização de títulos ou legendas de figuras 
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{pdflscape}
+\usepackage{lscape}
+\usepackage[inner=30mm,outer=20mm,top=30mm,bottom=20mm]{geometry}
+
+% ATALHOS =================================================================================================================
+
+\newcommand{\rot}[1]{\nabla \times \vec{\textrm{#1}}}
+\newcommand{\mt}{magnetotelúrico }                                              % mt -> magnetotelúrico
+\newcommand{\citar}[1]{\textcolor{red}{#1}}                                     % marca em vermelho locais para correção
+\newcommand{\en}[1]{\textit{#1}}                                                % marca em italico termos em ingles
+\newcommand{\ven}[1]{\vec{\textrm{#1}}}                                         % Coloca o vetor em cima da incognita 
+\newcommand{\parct}[1]{\dfrac{\partial \vec{\textrm{#1}}}{\partial t}}          % derivada Parcial de t
+\newcommand{\parctto}[1]{\dfrac{\partial^2 \vec{\textrm{#1}}}{\partial t^2}}    % derivada Parcial de t
+
+
+\newcommand{\Python}{\en{Python}}
+\newcommand{\software}{\en{software}}
+\newcommand{\Software}{\en{Software}}
+
+% ATALHOS PARA CODIGO FONTE
+\newcommand{\codnum}[1]{\begin{flushright} \normalsize (#1) \end{flushright}}   %numera os scripts
+\newcommand{\codbox}[1]{{\fontfamily{pcr}\selectfont #1}}                       %ambiente para escrever codigo fonte. OBS deve estar dentro do ambiente quote
+\newcommand{\cc}[1]{\textcolor{gray}{\textit{\# #1}}}                           %cor para comentarios (cinza)
+\newcommand{\f}[1]{\textbf{\textcolor{OliveGreen}{#1}}}                         %cor para funcoes (verde)
+\newcommand{\cl}[1]{\textbf{\textcolor{BurntOrange}{#1}}}                       %cor para classes (laranja)
+\newcommand{\ob}[1]{\textcolor{Blue}{#1}}
+\newcommand{\st}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\ini}{>{}>{}> \, }                                                  % produz >>>
+\newcommand{\init}{>{}>{}> \, \, \, \, \,}                                      % produz >>> tabulado 1vez
+\newcommand{\initt}{>{}>{}> \, \, \, \, \, \, \, \, \,}                         % produz >>> tabulado 2vez
+\newcommand{\inittt}{>{}>{}> \, \, \, \, \, \, \, \, \, \, \, \, \,}            % produz >>> tabulado 3vez
+
+
+
+
+
+
+% =========================================================================================================================
+
+
+
+
+
+% TITULO, AUTOR, ORIENTADOR =============================================================================================== 
+
+% TITULO
+	\title{Desenvolvimento de Software livre para processamentos de Dados Magnetotelúricos}                              
+
+% AUTOR
+	\author{Garcia}{Patrick Rogger}                                    
+
+% ORIENTAÇÃO
+	\advisor[Prof.~Dr.]{Oliveira}{Vinicius Abreu de}                        
+	\coadvisor[Prof\textsuperscript{a}.~Dr.\textsuperscript{a}.]{Matos}{Andréa Cristina Lima dos Santos}   
+	\renewcommand{\coadvisorname}{Co-orientadora}
+% =========================================================================================================================
+
+
+
+
+
+
+% BANCA ===========================================================================================================
+
+% BIBLIOTECA
+	\cutter{} 
+% MEMBRO 1
+	\banca[Prof.~Dr.]{Frigo}{Éverton}			                
+	\inst{Universidade Federal do Pampa}					    
+
+% MEMBRO 2
+	\banca[Prof.~Dr.]{Gonçalves}{Ítalo}                           
+	\inst{Universidade Federal do Pampa}	                    
+
+% DATA DA DEFERSA
+	\defesa{DIA}{MÊS}{ANO}                                    
+% ====================================================================================================================
+
+
+
+
+
+
+
+
+% DATA E LOCAL =======================================================================================================
+% SE PRECISAO MUDAR A DATA DO DOCUMENTO
+	%\date{MÊS}{ANO}
+% LOCAL
+	\location{Caçapava do Sul}{RS}                              
+% =====================================================================================================================
+
+
+
+
+
+
+
+
+% PALAVRAS CHAVES =====================================================================================================
+	\keyword{Magnetotelúrico}
+	\keyword{Python3}
+	\keyword{Software Livre}
+% ======================================================================================================================
+
+
+
+
+
+
+
+
+% CORRIGIR TEXTO =======================================================================================================
+	\sloppy                                                       
+% ======================================================================================================================
+
+
+
+
+
+
+
+
+% DOCUMENTO ============================================================================================================
+\begin{document}
+\maketitle
+\newpage\
+
+%\input{texto/capa.tex}
+
+
+
+% DEDICATORIA ==========================================================================================================
+
+    \begin{dedicatoria} 
+    %    
+        Dedico esse trabalho a .........
+    %    
+    %    
+    \end{dedicatoria}
+% =======================================================================================================================
+
+
+
+
+
+
+
+
+% AGRADECIMENTOS ========================================================================================================
+\newpage\
+\chapter*{Agradecimento}
+
+Agradeço a tal pessoa e tudo mais
+% ========================================================================================================================
+
+
+
+
+
+
+
+% EPIGRADE ================================================================================================================
+	\newpage\
+	\begin{epigrafe}
+		``Moça bonita, moça bem feita.''\\
+		--- Sr. Madruga
+	\end{epigrafe}
+% ========================================================================================================================
+
+
+
+
+
+
+
+
+% RESUMO ===============================================================================================================
+    \newpage\
+    \begin{abstract} 
+        \input{texto/Resumo}
+    \end{abstract}
+% =========================================================================================================================
+
+
+
+
+
+
+
+% RESUMO EM INGLES ========================================================================================================
+    \newpage\
+    \begin{englishabstract}
+        Digite aqui pq esta  dando erro
+    \end{englishabstract}
+
+    
+% ==========================================================================================================================
+
+
+
+
+
+
+
+% LISTA DE FIGURA E TABELA =================================================================================================
+\newpage\
+\listoffigures
+
+\newpage\
+\listoftables
+% ==========================================================================================================================
+
+
+
+
+
+
+%  LISTA DE TEOREMAS ==========================================================================================================================
+% Listas de definições e teoremas, para quem usar o pacote formais, para trabalhos que possuam definições formais e teoremas
+
+%\listofdefinitions
+%\listoftheorems
+% ==========================================================================================================================
+
+
+
+
+
+
+% LISTA DE ABREVIATURAS ====================================================================================================
+\newpage\
+\begin{listofabbrv}{UNIPAMPA}
+        \item[GUI]           {\en{Graphical User Interface}}
+        \item[MT]            {Magnetotelúrico}
+        %\item[API]          {\en{Application Programming Interface}}
+        %\item[ASCII]        {\en{American Standard Code for Information Interchange}}
+        %\item[CPU]          {\en{Central Processing Unit}}
+        %\item[CWI]          {\en{Centrum Wishunde \& Informatica}}
+        %\item[GEOMA]        {Grupo de Geomagnetismo}
+        %\item[INPE]         {Instituto Nacional de Pesquisas Espaciais}
+        %\item[MT]           {Magnetotelúrico}
+        %\item[1D]           {Uma Dimensão}
+        %\item[2D]           {Duas Dimensões}
+        %\item[3D]           {Três Dimensões}
+        %\item[TE]           {Transversal Elétrico}
+        %\item[TM]           {Transversal Magnético}
+        %\item[TS]           {\en{Time Series}}
+\end{listofabbrv}
+% =============================================================================================================================
+
+
+
+
+
+
+
+% LISTA DE SIMBOLOS ===========================================================================================================
+\newpage\
+\begin{listofsymbols}{$\alpha\beta\pi\omega$}
+       \item[$\sigma$]                  Condutividade Elétrica
+       %\item[$\rho$]                    Resistividade Elétrica
+       %\item[$V$]                       Diferença de Potencial
+       %\item[$i$]                       Corrente Elétrica
+       %\item[$R$]                       Resistência Elétrica
+       %\item[$A$]                       Área
+       %\item[$L$]                       Comprimento
+       %\item[$\nabla \times$]           Rotacional
+       %\item[$\nabla \cdot$]            Divergente
+       %\item[$\ven{E}$]                 Campo Elétrico
+       %\item[$\ven{H}$]                 Campo Magnetizante
+       %\item[$\ven{B}$]                 Campo Magnético
+       %\item[$\ven{J}$]                 Densidade de Corrente
+       %\item[$\ven{D}$]                 Campo de Deslocamento Elétrico
+       %\item[$\rho_f$]                  Densidade de Carga
+       %\item[$t$]                       Tempo
+       %\item[$\mu$]                     Permeabilidade Magnética
+       %\item[$\varepsilon$]             Permissividade Elétrica
+      
+       
+\end{listofsymbols}
+% =============================================================================================================================
+
+
+
+
+
+
+
+% SUMARIO ==================================================================================================================
+\newpage\
+\tableofcontents
+% ==========================================================================================================================
+
+
+
+
+
+
+
+% CORPO DO TEXTO ===============================================================================================================
+\inputencoding{utf8}                                %% Arquivos em outra codificação: UTF-8
+
+\newpage\
+
+% CAPITULOS ===================================================================================================================
+
+
+    \input{texto/Introducao}
+    \setcounter{page}{15}
+
+    \input{texto/Objetivos}
+
+
+% CAPITULO 2 ===================================================================================================================
+	%\input{texto/Objetivos}
+	%\input{texto/Justificativa}
+	%\input{texto/MateriaisNew}
+	
+
+
+% CAPITULO 3 ===================================================================================================================
+	%\input{texto/Algoritmos}
+	
+
+% CAPITULO 4 ===================================================================================================================
+	%\input{texto/Resultados}
+	
+
+% CAPITULO 5 ===================================================================================================================
+	%\input{texto/Cronograma}
+
+
+% CAPITULO 6 ===================================================================================================================
+	%\input{texto/06-Materiaisemetodos}
+
+
+% CAPITULO 7 ===================================================================================================================
+	%\input{texto/07-Planejamento}
+
+
+% CAPITULO 8 ===================================================================================================================
+	%\input{texto/08-Resultados}
+
+
+
+
+% CAPITULO 11 ===================================================================================================================
+
+% ===================================================================================================================
+
+
+
+
+
+
+
+
+% BIBLIOGRAFIA ===================================================================================================================
+\selectlanguage{brazilian}
+\bibliographystyle{abntex2-alf}
+\bibliography{biblio.bib}
+% ===================================================================================================================
+
+
+
+
+
+
+
+% GLOSSARIO ===================================================================================================================
+
+	%\chapter*{Glossário}
+% =============================================================================================================================
+
+
+
+
+
+
+
+% APENDICE ===================================================================================================================
+
+%\appendix
+
+	%\chapter{Nome do Apêndice}
+		%Depois do termo ``appendix'', qualquer capítulo aparecerá na forma correta, com o termo ``Apêndice''. Use apêndices quando houver material produzido pelo autor que ajuda no entendimento do trabalho mas que não faz parte do texto principal. Modelos de questionários utilizados, código fonte de programas, partituras completas, provas de teoremas acessórias, etc.
+% ===================================================================================================================
+
+
+
+
+
+
+
+
+% ANEXO ======================================================================================================================
+%\annex
+
+	%\chapter{Nome do Anexo}
+		%Depois do termo ``annex'', qualquer capítulo aparecerá na forma correta, com o termo ``Anexo'' no título. Use anexos quando se tratar de material não produzido pelo autor, mas necessário no entendimento do trabalho. Por exemplo, definições matemáticas, sintaxe formal de linguagens de programação, trechos de manuais, etc.
+% ===============================================================================================================================
+
+
+
+
+
+
+\end{document}
+% =============================================================================================================================

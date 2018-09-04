@@ -1,0 +1,58 @@
+imagem da onda penetrando na terra
+
+resultados preliminares
+	mostrar imagens do programa
+
+melhorar teoria do egbert
+                                                              
+colocar a teoria sobre as bandas como são divididas
+colocar em qual ambiente o programa funcionara (linux)
+fluxogramas
+
+melhoramento do processamentoz comentar 
+
+
+-- materiais e metodo
+colocar a banda morta
+colocar as diferentes operacoes do mt,  banda larga, audio mt
+
+	--fundamentos do mt
+	colocar as setas alinhadas 
+
+	--modelo de dimensoes
+	colocar como o programa sabe quando é um ou u=outro
+	comentar que as ondas do mt tem desenas de quilometros 
+	
+	--skindepth
+	colocar uma imagem mostrando a onda penetrando e sendo atenuada 
+	colocar a unidade SI ou metros
+
+	-- levantamento aquisição
+	-- colocar a aquisição das bandas 
+	-- imagem com a soma das frequencias e fourier
+
+	--terra 2d
+	referencias strike
+
+	--terra 3d
+	colocar uma imagem 
+
+
+-- algoritmos e processamento[
+colocar as etapas e o que o programa compreendera processar 
+--coleta dos pontos
+--escolha das bandas
+--plotagem das bandas
+--melhorar como configura o trammt dnff
+--waldim
+--plotagem das pseudosecoes
+--plotagem de rho
+--referencia remota
+--rhoplus
+----explicar o que cada um faz e como sera feito no programa 
+
+dissolver o materiais e metodos 
+
+
+
+
