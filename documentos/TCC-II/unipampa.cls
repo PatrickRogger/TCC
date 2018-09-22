@@ -1,0 +1,1 @@
+/home/patrick/dev/pampatex/unipampa.cls

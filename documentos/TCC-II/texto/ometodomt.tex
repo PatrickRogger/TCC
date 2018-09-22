@@ -1,0 +1,118 @@
+\chapter{FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO}
+
+    Proposto com \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa as fontes passivas\footnote{Fontes passivas -- São fontes de sinal que não dependem de instrumentos artificiais para gerá-la.} eletromagnéticas do planeta Terra para estudar e mapear a subsuperfície.
+    
+    Nesta secção será mostrado sucintamente a origem do sinal MT. Antes de demonstrar as bases teóricas do método, será mostrado brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
+        
+
+    \section{Resistividade Elétrica dos Materiais}
+    
+        
+        O método MT usa a resistividade elétrica ($\rho$[$\Omega m$]) ou o seu inverso, a condutividade elétrica ($\sigma$ [$S$]), para distinguir e estudar a distribuição dos elementos geológicos em subsuperfície. 
+        
+        A resistividade elétrica é um parâmetro físico intrínseco a cada material. Ela relaciona a dificuldade da passagem de corrente (independente do modelo nas dimenções do material estudado.) a cada material, sendo sempre contante\footnote{Para os materias geológicos a resistividade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.  
+        
+        Georg Ohm em 1827 verificou de forma empírica que ao aplicar uma diferença de potencial ($\Delta U$[$V$]) em um material, esse exerce uma resistência a passagem e corrente ($i$[$A$]). Materiais que obedecem a seguinte Lei de Ohm (equação \ref{lei-ohm}) são chamados de materiais ômicos.
+        
+        \begin{equation}
+            \label{lei-ohm}
+            \Delta U = R i
+        \end{equation}
+        
+        \citar{Escrever de novo, ta muito ruim kkkkkk}
+    
+    \section{Origem das Correntes Telúricas}
+    
+        O método MT utiliza-se de um amplo espectro de campo natural terrestre (10\textsuperscript{-4} a 10\textsuperscript{4} $Hz$) para as sondagens geofísicas. Essa característica permite que  a sondagem magnetotelúrica alcance centenas de quilômetros.
+        
+        O sinal MT tem sua origem nas ressonâncias de Schumann, nas micropulsações e nas variações diurnas \cite{padua2004estudos}. A figura \ref{sinalmt} mostra a contribuição de cada mecânismo no espectro MT.
+        
+        \begin{figure}[H]
+            
+            \caption{Campo magnético natural e as contribuições das fontes do sinal MT.}
+            \begin{center}
+             \includegraphics[width=8.5cm]{texto/figura/espectro-contrinuicao-padua2004.eps}
+            \end{center}
+            \legend{\Fonte{\cite{padua2004estudos}.}}
+            \label{sinalmt}
+        \end{figure}
+        
+        \subsection{Ressonâncias de Schumann}
+        
+            \citar{escrever sobre as ressanancias }
+            brevemente
+        
+        \subsection{Micropulsações}
+        
+        \subsection{Variações Diurnas}      
+        
+        
+    \section{Resposta do Método Magnetotelúrico}
+
+        O \mt{} assim como os outros método geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxweel [\ref{lei-maxwell}].
+        
+        
+        {\setlength\arraycolsep{2pt}
+            \begin{eqnarray}
+                \label{lei-maxwell}
+                \rot{E} & = & - \devpart{\vetor{B}} \nonumber\\[10pt]
+                \rot{H} & = & \vetor{J} + \devpart{\vetor{D}} \nonumber\\[10pt]
+                \nabla \cdot \vetor{B} & = & 0 \nonumber\\[10pt]
+                \nabla \cdot \vetor{D} & = & \varrho                
+            \end{eqnarray}}
+        
+        \noindent Onde,
+            
+        {\footnotesize \noindent
+            \begin{table}[H]
+                \begin{tabular*}{1cm}{p{0.05cm}p{0.1cm}p{10cm}}
+                    {\footnotesize $\vec{\textrm{E}}$}  & {\footnotesize $\rightarrow$} & {\footnotesize Campo Elétrico [$V/m$] }\\
+                    {\footnotesize $\vec{\textrm{B}}$}  & {\footnotesize $\rightarrow$} & {\footnotesize Campo Magnético [$T$] }\\
+                    {\footnotesize $\vec{\textrm{H}}$}  & {\footnotesize $\rightarrow$} & {\footnotesize Campo Magnetizante [$A/m$]} \\
+                    {\footnotesize $\vec{\textrm{J}}$}  & {\footnotesize $\rightarrow$} & {\footnotesize Densidade de Corrente [$A/m^2$]} \\
+                    {\footnotesize $\vec{\textrm{D}}$}  & {\footnotesize $\rightarrow$} & {\footnotesize Campo de Deslocamento Elétrico [$C/m^2$]} \\
+                    {\footnotesize $\varrho$}           & {\footnotesize $\rightarrow$} & {\footnotesize Densidade de Carga [$C/m^3$]} \\
+                    {\footnotesize $t$ }                & {\footnotesize $\rightarrow$} & {\footnotesize Tempo [$s$]}
+                \end{tabular*}
+            \end{table}}
+
+        Para os estudos \mt s são feitas as seguintes afirmações, que auxiliam e simplificam o desenvolvimento:
+       
+        \begin{quote}
+            A Terra comportasse como um condutor ôhmico e um semi-espaço isotrópico.
+        \end{quote}
+        
+        Podemos utilizar, partindo dessas característica e atrelado a um campo eletromagnético pouco intenso as seguintes relações constitutivas:
+        \begin{equation}
+         \vetor{B} = \mu \vetor{H}
+        \end{equation}
+        
+        \begin{equation}
+         \vetor{D} = \varepsilon \vetor{E}
+        \end{equation}
+        
+        \begin{equation}
+         \vetor{J} = \sigma \vetor{E}
+        \end{equation}
+
+        {\footnotesize \noindent
+            \begin{table}[H]
+                \begin{tabular*}{1cm}{p{0.05cm}p{0.1cm}p{10cm}}
+                    {\footnotesize $\mu$}          & {\footnotesize $\rightarrow$} & {\footnotesize Permeabilidade Magnética [$H/m$] }\\
+                    {\footnotesize $\varepsilon$}  & {\footnotesize $\rightarrow$} & {\footnotesize Permissividade Elétrica [$F/m$] }\\
+                    {\footnotesize $\sigma$}       & {\footnotesize $\rightarrow$} & {\footnotesize Condutividade Elétrica [$S/m$]} \\
+                \end{tabular*}
+            \end{table}}
+
+        Cada coeficiente das relações constitutivas funcionam como tensores, variantes no tempo, para meios anisotrópicos. Para o estudo abordado e seguindo a afirmação, a Terra tornasse um meio isotrópico isso implica que os tensores são estáticos e assumem os seguintes valores:
+        
+        \begin{quote}
+         \begin{enumerate}
+          \item[$\mu$] $=$ 1,2566x10\textsuperscript{-6}$H/m$
+          \item[$\varepsilon$] $=$ 8,85x10\textsuperscript{-12}$F/m$
+         \end{enumerate}
+        \end{quote}
+        
+    
+    \section{Função de Transferência e Impedância Eletromagnética}
+        

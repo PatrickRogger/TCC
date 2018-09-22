@@ -1,0 +1,45 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{11}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {OBJETIVOS}}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivo Geral}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{13}{section.2.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {JUSTIFICATIVA}}{15}{chapter.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {FUNDAMENTOS DO M\IeC {\'E}TODO MAGNETOTEL\IeC {\'U}RICO}}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Resistividade El\IeC {\'e}trica dos Materiais}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Origem das Correntes Tel\IeC {\'u}ricas}{17}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Resson\IeC {\^a}ncias de Schumann}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Micropulsa\IeC {\c c}\IeC {\~o}es}{18}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Varia\IeC {\c c}\IeC {\~o}es Diurnas}{18}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}Fun\IeC {\c c}\IeC {\~a}o de Transfer\IeC {\^e}ncia e Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{19}{section.4.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {AQUISI\IeC {\c C}\IeC {\~A}O DE DADOS E DEPEND\IeC {\^E}NCIAS}}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Depend\IeC {\^e}ncias e Processamento MT}{21}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Aquisi\IeC {\c c}\IeC {\~a}o de Dados MT}{21}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Formatos de Arquivos de Dados MT}{21}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Processamento Robusto -- EMTF}{21}{subsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Mudan\IeC {\c c}a Tempo/Frequ\IeC {\^e}ncia \IeC {\^A}ngular}{21}{subsubsection.5.1.3.1}
+\contentsline {subsubsection}{\numberline {5.1.3.2}Fun\IeC {\c c}\IeC {\~a}o de Transfer\IeC {\^e}ncias}{21}{subsubsection.5.1.3.2}
+\contentsline {subsection}{\numberline {5.1.4}Pacotes de Processamento do Grupo Geoma -- INPE}{21}{subsection.5.1.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {DESENVOLVIMENTO E ARQUITETURA DO PampaMT}}{23}{chapter.6}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {RESULTADOS E APLICA\IeC {\c C}\IeC {\~A}O DO PAMPAMT}}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}Aplica\IeC {\c c}\IeC {\~a}o do PampaMT}{25}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}\IeC {\'A}rea de Estudo}{25}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Contexto Geol\IeC {\'o}gico}{25}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Processamento dos Dados}{25}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Resultados e Interpreta\IeC {\c c}\IeC {\~a}o Geof\IeC {\'\i }sica}{25}{subsection.7.1.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{27}{chapter.8}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{29}{section*.11}

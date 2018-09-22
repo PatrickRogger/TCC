@@ -1,0 +1,265 @@
+\documentclass[12pt,twoside,oneright,a4paper,chapter=TITLE,english,brazil]{unipampa}
+\usepackage[utf8]{inputenc}                 % O Latex deve ser escrito em utf-8, pois utiliza o pacote abntex2
+\usepackage[alf,abnt-emphasize=bf]{abntex2cite}               % Pacote para utilizar a citação da abnt (Nome,ANO)
+\usepackage{times}                          % Usa a fonte padrao Times new roman
+%\usepackage{pdfpages}                      % Usar quando for adicionar a folha de aprovação assinada
+\usepackage{graphicx}                       % Usar para incluir figuras
+\usepackage{float}                          % Permite travar as figuras usando o parametro [H]
+\usepackage{makeidx}\makeindex              % Usar para criar indexação no texto
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+% ===============================================================================================================
+%
+
+% MEUS COMANDOS
+% =============================================================
+\newcommand{\en}[1]{\textit{#1}}
+\newcommand{\mt}{magnetotelúrico}
+\newcommand{\citar}[1]{\textcolor{red}{#1}}
+
+\newcommand{\Python}{\en{Python}}
+\newcommand{\software}{\en{software}}
+\newcommand{\Software}{\en{Software}}
+\newcommand{\softwares}{\en{softwares}}
+
+% =============================================================
+
+\newcommand{\rot}[1]{\nabla \times \vec{\textrm{#1}}}
+\newcommand{\devpart}[1]{\dfrac{\partial #1}{\partial t}}
+\newcommand{\vetor}[1]{\vec{\textrm{#1}}}
+% Configuração do documento (autor, titulo, orientação ....)
+
+% Autor, para varios autores use: \and entre eles
+\autortrabalho{Garcia}{Patrick Rogger}           
+\autor{Patrick Rogger Garcia}
+
+% Titulo do trabalho
+\titulo{Desenvolvimento de Software livre para processamentos de dados magnetotelúricos}                
+
+% Orientador e Coorientador
+\orientador[Orientador]{Vinicius Abreu de Oliveira}
+\coorientador[Co-orientadora]{Andréa Cristina Lima dos Santos Matos}
+
+% Curso
+\curso{geofísica}                           
+
+% LOCAL
+\local{Caçapava do Sul}
+\data{\the\year}            % Pode ser passado um ano especifico. Ex. \data{2018}
+
+% Tipo do Trabalho
+\tipotrabalho{Trabalho de Conclusão de Curso (Graduação)}
+
+% Preambulo do Trabalho 
+\preambulo{\imprimirtipotrabalho{} apresentado ao curso
+            de Bacharelado em \imprimircurso{} da Universidade
+            Federal do Pampa como requisito
+            parcial para obtenção do grau de Bacharel em \imprimircurso.}
+
+% Codigo cutter            
+\cutter{G216d} % Se não tiver, deixe em branco
+
+% Area de concentração
+\areadeconcentracao{Geofísica Espacial, Geofísica de \en{Software}}
+
+% Texto da defesa
+\defesa{Trabalho de Conclusão de Curso defendido e aprovado em: XX de novembro de 2018.}
+
+% Membros da Banca
+% ======================================================================================
+\titulacaoorientador{Prof. Post.}             % Titulação do orientador
+\membroA{Prof. Dr.}{Éverton Frigo}{UNIPAMPA}  % Utilize o formato \membroA{Titulo}{NOME}{INSTITUIÇÃO}
+\membroB{Titulo}{NOME}{INSTITUIÇÃO}           %
+% ======================================================================================
+
+% Palavras Chaves (Portugues): A-J
+\chaveA{Magnetotelúrico}
+\chaveB{Python3}
+\chaveC{Software Livre}
+\chaveD{Processamento Robusto}
+%=================================
+
+% Palavras Chaves (Ingles): A-J
+\keywordA{Magnetotelluric}
+\keywordB{Python3}
+\keywordC{Free Software}
+\keywordD{Robust Processing}
+%=================================
+
+
+% INICIO DO DOCUMENTOS
+\begin{document}
+
+\imprimircapa                   % Imprime a Capa
+
+\imprimirfolhaderosto*          % Imprime a Folha de Rosto, 
+                                % Para gerar o pdf sem a ficha Catalografica no verso, retire o '*'
+
+\imprimirfichacatalografica     % Imprime a Ficha Catalografica
+
+\imprimirfolhadeaprovacao       % Imprime a Folha de Aprovação
+%\includepdf{folhadeaprovacao_digitalizada.pdf}    % Use para adicionar a versão digitalizada com as assinaturas
+
+
+% DEDICATORIA 
+% ===================================
+%\begin{dedicatoria}
+%    tectodsdfa dffds dddf
+%\end{dedicatoria}
+% ===================================
+
+
+% AGRADECIMENTOS
+% ===================================
+%\begin{agradecimentos}
+%    Eu agradeco a um minhao de pessoa por tudoi que foi feito e como esta sendo utilizado a paltaforma para novos usuariso e mnomanetos de alegria e todo o mundo
+    
+%    \noindent sfdsfsdg kjkas djfuwernwer sdgfsdddd
+%\end{agradecimentos}
+% ===================================
+
+
+% EPÍGRAFE
+% ===================================
+%\begin{epigrafe}
+%    Moça boinita moça bem feita
+%    \DoubleSpacing \\
+%    -- (Sr. Madruga)
+%\end{epigrafe}
+% ===================================
+
+
+% RESUMO (PORTUGUES)
+% ===================================
+\begin{resumo}
+ aqui fica o resumo
+\end{resumo}
+% ===================================
+
+
+% RESUMO (INGLES)
+% ===================================
+%\begin{resumoingles}
+% This abstract
+%\end{resumoingles}
+% ===================================
+
+
+% LISTA DE FIGURAS E TABELAS
+% ================================================
+\listoffigures      % Imprime a lista de figuras
+\listoftables       % Imprime a lista de tabelas
+% ================================================
+
+
+% LISTA DE SIGLAS E ABREVIATURAS
+% ==============================================================
+% Utilize o formato:
+%   \item[SIGLA --]         Nome da sigla
+\begin{siglas}
+    \item[GUI --]              \en{Graphical User Interface}\footnote{Interface Gráfica do Utilizador}
+    \item[MT --]               Magnetotelúrico
+\end{siglas}
+% ==============================================================
+
+
+% LISTA DE SÍMBOLOS
+% ==============================================================
+% Utilize o formato:
+%   \item[Simbolo --]         Nome do símbolo
+\begin{simbolos}
+    \item[$\sigma$]                  Condutividade Elétrica
+    \item[$\rho$]                    Resistividade Elétrica
+    \item[$V$]                       Diferença de Potencial
+    \item[$i$]                       Corrente Elétrica
+    \item[$R$]                       Resistência Elétrica
+    \item[$A$]                       Área
+    \item[$L$]                       Comprimento
+    \item[$\nabla \times$]           Rotacional
+    \item[$\nabla \cdot$]            Divergente
+    \item[$\vetor{E}$]               Campo Elétrico
+    \item[$\vetor{H}$]               Campo Magnetizante
+    \item[$\vetor{B}$]               Campo Magnético
+    \item[$\vetor{J}$]               Densidade de Corrente
+    \item[$\vetor{D}$]               Campo de Deslocamento Elétrico
+    \item[$\varrho$]                 Densidade de Carga
+    \item[$t$]                       Tempo
+    \item[$\mu$]                     Permeabilidade Magnética
+    \item[$\varepsilon$]             Permissividade Elétrica    
+\end{simbolos}
+% ==============================================================
+
+
+% SUMÁRIO
+% ==============================================================
+\tableofcontents       % Imprime o sumario
+% ==============================================================
+
+
+% CORPO DO TEXTO
+% =============================================================================
+%
+% Hierarquia:
+% \chapter{NOME DO CAPITULO}                 --- secção primária   | 1.
+%    \section{Nome da secção}                --- secção secundária | 1.1
+%       \subsection{Nome da Secção primeria} --- secção terciária  | 1.1.1
+%          \subsubsection{Nome}              --- secção quaternária| 1.1.1.1  
+%              \subsubsubsection{Nome}       --- secção quinária   | 1.1.1.1.1
+%
+\textual                    % Inicia os elementos Textuais
+\pagestyle{simple}          % Retira a linha e titulo no verso das paginas
+\OnehalfSpacing             % Ajusta o texto para 1.5 entre linhas
+% =============================================================================
+
+\input{texto/introducao}
+\input{texto/objetivos}
+\input{texto/justificativa}
+\input{texto/ometodomt}
+\input{texto/aquisicaoedependencia}
+\input{texto/devpampamt}
+\input{texto/resultados}
+\input{texto/consideracao}
+
+% ==============================================================================
+
+        
+% PÓS-TEXTUAL
+% ==============================================================================
+\postextual     % Inicia os elementos pós-textuais
+% ==============================================================================
+
+
+% REFERENCIAS
+% ==============================================================================
+\bibliography{bibliografia}         % Imprime a referencia bibliografica
+% ============================================================================== 
+ 
+ 
+% APÊNDICE
+% ==============================================================================
+%\apendices                      % Inicia os apêndices
+
+%\chapter{Codigo fonte}
+%    Conteudo do apendice A
+% ==============================================================================
+
+
+% ANEXO
+% ==============================================================================
+%\anexos                         % Inicia os anexos
+
+%\chapter{Amigem para mostrar}
+%    Um anexo
+% ==============================================================================
+
+    
+% INDICE
+% ==============================================================================
+% Para utilizar o indexamento automatico use no corpo do texto:
+%   \index{palavra} 
+%
+%\printindex             % Imprime o indice
+% ==============================================================================
+
+\end{document}

@@ -1,0 +1,42 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Cagniard 1953]{cagniard1953basic}
+\abntrefinfo{Cagniard}{CAGNIARD}{1953}
+{CAGNIARD, L. Basic theory of the magneto-telluric method of geophysical
+  prospecting.
+\textbf{Geophysics}, Society of Exploration Geophysicists, v.~18, n.~3, p.
+  605--635, 1953.}
+
+\bibitem[MTnet 2018]{mtnet}
+\abntrefinfo{MTnet}{MTNET}{2018}
+{MTNET. 2018.
+MTNet.
+Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 nov.
+  2018.}
+
+\bibitem[P{\'a}dua 2004]{padua2004estudos}
+\abntrefinfo{P{\'a}dua}{P{\'A}DUA}{2004}
+{P{\'A}DUA, M. B.~d.
+\textbf{Estudos de indu{\c{c}}{\~a}o eletromagn{\'e}tica na
+  caracteriza{\c{c}}{\~a}o de estruturas profundas sob a borda sul do
+  cr{\'a}ton de S{\~a}o Francisco}.
+Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
+  Instituto Nacional de Pesquisas Espaciais (INPE), 2004.}
+
+\bibitem[Parkinson 1983]{parkinson93}
+\abntrefinfo{Parkinson}{PARKINSON}{1983}
+{PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
+  Academic Press, 1983.}
+
+\bibitem[Tikhonov 1950]{tikhonov1950determining}
+\abntrefinfo{Tikhonov}{TIKHONOV}{1950}
+{TIKHONOV, A. On determining electric characteristics of the deep layers of the
+  earth's crust.
+\textbf{Dolk. Acad. Nauk. SSSR}, v.~73, p. 295--297, 1950.}
+
+\end{thebibliography}
