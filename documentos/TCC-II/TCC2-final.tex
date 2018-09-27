@@ -8,7 +8,7 @@
 \usepackage{makeidx}\makeindex              % Usar para criar indexação no texto
 \usepackage{xcolor}
 \usepackage{amsmath}
-
+\usepackage{cancel}
 % ===============================================================================================================
 %
 
@@ -28,6 +28,15 @@
 \newcommand{\rot}[1]{\nabla \times \vec{\textrm{#1}}}
 \newcommand{\devpart}[1]{\dfrac{\partial #1}{\partial t}}
 \newcommand{\vetor}[1]{\vec{\textrm{#1}}}
+\newcommand{\unitario}[1]{\textrm{#1}}
+\newcommand{\basedez}[2]{$#1 \times 10^{#2}$}
+
+
+
+
+
+
+
 % Configuração do documento (autor, titulo, orientação ....)
 
 % Autor, para varios autores use: \and entre eles
@@ -140,16 +149,16 @@
 
 % RESUMO (INGLES)
 % ===================================
-%\begin{resumoingles}
-% This abstract
-%\end{resumoingles}
+\begin{resumoingles}
+ This abstract
+\end{resumoingles}
 % ===================================
 
 
 % LISTA DE FIGURAS E TABELAS
 % ================================================
 \listoffigures      % Imprime a lista de figuras
-\listoftables       % Imprime a lista de tabelas
+%\listoftables       % Imprime a lista de tabelas
 % ================================================
 
 
@@ -167,10 +176,11 @@
 % LISTA DE SÍMBOLOS
 % ==============================================================
 % Utilize o formato:
-%   \item[Simbolo --]         Nome do símbolo
+%   \item[Simbolo]          Nome do símbolo
 \begin{simbolos}
     \item[$\sigma$]                  Condutividade Elétrica
     \item[$\rho$]                    Resistividade Elétrica
+    \item[$\rho_a$]                  Resistividade Elétrica Aparente
     \item[$V$]                       Diferença de Potencial
     \item[$i$]                       Corrente Elétrica
     \item[$R$]                       Resistência Elétrica
@@ -186,7 +196,8 @@
     \item[$\varrho$]                 Densidade de Carga
     \item[$t$]                       Tempo
     \item[$\mu$]                     Permeabilidade Magnética
-    \item[$\varepsilon$]             Permissividade Elétrica    
+    \item[$\varepsilon$]             Permissividade Elétrica
+    \item[$\imath$]                  Unidade Imaginária                   
 \end{simbolos}
 % ==============================================================
 
@@ -214,7 +225,7 @@
 
 \input{texto/introducao}
 \input{texto/objetivos}
-\input{texto/justificativa}
+%\input{texto/justificativa}
 \input{texto/ometodomt}
 \input{texto/aquisicaoedependencia}
 \input{texto/devpampamt}

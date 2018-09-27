@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.24)  22 SEP 2018 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.24)  27 SEP 2018 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,6 +1035,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 
 LaTeX Warning: Unused global option(s):
     [oneright].
@@ -1042,26 +1045,27 @@ LaTeX Warning: Unused global option(s):
 (./TCC2-final.aux)
 \openout1 = `TCC2-final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 101.
+
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 92.
+Package hyperref Info: Link coloring OFF on input line 101.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1073,15 +1077,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 92.
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
 \myptabbox=\box35
 \myptabboxwidth=\skip263
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 92.
+(lastpage)             ! on input line 101.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1116,14 +1120,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Underfull \hbox (badness 4441) in paragraph at lines 98--98
+Underfull \hbox (badness 4441) in paragraph at lines 107--107
 \OT1/ptm/m/n/12 apre-sen-tado ao curso de Ba-cha-re-lado em
  []
 
@@ -1131,22 +1135,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 
-      [1
+l.107 
+       [1
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \imprimirfichacatalografica
-                                     % Imprime a Ficha Catalografica [2]
-Underfull \hbox (badness 4441) in paragraph at lines 101--101
+l.108 \imprimirfichacatalografica
+                                      % Imprime a Ficha Catalografica [2]
+Underfull \hbox (badness 4441) in paragraph at lines 110--110
 \OT1/ptm/m/n/12 apre-sen-tado ao curso de Ba-cha-re-lado em
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 101--101
+Underfull \hbox (badness 1859) in paragraph at lines 110--110
 [][]\OT1/ptm/m/n/12 Area de concentra[][]ao: Geof[]^^Psica Es-pa-cial,
  []
 
@@ -1154,22 +1158,20 @@ Underfull \hbox (badness 1859) in paragraph at lines 101--101
 
 ] [4
 
-] [5] [6] (./TCC2-final.lof) [7
+] [5] [6] [7
 
-
-
-] [8] (./TCC2-final.lot) [9
+] [8] (./TCC2-final.lof) [9
 
 
 
 ] [10] [11
 
 
-]
-[12] [13
+] [12] [13
 
 
-] [14] (./TCC2-final.toc) [15
+] [14]
+(./TCC2-final.toc) [15
 
 
 ] (./texto/introducao.texpdfTeX warning (ext4): destination with the same ident
@@ -1201,24 +1203,18 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
 )
-(./texto/justificativa.texpdfTeX warning (ext4): destination with the same iden
-tifier (name{page.13}) has been already used, duplicate ignored
+(./texto/ometodomt.texpdfTeX warning (ext4): destination with the same identifi
+er (name{page.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {JUSTIFICATIVA} [13]pdfTeX warning (ext4): destination with the sam
-e identifier (name{page.14}) has been already used, duplicate ignored
+            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [13]pdfTeX warning (ext4)
+: destination with the same identifier (name{page.14}) has been already used, d
+uplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {JUSTIFICATIVA} [14
-
-]) (./texto/ometodomt.texpdfTeX warning (ext4): destination with the same ident
-ifier (name{page.15}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [15] [16
+            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [14
 
 ]
 Package epstopdf Info: Source file: <texto/figura/espectro-contrinuicao-padua20
@@ -1232,162 +1228,188 @@ Package epstopdf Info: Source file: <texto/figura/espectro-contrinuicao-padua20
 (epstopdf)             Command: <repstopdf --outfile=texto/figura/espectro-cont
 rinuicao-padua2004-eps-converted-to.pdf texto/figura/espectro-contrinuicao-padu
 a2004.eps>
-(epstopdf)             \includegraphics on input line 34.
+(epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
-<texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf, id=195, 760
+<texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf, id=188, 760
 .8425pt x 641.39626pt>
 File: texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf Graphic
  file (type pdf)
 <use texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/espectro-contrinuicao-padua2004-eps-conve
-rted-to.pdf  used on input line 34.
+rted-to.pdf  used on input line 33.
 (pdftex.def)             Requested size: 241.84842pt x 203.88083pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
-Overfull \hbox (23.5952pt too wide) in paragraph at lines 52--53
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 
+      [15]
+Overfull \hbox (23.5952pt too wide) in paragraph at lines 51--52
 []\OT1/ptm/m/n/12 O mag-ne-to-tel[]urico as-sim como os ou-tros m[]etodo geof[]
 ^^Psicos ele-tro-magn[]eticos, fundamentam-
  []
 
 
-Overfull \hbox (4.68727pt too wide) in paragraph at lines 69--69
+Overfull \hbox (4.68727pt too wide) in paragraph at lines 77--77
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 69--69
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 77--77
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (5.24721pt too wide) in paragraph at lines 70--70
+Overfull \hbox (5.24721pt too wide) in paragraph at lines 78--78
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 70--70
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 78--78
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (5.79726pt too wide) in paragraph at lines 71--71
+Overfull \hbox (5.79726pt too wide) in paragraph at lines 79--79
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 71--71
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 79--79
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (2.46718pt too wide) in paragraph at lines 72--72
+Overfull \hbox (2.46718pt too wide) in paragraph at lines 80--80
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 72--72
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 80--80
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (5.79726pt too wide) in paragraph at lines 73--73
+Overfull \hbox (5.79726pt too wide) in paragraph at lines 81--81
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 73--73
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 81--81
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (3.74744pt too wide) in paragraph at lines 74--74
+Overfull \hbox (3.74744pt too wide) in paragraph at lines 82--82
 []|$\OML/cmm/m/it/10 %$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 74--74
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 82--82
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (2.1884pt too wide) in paragraph at lines 75--75
+Overfull \hbox (2.1884pt too wide) in paragraph at lines 83--83
 []|$\OML/cmm/m/it/10 t$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 75--75
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 83--83
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (296.34297pt too wide) in alignment at lines 68--76
+Overfull \hbox (296.34297pt too wide) in alignment at lines 76--84
 [][][] 
  []
 
-[18 <./texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
+[16 <./texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 
-Overfull \hbox (4.60277pt too wide) in paragraph at lines 101--101
+Overfull \hbox (4.60277pt too wide) in paragraph at lines 109--109
 []|$\OML/cmm/m/it/10 ^^V$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 101--101
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 109--109
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (3.24046pt too wide) in paragraph at lines 102--102
+Overfull \hbox (3.24046pt too wide) in paragraph at lines 110--110
 []|$\OML/cmm/m/it/10 "$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 102--102
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 110--110
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (4.65019pt too wide) in paragraph at lines 103--103
+Overfull \hbox (4.65019pt too wide) in paragraph at lines 111--111
 []|$\OML/cmm/m/it/10 ^^[$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 103--103
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 111--111
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (296.34297pt too wide) in alignment at lines 100--104
+Overfull \hbox (296.34297pt too wide) in alignment at lines 108--112
 [][][] 
  []
 
 
-Overfull \hbox (5.28407pt too wide) in paragraph at lines 107--108
-[]\OT1/ptm/m/n/12 Cada co-e-fi-ci-ente das rela[][]oes cons-ti-tu-ti-vas fun-ci
--o-nam como ten-so-res, va-ri-an-tes no tempo,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
 
  []
 
-) (./texto/aquisicaoedependencia.tex [19] [20
+[17] [18]
 
-]) (./texto/devpampamt.tex
+LaTeX Warning: File `fig/grafico_skin_depth.png' not found on input line 225.
+
+
+! Package pdftex.def Error: File `fig/grafico_skin_depth.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 ...s[width=10cm]{fig/grafico_skin_depth.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [19] [20])
+(./texto/aquisicaoedependencia.tex
+Overfull \hbox (11.94263pt too wide) in paragraph at lines 311--1
+[]\OT1/ptm/m/n/12 O m[]etodo MT ent[]ao obt[]em a re-sis-ti-vi-dade apa-rente a
+ par-tir da im-ped[]ancia ele-tro-magn[]etica,
+ []
+
 [21] [22
 
-]) (./texto/resultados.tex [23] [24
+]) (./texto/devpampamt.tex [23] [24
 
-]) (./texto/consideracao.tex
-[25] [26
+]) (./texto/resultados.tex [25]
+[26
 
-]) (./TCC2-final.bbl [27] [28
+]) (./texto/consideracao.tex [27] [28
+
+]) (./TCC2-final.bbl [29] [30
 
 ]
 
@@ -1397,48 +1419,53 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 bibitemlist
 ) 
 AED: lastpage setting LastPage
-[29]
+[31]
 \tf@lof=\write5
 \openout5 = `TCC2-final.lof'.
 
-\tf@lot=\write6
-\openout6 = `TCC2-final.lot'.
+\tf@toc=\write6
+\openout6 = `TCC2-final.toc'.
 
-\tf@toc=\write7
-\openout7 = `TCC2-final.toc'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
  (./TCC2-final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 276.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 13067 strings out of 492982
- 188731 string characters out of 6134896
- 324159 words of memory out of 5000000
- 16350 multiletter control sequences out of 15000+600000
- 18468 words of font info for 43 fonts, out of 8000000 for 9000
+ 13172 strings out of 492982
+ 190163 string characters out of 6134896
+ 327000 words of memory out of 5000000
+ 16423 multiletter control sequences out of 15000+600000
+ 18983 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,17n,40p,659b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TCC2-final.pdf (37 pages, 315197 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on TCC2-final.pdf (39 pages, 394911 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

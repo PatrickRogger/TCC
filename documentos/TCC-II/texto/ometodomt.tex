@@ -8,11 +8,11 @@
     \section{Resistividade Elétrica dos Materiais}
     
         
-        O método MT usa a resistividade elétrica ($\rho$[$\Omega m$]) ou o seu inverso, a condutividade elétrica ($\sigma$ [$S$]), para distinguir e estudar a distribuição dos elementos geológicos em subsuperfície. 
+        O método MT usa a resistividade elétrica ($\rho$ [$\Omega m$]) ou o seu inverso, a condutividade elétrica ($\sigma$ [$S$]), para distinguir e estudar a distribuição dos elementos geológicos em subsuperfície. 
         
-        A resistividade elétrica é um parâmetro físico intrínseco a cada material. Ela relaciona a dificuldade da passagem de corrente (independente do modelo nas dimenções do material estudado.) a cada material, sendo sempre contante\footnote{Para os materias geológicos a resistividade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.  
+        A resistividade elétrica é um parâmetro físico intrínseco a cada material. Ela relaciona a dificuldade da passagem de corrente (independente do modelo nas dimenções do material estudado.) a cada material, sendo sempre contante\footnote{Para os materiais geológicos a resistividade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.  
         
-        Georg Ohm em 1827 verificou de forma empírica que ao aplicar uma diferença de potencial ($\Delta U$[$V$]) em um material, esse exerce uma resistência a passagem e corrente ($i$[$A$]). Materiais que obedecem a seguinte Lei de Ohm (equação \ref{lei-ohm}) são chamados de materiais ômicos.
+        Georg Ohm em 1827 verificou de forma empírica que ao aplicar uma diferença de potencial ($\Delta U$ [$V$]) em um material, esse exerce uma resistência a passagem e corrente ($i$ [$A$]). Materiais que obedecem a seguinte Lei de Ohm (equação \ref{lei-ohm}) são chamados de materiais ôhmicos.
         
         \begin{equation}
             \label{lei-ohm}
@@ -28,11 +28,10 @@
         O sinal MT tem sua origem nas ressonâncias de Schumann, nas micropulsações e nas variações diurnas \cite{padua2004estudos}. A figura \ref{sinalmt} mostra a contribuição de cada mecânismo no espectro MT.
         
         \begin{figure}[H]
-            
             \caption{Campo magnético natural e as contribuições das fontes do sinal MT.}
-            \begin{center}
-             \includegraphics[width=8.5cm]{texto/figura/espectro-contrinuicao-padua2004.eps}
-            \end{center}
+                \begin{center}
+                    \includegraphics[width=8.5cm]{texto/figura/espectro-contrinuicao-padua2004.eps}
+                \end{center}
             \legend{\Fonte{\cite{padua2004estudos}.}}
             \label{sinalmt}
         \end{figure}
@@ -49,17 +48,26 @@
         
     \section{Resposta do Método Magnetotelúrico}
 
-        O \mt{} assim como os outros método geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxweel [\ref{lei-maxwell}].
+        O \mt{} assim como os outros método geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxwell [\ref{lei-max-rotE} -- \ref{lei-max-divD}].
         
-        
-        {\setlength\arraycolsep{2pt}
-            \begin{eqnarray}
-                \label{lei-maxwell}
-                \rot{E} & = & - \devpart{\vetor{B}} \nonumber\\[10pt]
-                \rot{H} & = & \vetor{J} + \devpart{\vetor{D}} \nonumber\\[10pt]
-                \nabla \cdot \vetor{B} & = & 0 \nonumber\\[10pt]
-                \nabla \cdot \vetor{D} & = & \varrho                
-            \end{eqnarray}}
+        \begin{equation}
+            \label{lei-max-rotE}
+            \rot{E} = - \devpart{\vetor{B}}
+        \end{equation}
+        \begin{equation}
+            \label{lei-max-rotH}
+            \rot{H} = \vetor{J} + \devpart{\vetor{D}}
+        \end{equation}
+
+        \begin{equation}
+            \label{lei-max-divB}
+            \nabla \cdot \vetor{B} = 0 
+        \end{equation}
+
+        \begin{equation}
+            \label{lei-max-divD}
+            \nabla \cdot \vetor{D} = \varrho                
+        \end{equation}
         
         \noindent Onde,
             
@@ -104,15 +112,200 @@
                 \end{tabular*}
             \end{table}}
 
-        Cada coeficiente das relações constitutivas funcionam como tensores, variantes no tempo, para meios anisotrópicos. Para o estudo abordado e seguindo a afirmação, a Terra tornasse um meio isotrópico isso implica que os tensores são estáticos e assumem os seguintes valores:
+        \noindent Cada coeficiente das relações constitutivas funcionam como tensores, variantes no tempo, para meios anisotrópicos. Para o estudo abordado e seguindo a afirmação, onde a Terra tornasse um meio isotrópico, isso implica que os tensores, $\mu$ e $\varepsilon$ são estáticos e assumem os seguintes valores:
         
         \begin{quote}
-         \begin{enumerate}
-          \item[$\mu$] $=$ 1,2566x10\textsuperscript{-6}$H/m$
-          \item[$\varepsilon$] $=$ 8,85x10\textsuperscript{-12}$F/m$
-         \end{enumerate}
+            \begin{enumerate}
+                \item[$\mu$] $=$ \basedez{1{,}2566}{-6}$H/m$
+                \item[$\varepsilon$] $=$ \basedez{8{,}85}{-12}$F/m$
+            \end{enumerate}
         \end{quote}
         
-    
-    \section{Função de Transferência e Impedância Eletromagnética}
+        Utilizando as equações constitutivas podemos reescrever as equações \ref{lei-max-rotE} e \ref{lei-max-rotH}:
         
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            \label{rotEconstH}
+            \rot{E} &=& - \devpart{\vetor{B}}; \qquad \vetor{B} = \mu \vetor{H} \nonumber \\
+            \rot{E} &=& - \mu \devpart{\vetor{H}}
+        \end{eqnarray}}
+
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            \label{rotHconstE}
+            \rot{H} &=& \vetor{J} + \devpart{\vetor{D}}; \qquad \vetor{J} = \sigma \vetor{E} \quad \textrm{e} \quad \vetor{D} = \varepsilon \vetor{E}\nonumber \\
+            & &\rot{H} =  \sigma \vetor{E} + \varepsilon \devpart{\vetor{E}}
+        \end{eqnarray}}
+        
+        Na faixa da sondagem MT a Terra comporta-se como um condutor ôhmico, isso implica que o meio não possue cargas livres, logo $\varrho \simeq 0$. 
+        
+        Para os campos pode ser assumida uma dependência temporal harmônica dada por $e^{- \imath \omega t}$, que pode ser decomposta em vários harmônicos pela transformada de Fourier. 
+    
+        Portando as equações: \ref{rotEconstH}, \ref{rotHconstE}, \ref{lei-max-divB} e \ref{lei-max-divD}, podem ser reescritas como:
+        
+        \begin{equation}
+            \label{rotEconstHreescrito}
+            \rot{E} = \imath \omega \mu \vetor{H}           
+        \end{equation}
+        
+        \begin{equation}
+            \label{rotHconstEreescrito}
+            \rot{H} = (\imath \omega \varepsilon + \sigma) \vetor{E}
+        \end{equation}
+        
+        \begin{equation}
+            \nabla \cdot \vetor{H}  = 0
+        \end{equation}
+
+        \begin{equation}
+            \nabla \cdot \vetor{E} = 0
+        \end{equation}
+
+        Aplicando o rotacional na equação \ref{rotHconstEreescrito}, obtemos:
+         
+        \begin{equation}
+            \label{rotrotH}
+            \nabla \times \nabla \times \vetor{H} = (\imath \omega \varepsilon + \sigma) \rot{E}
+        \end{equation}
+
+        Comparando a equação \ref{rotrotH} com a equação \ref{rotEconstHreescrito}, pode-se reescreve-la como:
+        
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            \label{preHk}
+            \nabla \times \nabla \times \vetor{H} &=& (\imath \omega \varepsilon + \sigma) \rot{E}; \qquad \rot{E} = \imath \omega \mu \vetor{H} \nonumber \\
+            & &\nabla \times \nabla \times \vetor{H} = \imath \omega \mu (\imath \omega \varepsilon + \sigma) \vetor{H}            
+        \end{eqnarray}}
+        
+        Pode-se expressar a equação \ref{preHk} usando a seguinte identidade vetorial:
+        
+        \begin{equation}
+            \nabla \times \nabla \times \vetor{A} = \nabla \nabla \cdot \vetor{A} - \nabla^2 \vetor{A} 
+        \end{equation}
+
+        \noindent Portanto:
+        
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            \label{difH}
+            \nabla \nabla \cdot \vetor{H} - \nabla^2 \vetor{H} & = & \imath \omega \mu (\imath \omega \varepsilon + \sigma) \vetor{H} \nonumber \\
+            \nabla (\nabla \cdot \vetor{H}) - \nabla^2 \vetor{H} & = & \vetor{H}[\cancelto{\kappa^2}{\imath \omega \mu (\imath \omega \varepsilon + \sigma)}] \nonumber \\
+            \nabla (\cancelto{0}{\nabla \cdot \vetor{H}}) - \nabla^2 \vetor{H} & = & \kappa^2 \vetor{H} \nonumber \\
+            \nabla^2 \vetor{H} + \kappa^2 \vetor{H} & = &  0; \qquad \kappa^2 = \imath \omega \mu (\imath \omega \varepsilon + \sigma)
+        \end{eqnarray}}        
+        
+        Considerando um condutor ôhmico ($\sigma \gg \omega \varepsilon$), assim:
+        \begin{equation}
+            \label{kappaquad}
+            \kappa^2 = \imath \omega \mu \sigma
+        \end{equation}
+        
+        A equação \ref{kappaquad} pode ser expressa seguindo a definição, como:
+        
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            \kappa & = & \sqrt{\imath \omega \mu \sigma}; \quad \imath = e^{\imath \frac{\pi}{2}} \nonumber \\
+            \kappa & = & \sqrt{\omega \mu \sigma} \sqrt{e^{\imath \frac{\pi}{2}}} \nonumber \\
+            \kappa & = & \sqrt{\omega \mu \sigma} e^{\imath \frac{\pi}{4}}; \quad e^{\imath \frac{\pi}{4}} = \sqrt{1/2} (1 + \imath) \nonumber \\
+            \kappa & = & \sqrt{\dfrac{\omega \mu \sigma}{2}} (1 + \imath) \nonumber \\
+            \kappa & = & \dfrac{(1 + \imath)}{\delta}
+        \end{eqnarray}} 
+        
+        \noindent Onde,
+        
+        \begin{equation}
+            \label{shin-depth}
+            \delta_\omega = \sqrt{\dfrac{2 \rho}{\omega \mu}} \longrightarrow \delta_f \approx 500  \sqrt{\frac{\rho_a}{f}}
+        \end{equation}
+
+        
+        \begin{figure}[H]
+            \caption{Gráfico do \en{skin-depth} em função da frequência [$Hz$]}
+            \begin{center}
+                \includegraphics[width=10cm]{fig/grafico_skin_depth.png}
+            \end{center}
+            \legend{\Fonte{\oautor.}}
+        \end{figure}
+        
+        
+        \citar{Breve descrição d gráfico}
+        
+        
+        A equação \ref{shin-depth} é chamada de \en{skin-depth}\footnote{Espessura pelicular}, ela representa a profundidade de penetração da onda eletromagnética em um meio condutor.
+        A partir da equação são mapeadas as litologias relacionando-as com a $\rho_a$.
+        
+    \section{Impedância Eletromagnética}
+        
+        Baseado na fundamentação teórica apresentada a seção anterior, o MT busca obter a resistividade aparente em função da profundidade. 
+        
+        A solução da equação \ref{difH} e da sua análoga para o campo $\vetor{E}$ são dadas por:
+        
+        \begin{equation}
+            \label{soluH}
+            \vetor{H}_{(\vetor{r})} = \vetor{H} e^{-\vetor{k} \cdot \vetor{r}}
+        \end{equation}
+
+        \begin{equation}
+            \label{soluE}
+            \vetor{E}_{(\vetor{r})} = \vetor{E} e^{-\vetor{k} \cdot \vetor{r}}
+        \end{equation}
+
+        \noindent Onde $\vetor{k}$ é o vetor de onda cujo o módulo é definido na equação \ref{kappaquad}
+        
+        Substituindo a equação \ref{soluH} e \ref{soluE} em \ref{rotHconstEreescrito}, temos:
+        
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            \label{HEpossolu}
+            \nabla \times \vetor{H}e^{-\vetor{k} \cdot \vetor{r}} & = & (\imath \omega \varepsilon + \sigma) \vetor{E}e^{-\vetor{k} \cdot \vetor{r}}; \quad \sigma \gg \imath \omega \varepsilon \ \nonumber \\
+            \nabla \times \vetor{H}e^{-\vetor{k} \cdot \vetor{r}} & = & \sigma \vetor{E}e^{-\vetor{k} \cdot \vetor{r}}; \quad \sigma = \dfrac{\kappa^2}{\imath \omega \mu} \nonumber \\
+            \nabla \times \vetor{H}e^{-\vetor{k} \cdot \vetor{r}} & = &\dfrac{\kappa^2}{\imath \omega \mu} \vetor{E}e^{-\vetor{k} \cdot \vetor{r}}
+        \end{eqnarray}} 
+        
+        \noindent Usando as identidades:
+        
+        \begin{equation}
+            \nabla (e^{-\vetor{k} \cdot \vetor{r}}) = - e^{-\vetor{k} \cdot \vetor{r}} \vetor{k}
+        \end{equation}
+
+        \begin{equation}
+            \nabla \times \vetor{C}(f_{(\vetor{r})}) = - \vetor{C} \times \nabla f_{(\vetor{r})} 
+        \end{equation}
+        
+        Pode-se reescreve a equação \ref{HEpossolu}:
+        
+        {\setlength\arraycolsep{2pt}
+        \begin{eqnarray}
+            - \vetor{H} \times (- e^{-\vetor{k} \cdot \vetor{r}} \vetor{k}) = \dfrac{\kappa^2}{\imath \omega \mu} \vetor{E}e^{-\vetor{k} \cdot \vetor{r}} \nonumber \\
+            \cancelto{}{e^{-\vetor{k} \cdot \vetor{r}}} (\vetor{H} \times \vetor{k}) = \cancelto{}{e^{-\vetor{k} \cdot \vetor{r}}} \dfrac{\kappa^2}{\imath \omega \mu} \vetor{E}\nonumber \\
+            \vetor{E} = \dfrac{\imath \omega \mu}{\kappa^2} \vetor{H} \times \vetor{k} \nonumber \\
+            \vetor{E} = \dfrac{\imath \omega \mu}{\kappa} \vetor{H} \times \dfrac{\vetor{k}}{\kappa}
+        \end{eqnarray}} 
+        
+        \noindent A relação $\vetor{k}/\kappa$ é o versor de $\vetor{k}$ ou  $\hat{\unitario{k}}$, representando a ortogonalidade entre $\vetor{H}$ e $\vetor{E}$.
+        
+        A partir da equação anterior pode ser definido que $Z = \imath \omega \mu / \kappa$, esta definição é conhecida como impedância intrínseca do meio ou impedância eletromagnética, também pode ser representada da seguinte forma:
+        
+        \begin{equation}
+            Z = \dfrac{|\vetor{E}|}{|\vetor{H}|} = \dfrac{\imath \omega \mu}{\kappa} = \sqrt{\omega \mu \rho} e^{\imath \frac{\pi}{4}}
+        \end{equation}
+        
+        A impedância eletromagnética ($Z$) pode ser decomposta em função das componentes de $\vetor{E}$ e $\vetor{H}$, representada na forma matricial:
+        
+        \begin{equation}
+            \left (\begin{array}{c}
+                \textrm{E}_x\\
+                \textrm{E}_y
+                    \end{array}\right)
+                =
+            \left (\begin{array}{cc}
+                \textrm{Z}_{xx} & \textrm{Z}_{xy}\\
+                \textrm{Z}_{yx} & \textrm{Z}_{yy}
+                    \end{array}\right)
+            \left (\begin{array}{c}
+                \textrm{H}_x\\
+                \textrm{H}_y
+                    \end{array}\right)
+	    \end{equation}
+	    
+	    O método MT então obtém a resistividade aparente a partir da impedância eletromagnética, e atribui a ela uma profundidade, onde pode ser definida pela função de \en{skin-depth}.          
