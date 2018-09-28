@@ -1,18 +1,55 @@
 \chapter{AQUISIÇÃO DE DADOS E DEPENDÊNCIAS}
     
-    \section{Dependências e Processamento MT}
+    Neste capítulo será discutido como é feita a aquisição de dados MT, e quais as técnicas atualmente utilizadas para o processamento de dados. Também será mostrado quais as dependências que foram necessárias para a construção do \software, dentre elas estão: Kivy, EMTF (Dnff e TranMT) e conversores de dados.
+        
+    \section{Aquisição de Dados MT}        
     
-        \subsection{Aquisição de Dados MT}
+        A aquisição de dados MT consiste na obtenção dos campos elétricos ($\campo{E}_x$ e $\campo{E}_y$) e magnéticos ($\campo{H}_x$, $\campo{H}_y$ e $\campo{H}_z$), onde são os parâmetros essenciais para o cálculo da impedância ($Z$).
         
-        \subsection{Formatos de Arquivos de Dados MT}
+        Devido a sensibilidade do sinal das sondagens MT, os sensores devem proporcionar uma alta relação sinal/ruído e alta capacidade de ampliar o sinal medido.
         
-        \subsection{Processamento Robusto -- EMTF}
+        O arranjo amplamente adota para aquisição, são três magnetômetros distribuídos cada um paralelo a um eixo cartesiano, responsáveis pelos campos magnéticos, já para os campos elétricos, são distribuídos dois arranjos de eletrodos não polarizados, onde são acoplados horizontalmente, no sentido $x$ e $y$. A figura \ref{fig-arranjo-mt} mostra a disposição dos sensores na superfícies.
+        
+        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção de fluxo magnético terrestre, ou seja, derecionar-se ao polo magnético terrestre\footnote{Ponto na superfícies terrestre onde a inclinação magnética é $+90^\circ$}. 
+        
+        \begin{figure}[H]
+            \caption{Arranjo para Aquisição de dados MT.}
+                \begin{center}
+                    \includegraphics[width=13cm]{texto/figura/arranjo-mt.eps}
+                \end{center}
+            \legend{\Fonte{\oautor.}}
+            \label{fig-arranjo-mt}
+        \end{figure}
+        
+        Os sensores registram a variação da amplitude do sinal em função do tempo, esses registros são chamados de series temporais e são considerados os dados brutos do método. 
+        
+        Devido ao grande intervalo do espectro eletromagnético que abrange as sondagens MT ($10^{-3}\, Hz$ a $10^{4}\, Hz$), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências ângulares diferentes, se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
+        
+        A figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, no exemplo é mostrado a composição de um onda com 10 frequências diferentes, variando de $1$ a $10\, Hz$, se atribuirmos à ela uma taxa de aquisição de $10\,Hz$ pode-se perceber que a frequência de $6\,Hz$ não é representada corretamento, já percebe-se que para a frequência de $1\,Hz$ é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar na melhor forma possível esses dois fatos.
+        
+        \begin{figure}[H]
+            \caption{Aquisição de Dados Discretos.}
+                \begin{center}
+                    \includegraphics[width=13cm]{texto/figura/fourier2.eps}
+                \end{center}
+            \legend{\Fonte{\oautor.}}
+            \label{fig-aquisicao}
+        \end{figure}
+    
+        As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transforma de Fourier. Cada taxa de aquisições é chamada de \en{Banda} e varia de nome para cada equipamento utilizado em levantamentos. 
+    
+    \section{Formatos de Arquivos de Dados MT}
+    
+    \section{Processamento de Dados MT}
+    
+    \subsection{Processamento Robusto -- EMTF}
             
-            \subsubsection{Mudança Tempo/Frequência Ângular}
+        \subsubsection{Mudança Tempo/Frequência Ângular}
             
-            \subsubsection{Função de Transferências}
+        \subsubsection{Função de Transferências}
            
-        \subsection{Pacotes de Processamento do Grupo Geoma -- INPE}
+    \section{Pacotes de Processamento do Grupo Geoma -- INPE}
     
+    \section{Construtor Gráfico -- Kivy}
 
     
