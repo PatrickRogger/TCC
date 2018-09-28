@@ -1,31 +1,31 @@
 InfoBegin
 InfoKey: ModDate
-InfoValue: D:20180926214800-03'00'
+InfoValue: D:20180927221758-03'00'
 InfoBegin
 InfoKey: PTEX.Fullbanner
 InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) kpathsea version 6.2.3
 InfoBegin
 InfoKey: CreationDate
-InfoValue: D:20180926214800-03'00'
+InfoValue: D:20180927221758-03'00'
 InfoBegin
 InfoKey: Creator
 InfoValue: LaTeX with hyperref package
 InfoBegin
 InfoKey: Producer
 InfoValue: pdfTeX-1.40.18
-PdfID0: be000f86e9c1551a722c5d0b0f6e5bad
-PdfID1: be000f86e9c1551a722c5d0b0f6e5bad
-NumberOfPages: 39
+PdfID0: 5d0ab849b03f30e8e07f97e617c92e98
+PdfID1: 5d0ab849b03f30e8e07f97e617c92e98
+NumberOfPages: 41
 BookmarkBegin
 BookmarkTitle: Folha de rosto
 BookmarkLevel: 1
 BookmarkPageNumber: 3
 BookmarkBegin
-BookmarkTitle: Folha de aprova&#231;&#227;o
+BookmarkTitle: Folha de aprovação
 BookmarkLevel: 1
 BookmarkPageNumber: 5
 BookmarkBegin
-BookmarkTitle: INTRODU&#199;&#195;O
+BookmarkTitle: INTRODUÇÃO
 BookmarkLevel: 1
 BookmarkPageNumber: 19
 BookmarkBegin
@@ -37,109 +37,113 @@ BookmarkTitle: Objetivo Geral
 BookmarkLevel: 2
 BookmarkPageNumber: 21
 BookmarkBegin
-BookmarkTitle: Objetivos Espec&#237;ficos
+BookmarkTitle: Objetivos Específicos
 BookmarkLevel: 2
 BookmarkPageNumber: 21
 BookmarkBegin
-BookmarkTitle: FUNDAMENTOS DO M&#201;TODO MAGNETOTEL&#218;RICO
+BookmarkTitle: FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO
 BookmarkLevel: 1
 BookmarkPageNumber: 23
 BookmarkBegin
-BookmarkTitle: Resistividade El&#233;trica dos Materiais
+BookmarkTitle: Resistividade Elétrica dos Materiais
 BookmarkLevel: 2
 BookmarkPageNumber: 23
 BookmarkBegin
-BookmarkTitle: Origem das Correntes Tel&#250;ricas
+BookmarkTitle: Origem das Correntes Telúricas
 BookmarkLevel: 2
 BookmarkPageNumber: 23
 BookmarkBegin
-BookmarkTitle: Resson&#226;ncias de Schumann
+BookmarkTitle: Ressonâncias de Schumann
 BookmarkLevel: 3
 BookmarkPageNumber: 24
 BookmarkBegin
-BookmarkTitle: Micropulsa&#231;&#245;es
+BookmarkTitle: Micropulsações
 BookmarkLevel: 3
 BookmarkPageNumber: 24
 BookmarkBegin
-BookmarkTitle: Varia&#231;&#245;es Diurnas
+BookmarkTitle: Variações Diurnas
 BookmarkLevel: 3
 BookmarkPageNumber: 24
 BookmarkBegin
-BookmarkTitle: Resposta do M&#233;todo Magnetotel&#250;rico
+BookmarkTitle: Resposta do Método Magnetotelúrico
 BookmarkLevel: 2
 BookmarkPageNumber: 24
 BookmarkBegin
-BookmarkTitle: Imped&#226;ncia Eletromagn&#233;tica
+BookmarkTitle: Impedância Eletromagnética
 BookmarkLevel: 2
 BookmarkPageNumber: 28
 BookmarkBegin
-BookmarkTitle: AQUISI&#199;&#195;O DE DADOS E DEPEND&#202;NCIAS
+BookmarkTitle: AQUISIÇÃO DE DADOS E DEPENDÊNCIAS
 BookmarkLevel: 1
 BookmarkPageNumber: 31
 BookmarkBegin
-BookmarkTitle: Depend&#234;ncias e Processamento MT
+BookmarkTitle: Aquisição de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 31
-BookmarkBegin
-BookmarkTitle: Aquisi&#231;&#227;o de Dados MT
-BookmarkLevel: 3
 BookmarkPageNumber: 31
 BookmarkBegin
 BookmarkTitle: Formatos de Arquivos de Dados MT
-BookmarkLevel: 3
-BookmarkPageNumber: 31
+BookmarkLevel: 2
+BookmarkPageNumber: 33
 BookmarkBegin
-BookmarkTitle: Processamento Robusto &#8211; EMTF
-BookmarkLevel: 3
-BookmarkPageNumber: 31
+BookmarkTitle: Processamento de Dados MT
+BookmarkLevel: 2
+BookmarkPageNumber: 33
 BookmarkBegin
-BookmarkTitle: Mudan&#231;a Tempo/Frequ&#234;ncia &#194;ngular
+BookmarkTitle: Processamento Robusto – EMTF
+BookmarkLevel: 3
+BookmarkPageNumber: 33
+BookmarkBegin
+BookmarkTitle: Mudança Tempo/Frequência Ângular
 BookmarkLevel: 4
-BookmarkPageNumber: 31
+BookmarkPageNumber: 33
 BookmarkBegin
-BookmarkTitle: Fun&#231;&#227;o de Transfer&#234;ncias
+BookmarkTitle: Função de Transferências
 BookmarkLevel: 4
-BookmarkPageNumber: 31
+BookmarkPageNumber: 33
 BookmarkBegin
-BookmarkTitle: Pacotes de Processamento do Grupo Geoma &#8211; INPE
-BookmarkLevel: 3
-BookmarkPageNumber: 31
+BookmarkTitle: Pacotes de Processamento do Grupo Geoma – INPE
+BookmarkLevel: 2
+BookmarkPageNumber: 33
+BookmarkBegin
+BookmarkTitle: Construtor Gráfico – Kivy
+BookmarkLevel: 2
+BookmarkPageNumber: 33
 BookmarkBegin
 BookmarkTitle: DESENVOLVIMENTO E ARQUITETURA DO PampaMT
 BookmarkLevel: 1
-BookmarkPageNumber: 33
-BookmarkBegin
-BookmarkTitle: RESULTADOS E APLICA&#199;&#195;O DO PAMPAMT
-BookmarkLevel: 1
 BookmarkPageNumber: 35
 BookmarkBegin
-BookmarkTitle: Aplica&#231;&#227;o do PampaMT
-BookmarkLevel: 2
-BookmarkPageNumber: 35
-BookmarkBegin
-BookmarkTitle: &#193;rea de Estudo
-BookmarkLevel: 3
-BookmarkPageNumber: 35
-BookmarkBegin
-BookmarkTitle: Contexto Geol&#243;gico
-BookmarkLevel: 3
-BookmarkPageNumber: 35
-BookmarkBegin
-BookmarkTitle: Processamento dos Dados
-BookmarkLevel: 3
-BookmarkPageNumber: 35
-BookmarkBegin
-BookmarkTitle: Resultados e Interpreta&#231;&#227;o Geof&#237;sica
-BookmarkLevel: 3
-BookmarkPageNumber: 35
-BookmarkBegin
-BookmarkTitle: CONSIDERA&#199;&#213;ES FINAIS
+BookmarkTitle: RESULTADOS E APLICAÇÃO DO PAMPAMT
 BookmarkLevel: 1
 BookmarkPageNumber: 37
 BookmarkBegin
-BookmarkTitle: Refer&#234;ncias
+BookmarkTitle: Aplicação do PampaMT
+BookmarkLevel: 2
+BookmarkPageNumber: 37
+BookmarkBegin
+BookmarkTitle: Área de Estudo
+BookmarkLevel: 3
+BookmarkPageNumber: 37
+BookmarkBegin
+BookmarkTitle: Contexto Geológico
+BookmarkLevel: 3
+BookmarkPageNumber: 37
+BookmarkBegin
+BookmarkTitle: Processamento dos Dados
+BookmarkLevel: 3
+BookmarkPageNumber: 37
+BookmarkBegin
+BookmarkTitle: Resultados e Interpretação Geofísica
+BookmarkLevel: 3
+BookmarkPageNumber: 37
+BookmarkBegin
+BookmarkTitle: CONSIDERAÇÕES FINAIS
 BookmarkLevel: 1
 BookmarkPageNumber: 39
+BookmarkBegin
+BookmarkTitle: Referências
+BookmarkLevel: 1
+BookmarkPageNumber: 41
 PageMediaBegin
 PageMediaNumber: 1
 PageMediaRotation: 0
@@ -332,6 +336,16 @@ PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
 PageMediaNumber: 39
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 40
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 41
 PageMediaRotation: 0
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
