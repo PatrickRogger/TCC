@@ -17,13 +17,13 @@ sumario=17
 intro=19
 objetivos=21
 fundamentos=23-29
-aquisi=31-33
+aquisi=31-34
 desenvol=35
 resultados=37
 conside=39
 referencias=41
 
-pdftk A=TCC2-final.pdf cat A$capa A$folharosto A$ficha A$aprovacao A$resumo A$abstract A$listafi A$listasi A$listasim A$sumario A$intro A$objetivos A$fundamentos A$aquisi A$desenvol A$resultados A$conside A$referencias output  
+pdftk A=TCC2-final.pdf cat A$capa A$folharosto A$ficha A$aprovacao A$resumo A$abstract A$listafi A$listasi A$listasim A$sumario A$intro A$objetivos A$fundamentos A$aquisi A$desenvol A$resultados A$conside A$referencias output TCC2-Garcia-Santos.P.R.pdf 
 
 pdftk TCC2-final.pdf dump_data_utf8 output info_dump_original.info
 

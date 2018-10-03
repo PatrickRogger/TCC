@@ -8,9 +8,9 @@
         
         Devido a sensibilidade do sinal das sondagens MT, os sensores devem proporcionar uma alta relação sinal/ruído e alta capacidade de ampliar o sinal medido.
         
-        O arranjo amplamente adota para aquisição, são três magnetômetros distribuídos cada um paralelo a um eixo cartesiano, responsáveis pelos campos magnéticos, já para os campos elétricos, são distribuídos dois arranjos de eletrodos não polarizados, onde são acoplados horizontalmente, no sentido $x$ e $y$. A figura \ref{fig-arranjo-mt} mostra a disposição dos sensores na superfícies.
+        O arranjo amplamente adota para aquisição, são três magnetômetros distribuídos cada um paralelo a um eixo cartesiano, responsáveis pelos campos magnéticos. Para os campos elétricos, são distribuídos dois arranjos de eletrodos não polarizados, onde são acoplados horizontalmente, no sentido $x$ e $y$. A figura \ref{fig-arranjo-mt} mostra a disposição dos sensores na superfícies.
         
-        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção de fluxo magnético terrestre, ou seja, derecionar-se ao polo magnético terrestre\footnote{Ponto na superfícies terrestre onde a inclinação magnética é $+90^\circ$}. 
+        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção do fluxo magnético terrestre, ou seja, direcionado ao polo magnético terrestre\footnote{Ponto na superfícies terrestre onde a inclinação magnética é $+90^\circ$}. 
         
         \begin{figure}[H]
             \caption{Arranjo para Aquisição de dados MT.}
@@ -23,9 +23,9 @@
         
         Os sensores registram a variação da amplitude do sinal em função do tempo, esses registros são chamados de series temporais e são considerados os dados brutos do método. 
         
-        Devido ao grande intervalo do espectro eletromagnético que abrange as sondagens MT ($10^{-3}\, Hz$ a $10^{4}\, Hz$), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências ângulares diferentes, se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
+        Devido ao grande intervalo do espectro eletromagnético que abrange as sondagens MT ($10^{-3}\, Hz$ a $10^{4}\, Hz$), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências angulares diferentes, se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
         
-        A figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, no exemplo é mostrado a composição de um onda com 10 frequências diferentes, variando de $1$ a $10\, Hz$, se atribuirmos à ela uma taxa de aquisição de $10\,Hz$ pode-se perceber que a frequência de $6\,Hz$ não é representada corretamento, já percebe-se que para a frequência de $1\,Hz$ é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar na melhor forma possível esses dois fatos.
+        A figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, no exemplo é mostrado a composição de um onda com 10 frequências diferentes ($f_{\omega(t)}$), variando de $1$ a $10\, Hz$, se atribuirmos à ela uma taxa de aquisição de $10\,Hz$ pode-se perceber que a frequência de $6\,Hz$ não é representada corretamento, já percebe-se que para a frequência de $1\,Hz$ é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar na melhor forma possível esses dois fatos.
         
         \begin{figure}[H]
             \caption{Aquisição de Dados Discretos.}
@@ -36,15 +36,67 @@
             \label{fig-aquisicao}
         \end{figure}
     
-        As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transforma de Fourier. Cada taxa de aquisições é chamada de \en{Banda} e varia de nome para cada equipamento utilizado em levantamentos. 
+        As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transforma de Fourier. Cada taxa de aquisição é chamada de \en{Banda} e varia de nome para cada equipamento utilizado. 
     
     \section{Formatos de Arquivos de Dados MT}   
     
+        Parte das funções do \software{} será a simplificação no processo de conversão de dados, atualmente os formatos mais utilizados, são:
+        
+        {\footnotesize \noindent
+            \begin{table}[H]
+                \begin{tabular*}{1cm}{p{2.05cm}p{0.5cm}p{10cm}}
+                    \en{TS-format}       & {\footnotesize $\rightarrow$} & \en{Time Series Format} \\
+                    \en{Z-file}          & {\footnotesize $\rightarrow$} & \en{Z (Impedance Tensor) File} \\
+                    \en{J-format}        & {\footnotesize $\rightarrow$} & \en{Jones Format} \\
+                    \en{EDI-format}      & {\footnotesize $\rightarrow$} & \en{Eletrical Data Interchange Format} \\
+                \end{tabular*}
+            \end{table}}
+        
+        Os arquivos \en{TS} são utilizados para registrar as series temporais, onde são armazenadas as amplitudes registradas pelos sensores em função do tempo. A grande parte dos equipamentos tem como saída padrão a forma binária dos arquivos \en{TS}. Os arquivos binários podem  posteriormente serem convertidos para o formato ASCII.
+        
+        O arquivo \en{TS} é composto por dois blocos, o primeiro é destinado a comentários e configurações da aquisição, já  o segundo compõe o bloco de dados, distribuídos em cinco colunas, cada uma registra a amplitude do sinal dos sensores $H_x$, $H_y$, $H_z$, $E_x$ e $E_y$. O tempo associado a cada registro pode ser estimado pela hora de inicio e a taxa de aquisição da rodada.   
+        
+        \SingleSpacing
+        
+        Exemplo de arquivo \en{TS} (ASCII):
+
+        \begin{footnotesize}        
+\begin{verbatim}
+        # time series file from mp2ts 
+        # date: Mon May 12 10:15:57 1997
+        # input file: sno101/sno101as.1mp
+        # site description: KM 222.5
+        # Latitude   :062:39:47 N
+        # Longitude  :116:12:32 W
+        # LiMS         number :           52
+        # Magnetometer number :           52
+        # Ex line length (m):     100.0000000
+        # Ey line length (m):     100.0000000
+        # Azimuths relative to: MAGNETIC NORTH 
+        # Ex azimuth;          -17
+        # Ey azimuth;           73 
+        # Hx azimuth;          -17 
+        # Hy azimuth;           73 
+        1.98250   0.878400    3.64780    1.10889    2.02644                                  
+        1.93980   0.976000    3.65390    1.15682    2.01610                                     
+\end{verbatim}
+\end{footnotesize}
+            \begin{flushright}
+                \cite{ts-format}
+            \end{flushright}
+        
+        Como comentado no capítulo anterior, 
+        
+        Os arquivos \en{Z} são a saída padrão do processamento Robusto (Seção \ref{sec-robusto}), diferentes dos arquivo
+
+            
+        
     
     \section{Processamento de Dados MT}
     
     \subsection{Processamento Robusto -- EMTF}
-            
+        \label{sec-robusto}
+        \cite{robusto-egbert}
         \subsubsection{Mudança Tempo/Frequência Ângular}
             
         \subsubsection{Função de Transferências}

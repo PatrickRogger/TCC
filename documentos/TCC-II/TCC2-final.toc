@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {4.2}Formatos de Arquivos de Dados MT}{25}{section.4.2}
 \contentsline {section}{\numberline {4.3}Processamento de Dados MT}{25}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Processamento Robusto -- EMTF}{25}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}Mudan\IeC {\c c}a Tempo/Frequ\IeC {\^e}ncia \IeC {\^A}ngular}{25}{subsubsection.4.3.1.1}
-\contentsline {subsubsection}{\numberline {4.3.1.2}Fun\IeC {\c c}\IeC {\~a}o de Transfer\IeC {\^e}ncias}{25}{subsubsection.4.3.1.2}
-\contentsline {section}{\numberline {4.4}Pacotes de Processamento do Grupo Geoma -- INPE}{25}{section.4.4}
-\contentsline {section}{\numberline {4.5}Construtor Gr\IeC {\'a}fico -- Kivy}{25}{section.4.5}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Mudan\IeC {\c c}a Tempo/Frequ\IeC {\^e}ncia \IeC {\^A}ngular}{26}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Fun\IeC {\c c}\IeC {\~a}o de Transfer\IeC {\^e}ncias}{26}{subsubsection.4.3.1.2}
+\contentsline {section}{\numberline {4.4}Pacotes de Processamento do Grupo Geoma -- INPE}{26}{section.4.4}
+\contentsline {section}{\numberline {4.5}Construtor Gr\IeC {\'a}fico -- Kivy}{26}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E ARQUITETURA DO PampaMT}}{27}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -40,4 +40,4 @@
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{31}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{33}{section*.13}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{33}{section*.14}

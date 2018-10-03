@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{cancel}
+\usepackage{totcount}
 % ===============================================================================================================
 %
 
@@ -33,10 +34,42 @@
 \newcommand{\campo}[1]{\textrm{#1}}
 
 
+% =============================================================
+% Novos contadores - FLUXOGRAMAS
+
+%\newcounter{fluxo}
+%\newenvironment{fluxograma}{%
+%\addtocounter{fluxo}{1}%
+%\newcommand{\titulofluxo}[1]{Fluxograma \thefluxo -- ##1}
+%}{}
 
 
 
+% Create new file
+\newwrite\flu
+\immediate\openout\flu=\jobname.flu
+\newcommand{\flux}[1]{\write\flu{#1}}
 
+\usepackage{listings}
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{green},
+  morecomment=[s][\color{blue}]{/**}{*/},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{white}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4
+}
 
 % Configuração do documento (autor, titulo, orientação ....)
 
@@ -168,8 +201,10 @@
 % Utilize o formato:
 %   \item[SIGLA --]         Nome da sigla
 \begin{siglas}
+    \item[ASCII --]            \en{American Standard Code for Information Interchange}
     \item[GUI --]              \en{Graphical User Interface}\footnote{Interface Gráfica do Utilizador}
     \item[MT --]               Magnetotelúrico
+    \item[TS --]               \en{Time Series}
 \end{siglas}
 % ==============================================================
 

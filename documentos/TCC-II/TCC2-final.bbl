@@ -12,11 +12,24 @@
 \textbf{Geophysics}, Society of Exploration Geophysicists, v.~18, n.~3, p.
   605--635, 1953.}
 
+\bibitem[Egbert e Booker 1986]{robusto-egbert}
+\abntrefinfo{Egbert e Booker}{EGBERT; BOOKER}{1986}
+{EGBERT, G.~D.; BOOKER, J.~R. Robust estimation of geomagnetic transfer
+  functions.
+\textbf{Geophysical Journal of the Royal Astronomical Society}, Wiley Online
+  Library, v.~87, n.~1, p. 173--194, 1986.}
+
+\bibitem[Jones 1999]{ts-format}
+\abntrefinfo{Jones}{JONES}{1999}
+{JONES, A.~G. \textbf{TS Format v1.3}.
+Ottawa, 1999. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/ts\_format.txt}.
+  Acesso em: 02 out. 2018.}
+
 \bibitem[MTnet 2018]{mtnet}
 \abntrefinfo{MTnet}{MTNET}{2018}
 {MTNET. 2018.
 MTNet.
-Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 nov.
+Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
   2018.}
 
 \bibitem[Nyquist 1928]{nyquist28}
