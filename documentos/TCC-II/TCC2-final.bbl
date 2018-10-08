@@ -12,12 +12,31 @@
 \textbf{Geophysics}, Society of Exploration Geophysicists, v.~18, n.~3, p.
   605--635, 1953.}
 
+\bibitem[Egbert 1997]{egbert-emtf}
+\abntrefinfo{Egbert}{EGBERT}{1997}
+{EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
+\textbf{Geophysical Journal International}, Blackwell Publishing Ltd Oxford,
+  UK, v.~130, n.~2, p. 475--496, 1997.}
+
+\bibitem[Egbert 1998]{z-files}
+\abntrefinfo{Egbert}{EGBERT}{1998}
+{EGBERT, G.~D. \textbf{Errors Bars for Transfer Function Elements in Z-files}.
+[S.l.], 1998. Dispon{\'\i}vel em:
+  \url{ftp://ftp.oce.orst.edu/dist/egbert/EMTF/EMTF.tar.gz}. Acesso em: 07 out.
+  2018.}
+
 \bibitem[Egbert e Booker 1986]{robusto-egbert}
 \abntrefinfo{Egbert e Booker}{EGBERT; BOOKER}{1986}
 {EGBERT, G.~D.; BOOKER, J.~R. Robust estimation of geomagnetic transfer
   functions.
 \textbf{Geophysical Journal of the Royal Astronomical Society}, Wiley Online
   Library, v.~87, n.~1, p. 173--194, 1986.}
+
+\bibitem[Jones 1994]{j-format}
+\abntrefinfo{Jones}{JONES}{1994}
+{JONES, A.~G. \textbf{Magnetotelluric data file J-format: v2.0}.
+[S.l.], 1994. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/jformat.txt}.
+  Acesso em: 07 out. 2018.}
 
 \bibitem[Jones 1999]{ts-format}
 \abntrefinfo{Jones}{JONES}{1999}
@@ -31,6 +50,13 @@ Ottawa, 1999. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/ts\_format.txt}.
 MTNet.
 Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
   2018.}
+
+\bibitem[{NATIONAL SCIENCE FOUNDATION} 2018]{gmt}
+\abntrefinfo{{NATIONAL SCIENCE FOUNDATION}}{{NATIONAL SCIENCE
+  FOUNDATION}}{2018}
+{{NATIONAL SCIENCE FOUNDATION}. \textbf{The Generic Mapping Tools}.
+[S.l.], 2018. Dispon{\'\i}vel em: \url{http://gmt.soest.hawaii.edu/}. Acesso
+  em: 07 out. 2018.}
 
 \bibitem[Nyquist 1928]{nyquist28}
 \abntrefinfo{Nyquist}{NYQUIST}{1928}
@@ -47,6 +73,13 @@ Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
 Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
   Instituto Nacional de Pesquisas Espaciais (INPE), 2004.}
 
+\bibitem[Parker e Booker 1996]{parker1996optimal}
+\abntrefinfo{Parker e Booker}{PARKER; BOOKER}{1996}
+{PARKER, R.~L.; BOOKER, J.~R. Optimal one-dimensional inversion and bounding of
+  magnetotelluric apparent resistivity and phase measurements.
+\textbf{Physics of the Earth and Planetary Interiors}, Elsevier, v.~98, n.~3-4,
+  p. 269--282, 1996.}
+
 \bibitem[Parkinson 1983]{parkinson93}
 \abntrefinfo{Parkinson}{PARKINSON}{1983}
 {PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
@@ -57,5 +90,12 @@ Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
 {TIKHONOV, A. On determining electric characteristics of the deep layers of the
   earth's crust.
 \textbf{Dolk. Acad. Nauk. SSSR}, v.~73, p. 295--297, 1950.}
+
+\bibitem[Wight e Bostick 1980]{wight1980cascade}
+\abntrefinfo{Wight e Bostick}{WIGHT; BOSTICK}{1980}
+{WIGHT, D.; BOSTICK, F. Cascade decimation--a technique for real time
+  estimation of power spectra. In:  IEEE. \textbf{Acoustics, Speech, and Signal
+  Processing, IEEE International Conference on ICASSP'80.} [S.l.], 1980. v.~5,
+  p. 626--629.}
 
 \end{thebibliography}

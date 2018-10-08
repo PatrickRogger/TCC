@@ -1,1 +1,91 @@
-\chapter{DESENVOLVIMENTO E ARQUITETURA DO PampaMT}
+\chapter{DESENVOLVIMENTO E RESULTADOS DO PampaMT}
+
+    O \en{software} desenvolvido recebeu o nome de PampaMT, em homenagem a Universidade Federal do Pampa. O desenvolvimento iniciou-se em janeiro de 2018, com o primeiro protótipo, RiMT, para testar os conceitos e a viabilidade das funções para o programa, em junho de 2018 o código foi reestruturado e reescrito totalmente, atentando para os problemas e adicionando novas funções. A principal mudança foi a construção do \en{software} em módulos que viabiliza, de modo fácil, a adição de novas funções.
+    
+    No apêndice A pode ser encontrado o caminho para o código fonte do programa, junto com as informações para a instalação. O PampaMT foi desenvolvido para ambiente Linux rodando em base Debian. O código foi escrito em \Python, com alguns trechos escritos em \Shell{} para instalação e comunicação da interface com os executáveis dos programas Dnff e TranMT.
+    
+    O PampaMT foi dividido em duas etapas: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. A segunda parte foi destinada a escolha das melhores rodadas e períodos, a maior interação com o usuário é destinada a essa etapa. 
+    
+    A figura \ref{tela_inicial} mostra a primeira tela ao executar o PampaMT, nela pode-se escolher criar um novo projeto ou abrir um já existente.
+    
+    \begin{figure}[H]
+        \caption{Tela Inicial PampaMT}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/tela1_com_fluxograma.eps}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{tela_inicial}
+    \end{figure}
+    
+     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}, nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e Lins, a seleção pode ser automática ou estação á estação (figura \ref{tela_sel_site}). 
+    
+    \begin{figure}[H]
+        \caption{Seleção das Estações}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/tela2_com_fluxograma.eps}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{tela_sel_site}
+    \end{figure}
+    
+    Os dados após a seleção, são copiados para o diretório \textbf{PampaMT/DADOS\_MT/projeto}, esse processo é realizado para prever eventuais perdas dos arquivos, os dados então são convertidos e salvos no diretório \textbf{PampaMT/PROC\_MT/projeto} 
+    
+    O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrões, o usuário pode alterar qualquer configuração, como escolher uma nova janela ou alterar o horário do relógio dos dados (figura \ref{conf-procZ}).
+    
+    \begin{figure}[H]
+        \caption{Tela de Configuração para o EMTF}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/tela3_com_fluxograma.eps}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{conf-procZ}
+    \end{figure}
+    
+    O processo EMTF tende a demorar um tempo considerável, visto a grande quantidade de recursos do computador que ele consome. Finalizado o processo EMTF a janela é fechada e inicia-se o tela principal do PampaMT (figura \ref{tela-prin}).
+    
+    \begin{figure}[H]
+        \caption{Tela Principal PampaMT}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/tela4.png}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{tela-prin}
+    \end{figure}
+    
+    
+    Na tela principal contem todas as funcionalidades do PampaMT, incluindo a etapa de criação de um novo projeto. O carácter modular do PampaMT ajuda na adição de novas funcionalidades, como por exemplo, integração por programas SIG, integração com visualizados de dados, como o GMT, dentre outros.
+    
+    Um exemplo notável é a adição do programa rhoplusGUI desenvolvido pelo autor para o projeto \citar{citar eu CNPQ}, esse programa auxilia na manipulação de dados para o processamento Rho+ \cite{parker1996optimal}, onde foi necessário adicionar poucas linhas de código para inclui-lo no PampaMT (figura \ref{rhoplusGUI}).
+    
+    \begin{figure}[H]
+        \caption{Integração com Outros Programas}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/rhoplusGUI.eps}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{rhoplusGUI}
+    \end{figure}
+    
+    A principal função que o usuário utilizará, é a escolha dos melhores períodos e rodadas, esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos, após a contagem o usuário deve anotar esses pontos e por fim executar o \en{script}: \en{ToJones}, esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
+    
+    Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção,e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (figura \ref{selc-perio}).
+    
+    \begin{figure}[H]
+        \caption{Seleção dos Períodos}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/tela3_selecionando.png}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{selc-perio}
+    \end{figure}
+    
+    Após escolher os melhor períodos o usuário pode executar o \en{script}: \en{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo, o PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{ToJones}, finalizando a ultima etapa do pré-processamento.
+    
+    A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente.
+    
+    Para efeitos de comparação, ao utilizar o programa em fase alfa, usuário que nunca tiveram contato com o terminal, puderam executar e processar os dados com sucesso.
+    
+    
+    
+    
+    

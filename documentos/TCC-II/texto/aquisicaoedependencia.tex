@@ -38,6 +38,32 @@
     
         As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transforma de Fourier. Cada taxa de aquisição é chamada de \en{Banda} e varia de nome para cada equipamento utilizado. 
     
+    \section{Processamento de Dados MT}
+        Tradicionalmente o grande processamento de dados geofísicos é chamado de inversão, onde esse tenta ajustar um modelo físico que melhor represente o conjunto de dados. Porém para dados MT faz-se necessário antes das técnicas de inversão, o pré-processamento.
+        
+        O pré-processamento consiste, sucintamente, em realizar processamentos de filtragem, tratamentos estatísticos, conversão de dados, mudança de domínios e mesclagem de arquivos.
+    
+        A primeira etapa do pré-processamento é a conversão dos arquivos de binários para ASCII, esse processo é opcional, porem como boa prática é realizado para melhorar a legibilidade por parte dos usuários sobre os dados.
+        
+        Após a conversão são realizados técnicas de filtragem, a mudança do domínio dos dados de tempo para frequência angular, e calculo do tensor impedância ($Z$), esse processo será demonstrado mais detalhadamente no seção \ref{sec-robusto}, a técnica adotada para esse processo é chamado de processamento robusto, EMTF \cite{robusto-egbert}, atualmente é a técnica mais confiável e amplamente utilizadas no meio acadêmico para manipulação dos dados.
+        
+        Como comentado na seção anterior, devido as limitações dos equipamentos, os dados são coletados separadamente para cada banda. Cada banda após o processamento robusto gera um arquivo com extensão \en{.zss}, nesses arquivos são armazenados os tensores de impedância, ou seja, cada componente da matriz $Z$, para cada período.
+        
+        A etapa seguinte do processamento consiste em escolher, dentro de todos arquivos, a melhor composição dos períodos para todo o espectro de estudo, esse processo é minucioso e depende da experiencia do usuário, nela deve-se plotar cada arquivo e verificar a sua coerência dentro do conjunto total dos dados.
+        
+        A última etapa do pré-processamento é mesclar os períodos escolhidos em um único arquivo, esses arquivos contem todas as informações necessárias para realizar os processos de inversão.
+        
+        A figura \ref{fluxo-preprocessamento} ilustra as etapas de pré-processamento.
+        
+        \begin{figure}[H]
+            \caption{Fluxograma de Pré-processamento.}
+                \begin{center}
+                    \includegraphics[width=15cm]{texto/figura/fluxo_preprocessamento.eps}
+                \end{center}
+            \legend{\Fonte{\oautor.}}
+            \label{fluxo-preprocessamento}
+        \end{figure}
+        
     \section{Formatos de Arquivos de Dados MT}   
     
         Parte das funções do \software{} será a simplificação no processo de conversão de dados, atualmente os formatos mais utilizados, são:
@@ -45,18 +71,16 @@
         {\footnotesize \noindent
             \begin{table}[H]
                 \begin{tabular*}{1cm}{p{2.05cm}p{0.5cm}p{10cm}}
-                    \en{TS-format}       & {\footnotesize $\rightarrow$} & \en{Time Series Format} \\
-                    \en{Z-file}          & {\footnotesize $\rightarrow$} & \en{Z (Impedance Tensor) File} \\
-                    \en{J-format}        & {\footnotesize $\rightarrow$} & \en{Jones Format} \\
-                    \en{EDI-format}      & {\footnotesize $\rightarrow$} & \en{Eletrical Data Interchange Format} \\
+                    \en{TS-format}       & {\footnotesize $\rightarrow$} & \en{Time Series Format (.ats)} \\
+                    \en{Z-file}          & {\footnotesize $\rightarrow$} & \en{Z (Impedance Tensor) File (.zss)} \\
+                    \en{J-format}        & {\footnotesize $\rightarrow$} & \en{Jones Format (.dat)} \\
+                    %\en{EDI-format}      & {\footnotesize $\rightarrow$} & \en{Eletrical Data Interchange Format (.edi)} \\
                 \end{tabular*}
             \end{table}}
         
         Os arquivos \en{TS} são utilizados para registrar as series temporais, onde são armazenadas as amplitudes registradas pelos sensores em função do tempo. A grande parte dos equipamentos tem como saída padrão a forma binária dos arquivos \en{TS}. Os arquivos binários podem  posteriormente serem convertidos para o formato ASCII.
         
         O arquivo \en{TS} é composto por dois blocos, o primeiro é destinado a comentários e configurações da aquisição, já  o segundo compõe o bloco de dados, distribuídos em cinco colunas, cada uma registra a amplitude do sinal dos sensores $H_x$, $H_y$, $H_z$, $E_x$ e $E_y$. O tempo associado a cada registro pode ser estimado pela hora de inicio e a taxa de aquisição da rodada.   
-        
-        \SingleSpacing
         
         Exemplo de arquivo \en{TS} (ASCII):
 
@@ -85,24 +109,141 @@
                 \cite{ts-format}
             \end{flushright}
         
-        Como comentado no capítulo anterior, 
+        Após realizar a transformada de Fourier e o calculo do tensor impedância, não são mais necessários carregar todas as informações das series temporais, pois a partir do tensor impedância é possível estimar todos os parâmetros associados a cada período, tais como: $\rho_a$, $\phi$ e as componentes do próprio tensor: $Z_{xx}$, $Z_{xy}$, $Z_{yx}$ e $Z_{yy}$, as componentes do tensor são importantes para a interpretação da adimensionalidade dos dados.
         
-        Os arquivos \en{Z} são a saída padrão do processamento Robusto (Seção \ref{sec-robusto}), diferentes dos arquivo
+        Como discutido na seção anterior a saída padrão do TranMT (programa adota para os cálculos do tensor impedância), são os arquivos \en{.zss}, esses arquivos são estruturados na forma de blocos, onde, cada bloco representa um período e nele contem o próprio tensor impedância, a matriz de covariância inversa e a matriz de covariância residual.
+        
+        Exemplo de arquivo \en{Z}:
+        
+\begin{footnotesize}        
+\begin{verbatim}
+      **** IMPEDANCE IN MEASUREMENT COORDINATES ****
+      ********** WITH FULL ERROR COVARINCE**********
+     Robust Single station                                                           
+     station    :ufb104a091_03B      
+     coordinate  -10.47560  -38.43750  declination   -23.00
+     number of channels   5   number of frequencies   16
+      orientations and tilts of each channel 
+         1     0.00     0.00 ufb104a  Hx    
+         2    90.00     0.00 ufb104a  Hy    
+         3     0.00     0.00 ufb104a  Hz    
+         4     0.00     0.00 ufb104a  Ex    
+         5    90.00     0.00 ufb104a  Ey    
+     period : 1.116071E-03    decimation level   1    freq. band from
+     1600 to   1984
+     number of data point  29853 sampling freq. 4.096000E+03 Hz
+      Transfer Functions
+       3.7279E-03  5.5604E-03 -1.2527E-03 -4.9609E-03
+       5.7064E+01  1.7047E+01  3.1437E+02  2.1458E+02
+      -2.6267E+02 -1.9591E+02 -3.2340E+01 -1.3460E+00
+      Inverse Coherent Signal Power Matrix
+       1.3513E+05  0.0000E+00
+      -1.3265E+04  1.9036E+03  1.5955E+04  0.0000E+00
+      Residual Covariance
+       3.2219E-11  0.0000E+00
+       6.8311E-10 -1.4571E-10  1.4028E-04  0.0000E+00
+       1.2952E-10  2.3198E-10 -7.8350E-07 -1.5203E-07  1.3332E-04  0.0000E+00                                     
+\end{verbatim}
+\end{footnotesize}
+        
+        A partir dos arquivos \en{Z} ou \en{.zss}, pode-se calcular a resitividade aparente ($\rho_a$) a partir da seguinte equação \cite{z-files}:
+        
+        \begin{equation}
+         \rho_a = \dfrac{T|Z_{ij}|^2}{5}
+        \end{equation}
 
-            
+        \noindent e para se obter a fase ($\phi$) pode-se calcular, a partir:
+        \citar{não me lembro se no brasil usa-se arctan ou tan$^{-1}$}
+        \begin{equation}
+         \phi = \dfrac{180}{\pi} \textrm{tan}^{-1}\left [\dfrac{\Im(Z_{ij})}{\Re(Z_{ij})} \right ]
+        \end{equation}
+
+        Os erros associados a cada componente podem ser obtidos a partir das matrizes de covariância, assim como os erros para $\rho_a$ e $\phi$.
         
+        Os arquivos \en{J}, análogo aos arquivos \en{Z}, armazenam as informações do tensor, porém, a estrutura é mais sintetizada. Os arquivos são estruturados em dois blocos, um destinado a configurações, tais como: localização, elevação, nome da estação e azimute. O segundo bloco é destinado aos dados \cite{j-format}.
+        
+        A estrutura base utilizada para os dados é composta por quatro sub-blocos, cada um representando uma componente do tensor. O bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
+        
+\begin{footnotesize}        
+\begin{verbatim}
+            Zij SI units (ohms)                 < componente
+            n                                   < numero de periodos
+                periodo(n)  Real  Imaginario    Erro    Peso
+\end{verbatim}
+\end{footnotesize}
+               
+        Os arquivos \en{J} recebem a extensão \en{.dat}, e são os arquivos necessários para as etapas de inversão, a adoção desse formato para essa etapa, se da pela fácil leitura dos períodos e por armazenar toda a sondagem em um único arquivo, ele armazena a mesclagem de todas as diferentes janelas resultantes do processamento EMTF.
+        
+        Exemplo de arquivo \en{J}:
+        
+\begin{footnotesize}        
+\begin{verbatim}
+        >STATION   =bor608b
+        >AZIMUTH   =    -23.0000
+        >LATITUDE  =    -8.72768
+        >LONGITUDE =   -37.84493
+        >ELEVATION =    664.0000
+        bor608b -23.0
+        ZXX SI units (ohms)
+        2
+            1.1161e-04   -6.6462e-02   -1.0728e-01    1.7715e-03   1
+            1.5625e-04    7.7005e-04   -1.0442e-01    2.9007e-03   1
+        ZXY SI units (ohms)
+        2
+            1.1161e-04    2.5648e+00    1.2953e+00    2.5613e-03   1
+            1.5625e-04    2.4467e+00    1.4059e+00    5.9294e-03   1
+        ZYX SI units (ohms)
+        2
+            1.1161e-04   -2.3499e+00   -1.1104e+00    1.6657e-03   1
+            1.5625e-04   -2.3904e+00   -1.2251e+00    3.0355e-03   1
+        ZYY SI units (ohms)
+        2
+            1.1161e-04    7.1532e-02    3.1711e-02    2.4082e-03   1
+            1.5625e-04    5.9528e-02    3.7107e-02    6.2053e-03   1
+\end{verbatim}
+\end{footnotesize}
     
-    \section{Processamento de Dados MT}
-    
-    \subsection{Processamento Robusto -- EMTF}
+    \section{Processamento Robusto -- EMTF}
         \label{sec-robusto}
-        \cite{robusto-egbert}
-        \subsubsection{Mudança Tempo/Frequência Ângular}
+        
+            O processamento dos dados parte primeiramente da análise espectral, onde primeiro faz-se necessário a mudança do domínio do tempo para a frequência angular e em seguida a filtragem, remoção de tendências e dados ruins.
             
-        \subsubsection{Função de Transferências}
+            O pacote EMTF \cite{egbert-emtf} desenvolvido por Gary D. Egbert, é um conjunto de programas escrito em \en{Fortran 77} que realizam processamento tais como: mudança de domínio, cálculo do tensor impedância, plotagem e alguns tipos de conversores de dados. 
+            
+            A mudança do domínio do tempo para frequência angular é realizado pelo programa Dnff, contido no pacote, esse programa realiza a troca do domínio través da \en{cascade decimation} \apud{wight1980cascade}{padua2004estudos} uma alternativa a FFT (\en{Fast Fourier Transform}\footnote{Transformada Rápida de Fourier}).
+            
+            Antes de efetuar a transformada de Fourier, as séries temporais são re-amostradas, essas re-amostragem são chamadas de janelas e tem o objetivo de minimizar as distorções causadas pelas reverberações da transformada de Fourier.
+            
+            Para estimar as componentes do tensor impedância o programa parte dos seguintes cálculos:
+            
+            A partir da equação \ref{tensor-impe} podemos representa-la na forma do sistema:
+            
+            \citar{terminar ....}
+        \subsection{Função de Transferências}
+           
+           \cite{robusto-egbert}
            
     \section{Pacotes de Processamento do Grupo Geoma -- INPE}
     
+        O grupo GEOMA do INPE (Institudo Nacional de Pesquisas Espaciais) oferece treinamentos para alunos e colaboradores. O grupo dispõe de um série de \en{scripts} e programas para auxiliar na manipulação do processamento MT.
+
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Ms. Marcelo Banik de Pádua, os mesmo \en{scripts} foram obtidos sobre comunicação privada pelo autor.
+        
+        O programa desenvolvido faz uso dos \en{scripts} como ``ponte'' entre a interface e o os programas EMTF, como também para conversores de dados. Um exemplo é o programa \en{processamentoZ} que prepara os dados e extraí os parâmetros necessários para as rotinas Dnff e TranMT. 
+        
+        Para as plotagens dos gráficos é utilizado o programa GMT \cite{gmt}(figura \ref{plot-cmp-tf}). Embora o programa desenvolvido tenha a sua própria saída gráfica, foi desenvolvida uma extensão que exporta as imagens utilizando o \en{Kernel} do GMT, essa extensão visa não causar estranheza em usuários já acostumados com as imagens geradas pelo GMT.  
+    
+        \begin{figure}[H]
+            \caption{Saída Gráfica Gerada pelo \en{script}: \en{plot-cmp-tf}, utilizando o GMT.}
+                \begin{center}
+                    \includegraphics[width=15cm]{texto/figura/plot-cmp-tf.png}
+                \end{center}
+            \legend{\Fonte{\oautor.}}
+            \label{plot-cmp-tf}
+        \end{figure}
+
+    
     \section{Construtor Gráfico -- Kivy}
 
+        \citar{escrever se der tempo}
     

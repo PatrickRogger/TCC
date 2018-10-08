@@ -11,11 +11,12 @@
 \usepackage{cancel}
 \usepackage{totcount}
 % ===============================================================================================================
-%
+
 
 % MEUS COMANDOS
 % =============================================================
 \newcommand{\en}[1]{\textit{#1}}
+
 \newcommand{\mt}{magnetotelúrico}
 \newcommand{\citar}[1]{\textcolor{red}{#1}}
 
@@ -23,15 +24,22 @@
 \newcommand{\software}{\en{software}}
 \newcommand{\Software}{\en{Software}}
 \newcommand{\softwares}{\en{softwares}}
-
+\newcommand{\Shell}{\en{Shell}}
 % =============================================================
 
+% =============================================================
 \newcommand{\rot}[1]{\nabla \times \vec{\textrm{#1}}}
 \newcommand{\devpart}[1]{\dfrac{\partial #1}{\partial t}}
 \newcommand{\vetor}[1]{\vec{\textrm{#1}}}
 \newcommand{\unitario}[1]{\textrm{#1}}
 \newcommand{\basedez}[2]{$#1 \times 10^{#2}$}
 \newcommand{\campo}[1]{\textrm{#1}}
+% =============================================================
+
+% =============================================================
+\hyphenation{ASCII}
+% =============================================================
+
 
 
 % =============================================================
@@ -265,7 +273,7 @@
 \input{texto/ometodomt}
 \input{texto/aquisicaoedependencia}
 \input{texto/devpampamt}
-\input{texto/resultados}
+%\input{texto/resultados}
 \input{texto/consideracao}
 
 % ==============================================================================
@@ -296,8 +304,7 @@
 % ==============================================================================
 %\anexos                         % Inicia os anexos
 
-%\chapter{Amigem para mostrar}
-%    Um anexo
+\input{texto/anexos}
 % ==============================================================================
 
     
