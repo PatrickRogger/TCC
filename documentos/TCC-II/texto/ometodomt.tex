@@ -1,6 +1,6 @@
 \chapter{FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO}
 
-    Proposto com \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa as fontes passivas\footnote{Fontes passivas -- São fontes de sinal que não dependem de instrumentos artificiais para gerá-la.} eletromagnéticas do planeta Terra para estudar e mapear a subsuperfície.
+    Proposto com \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa as fontes passivas\footnote{Fontes passivas -- São fontes de sinal que não dependem de instrumentos artificiais para gerá-la, ou seja, sinais naturais do planeta.} eletromagnéticas do planeta Terra para estudar e mapear a subsuperfície.
     
     %Nesta secção será mostrado sucintamente a origem do sinal MT. Antes de demonstrar as bases teóricas do método, será mostrado brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
         
@@ -23,7 +23,7 @@
     
     \section{Origem das Correntes Telúricas}
     
-        O método MT utiliza-se de um amplo espectro de campo natural terrestre (10\textsuperscript{-4} a 10\textsuperscript{4} $Hz$) para as sondagens geofísicas. Essa característica permite que  a sondagem magnetotelúrica alcance centenas de quilômetros.
+        O método MT utiliza-se de um amplo espectro do campo eletromagnético natural terrestre (10\textsuperscript{-4} a 10\textsuperscript{4} $Hz$) para as sondagens geofísicas. Essa característica permite que  a sondagem magnetotelúrica alcance centenas de quilômetros.
         
         O sinal MT tem sua origem nas ressonâncias de Schumann, nas micropulsações e nas variações diurnas \cite{padua2004estudos}. A figura \ref{sinalmt} mostra a contribuição de cada mecânismo no espectro MT.
         
@@ -36,36 +36,18 @@
             \label{sinalmt}
         \end{figure}
         
-        As ressonâncias de Schumann tem sua origem principalmente nas tempestades equatorias contribuindo para a fonte do sinal MT acima de 1 $Hz$, as frequências a baixo desse valor, tem origem na interação do vento solar com a magnetosfera, que geram ressonâncias Terra-ionosfera. A contribuição de parte do espectro MT, tambem pode ser explicada pela distorção do formato do campo magnético terrestre causada pelo Sol durante o dia, esse processo é chamado de variação diurna e contribui com a faixa de frequência de 10\textsuperscript{-5} a 10\textsuperscript{-4} $Hz$. 
+        As ressonâncias de Schumann tem sua origem principalmente nas tempestades equatoriais contribuindo para a fonte do sinal MT acima de 1 $Hz$, as frequências a baixo desse valor, tem origem na interação do vento solar com a magnetosfera, que geram ressonâncias Terra-ionosfera. A contribuição de parte do espectro MT, tambem pode ser explicada pela distorção do formato do campo magnético terrestre causada pelo Sol durante o dia, esse processo é chamado de variação diurna e contribui com a faixa de frequência de 10\textsuperscript{-5} a 10\textsuperscript{-4} $Hz$. 
         
         
         %\subsection{Ressonâncias de Schumann}
         
-       %\subsection{Micropulsações}
+        %\subsection{Micropulsações}
         
         %\subsection{Variações Diurnas}   
         
-
-%\begin{lstlisting}
-%# Comentario
-%def funcao:
-%    a funcao e essa
-%    return dddd
-%\end{lstlisting}
-
-        
-        
-        %\begin{fluxograma}
-        % \titulofluxo{outro fluxo}
-        % dfsfsdfsdfsdf
-        %\end{fluxograma}
-
-        \flux{ei vc ai}
-
-        
     \section{Resposta do Método Magnetotelúrico}
 
-        O \mt{} assim como outros métodos geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxwell [\ref{lei-max-rotE} -- \ref{lei-max-divD}].
+        O \mt{} assim como outros métodos geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxwell [\ref{lei-max-rotE} -- \ref{lei-max-divD}], podemos partir das equações para estimar os parâmetros físicos para a investigação MT, assim:
         
         \begin{equation}
             \label{lei-max-rotE}
@@ -238,7 +220,7 @@
         A equação \ref{shin-depth} é chamada de \en{skin-depth}\footnote{Espessura pelicular}, ela representa a profundidade de penetração da onda eletromagnética em um meio condutor.
         A partir da equação são mapeadas as litologias em subsuperfície, relacionando-as com a $\rho_a$.        
 
-        O meio geológico influencia diretamente a profundidade de investigação, a figura \ref{fig-skin-depth} mostra que para uma mesma frequência, ela pode representar valores diferentes de profundidade, variando o meio onde esta, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante por que ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares e contados cristalinos, a atenção deve-se voltar para que uma mesma frequência ou período, esse está representando uma profundidade diferente, dentro e fora da bacia sedimentar (meio condutivo). 
+        O meio geológico influência diretamente a profundidade de investigação, a figura \ref{fig-skin-depth} mostra que para uma mesma frequência, ela pode representar valores diferentes de profundidade, variando o meio onde esta, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante por que ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares e contados cristalinos, a atenção deve-se voltar para que uma mesma frequência ou período, esse está representando uma profundidade diferente, dentro e fora da bacia sedimentar (meio condutivo). 
         
         \begin{figure}[H]
             \caption[Gráfico do \en{skin-depth}]{Gráfico do \en{skin-depth} em função da frequência [$Hz$], variando a resistividade do meio}

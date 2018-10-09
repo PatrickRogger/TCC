@@ -1,6 +1,6 @@
 \chapter{DESENVOLVIMENTO E RESULTADOS DO PampaMT}
 
-    O \en{software} desenvolvido recebeu o nome de PampaMT, em homenagem a Universidade Federal do Pampa. O desenvolvimento iniciou-se em janeiro de 2018, com o primeiro protótipo, RiMT, para testar os conceitos e a viabilidade das funções para o programa, em junho de 2018 o código foi reestruturado e reescrito totalmente, atentando para os problemas e adicionando novas funções. A principal mudança foi a construção do \en{software} em módulos que viabiliza, de modo fácil, a adição de novas funções.
+    O \en{software} desenvolvido recebeu o nome de PampaMT, em homenagem a Universidade Federal do Pampa. O desenvolvimento iniciou-se em janeiro de 2018, com o primeiro protótipo de codinome RiMT, para testar os conceitos e a viabilidade das funções para o programa, em junho de 2018 o código foi reestruturado e reescrito totalmente, atentando para os problemas e adicionando novas funções. A principal mudança foi a construção do \en{software} em módulos que viabiliza, de modo fácil, a adição de novas funções.
     
     No apêndice A pode ser encontrado o caminho para o código fonte do programa, junto com as informações para a instalação. O PampaMT foi desenvolvido para ambiente Linux rodando em base Debian. O código foi escrito em \Python, com alguns trechos escritos em \Shell{} para instalação e comunicação da interface com os executáveis dos programas Dnff e TranMT.
     
@@ -17,7 +17,7 @@
         \label{tela_inicial}
     \end{figure}
     
-     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}, nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e Lins, a seleção pode ser automática ou estação á estação (figura \ref{tela_sel_site}). 
+     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}, nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e LiMS, a seleção pode ser automática ou estação á estação (figura \ref{tela_sel_site}). 
     
     \begin{figure}[H]
         \caption{Seleção das Estações}
@@ -28,7 +28,7 @@
         \label{tela_sel_site}
     \end{figure}
     
-    Os dados após a seleção, são copiados para o diretório \textbf{PampaMT/DADOS\_MT/projeto}, esse processo é realizado para prever eventuais perdas dos arquivos, os dados então são convertidos e salvos no diretório \textbf{PampaMT/PROC\_MT/projeto} 
+    Os dados após a seleção, são copiados para o diretório: \textbf{PampaMT/DADOS\_MT/projeto}, esse processo é realizado para prever eventuais perdas dos arquivos. Os dados então são convertidos e salvos no diretório: \textbf{PampaMT/PROC\_MT/projeto} 
     
     O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrões, o usuário pode alterar qualquer configuração, como escolher uma nova janela ou alterar o horário do relógio dos dados (figura \ref{conf-procZ}).
     
@@ -66,9 +66,9 @@
         \label{rhoplusGUI}
     \end{figure}
     
-    A principal função que o usuário utilizará, é a escolha dos melhores períodos e rodadas, esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos, após a contagem o usuário deve anotar esses pontos e por fim executar o \en{script}: \en{ToJones}, esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
+    A principal função que o usuário utilizará, é a escolha dos melhores períodos e rodadas, esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos, após a contagem o usuário deve anotar esses pontos e por fim executar o \en{script}: \en{ToJones}. Esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
     
-    Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção,e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (figura \ref{selc-perio}).
+    Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção, e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (figura \ref{selc-perio}).
     
     \begin{figure}[H]
         \caption{Seleção dos Períodos}
@@ -83,7 +83,7 @@
     
     A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente.
     
-    Para efeitos de comparação, ao utilizar o programa em fase alfa, usuário que nunca tiveram contato com o terminal, puderam executar e processar os dados com sucesso.
+    Para efeitos de comparação, ao utilizar o programa em fase alfa, usuários que nunca tiveram contato com o terminal \Shell, puderam executar e processar os dados com sucesso.
     
     
     

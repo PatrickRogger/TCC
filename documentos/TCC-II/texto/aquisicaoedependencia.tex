@@ -10,12 +10,12 @@
         
         O arranjo amplamente adota para aquisição, são três magnetômetros distribuídos cada um paralelo a um eixo cartesiano, responsáveis pelos campos magnéticos. Para os campos elétricos, são distribuídos dois arranjos de eletrodos não polarizados, onde são acoplados horizontalmente, no sentido $x$ e $y$. A figura \ref{fig-arranjo-mt} mostra a disposição dos sensores na superfícies.
         
-        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção do fluxo magnético terrestre, ou seja, direcionado ao polo magnético terrestre\footnote{Ponto na superfícies terrestre onde a inclinação magnética é $+90^\circ$}. 
+        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção do fluxo magnético terrestre, ou seja, direcionado ao polo geomagnético terrestre\footnote{Ponto na superfícies terrestre, onde, a inclinação magnética do modelo matemático para o campo magnético é $+90^\circ$}. 
         
         \begin{figure}[H]
             \caption{Arranjo para Aquisição de dados MT.}
                 \begin{center}
-                    \includegraphics[width=13cm]{texto/figura/arranjo-mt.eps}
+                    \includegraphics[width=12cm]{texto/figura/arranjo-mt.eps}
                 \end{center}
             \legend{\Fonte{\oautor.}}
             \label{fig-arranjo-mt}
@@ -49,7 +49,7 @@
         
         Como comentado na seção anterior, devido as limitações dos equipamentos, os dados são coletados separadamente para cada banda. Cada banda após o processamento robusto gera um arquivo com extensão \en{.zss}, nesses arquivos são armazenados os tensores de impedância, ou seja, cada componente da matriz $Z$, para cada período.
         
-        A etapa seguinte do processamento consiste em escolher, dentro de todos arquivos, a melhor composição dos períodos para todo o espectro de estudo, esse processo é minucioso e depende da experiencia do usuário, nela deve-se plotar cada arquivo e verificar a sua coerência dentro do conjunto total dos dados.
+        A etapa seguinte do processamento consiste em escolher, dentro de todos arquivos, a melhor composição dos períodos para todo o espectro de estudo, esse processo é minucioso e depende da experiencia do usuário. Nessa etapa deve-se plotar cada arquivo e verificar a sua coerência dentro do conjunto total dos dados.
         
         A última etapa do pré-processamento é mesclar os períodos escolhidos em um único arquivo, esses arquivos contem todas as informações necessárias para realizar os processos de inversão.
         
@@ -66,7 +66,7 @@
         
     \section{Formatos de Arquivos de Dados MT}   
     
-        Parte das funções do \software{} será a simplificação no processo de conversão de dados, atualmente os formatos mais utilizados, são:
+        Parte das funções do \software{} desenvolvido será a simplificação no processo de conversão de dados, atualmente os formatos mais utilizados, são:
         
         {\footnotesize \noindent
             \begin{table}[H]
@@ -146,7 +146,7 @@
 \end{verbatim}
 \end{footnotesize}
         
-        A partir dos arquivos \en{Z} ou \en{.zss}, pode-se calcular a resitividade aparente ($\rho_a$) a partir da seguinte equação \cite{z-files}:
+        A partir dos arquivos \en{Z} (\en{.zss}), pode-se calcular a resitividade aparente ($\rho_a$) a partir da seguinte equação \cite{z-files}:
         
         \begin{equation}
          \rho_a = \dfrac{T|Z_{ij}|^2}{5}
@@ -162,7 +162,7 @@
         
         Os arquivos \en{J}, análogo aos arquivos \en{Z}, armazenam as informações do tensor, porém, a estrutura é mais sintetizada. Os arquivos são estruturados em dois blocos, um destinado a configurações, tais como: localização, elevação, nome da estação e azimute. O segundo bloco é destinado aos dados \cite{j-format}.
         
-        A estrutura base utilizada para os dados é composta por quatro sub-blocos, cada um representando uma componente do tensor. O bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
+        A estrutura base utilizada para os dados é composta por quatro sub-blocos, cada um representando uma componente do tensor. O sub-bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
         
 \begin{footnotesize}        
 \begin{verbatim}
@@ -206,11 +206,11 @@
     \section{Processamento Robusto -- EMTF}
         \label{sec-robusto}
         
-            O processamento dos dados parte primeiramente da análise espectral, onde primeiro faz-se necessário a mudança do domínio do tempo para a frequência angular e em seguida a filtragem, remoção de tendências e dados ruins.
+            O processamento dos dados parte primeiramente da análise espectral, onde primeiro faz-se necessário a mudança do domínio do tempo para a frequência angular e em seguida a filtragem, remoção de tendências e de dados ruins.
             
             O pacote EMTF \cite{egbert-emtf} desenvolvido por Gary D. Egbert, é um conjunto de programas escrito em \en{Fortran 77} que realizam processamento tais como: mudança de domínio, cálculo do tensor impedância, plotagem e alguns tipos de conversores de dados. 
             
-            A mudança do domínio do tempo para frequência angular é realizado pelo programa Dnff, contido no pacote, esse programa realiza a troca do domínio través da \en{cascade decimation} \apud{wight1980cascade}{padua2004estudos} uma alternativa a FFT (\en{Fast Fourier Transform}\footnote{Transformada Rápida de Fourier}).
+            A mudança do domínio do tempo para frequência angular é realizado pelo programa Dnff, contido no pacote, esse programa realiza a troca do domínio través da \en{cascade decimation} \apud{wight1980cascade}{padua2004estudos} uma alternativa ao FFT (\en{Fast Fourier Transform}\footnote{Transformada Rápida de Fourier}).
             
             Antes de efetuar a transformada de Fourier, as séries temporais são re-amostradas, essas re-amostragem são chamadas de janelas e tem o objetivo de minimizar as distorções causadas pelas reverberações da transformada de Fourier.
             
@@ -227,7 +227,7 @@
     
         O grupo GEOMA do INPE (Institudo Nacional de Pesquisas Espaciais) oferece treinamentos para alunos e colaboradores. O grupo dispõe de um série de \en{scripts} e programas para auxiliar na manipulação do processamento MT.
 
-        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Ms. Marcelo Banik de Pádua, os mesmo \en{scripts} foram obtidos sobre comunicação privada pelo autor.
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Me. Marcelo Banik de Pádua.% os mesmo \en{scripts} foram obtidos sobre comunicação privada pelo autor.
         
         O programa desenvolvido faz uso dos \en{scripts} como ``ponte'' entre a interface e o os programas EMTF, como também para conversores de dados. Um exemplo é o programa \en{processamentoZ} que prepara os dados e extraí os parâmetros necessários para as rotinas Dnff e TranMT. 
         

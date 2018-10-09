@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.1)  8 OCT 2018 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.1)  8 OCT 2018 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,137 +1277,134 @@ Package pdftex.def Info: texto/figura/espectro-contrinuicao-padua2004-eps-conve
 rted-to.pdf  used on input line 33.
 (pdftex.def)             Requested size: 241.84842pt x 203.88083pt.
 
-Overfull \hbox (15.31517pt too wide) in paragraph at lines 68--69
+Overfull \hbox (15.31517pt too wide) in paragraph at lines 50--51
 []\OT1/ptm/m/n/12 O mag-ne-to-tel[]urico as-sim como ou-tros m[]etodos geof[]^^
 Psicos ele-tro-magn[]eticos, fundamentam-
  []
-
-
-Underfull \vbox (badness 1460) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.73         \end{equation}
-                            [15 <./texto/figura/espectro-contrinuicao-padua2004
--eps-converted-to.pdf>]
-Overfull \hbox (4.68727pt too wide) in paragraph at lines 94--94
+l.51 
+      [15 <./texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf>
+]
+Overfull \hbox (4.68727pt too wide) in paragraph at lines 76--76
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 94--94
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 76--76
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (5.24721pt too wide) in paragraph at lines 95--95
+Overfull \hbox (5.24721pt too wide) in paragraph at lines 77--77
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 95--95
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 77--77
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (5.79726pt too wide) in paragraph at lines 96--96
+Overfull \hbox (5.79726pt too wide) in paragraph at lines 78--78
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 96--96
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 78--78
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (2.46718pt too wide) in paragraph at lines 97--97
+Overfull \hbox (2.46718pt too wide) in paragraph at lines 79--79
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 97--97
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 79--79
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (5.79726pt too wide) in paragraph at lines 98--98
+Overfull \hbox (5.79726pt too wide) in paragraph at lines 80--80
 []|$[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 98--98
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 80--80
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (3.74744pt too wide) in paragraph at lines 99--99
+Overfull \hbox (3.74744pt too wide) in paragraph at lines 81--81
 []|$\OML/cmm/m/it/10 %$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 99--99
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 81--81
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (2.1884pt too wide) in paragraph at lines 100--100
+Overfull \hbox (2.1884pt too wide) in paragraph at lines 82--82
 []|$\OML/cmm/m/it/10 t$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 100--100
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 82--82
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (296.34297pt too wide) in alignment at lines 93--101
+Overfull \hbox (296.34297pt too wide) in alignment at lines 75--83
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
 
-Overfull \hbox (4.60277pt too wide) in paragraph at lines 126--126
+Overfull \hbox (4.60277pt too wide) in paragraph at lines 108--108
 []|$\OML/cmm/m/it/10 ^^V$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 126--126
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 108--108
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (3.24046pt too wide) in paragraph at lines 127--127
+Overfull \hbox (3.24046pt too wide) in paragraph at lines 109--109
 []|$\OML/cmm/m/it/10 "$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 127--127
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 109--109
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (4.65019pt too wide) in paragraph at lines 128--128
+Overfull \hbox (4.65019pt too wide) in paragraph at lines 110--110
 []|$\OML/cmm/m/it/10 ^^[$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 128--128
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 110--110
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (296.34297pt too wide) in alignment at lines 125--129
+Overfull \hbox (296.34297pt too wide) in alignment at lines 107--111
 [][][] 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 134--140
+Underfull \hbox (badness 10000) in paragraph at lines 116--122
 
  []
 
@@ -1415,11 +1412,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--140
 <texto/figura/skin-depth.png, id=273, 1751.54375pt x 1297.84875pt>
 File: texto/figura/skin-depth.png Graphic file (type png)
 <use texto/figura/skin-depth.png>
-Package pdftex.def Info: texto/figura/skin-depth.png  used on input line 246.
+Package pdftex.def Info: texto/figura/skin-depth.png  used on input line 228.
 (pdftex.def)             Requested size: 369.88582pt x 274.06136pt.
  [19 <./texto/figura/skin-depth.png>])
 (./texto/aquisicaoedependencia.tex
-Overfull \hbox (11.94263pt too wide) in paragraph at lines 327--1
+Overfull \hbox (11.94263pt too wide) in paragraph at lines 309--1
 []\OT1/ptm/m/n/12 O m[]etodo MT ent[]ao obt[]em a re-sis-ti-vi-dade apa-rente a
  par-tir da im-ped[]ancia ele-tro-magn[]etica,
  []
@@ -1446,7 +1443,7 @@ File: texto/figura/arranjo-mt-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/arranjo-mt-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/arranjo-mt-eps-converted-to.pdf  used on 
 input line 18.
-(pdftex.def)             Requested size: 369.88582pt x 261.82758pt.
+(pdftex.def)             Requested size: 341.43306pt x 241.68138pt.
 [21
 
  <./texto/figura/arranjo-mt-eps-converted-to.pdf>]
@@ -1519,7 +1516,7 @@ File: texto/figura/plot-cmp-tf.png Graphic file (type png)
 Package pdftex.def Info: texto/figura/plot-cmp-tf.png  used on input line 239.
 (pdftex.def)             Requested size: 426.79134pt x 266.8793pt.
 
-Underfull \vbox (badness 5726) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27])
 (./texto/devpampamt.tex [28 <./texto/figura/plot-cmp-tf.png>]
@@ -1577,9 +1574,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [29
 
  <./texto/figura/tela1_com_fluxograma-eps-converted-to.pdf>]
-Overfull \hbox (5.75322pt too wide) in paragraph at lines 31--32
+Overfull \hbox (10.16905pt too wide) in paragraph at lines 31--32
 []\OT1/ptm/m/n/12 Os da-dos ap[]os a sele[][]ao, s[]ao co-pi-a-dos para o di-re
-t[]orio \OT1/ptm/b/n/12 Pam-paMT/-DA-DOS[]MT/projeto\OT1/ptm/m/n/12 ,
+t[]orio: \OT1/ptm/b/n/12 Pam-paMT/-DA-DOS[]MT/projeto\OT1/ptm/m/n/12 ,
  []
 
 Package epstopdf Info: Source file: <texto/figura/tela3_com_fluxograma.eps>
@@ -1672,7 +1669,7 @@ Package epstopdf Info: Source file: <texto/figura/qr-code-pampamt.eps>
 (epstopdf)                    size: 5233 bytes
 (epstopdf)             Command: <repstopdf --outfile=texto/figura/qr-code-pampa
 mt-eps-converted-to.pdf texto/figura/qr-code-pampamt.eps>
-(epstopdf)             \includegraphics on input line 7.
+(epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1685,7 +1682,7 @@ File: texto/figura/qr-code-pampamt-eps-converted-to.pdf Graphic file (type pdf)
 
 <use texto/figura/qr-code-pampamt-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/qr-code-pampamt-eps-converted-to.pdf  use
-d on input line 7.
+d on input line 11.
 (pdftex.def)             Requested size: 142.26378pt x 142.26984pt.
 ) 
 AED: lastpage setting LastPage
@@ -1696,25 +1693,25 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `TCC2-final.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
  (./TCC2-final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 319.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 322.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 322.
  ) 
 Here is how much of TeX's memory you used:
  14709 strings out of 492982
- 214199 string characters out of 6134896
+ 214200 string characters out of 6134896
  373208 words of memory out of 5000000
  17908 multiletter control sequences out of 15000+600000
  18983 words of font info for 45 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 45i,17n,40p,759b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,40p,1245b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1732,7 +1729,7 @@ t/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TCC2-final.pdf (47 pages, 2443547 bytes).
+Output written on TCC2-final.pdf (47 pages, 2444505 bytes).
 PDF statistics:
  658 PDF objects out of 1000 (max. 8388607)
  546 compressed objects within 6 object streams
