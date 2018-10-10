@@ -1,141 +1,85 @@
 InfoBegin
 InfoKey: ModDate
-InfoValue: D:20181002231155-03'00'
+InfoValue: D:20181010142456-03'00'
 InfoBegin
 InfoKey: PTEX.Fullbanner
 InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) kpathsea version 6.2.3
 InfoBegin
 InfoKey: CreationDate
-InfoValue: D:20181002231155-03'00'
+InfoValue: D:20181010142456-03'00'
 InfoBegin
 InfoKey: Creator
 InfoValue: LaTeX with hyperref package
 InfoBegin
 InfoKey: Producer
 InfoValue: pdfTeX-1.40.18
-PdfID0: 4b49c5d1f2e9550cf0668927111bb59c
-PdfID1: 4b49c5d1f2e9550cf0668927111bb59c
-NumberOfPages: 41
+PdfID0: 48c16906819f508b83a433ea7471be84
+PdfID1: 48c16906819f508b83a433ea7471be84
+NumberOfPages: 43
 BookmarkBegin
 BookmarkTitle: Folha de rosto
 BookmarkLevel: 1
 BookmarkPageNumber: 3
 BookmarkBegin
-BookmarkTitle: Folha de aprovação
-BookmarkLevel: 1
-BookmarkPageNumber: 5
-BookmarkBegin
 BookmarkTitle: INTRODUÇÃO
 BookmarkLevel: 1
-BookmarkPageNumber: 19
+BookmarkPageNumber: 15
 BookmarkBegin
 BookmarkTitle: OBJETIVOS
 BookmarkLevel: 1
-BookmarkPageNumber: 21
+BookmarkPageNumber: 17
 BookmarkBegin
 BookmarkTitle: Objetivo Geral
 BookmarkLevel: 2
-BookmarkPageNumber: 21
+BookmarkPageNumber: 17
 BookmarkBegin
 BookmarkTitle: Objetivos Específicos
 BookmarkLevel: 2
-BookmarkPageNumber: 21
+BookmarkPageNumber: 17
 BookmarkBegin
 BookmarkTitle: FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO
 BookmarkLevel: 1
-BookmarkPageNumber: 23
-BookmarkBegin
-BookmarkTitle: Resistividade Elétrica dos Materiais
-BookmarkLevel: 2
-BookmarkPageNumber: 23
+BookmarkPageNumber: 19
 BookmarkBegin
 BookmarkTitle: Origem das Correntes Telúricas
 BookmarkLevel: 2
-BookmarkPageNumber: 23
-BookmarkBegin
-BookmarkTitle: Ressonâncias de Schumann
-BookmarkLevel: 3
-BookmarkPageNumber: 24
-BookmarkBegin
-BookmarkTitle: Micropulsações
-BookmarkLevel: 3
-BookmarkPageNumber: 24
-BookmarkBegin
-BookmarkTitle: Variações Diurnas
-BookmarkLevel: 3
-BookmarkPageNumber: 24
+BookmarkPageNumber: 19
 BookmarkBegin
 BookmarkTitle: Resposta do Método Magnetotelúrico
 BookmarkLevel: 2
-BookmarkPageNumber: 24
+BookmarkPageNumber: 20
 BookmarkBegin
 BookmarkTitle: Impedância Eletromagnética
 BookmarkLevel: 2
-BookmarkPageNumber: 28
+BookmarkPageNumber: 23
 BookmarkBegin
 BookmarkTitle: AQUISIÇÃO DE DADOS E DEPENDÊNCIAS
 BookmarkLevel: 1
-BookmarkPageNumber: 31
+BookmarkPageNumber: 25
 BookmarkBegin
 BookmarkTitle: Aquisição de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 31
-BookmarkBegin
-BookmarkTitle: Formatos de Arquivos de Dados MT
-BookmarkLevel: 2
-BookmarkPageNumber: 33
+BookmarkPageNumber: 25
 BookmarkBegin
 BookmarkTitle: Processamento de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 33
+BookmarkPageNumber: 27
+BookmarkBegin
+BookmarkTitle: Formatos de Arquivos de Dados MT
+BookmarkLevel: 2
+BookmarkPageNumber: 28
 BookmarkBegin
 BookmarkTitle: Processamento Robusto – EMTF
-BookmarkLevel: 3
-BookmarkPageNumber: 33
-BookmarkBegin
-BookmarkTitle: Mudança Tempo/Frequência Ângular
-BookmarkLevel: 4
-BookmarkPageNumber: 34
-BookmarkBegin
-BookmarkTitle: Função de Transferências
-BookmarkLevel: 4
-BookmarkPageNumber: 34
+BookmarkLevel: 2
+BookmarkPageNumber: 31
 BookmarkBegin
 BookmarkTitle: Pacotes de Processamento do Grupo Geoma – INPE
 BookmarkLevel: 2
-BookmarkPageNumber: 34
+BookmarkPageNumber: 31
 BookmarkBegin
-BookmarkTitle: Construtor Gráfico – Kivy
-BookmarkLevel: 2
-BookmarkPageNumber: 34
-BookmarkBegin
-BookmarkTitle: DESENVOLVIMENTO E ARQUITETURA DO PampaMT
+BookmarkTitle: DESENVOLVIMENTO E RESULTADOS DO PampaMT
 BookmarkLevel: 1
-BookmarkPageNumber: 35
-BookmarkBegin
-BookmarkTitle: RESULTADOS E APLICAÇÃO DO PAMPAMT
-BookmarkLevel: 1
-BookmarkPageNumber: 37
-BookmarkBegin
-BookmarkTitle: Aplicação do PampaMT
-BookmarkLevel: 2
-BookmarkPageNumber: 37
-BookmarkBegin
-BookmarkTitle: Área de Estudo
-BookmarkLevel: 3
-BookmarkPageNumber: 37
-BookmarkBegin
-BookmarkTitle: Contexto Geológico
-BookmarkLevel: 3
-BookmarkPageNumber: 37
-BookmarkBegin
-BookmarkTitle: Processamento dos Dados
-BookmarkLevel: 3
-BookmarkPageNumber: 37
-BookmarkBegin
-BookmarkTitle: Resultados e Interpretação Geofísica
-BookmarkLevel: 3
-BookmarkPageNumber: 37
+BookmarkPageNumber: 33
 BookmarkBegin
 BookmarkTitle: CONSIDERAÇÕES FINAIS
 BookmarkLevel: 1
@@ -144,6 +88,10 @@ BookmarkBegin
 BookmarkTitle: Referências
 BookmarkLevel: 1
 BookmarkPageNumber: 41
+BookmarkBegin
+BookmarkTitle: Código Fonte PampaMT
+BookmarkLevel: 1
+BookmarkPageNumber: 43
 PageMediaBegin
 PageMediaNumber: 1
 PageMediaRotation: 0
@@ -326,7 +274,7 @@ PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
 PageMediaNumber: 37
-PageMediaRotation: 0
+PageMediaRotation: 90
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
@@ -349,6 +297,16 @@ PageMediaNumber: 41
 PageMediaRotation: 0
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 42
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 43
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
 PageLabelBegin
 PageLabelNewIndex: 1
 PageLabelStart: 1
@@ -358,6 +316,6 @@ PageLabelNewIndex: 3
 PageLabelStart: 1
 PageLabelNumStyle: DecimalArabicNumerals
 PageLabelBegin
-PageLabelNewIndex: 18
-PageLabelStart: 10
+PageLabelNewIndex: 14
+PageLabelStart: 8
 PageLabelNumStyle: DecimalArabicNumerals

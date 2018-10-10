@@ -3,32 +3,32 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{11}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{9}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {OBJETIVOS}}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Objetivo Geral}{13}{section.2.1}
-\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{13}{section.2.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {OBJETIVOS}}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objetivo Geral}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Objetivos Espec\IeC {\'\i }ficos}{11}{section.2.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTOS DO M\IeC {\'E}TODO MAGNETOTEL\IeC {\'U}RICO}}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Origem das Correntes Tel\IeC {\'u}ricas}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{19}{section.3.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTOS DO M\IeC {\'E}TODO MAGNETOTEL\IeC {\'U}RICO}}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Origem das Correntes Tel\IeC {\'u}ricas}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{17}{section.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {AQUISI\IeC {\c C}\IeC {\~A}O DE DADOS E DEPEND\IeC {\^E}NCIAS}}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Aquisi\IeC {\c c}\IeC {\~a}o de Dados MT}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Processamento de Dados MT}{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}Formatos de Arquivos de Dados MT}{24}{section.4.3}
-\contentsline {section}{\numberline {4.4}Processamento Robusto -- EMTF}{27}{section.4.4}
-\contentsline {section}{\numberline {4.5}Pacotes de Processamento do Grupo Geoma -- INPE}{27}{section.4.5}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {AQUISI\IeC {\c C}\IeC {\~A}O DE DADOS E DEPEND\IeC {\^E}NCIAS}}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aquisi\IeC {\c c}\IeC {\~a}o de Dados MT}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Processamento de Dados MT}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Formatos de Arquivos de Dados MT}{22}{section.4.3}
+\contentsline {section}{\numberline {4.4}Processamento Robusto -- EMTF}{25}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pacotes de Processamento do Grupo Geoma -- INPE}{25}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO PampaMT}}{29}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO PampaMT}}{27}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{35}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{33}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{37}{section*.23}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{35}{section*.23}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {C\IeC {\'o}digo Fonte PampaMT}}{39}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {C\IeC {\'o}digo Fonte PampaMT}}{37}{appendix.A}
