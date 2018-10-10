@@ -19,16 +19,14 @@
 \contentsline {section}{\numberline {4.2}Processamento de Dados MT}{23}{section.4.2}
 \contentsline {section}{\numberline {4.3}Formatos de Arquivos de Dados MT}{24}{section.4.3}
 \contentsline {section}{\numberline {4.4}Processamento Robusto -- EMTF}{27}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Fun\IeC {\c c}\IeC {\~a}o de Transfer\IeC {\^e}ncias}{27}{subsection.4.4.1}
 \contentsline {section}{\numberline {4.5}Pacotes de Processamento do Grupo Geoma -- INPE}{27}{section.4.5}
-\contentsline {section}{\numberline {4.6}Construtor Gr\IeC {\'a}fico -- Kivy}{28}{section.4.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO PampaMT}}{29}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{35}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{37}{section*.24}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{37}{section*.23}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
