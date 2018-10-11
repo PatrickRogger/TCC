@@ -1,97 +1,122 @@
 InfoBegin
 InfoKey: ModDate
-InfoValue: D:20181010212919-03'00'
-InfoBegin
-InfoKey: PTEX.Fullbanner
-InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) kpathsea version 6.2.3
+InfoValue: D:20181010173057Z
 InfoBegin
 InfoKey: CreationDate
-InfoValue: D:20181010212919-03'00'
+InfoValue: D:20181010173057Z
 InfoBegin
 InfoKey: Creator
-InfoValue: LaTeX with hyperref package
+InfoValue: pdftk 2.02 - www.pdftk.com
 InfoBegin
 InfoKey: Producer
-InfoValue: pdfTeX-1.40.18
-PdfID0: 16acf27901788fe5896efa75f56831ed
-PdfID1: 16acf27901788fe5896efa75f56831ed
-NumberOfPages: 43
+InfoValue: itext-paulo-155 (itextpdf.sf.net-lowagie.com)
+PdfID0: 6864bdb23b5fda602fbb544d9a1f846a
+PdfID1: 2780be05448717c2a49ad6c22205d058
+NumberOfPages: 33
+BookmarkBegin
+BookmarkTitle: Capa
+BookmarkLevel: 1
+BookmarkPageNumber: 1
 BookmarkBegin
 BookmarkTitle: Folha de rosto
 BookmarkLevel: 1
+BookmarkPageNumber: 2
+BookmarkBegin
+BookmarkTitle: Ficha Catalográfica
+BookmarkLevel: 1
 BookmarkPageNumber: 3
+BookmarkBegin
+BookmarkTitle: Resumo
+BookmarkLevel: 1
+BookmarkPageNumber: 4
+BookmarkBegin
+BookmarkTitle: Lista de Figuras
+BookmarkLevel: 1
+BookmarkPageNumber: 5
+BookmarkBegin
+BookmarkTitle: Lista de Siglas
+BookmarkLevel: 1
+BookmarkPageNumber: 6
+BookmarkBegin
+BookmarkTitle: Lista de Símbolos
+BookmarkLevel: 1
+BookmarkPageNumber: 7
+BookmarkBegin
+BookmarkTitle: Sumário
+BookmarkLevel: 1
+BookmarkPageNumber: 8
 BookmarkBegin
 BookmarkTitle: INTRODUÇÃO
 BookmarkLevel: 1
-BookmarkPageNumber: 15
+BookmarkPageNumber: 9
 BookmarkBegin
 BookmarkTitle: OBJETIVOS
 BookmarkLevel: 1
-BookmarkPageNumber: 17
+BookmarkPageNumber: 10
 BookmarkBegin
 BookmarkTitle: Objetivo Geral
 BookmarkLevel: 2
-BookmarkPageNumber: 17
+BookmarkPageNumber: 10
 BookmarkBegin
 BookmarkTitle: Objetivos Específicos
 BookmarkLevel: 2
-BookmarkPageNumber: 17
+BookmarkPageNumber: 10
 BookmarkBegin
 BookmarkTitle: FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO
 BookmarkLevel: 1
-BookmarkPageNumber: 19
+BookmarkPageNumber: 11
 BookmarkBegin
 BookmarkTitle: Origem das Correntes Telúricas
 BookmarkLevel: 2
-BookmarkPageNumber: 19
+BookmarkPageNumber: 11
 BookmarkBegin
 BookmarkTitle: Resposta do Método Magnetotelúrico
 BookmarkLevel: 2
-BookmarkPageNumber: 20
+BookmarkPageNumber: 12
 BookmarkBegin
 BookmarkTitle: Impedância Eletromagnética
 BookmarkLevel: 2
-BookmarkPageNumber: 23
+BookmarkPageNumber: 15
 BookmarkBegin
 BookmarkTitle: AQUISIÇÃO DE DADOS E DEPENDÊNCIAS
 BookmarkLevel: 1
-BookmarkPageNumber: 25
+BookmarkPageNumber: 17
 BookmarkBegin
 BookmarkTitle: Aquisição de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 25
+BookmarkPageNumber: 17
 BookmarkBegin
 BookmarkTitle: Processamento de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 27
+BookmarkPageNumber: 19
 BookmarkBegin
 BookmarkTitle: Formatos de Arquivos de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 28
+BookmarkPageNumber: 20
 BookmarkBegin
 BookmarkTitle: Processamento Robusto – EMTF
 BookmarkLevel: 2
-BookmarkPageNumber: 31
+BookmarkPageNumber: 23
 BookmarkBegin
 BookmarkTitle: Pacotes de Processamento do Grupo Geoma – INPE
 BookmarkLevel: 2
-BookmarkPageNumber: 31
+BookmarkPageNumber: 23
 BookmarkBegin
 BookmarkTitle: DESENVOLVIMENTO E RESULTADOS DO PampaMT
 BookmarkLevel: 1
-BookmarkPageNumber: 33
+BookmarkPageNumber: 25
 BookmarkBegin
 BookmarkTitle: CONSIDERAÇÕES FINAIS
 BookmarkLevel: 1
-BookmarkPageNumber: 39
+BookmarkPageNumber: 31
 BookmarkBegin
 BookmarkTitle: Referências
 BookmarkLevel: 1
-BookmarkPageNumber: 41
+BookmarkPageNumber: 32
 BookmarkBegin
 BookmarkTitle: Código Fonte PampaMT
 BookmarkLevel: 1
-BookmarkPageNumber: 43
+BookmarkPageNumber: 33
 PageMediaBegin
 PageMediaNumber: 1
 PageMediaRotation: 0
@@ -234,7 +259,7 @@ PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
 PageMediaNumber: 29
-PageMediaRotation: 0
+PageMediaRotation: 90
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
@@ -257,65 +282,3 @@ PageMediaNumber: 33
 PageMediaRotation: 0
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 34
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 35
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 36
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 37
-PageMediaRotation: 90
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 38
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 39
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 40
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 41
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 42
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageMediaBegin
-PageMediaNumber: 43
-PageMediaRotation: 0
-PageMediaRect: 0 0 595.276 841.89
-PageMediaDimensions: 595.276 841.89
-PageLabelBegin
-PageLabelNewIndex: 1
-PageLabelStart: 1
-PageLabelNumStyle: DecimalArabicNumerals
-PageLabelBegin
-PageLabelNewIndex: 3
-PageLabelStart: 1
-PageLabelNumStyle: DecimalArabicNumerals
-PageLabelBegin
-PageLabelNewIndex: 14
-PageLabelStart: 8
-PageLabelNumStyle: DecimalArabicNumerals
