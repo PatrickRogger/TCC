@@ -32,6 +32,11 @@
 \textbf{Geophysical Journal of the Royal Astronomical Society}, Wiley Online
   Library, v.~87, n.~1, p. 173--194, 1986.}
 
+\bibitem[Hayt e Buck 2013]{eletromag8hayt}
+\abntrefinfo{Hayt e Buck}{HAYT; BUCK}{2013}
+{HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
+  Brazil: AMGH Editora Ltda., 2013.}
+
 \bibitem[Jones 1994]{j-format}
 \abntrefinfo{Jones}{JONES}{1994}
 {JONES, A.~G. \textbf{Magnetotelluric data file J-format: v2.0}.
@@ -73,6 +78,13 @@ Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
 Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
   Instituto Nacional de Pesquisas Espaciais (INPE), 2004.}
 
+\bibitem[Palacky e West 1991]{palacky}
+\abntrefinfo{Palacky e West}{PALACKY; WEST}{1991}
+{PALACKY, G.; WEST, G. Airborne electromagnetic methods. In:
+  \textbf{Electromagnetic Methods in Applied Geophysics: Volume 2, Application,
+  Parts A and B}. [S.l.]: Society of Exploration Geophysicists, 1991. p.
+  811--880.}
+
 \bibitem[Parker e Booker 1996]{parker1996optimal}
 \abntrefinfo{Parker e Booker}{PARKER; BOOKER}{1996}
 {PARKER, R.~L.; BOOKER, J.~R. Optimal one-dimensional inversion and bounding of
@@ -84,6 +96,11 @@ Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
 \abntrefinfo{Parkinson}{PARKINSON}{1983}
 {PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
   Academic Press, 1983.}
+
+\bibitem[Telford, Geldart e Sheriff 1990]{telford}
+\abntrefinfo{Telford, Geldart e Sheriff}{TELFORD; GELDART; SHERIFF}{1990}
+{TELFORD, W.~M.; GELDART, L.~P.; SHERIFF, R.~E. \textbf{Applied Geophysics}.
+  New York, USA: British Library Cataloguind, 1990.}
 
 \bibitem[Tikhonov 1950]{tikhonov1950determining}
 \abntrefinfo{Tikhonov}{TIKHONOV}{1950}

@@ -36,7 +36,7 @@
             \label{fig-aquisicao}
         \end{figure}
     
-        As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transforma de Fourier. Cada taxa de aquisição é chamada de \en{Banda} e varia de nome para cada equipamento utilizado. 
+        As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transformada de Fourier. Cada taxa de aquisição é chamada de \en{Banda} e varia de nome para cada equipamento utilizado. 
     
     \section{Processamento de Dados MT}
         Tradicionalmente o grande processamento de dados geofísicos é chamado de inversão, onde esse tenta ajustar um modelo físico que melhor represente o conjunto de dados. Porém para dados MT faz-se necessário antes das técnicas de inversão, o pré-processamento.
@@ -111,7 +111,7 @@
         
         Após realizar a transformada de Fourier e o calculo do tensor impedância, não são mais necessários carregar todas as informações das series temporais, pois a partir do tensor impedância é possível estimar todos os parâmetros associados a cada período, tais como: $\rho_a$, $\phi$ e as componentes do próprio tensor: $Z_{xx}$, $Z_{xy}$, $Z_{yx}$ e $Z_{yy}$, as componentes do tensor são importantes para a interpretação da adimensionalidade dos dados.
         
-        Como discutido na seção anterior a saída padrão do TranMT (programa adota para os cálculos do tensor impedância), são os arquivos \en{.zss}, esses arquivos são estruturados na forma de blocos, onde, cada bloco representa um período e nele contem o próprio tensor impedância, a matriz de covariância inversa e a matriz de covariância residual.
+        Como discutido na seção anterior a saída padrão do TranMT (programa adotado para os cálculos do tensor impedância), são os arquivos \en{.zss}, esses arquivos são estruturados na forma de blocos, onde, cada bloco representa um período e nele contem o próprio tensor impedância, a matriz de covariância inversa e a matriz de covariância residual.
         
         Exemplo de arquivo \en{Z}:
         
@@ -241,7 +241,7 @@
     
         O grupo GEOMA do INPE (Institudo Nacional de Pesquisas Espaciais) oferece treinamentos para alunos e colaboradores. O grupo dispõe de um série de \en{scripts} e programas para auxiliar na manipulação do processamento MT.
 
-        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Me. Marcelo Banik de Pádua. O programa desenvolvido faz uso dos \en{scripts} como ``ponte'' entre a interface e o os programas EMTF, como também para conversores de dados. Um exemplo é o programa \en{processamentoZ} que prepara os dados e extraí os parâmetros necessários para as rotinas Dnff e TranMT. 
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Me. Marcos Banik de Pádua. O programa desenvolvido faz uso dos \en{scripts} como ``ponte'' entre a interface e o os programas EMTF, como também para conversores de dados. Um exemplo é o programa \en{processamentoZ} que prepara os dados e extraí os parâmetros necessários para as rotinas Dnff e TranMT. 
         
         Para as plotagens dos gráficos é utilizado o programa GMT \cite{gmt}, figura \ref{plot-cmp-tf}. Embora o programa desenvolvido tenha a sua própria saída gráfica, foi desenvolvida uma extensão que exporta as imagens utilizando o \en{Kernel} do GMT, essa extensão visa não causar estranheza em usuários já acostumados com as imagens geradas pelo GMT.  
     

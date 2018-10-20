@@ -2,24 +2,79 @@
 
     Proposto com \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa as fontes passivas\footnote{São fontes de sinal que não dependem de instrumentos artificiais para gerá-la, ou seja, sinais naturais do planeta.} eletromagnéticas do planeta Terra para estudar e mapear a subsuperfície.
     
-    %Nesta secção será mostrado sucintamente a origem do sinal MT. Antes de demonstrar as bases teóricas do método, será mostrado brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
+    Nesta secção será mostrado sucintamente a origem do sinal MT. Entretanto, antes de demonstrar as bases teóricas do método, será descrito brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
         
 
-    %\section{Resistividade Elétrica dos Materiais}
+    \section{Resistividade Elétrica dos Materiais}
     
         
-    %    O método MT usa a resistividade elétrica ($\rho$ [$\Omega m$]) ou o seu inverso, a condutividade elétrica ($\sigma$ [$S$]), para distinguir e estudar a distribuição dos elementos geológicos em subsuperfície. 
+        O método MT usa a resistividade elétrica ($\rho$ [$\Omega m$]) ou o seu inverso, a condutividade elétrica ($\sigma$ [$S$]), para distinguir e estudar a distribuição dos elementos geológicos em subsuperfície. 
         
-    %    A resistividade elétrica é um parâmetro físico intrínseco a cada material. Ela relaciona a dificuldade da passagem de corrente (independente do modelo nas dimenções do material estudado.) a cada material, sendo sempre contante\footnote{Para os materiais geológicos a resistividade é representada por um intervalo de valores, devido as complexidades químicas e físicas das diferentes litologias.}.  
+        A resistividade elétrica é um parâmetro físico intrínseco a cada material. Ela pode ser definida pela oposição do fluxo de corrente elétrica em um material, ou seja, a resistividade elétrica é igual ao campo elétrica sobre a densidade de corrente \cite{eletromag8hayt}:
         
-    %    Georg Ohm em 1827 verificou de forma empírica que ao aplicar uma diferença de potencial ($\Delta U$ [$V$]) em um material, esse exerce uma resistência a passagem e corrente ($i$ [$A$]). Materiais que obedecem a seguinte Lei de Ohm (equação \ref{lei-ohm}) são chamados de materiais ôhmicos.
+        \begin{equation}
+            \label{resis-antes}
+            \rho = \dfrac{E}{J}
+        \end{equation}
+
+        \noindent Onde, $E$ é a magnitude do campo elétrico em [$V/m$] e $J$ é a densidade de corrente em [$A/m^2$].
         
-    %    \begin{equation}
-    %        \label{lei-ohm}
-    %        \Delta U = R i
-    %    \end{equation}
+        Se o campo elétrico e a corrente elétrica forem constantes, eles podem assumir os seguintes valores:
         
-    %    \citar{Escrever de novo, ta muito ruim kkkkkk}
+        \begin{equation}
+            \label{campo-eletrico}
+            E = \frac{\Delta U}{\Delta l}
+        \end{equation}
+        
+        {\footnotesize \noindent
+            \begin{table}[H]
+                \begin{tabular*}{5cm}{p{0.4cm}p{0.1cm}p{10cm}}
+                    {\footnotesize $\Delta U$}  & {\footnotesize $\rightarrow$} & {\footnotesize Diferença de potêncial [$V$] }\\
+                    {\footnotesize $\Delta l$}         & {\footnotesize $\rightarrow$} & {\footnotesize Comprimento do condutor [$m$]}\\
+                \end{tabular*}
+            \end{table}}
+            
+        \begin{equation}
+            \label{densidade-de-corrente}
+            J = \frac{i}{A}
+        \end{equation}
+        
+        {\footnotesize \noindent
+            \begin{table}[H]
+                \begin{tabular*}{1cm}{p{0.05cm}p{0.1cm}p{10cm}}
+                    {\footnotesize $i$}  & {\footnotesize $\rightarrow$} & {\footnotesize Corrente Elétrica [$A$] }\\
+                    {\footnotesize $A$}  & {\footnotesize $\rightarrow$} & {\footnotesize Seção transversal do condutor [$m^2$]}\\
+                \end{tabular*}
+            \end{table}}
+
+        \noindent Substituindo as equações [\ref{campo-eletrico}] e [\ref{densidade-de-corrente}] na equação [\ref{resis-antes}], obtém-se:
+        
+        \begin{equation}
+            \label{resistividade}
+            \rho = \dfrac{A \, \Delta U}{i \, \Delta l}
+        \end{equation}
+
+        Utilizando a equação [\ref{resistividade}], pode-se estimar a resistividade elétrica de um material geológico experimentalmente, a partir do arranjo mostrado na Figura \ref{arranjo-resistividade}.
+
+        \begin{figure}[H]
+            \caption{Arranjo para obter experimentalmente a resistividade de um material geológico.}
+                \begin{center}
+                    \includegraphics[width=4cm]{texto/figura/resisti_telford.png}
+                \end{center}
+            \legend{\Fonte{Adaptado \cite{telford}.}}
+            \label{arranjo-resistividade}
+        \end{figure}
+        
+        Devido a complexidade físico-químicas dos materiais geológicos, a resistividade elétrica é representada por um intervalo de valores. A Figura \ref{tabela-resis} mostra esses intervalos de valores para alguns tipos de rochas, vale ressaltar que os valores podem serem alterados dependendo do contexto geológico. 
+        
+        \begin{figure}[H]
+            \caption{Arranjo para obter experimentalmente a resistividade de um material geológico.}
+                \begin{center}
+                    \includegraphics[width=13cm]{texto/figura/resistividade_tabela.png}
+                \end{center}
+            \legend{\Fonte{Adaptado \cite{palacky}.}}
+            \label{tabela-resis}
+        \end{figure}
     
     \section{Origem das Correntes Telúricas}
     
@@ -47,7 +102,7 @@
         
     \section{Resposta do Método Magnetotelúrico}
 
-        O \mt{} assim como outros métodos geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxwell [\ref{lei-max-rotE} -- \ref{lei-max-divD}], pode-se partir das equações para estimar os parâmetros físicos para a investigação MT, assim:
+        O \mt{} assim como outros métodos geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxwell [\ref{lei-max-rotE} -- \ref{lei-max-divD}], pode-se partir das equações estimar os parâmetros físicos para a investigação MT, assim:
         
         \begin{equation}
             \label{lei-max-rotE}
@@ -220,9 +275,9 @@
         \end{equation}
         
         A equação \ref{shin-depth} é chamada de \en{skin-depth}\footnote{Espessura pelicular}, ela representa a profundidade de penetração da onda eletromagnética em um meio condutor.
-        A partir da equação são mapeadas as litologias em subsuperfície, relacionando-as com a $\rho_a$.        
+        A partir da equação são mapeadas as litologias em subsuperfície. Porém a resistividade ($\rho$) representa todo o pacote de rochas em subsuperfície, portanto, adota-se o termo resistividade aparente ($\rho_a$) para a mesma. A resistividade efetiva ($\rho$) pode ser obtida a partir do processo de inversão geofísica.        
 
-        O meio geológico influência diretamente a profundidade de investigação, a figura \ref{fig-skin-depth} mostra que para uma mesma frequência, ela pode representar valores diferentes de profundidade, variando o meio em subsuperfície, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante por que, ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares (meio condutivo) em contados com contextos cristalinos (meio resistivo), a atenção deve-se voltar para o fato de que um mesmo período em função de $\rho$ pode representar duas profundidades diferentes, estando a estação em cima do contexto sedimentar ou em cima do contexto cristalino. 
+        O meio geológico influência diretamente a profundidade de investigação, a figura \ref{fig-skin-depth} mostra que para uma mesma frequência, ela pode representar valores diferentes de profundidade, variando o meio em subsuperfície, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante por que, ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares (meio condutivo) em contado com contextos cristalinos (meio resistivo), a atenção deve-se voltar para o fato de que um mesmo período em função de $\rho$ pode representar duas profundidades diferentes, estando a estação em cima do contexto sedimentar ou em cima do contexto cristalino. 
         
         \begin{figure}[H]
             \caption[Gráfico do \en{skin-depth}]{Gráfico do \en{skin-depth} em função da frequência [$Hz$], variando a resistividade do meio}
@@ -271,7 +326,7 @@
             \nabla \times \vetor{C}(f_{(\vetor{r})}) = - \vetor{C} \times \nabla f_{(\vetor{r})} 
         \end{equation}
         
-        Pode-se reescreve a equação \ref{HEpossolu}:
+        Pode-se reescrever a equação \ref{HEpossolu}:
         
         {\setlength\arraycolsep{2pt}
         \begin{eqnarray}
