@@ -10,7 +10,7 @@
 \usepackage{amsmath}
 \usepackage{cancel}
 \usepackage{totcount}
-
+\usepackage{multicol}
 \usepackage{pdflscape}
 \usepackage{lscape}
 % ===============================================================================================================
@@ -213,14 +213,35 @@ This work deals with the development of PampaMT software. This program was devel
 % Utilize o formato:
 %   \item[SIGLA --]         Nome da sigla
 \begin{siglas}
-    \item[ASCII --]            \en{American Standard Code for Information Interchange}
-    \item[CNPq --]              Conselho Nacional de Desenvolvimento Científico e Tecnológico
-    \item[GEOMA --]             Grupo de Geomagnetismo
-    \item[GUI --]              \en{Graphical User Interface}
-    \item[INPE --]              Instituto Nacional de Pesquisa Espaciais
-    \item[MT --]               Magnetotelúrico
-    \item[PIBIC --]             Programa Institucional de Bolsas de Iniciação Científica
-    \item[TS --]               \en{Time Series}
+    \sigla{ASCII}{  \en{American Standard Code for Information Interchange}}
+    \siglae{            -- Código Padrão Norte-americano para Intercâmbio de Informações -- (Tradução Nossa)}
+    \\
+    \sigla{CNPq}{   Conselho Nacional de Desenvolvimento Científico e Tecnológico}
+    \\
+    \sigla{EMTF}{   \en{Electromagnetic Magnetic Transfer Function}}
+    \siglae{            -- Função de Transferência Eletromagnética -- (Tradução Nossa)}
+    \\
+    \sigla{FFT}{    \en{Fast Fourier Transform}}
+    \siglae{            -- Transformada Rápida de Fourier -- (Tradução Nossa)}
+    \\
+    \sigla{GEOMA}{  Grupo de Geomagnetismo}
+    \\
+    \sigla{GMT}{    \en{Generic Mapping Tools}}
+    \siglae{            -- Ferramentas Genéricas para Mapeamento -- (Tradução Nossa)}
+    \\
+    \sigla{GUI}{    \en{Graphical User Interface}}
+    \siglae{            -- Interface Gráfica do Utilizador -- (Tradução Nossa)}
+    \\
+    \sigla{INPE}{   Instituto Nacional de Pesquisa Espaciais}
+    \\
+    \sigla{MT}{     Magnetotelúrico}
+    \\
+    \sigla{PIBIC}{  Programa Institucional de Bolsas de Iniciação Científica}
+    \\
+    \sigla{SIG}{    Sistema de Informação Geográfica}
+    \\
+    \sigla{TS}{     \en{Time Series}}
+    \siglae{            -- Séries Temporais -- (Tradução Nossa)}
 \end{siglas}
 % ==============================================================
 
@@ -230,26 +251,38 @@ This work deals with the development of PampaMT software. This program was devel
 % Utilize o formato:
 %   \item[Simbolo]          Nome do símbolo
 \begin{simbolos}
-    \item[$\sigma$]                  Condutividade Elétrica
+    \begin{multicols}{2}\item[$\delta$]                 \en{Skin-depth}
+    \item[$\varepsilon$]             Permissividade Elétrica
+    \item[$\mu$]                     Permeabilidade Magnética
+    \item[$\kappa$]                 Modulo do Vetor de Onda
     \item[$\rho$]                    Resistividade Elétrica
     \item[$\rho_a$]                  Resistividade Elétrica Aparente
-    \item[$\Delta U$]                 Diferença de Potencial
-    \item[$i$]                       Corrente Elétrica
-    \item[$R$]                       Resistência Elétrica
+    \item[$\varrho$]                 Densidade de Carga
+    \item[$\sigma$]                  Condutividade Elétrica
+    \item[$\phi$]                   Fase de Onda
+    \item[$\omega$]                 Frequência Angular
     \item[$A$]                       Área
+    \item[$\vetor{B}$]               Campo Magnético
+    \item[$\vetor{D}$]               Campo de Deslocamento Elétrico
+    \item[$\vetor{E}$]               Campo Elétrico
+    \item[$f$]                      Frequência
+    \item[$\vetor{H}$]               Campo Magnetizante
+    \item[$i$]                       Corrente Elétrica
+    \item[$\vetor{J}$]               Densidade de Corrente
+    \item[$\vetor{k}$]              Vetor de Onda
+    \item[$R$]                       Resistência Elétrica
+    \item[$t$]                       Tempo
+    \item[$T$]                      Período
+    \item[$Z$]                        Impedância Eletromagnética  
+    \item[$\imath$]                  Unidade Imaginária
     \item[$\Delta l$]                Comprimento
+    \item[$\Delta U$]                 Diferença de Potencial
+    \item[$\nabla$]                  Gradiente
     \item[$\nabla \times$]           Rotacional
     \item[$\nabla \cdot$]            Divergente
-    \item[$\vetor{E}$]               Campo Elétrico
-    \item[$\vetor{H}$]               Campo Magnetizante
-    \item[$\vetor{B}$]               Campo Magnético
-    \item[$\vetor{J}$]               Densidade de Corrente
-    \item[$\vetor{D}$]               Campo de Deslocamento Elétrico
-    \item[$\varrho$]                 Densidade de Carga
-    \item[$t$]                       Tempo
-    \item[$\mu$]                     Permeabilidade Magnética
-    \item[$\varepsilon$]             Permissividade Elétrica
-    \item[$\imath$]                  Unidade Imaginária                   
+    \item[$\nabla^2$]               Laplaciano
+    \item[$\Im$]                    Componente Imaginária 
+    \item[$\Re$]                    Componente Real\end{multicols}                                                   
 \end{simbolos}
 % ==============================================================
 
