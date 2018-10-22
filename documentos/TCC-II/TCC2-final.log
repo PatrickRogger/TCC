@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  20 OCT 2018 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  21 OCT 2018 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,51 +1253,66 @@ Underfull \hbox (badness 1859) in paragraph at lines 155--155
 
 ] [4
 
-] [5] [6] [7
+] [5
 
-] [8] (./TCC2-final.lof) [9
+] [6]
+Overfull \hbox (1.04375pt too wide) in paragraph at lines 185--186
+\OT1/ptm/m/n/12 Agrade[]o meus pro-fes-so-res pe-los co-nhe-ci-men-tos pas-sa-d
+os, prin-ci-pal-mente ao pro-fes-sor []Everton
+ []
+
+[7
+
+] [8] [9
+
+
+] [10] [11
+
+] [12] [13
+
+] [14] (./TCC2-final.lof) [15
 
 
 
-] [10]
-Overfull \hbox (2.87895pt too wide) in paragraph at lines 216--216
+] [16]
+Overfull \hbox (2.87895pt too wide) in paragraph at lines 246--246
 []|\OT1/ptm/m/n/12 ASCII| 
  []
 
 
-Overfull \hbox (0.88704pt too wide) in paragraph at lines 219--219
+Overfull \hbox (0.88704pt too wide) in paragraph at lines 249--249
 []|\OT1/ptm/m/n/12 CNPq| 
  []
 
 
-Overfull \hbox (3.55103pt too wide) in paragraph at lines 221--221
+Overfull \hbox (3.55103pt too wide) in paragraph at lines 251--251
 []|\OT1/ptm/m/n/12 EMTF| 
  []
 
 
-Overfull \hbox (15.53899pt too wide) in paragraph at lines 227--227
+Overfull \hbox (15.53899pt too wide) in paragraph at lines 257--257
 []|\OT1/ptm/m/n/12 GEOMA| 
  []
 
 
-Overfull \hbox (2.2189pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.2189pt too wide) in paragraph at lines 269--269
 []|\OT1/ptm/m/n/12 PIBIC| 
  []
 
 
-Overfull \hbox (462.79132pt too wide) in alignment at lines 215--245
+Overfull \hbox (462.79132pt too wide) in alignment at lines 245--275
 [][][] 
  []
 
-[11
+[17
 
 
-] [12] [13
+] [18] [19
 
 
-] [14
+] [20
 
-] (./TCC2-final.toc) [15] (./texto/introducao.texpdfTeX warning (ext4): destina
+] (./TCC2-final.toc) [21] (./texto/introducao.texpdfTeX warning (ext4): destina
 tion with the same identifier (name{page.10}) has been already used, duplicate 
 ignored
 <to be read again> 
@@ -1385,7 +1400,7 @@ Overfull \hbox (296.34297pt too wide) in alignment at lines 44--47
 [][][] 
  []
 
-<texto/figura/resisti_telford.png, id=192, 169.97714pt x 278.14441pt>
+<texto/figura/resisti_telford.png, id=227, 169.97714pt x 278.14441pt>
 File: texto/figura/resisti_telford.png Graphic file (type png)
 <use texto/figura/resisti_telford.png>
 Package pdftex.def Info: texto/figura/resisti_telford.png  used on input line 6
@@ -1402,42 +1417,54 @@ Overfull \hbox (0.79558pt too wide) in paragraph at lines 69--70
 -ais geol[]ogicos, a re-sis-ti-vi-dade el[]etrica
  []
 
-<texto/figura/resistividade_tabela.png, id=213, 322.3242pt x 183.3249pt>
+<texto/figura/resistividade_tabela.png, id=248, 322.3242pt x 183.3249pt>
 File: texto/figura/resistividade_tabela.png Graphic file (type png)
 <use texto/figura/resistividade_tabela.png>
 Package pdftex.def Info: texto/figura/resistividade_tabela.png  used on input l
 ine 74.
 (pdftex.def)             Requested size: 369.88582pt x 210.38281pt.
-[16 <./texto/figura/resisti_telford.png> <./texto/figura/resistividade_tabela.p
-ng>]
-Package epstopdf Info: Source file: <texto/figura/espectro-contrinuicao-padua20
-04.eps>
-(epstopdf)                    date: 2018-09-20 19:00:43
-(epstopdf)                    size: 582694 bytes
-(epstopdf)             Output file: <texto/figura/espectro-contrinuicao-padua20
-04-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-09-20 19:01:30
-(epstopdf)                    size: 190789 bytes
-(epstopdf)             Command: <repstopdf --outfile=texto/figura/espectro-cont
-rinuicao-padua2004-eps-converted-to.pdf texto/figura/espectro-contrinuicao-padu
-a2004.eps>
+pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 
+      [16 <./texto/figura/resisti_telford.png> <./texto/figura/resistividade_ta
+bela.png>]
+Package epstopdf Info: Source file: <texto/figura/padua04.eps>
+(epstopdf)                    date: 2018-10-21 00:42:45
+(epstopdf)                    size: 132562 bytes
+(epstopdf)             Output file: <texto/figura/padua04-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2018-10-21 00:43:04
+(epstopdf)                    size: 131972 bytes
+(epstopdf)             Command: <repstopdf --outfile=texto/figura/padua04-eps-c
+onverted-to.pdf texto/figura/padua04.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
-<texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf, id=227, 760
-.8425pt x 641.39626pt>
-File: texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf Graphic
- file (type pdf)
-<use texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf>
-Package pdftex.def Info: texto/figura/espectro-contrinuicao-padua2004-eps-conve
-rted-to.pdf  used on input line 89.
-(pdftex.def)             Requested size: 241.84842pt x 203.88083pt.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/padua04-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<texto/figura/padua04-eps-converted-to.pdf, id=261, 433.62pt x 317.185pt>
+File: texto/figura/padua04-eps-converted-to.pdf Graphic file (type pdf)
+<use texto/figura/padua04-eps-converted-to.pdf>
+Package pdftex.def Info: texto/figura/padua04-eps-converted-to.pdf  used on inp
+ut line 89.
+(pdftex.def)             Requested size: 341.43306pt x 249.76514pt.
 
 Overfull \hbox (15.31517pt too wide) in paragraph at lines 106--107
 []\OT1/ptm/m/n/12 O mag-ne-to-tel[]urico as-sim como ou-tros m[]etodos geof[]^^
 Psicos ele-tro-magn[]eticos, fundamentam-
  []
 
-[17 <./texto/figura/espectro-contrinuicao-padua2004-eps-converted-to.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111         \end{equation}
+                             [17 <./texto/figura/padua04-eps-converted-to.pdf>]
+
 Overfull \hbox (4.68727pt too wide) in paragraph at lines 132--132
 []|$[]$| 
  []
@@ -1557,13 +1584,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--178
 
  []
 
-[18] [19] [20]
-<texto/figura/skin-depth.png, id=307, 1751.54375pt x 1297.84875pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 
+       [18]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.235         P
+               ode-se expressar a equação \ref{preHk} usando a seguinte id...
+[19]pdfTeX warning (ext4): destination with the same identifier (name{page.20})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.281         O
+                meio geológico influência diretamente a profundidade de in...
+[20]
+<texto/figura/skin-depth.png, id=330, 1751.54375pt x 1297.84875pt>
 File: texto/figura/skin-depth.png Graphic file (type png)
 <use texto/figura/skin-depth.png>
 Package pdftex.def Info: texto/figura/skin-depth.png  used on input line 286.
 (pdftex.def)             Requested size: 341.43306pt x 252.99037pt.
- [21 <./texto/figura/skin-depth.png>])
+pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.306         \end{equation}
+                             [21 <./texto/figura/skin-depth.png>])
 (./texto/aquisicaoedependencia.tex [22]
 Overfull \hbox (13.03658pt too wide) in paragraph at lines 7--8
 []\OT1/ptm/m/n/12 A aquisi[][]ao de da-dos MT con-siste na obten[][]ao dos cam-
@@ -1581,7 +1630,7 @@ df>
 s-converted-to.pdf texto/figura/arranjo-mt.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
-<texto/figura/arranjo-mt-eps-converted-to.pdf, id=334, 845.1575pt x 598.235pt>
+<texto/figura/arranjo-mt-eps-converted-to.pdf, id=356, 845.1575pt x 598.235pt>
 File: texto/figura/arranjo-mt-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/arranjo-mt-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/arranjo-mt-eps-converted-to.pdf  used on 
@@ -1604,7 +1653,7 @@ Package epstopdf Info: Source file: <texto/figura/fourier2.eps>
 converted-to.pdf texto/figura/fourier2.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
-<texto/figura/fourier2-eps-converted-to.pdf, id=351, 1186.4325pt x 835.12pt>
+<texto/figura/fourier2-eps-converted-to.pdf, id=373, 1186.4325pt x 835.12pt>
 File: texto/figura/fourier2-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/fourier2-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/fourier2-eps-converted-to.pdf  used on in
@@ -1630,7 +1679,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/fluxo_preprocessamento-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<texto/figura/fluxo_preprocessamento-eps-converted-to.pdf, id=363, 555.07375pt 
+<texto/figura/fluxo_preprocessamento-eps-converted-to.pdf, id=385, 555.07375pt 
 x 152.57pt>
 File: texto/figura/fluxo_preprocessamento-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -1708,7 +1757,7 @@ Overfull \hbox (206.71652pt too wide) in alignment at lines 171--174
  []
 
 [27] [28]
-<texto/figura/plot-cmp-tf.png, id=417, 759.3168pt x 474.8139pt>
+<texto/figura/plot-cmp-tf.png, id=440, 759.3168pt x 474.8139pt>
 File: texto/figura/plot-cmp-tf.png Graphic file (type png)
 <use texto/figura/plot-cmp-tf.png>
 Package pdftex.def Info: texto/figura/plot-cmp-tf.png  used on input line 251.
@@ -1734,7 +1783,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/tela1_com_fluxograma-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<texto/figura/tela1_com_fluxograma-eps-converted-to.pdf, id=434, 830.10126pt x 
+<texto/figura/tela1_com_fluxograma-eps-converted-to.pdf, id=456, 830.10126pt x 
 332.24126pt>
 File: texto/figura/tela1_com_fluxograma-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1758,7 +1807,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/tela2_com_fluxograma-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<texto/figura/tela2_com_fluxograma-eps-converted-to.pdf, id=436, 835.12pt x 329
+<texto/figura/tela2_com_fluxograma-eps-converted-to.pdf, id=458, 835.12pt x 329
 .23pt>
 File: texto/figura/tela2_com_fluxograma-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1788,7 +1837,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/tela3_com_fluxograma-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<texto/figura/tela3_com_fluxograma-eps-converted-to.pdf, id=449, 706.64pt x 335
+<texto/figura/tela3_com_fluxograma-eps-converted-to.pdf, id=471, 706.64pt x 335
 .2525pt>
 File: texto/figura/tela3_com_fluxograma-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1798,7 +1847,7 @@ Package pdftex.def Info: texto/figura/tela3_com_fluxograma-eps-converted-to.pdf
 (pdftex.def)             Requested size: 455.24408pt x 215.98299pt.
 [32 <./texto/figura/tela2_com_fluxograma-eps-converted-to.pdf> <./texto/figura/
 tela3_com_fluxograma-eps-converted-to.pdf>]
-<texto/figura/tela4.png, id=469, 1327.96124pt x 743.77875pt>
+<texto/figura/tela4.png, id=491, 1327.96124pt x 743.77875pt>
 File: texto/figura/tela4.png Graphic file (type png)
 <use texto/figura/tela4.png>
 Package pdftex.def Info: texto/figura/tela4.png  used on input line 49.
@@ -1819,7 +1868,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/rhoplusGUI-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<texto/figura/rhoplusGUI-eps-converted-to.pdf, id=473, 708.6475pt x 339.2675pt>
+<texto/figura/rhoplusGUI-eps-converted-to.pdf, id=495, 708.6475pt x 339.2675pt>
 
 File: texto/figura/rhoplusGUI-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/rhoplusGUI-eps-converted-to.pdf>
@@ -1831,7 +1880,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33 <./texto/figura/tela4.png>] [34 <./texto/figura/rhoplusGUI-eps-converted-t
 o.pdf>]
-<texto/figura/tela3_selecionando.png, id=492, 1327.96124pt x 744.7825pt>
+<texto/figura/tela3_selecionando.png, id=514, 1327.96124pt x 744.7825pt>
 File: texto/figura/tela3_selecionando.png Graphic file (type png)
 <use texto/figura/tela3_selecionando.png>
 Package pdftex.def Info: texto/figura/tela3_selecionando.png  used on input lin
@@ -1841,13 +1890,15 @@ e 75.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35 <./texto/figura/tela3_selecionando.png>]) (./texto/consideracao.tex
-[36
+[35 <./texto/figura/tela3_selecionando.png>]) (./texto/resultados.tex [36
 
 
-]) (./TCC2-final.bbl [37
+])
+(./texto/consideracao.tex [37
 
 ] [38
+
+]) (./TCC2-final.bbl [39] [40
 
 ]
 
@@ -1855,7 +1906,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[39]) (./texto/apendice.tex [40]
+[41]) (./texto/apendice.tex [42]
 Package epstopdf Info: Source file: <texto/figura/qr-code-pampamt.eps>
 (epstopdf)                    date: 2018-10-05 19:23:54
 (epstopdf)                    size: 24081 bytes
@@ -1872,7 +1923,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/qr-code-pampamt-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<texto/figura/qr-code-pampamt-eps-converted-to.pdf, id=527, 266.9975pt x 266.99
+<texto/figura/qr-code-pampamt-eps-converted-to.pdf, id=558, 266.9975pt x 266.99
 75pt>
 File: texto/figura/qr-code-pampamt-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1882,7 +1933,7 @@ d on input line 11.
 (pdftex.def)             Requested size: 142.26378pt x 142.26984pt.
 ) 
 AED: lastpage setting LastPage
-[41
+[43
 
  <./texto/figura/qr-code-pampamt-eps-converted-to.pdf>]
 \tf@lof=\write6
@@ -1891,22 +1942,22 @@ AED: lastpage setting LastPage
 \tf@toc=\write7
 \openout7 = `TCC2-final.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
  (./TCC2-final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 361.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 393.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
  ) 
 Here is how much of TeX's memory you used:
- 14896 strings out of 492982
- 217338 string characters out of 6134895
+ 14913 strings out of 492982
+ 217411 string characters out of 6134895
  385387 words of memory out of 5000000
- 18070 multiletter control sequences out of 15000+600000
+ 18077 multiletter control sequences out of 15000+600000
  18983 words of font info for 45 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  45i,17n,40p,1607b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1928,10 +1979,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TCC2-final.pdf (49 pages, 2563635 bytes).
+Output written on TCC2-final.pdf (57 pages, 2511402 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 578 compressed objects within 6 object streams
- 147 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

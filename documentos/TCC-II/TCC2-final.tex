@@ -158,29 +158,59 @@
 
 % DEDICATORIA 
 % ===================================
-%\begin{dedicatoria}
-%    tectodsdfa dffds dddf
-%\end{dedicatoria}
+\begin{dedicatoria}
+    \textit{Dedico este trabalho, bem como todas as demais conquistas da minha vida, a minha esposa -- Fernanda --, minha mãe -- Cláudia --, minha irmã -- Thairine -- e minha avó -- Suzana --.} 
+\end{dedicatoria}
 % ===================================
 
 
 % AGRADECIMENTOS
 % ===================================
-%\begin{agradecimentos}
-%    Eu agradeco a um minhao de pessoa por tudoi que foi feito e como esta sendo utilizado a paltaforma para novos usuariso e mnomanetos de alegria e todo o mundo
+\begin{agradecimentos}
+    Agradeço primeiramente a minha irmã -- Thairine Garcia -- por este trabalho, pois sem ela os últimos quatro anos não seriam possíveis. Também a minha mãe, Claudia Valéria, pelo exemplo e pelo amor que me deu. 
     
-%    \noindent sfdsfsdg kjkas djfuwernwer sdgfsdddd
-%\end{agradecimentos}
+    \SingleSpacing
+    \OnehalfSpacing
+    
+    \noindent Obrigado minha amada e mais do que tudo minha grande amiga -- Fernanda Melo -- por todas as horas ao meu lado, por todo o apoio e por todos os momentos desde a chuva de meteoros de novembro de 2014.
+    
+    \SingleSpacing
+    \OnehalfSpacing
+    
+    \noindent Agradeço meu grande amigo, Paulo Roberto, por todas as horas de conversas, principalmente pelas intermináveis e ótimas horas falando sobre furos de sondagem.  
+    
+    \SingleSpacing
+    \OnehalfSpacing
+    
+    \noindent Agradeço meus professores pelos conhecimentos passados, principalmente ao professor Éverton Frigo, que me apresentou ao mundo da programação e pelos seu carinho ao curso da geofísica, onde sempre esteve pronto a nos ajudar.
+    
+    \SingleSpacing
+    \OnehalfSpacing
+    
+    \noindent Obrigado a professora Andréa Matos por me apresentar o Magnetotelúrico e a todo o Grupo GEOMA do INPE. Em especial agradeço ao Marcelo de Pádua que concedeu os programas e todo o auxilio para o desenvolvimento do PampaMT.   
+    
+    \SingleSpacing
+    \OnehalfSpacing
+
+    \noindent Obrigado também ao meu orientador, Vinicius Oliveira por sempre me ajudar e pelas ótimas sugestões nesse último ano.
+    
+    \SingleSpacing
+    \OnehalfSpacing
+    
+    \noindent E a minha avó -- Suzana Simões -- pelo seu amor e pelas horas no telefone.
+    
+    \citar{melhorar}
+\end{agradecimentos}
 % ===================================
 
 
 % EPÍGRAFE
 % ===================================
-%\begin{epigrafe}
-%    Moça boinita moça bem feita
-%    \DoubleSpacing \\
-%    -- (Sr. Madruga)
-%\end{epigrafe}
+\begin{epigrafe}
+    \textit{Matemática se entra pelos dedos.
+    \DoubleSpacing \\
+    -- (Osmar Giuliani)}
+\end{epigrafe}
 % ===================================
 
 
@@ -251,38 +281,40 @@ This work deals with the development of PampaMT software. This program was devel
 % Utilize o formato:
 %   \item[Simbolo]          Nome do símbolo
 \begin{simbolos}
-    \begin{multicols}{2}\item[$\delta$]                 \en{Skin-depth}
+    \begin{multicols}{2}
+    \item[$\delta$]                 \en{Skin-depth}
     \item[$\varepsilon$]             Permissividade Elétrica
     \item[$\mu$]                     Permeabilidade Magnética
-    \item[$\kappa$]                 Modulo do Vetor de Onda
+    \item[$\kappa$]                  Modulo do Vetor de Onda
     \item[$\rho$]                    Resistividade Elétrica
     \item[$\rho_a$]                  Resistividade Elétrica Aparente
     \item[$\varrho$]                 Densidade de Carga
     \item[$\sigma$]                  Condutividade Elétrica
-    \item[$\phi$]                   Fase de Onda
-    \item[$\omega$]                 Frequência Angular
+    \item[$\phi$]                    Fase de Onda
+    \item[$\omega$]                  Frequência Angular
     \item[$A$]                       Área
     \item[$\vetor{B}$]               Campo Magnético
     \item[$\vetor{D}$]               Campo de Deslocamento Elétrico
     \item[$\vetor{E}$]               Campo Elétrico
-    \item[$f$]                      Frequência
+    \item[$f$]                       Frequência
     \item[$\vetor{H}$]               Campo Magnetizante
     \item[$i$]                       Corrente Elétrica
     \item[$\vetor{J}$]               Densidade de Corrente
-    \item[$\vetor{k}$]              Vetor de Onda
+    \item[$\vetor{k}$]               Vetor de Onda
     \item[$R$]                       Resistência Elétrica
     \item[$t$]                       Tempo
-    \item[$T$]                      Período
-    \item[$Z$]                        Impedância Eletromagnética  
+    \item[$T$]                       Período
+    \item[$Z$]                       Impedância Eletromagnética  
     \item[$\imath$]                  Unidade Imaginária
     \item[$\Delta l$]                Comprimento
-    \item[$\Delta U$]                 Diferença de Potencial
+    \item[$\Delta U$]                Diferença de Potencial
     \item[$\nabla$]                  Gradiente
     \item[$\nabla \times$]           Rotacional
     \item[$\nabla \cdot$]            Divergente
-    \item[$\nabla^2$]               Laplaciano
-    \item[$\Im$]                    Componente Imaginária 
-    \item[$\Re$]                    Componente Real\end{multicols}                                                   
+    \item[$\nabla^2$]                Laplaciano
+    \item[$\Im$]                     Componente Imaginária 
+    \item[$\Re$]                     Componente Real
+    \end{multicols}                                                   
 \end{simbolos}
 % ==============================================================
 
@@ -314,7 +346,7 @@ This work deals with the development of PampaMT software. This program was devel
 \input{texto/ometodomt}
 \input{texto/aquisicaoedependencia}
 \input{texto/devpampamt}
-%\input{texto/resultados}
+\input{texto/resultados}
 \input{texto/consideracao}
 
 % ==============================================================================
