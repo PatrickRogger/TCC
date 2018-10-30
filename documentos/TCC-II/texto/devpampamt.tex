@@ -1,10 +1,10 @@
 \chapter{DESENVOLVIMENTO E RESULTADOS DO PampaMT}
 
-    O \en{software} desenvolvido recebeu o nome de PampaMT, em homenagem a Universidade Federal do Pampa. O desenvolvimento iniciou-se em janeiro de 2018, com o primeiro protótipo de codinome RiMT, para testar os conceitos e a viabilidade das funções para o programa, em junho de 2018 o código foi reestruturado e reescrito, atentando para os problemas e adicionando novas funções. A principal mudança foi a construção do \en{software} em modulos, facilitando a adição de novas funções.
+    O \en{software} desenvolvido recebeu o nome de PampaMT, em homenagem a Universidade Federal do Pampa. O desenvolvimento iniciou-se em janeiro de 2018, com o primeiro protótipo de codinome RiMT, vizando testar os conceitos e a viabilidade das funções para o programa. Em junho de 2018 o código foi reestruturado e reescrito, atentando para os problemas e adicionando novas funções baseando no protótipo. A principal mudança foi a construção do \en{software} em módulos, facilitando a adição e manutenção de novas funções.
     
     No apêndice A pode ser encontrado o caminho para o código fonte do programa, junto com as informações para a instalação. O PampaMT foi desenvolvido para ambiente Linux rodando em base Debian. O código foi escrito em \Python, com alguns trechos escritos em \Shell{} para instalação e comunicação da interface com os executáveis dos programas Dnff e TranMT.
     
-    O PampaMT foi dividido em duas etapas: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. A segunda parte foi destinada a escolha das melhores rodadas e períodos, a maior interação com o usuário é destinada a essa etapa. 
+    O PampaMT foi dividido em duas etapas de processamento: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. A segunda parte foi destinada a escolha das melhores rodadas e períodos, esse processo destina a maior interação com o usuário e representa a principal justificativa para o desenvolvimento do \en{software}. 
     
     A figura \ref{tela_inicial} mostra a primeira tela ao executar o PampaMT, nela pode-se escolher criar um novo projeto ou abrir um já existente.
     
@@ -30,7 +30,7 @@
     
     Os dados após a seleção, são copiados para o diretório: \textbf{DADOS\_MT/projeto}, esse processo é realizado para prever eventuais perdas dos arquivos. Os dados então são convertidos e salvos no diretório: \textbf{PROC\_MT/projeto} 
     
-    O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrão, o usuário pode alterar qualquer configuração, como escolher uma nova janela ou alterar o horário do relógio dos dados (figura \ref{conf-procZ}).
+    O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrão, entretanto o usuário pode alterar qualquer configuração, tais como, escolher uma nova janela ou alterar o horário do relógio dos dados (figura \ref{conf-procZ}).
     
     \begin{figure}[H]
         \caption{Tela de Configuração para o EMTF}
@@ -79,11 +79,6 @@
     \end{figure}
     \end{landscape}
     
-    Após escolher os melhor períodos o usuário pode executar o \en{script}: \en{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo, o PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{ToJones}, finalizando a ultima etapa do pré-processamento.
+    Após escolher os melhor períodos o usuário pode executar o \en{script}: \en{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo, o PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{script}, finalizando a ultima etapa do pré-processamento.
     
-    A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente. Para efeitos de comparação, ao utilizar o programa em fase alfa, usuários que nunca tiveram contato com o terminal \Shell, puderam executar e processar os dados com sucesso.
-    
-    
-    
-    
-    
+    A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente. Para efeitos de comparação, ao utilizar o programa em fase alfa, usuários que nunca tiveram contato com o terminal \Shell, puderam executar e processar os dados com sucesso.  

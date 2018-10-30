@@ -21,6 +21,7 @@
 \contentsline {section}{\numberline {4.3}Formatos de Arquivos de Dados MT}{26}{section.4.3}
 \contentsline {section}{\numberline {4.4}Processamento Robusto -- EMTF}{29}{section.4.4}
 \contentsline {section}{\numberline {4.5}Pacotes de Processamento do Grupo Geoma -- INPE}{29}{section.4.5}
+\contentsline {section}{\numberline {4.6}Construtor Gr\IeC {\'a}fico -- Kivy}{30}{section.4.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO PampaMT}}{31}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -31,6 +32,7 @@
 \contentsline {section}{\numberline {6.4}Resultados e Interpreta\IeC {\c c}\IeC {\~a}o Geof\IeC {\'\i }sica}{37}{section.6.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}Desenvolvimentos Futuros para o PampaMT}{39}{section.7.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\uppercase {Refer\^encias}}{41}{section*.29}
@@ -39,3 +41,11 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
 \contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {C\IeC {\'o}digo Fonte PampaMT}}{43}{appendix.A}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Pr\IeC {\'e}-processamento Usando o M\IeC {\'e}todo Tradicional}}{45}{appendix.B}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Pr\IeC {\'e}-processamento Usando o PampaMT}}{51}{appendix.C}

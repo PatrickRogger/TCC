@@ -178,7 +178,7 @@
         
         Os arquivos \en{J}, análogo aos arquivos \en{Z}, armazenam as informações do tensor, porém, a estrutura é mais sintetizada. Os arquivos são estruturados em dois blocos, um destinado a configurações, tais como: localização, elevação, nome da estação e azimute. O segundo bloco é destinado aos dados \cite{j-format}.
         
-        A estrutura base utilizada para os dados é composta por quatro sub-blocos, cada um representando uma componente do tensor. O sub-bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
+        A estrutura base utilizada para os dados é composta por seis sub-blocos, quatro representam cada uma das componentes do tensor e dois sub-blocos destinados ao \en{Tipper}  . O sub-bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
         
 \begin{footnotesize}        
 \begin{verbatim}
@@ -222,20 +222,16 @@
     \section{Processamento Robusto -- EMTF}
         \label{sec-robusto}
         
+            \citar{corrigir algumas coisas teorica}
+        
             O processamento dos dados parte primeiramente da análise espectral, onde primeiro faz-se necessário a mudança do domínio do tempo para a frequência angular e em seguida a filtragem, remoção de tendências e de dados ruins.
             
             O pacote EMTF \cite{egbert-emtf} desenvolvido por Gary D. Egbert, é um conjunto de programas escrito em \en{Fortran 77} que realizam processamento tais como: mudança de domínio, cálculo do tensor impedância, plotagem e alguns tipos de conversores de dados. 
             
-            A mudança do domínio do tempo para frequência angular é realizado pelo programa Dnff, contido no pacote, esse programa realiza a troca do domínio través da \en{cascade decimation} \apud{wight1980cascade}{padua2004estudos} uma alternativa ao FFT (\en{Fast Fourier Transform}\footnote{Transformada Rápida de Fourier}). Antes de efetuar a transformada de Fourier, as séries temporais são re-amostradas, essas re-amostragem são chamadas de janelas e tem o objetivo de minimizar as distorções causadas pelas reverberações da transformada de Fourier.
+            A mudança do domínio do tempo para frequência angular é realizado pelo programa Dnff, contido no pacote, esse programa realiza a troca do domínio través da FFT (\en{Fast Fourier Transform}\footnote{Transformada Rápida de Fourier}). Após efetuar a transformada de Fourier, as séries temporais são re-amostradas, essas re-amostragem são chamadas de janelas e tem o objetivo de minimizar as distorções causadas pelas reverberações da transformada de Fourier.
             
-        %    Para estimar as componentes do tensor impedância o programa parte dos seguintes cálculos:
             
-        %    A partir da equação \ref{tensor-impe} podemos representa-la na forma do sistema:
-            
-        %    \citar{terminar ....}
-        %\subsection{Função de Transferências}
-           
-        %   \cite{robusto-egbert}
+      
            
     \section{Pacotes de Processamento do Grupo Geoma -- INPE}
     
@@ -255,7 +251,11 @@
         \end{figure}
 
     
-    %\section{Construtor Gráfico -- Kivy}
+    \section{Construtor Gráfico -- Kivy}
 
-    %    \citar{escrever se der tempo}
-    
+        Kivy é um \en{framework} desenvolvido em Python com trechos escritos em Cython\footnote{Linguagem que permite  a conversão de códigos escritos com a mesma sintaxe do Python para códigos nativos em C \cite{cython}}, utilizado para o desenvolvimento da interface gráfica do programa \cite{kivy}.
+        
+        Kivy é um construtor gráfico que utiliza a API OpenGL \cite{opengl} para o processamento dos elementos visuais impressos na tela. Isso significa que todo o processamento dos elementos são executados nativamente no chip gráfico do computador.
+        
+        A escolha do Kivy também pode ser explicada pela simplicidade de implementação, visto que o mesmo permite o desenvolvimento através de uma linguagem própria, a \en{Kvlang} \cite{kvlang}. Essa linguagem permite a construção dos elementos, através de uma linguagem de marcação e indentada, ou seja, a hierarquia dos elementos estão sempre na identação mais a direita. A linguagem \en{Kvlang} é integrada ao código Python, isso permite o acesso do mesmo elemento nas duas estruturas de código.
+        

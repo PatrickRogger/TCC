@@ -12,6 +12,13 @@
 \textbf{Geophysics}, Society of Exploration Geophysicists, v.~18, n.~3, p.
   605--635, 1953.}
 
+\bibitem[Cython 2018]{cython}
+\abntrefinfo{Cython}{CYTHON}{2018}
+{CYTHON. 2018.
+Cython.
+Dispon{\'\i}vel em: \url{http://docs.cython.org/en/latest/\#}. Acesso em: 23
+  out. 2018.}
+
 \bibitem[Egbert 1997]{egbert-emtf}
 \abntrefinfo{Egbert}{EGBERT}{1997}
 {EGBERT, G.~D. Robust multiple-station magnetotelluric data processing.
@@ -49,6 +56,20 @@
 Ottawa, 1999. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/ts\_format.txt}.
   Acesso em: 02 out. 2018.}
 
+\bibitem[{KIVY ORGANIZATION} 2018]{kivy}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
+{{KIVY ORGANIZATION}. \textbf{Kivy Documentation - Release 1.11.0.dev0}.
+[S.l.], 2018. Dispon{\'\i}vel em:
+  \url{https://media.readthedocs.org/pdf/kivy/latest/kivy.pdf}. Acesso em: 23
+  out. 2018.}
+
+\bibitem[{KIVY ORGANIZATION} 2018]{kvlang}
+\abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018b}
+{{KIVY ORGANIZATION}. \textbf{Kivy Language - Release 1.0.0}.
+[S.l.], 2018. Dispon{\'\i}vel em:
+  \url{https://kivy.org/doc/stable/api-kivy.lang.html}. Acesso em: 24 out.
+  2018.}
+
 \bibitem[MTnet 2018]{mtnet}
 \abntrefinfo{MTnet}{MTNET}{2018}
 {MTNET. 2018.
@@ -68,6 +89,12 @@ Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
 {NYQUIST, H. Certain topics in telegraph transmission theory.
 \textbf{Transactions of the American Institute of Electrical Engineers}, IEEE,
   v.~47, n.~2, p. 617--644, 1928.}
+
+\bibitem[OpenGL 2018]{opengl}
+\abntrefinfo{OpenGL}{OPENGL}{2018}
+{OPENGL. 2018.
+OpenGL.
+Dispon{\'\i}vel em: \url{https://www.opengl.org/}. Acesso em: 23 out. 2018.}
 
 \bibitem[P{\'a}dua 2004]{padua2004estudos}
 \abntrefinfo{P{\'a}dua}{P{\'A}DUA}{2004}
@@ -107,12 +134,5 @@ Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
 {TIKHONOV, A. On determining electric characteristics of the deep layers of the
   earth's crust.
 \textbf{Dolk. Acad. Nauk. SSSR}, v.~73, p. 295--297, 1950.}
-
-\bibitem[Wight e Bostick 1980]{wight1980cascade}
-\abntrefinfo{Wight e Bostick}{WIGHT; BOSTICK}{1980}
-{WIGHT, D.; BOSTICK, F. Cascade decimation--a technique for real time
-  estimation of power spectra. In:  IEEE. \textbf{Acoustics, Speech, and Signal
-  Processing, IEEE International Conference on ICASSP'80.} [S.l.], 1980. v.~5,
-  p. 626--629.}
 
 \end{thebibliography}
