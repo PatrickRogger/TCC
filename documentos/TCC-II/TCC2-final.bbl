@@ -5,6 +5,26 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Almeida et al. 1981]{almeida}
+\abntrefinfo{Almeida et al.}{ALMEIDA et al.}{1981}
+{ALMEIDA, F. D. et al. Brazilian structural provinces: an introduction.
+\textbf{Earth-Science Reviews}, Elsevier, v.~17, n.~1-2, p. 1--29, 1981.}
+
+\bibitem[Barbosa 2017]{barbosa}
+\abntrefinfo{Barbosa}{BARBOSA}{2017}
+{BARBOSA, A.~N. \textbf{Estudo Magnetotelúrico na Região Centro-Sul da
+  Província Borborema}. UNIPAMPA: [s.n.], 2017. 73~p. Trabalho de Conclusão
+  de Curso.}
+
+\bibitem[{Brazil. Departamento Nacional da Produ{\c{c}}{\~a}o Mineral} e Bruni
+  1976]{cprm}
+\abntrefinfo{{Brazil. Departamento Nacional da Produ{\c{c}}{\~a}o Mineral} e
+  Bruni}{{Brazil. Departamento Nacional da Produ{\c{c}}{\~a}o Mineral};
+  BRUNI}{1976}
+{{Brazil. Departamento Nacional da Produ{\c{c}}{\~a}o Mineral}; BRUNI, M. A.~L.
+  \textbf{Carta geol{\'o}gica do Brasil ao milion{\'e}simo: folha Aracaju (Sc.
+  24)}. [S.l.]: O Departamento, 1976.}
+
 \bibitem[Cagniard 1953]{cagniard1953basic}
 \abntrefinfo{Cagniard}{CAGNIARD}{1953}
 {CAGNIARD, L. Basic theory of the magneto-telluric method of geophysical
@@ -70,6 +90,15 @@ Ottawa, 1999. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/ts\_format.txt}.
   \url{https://kivy.org/doc/stable/api-kivy.lang.html}. Acesso em: 24 out.
   2018.}
 
+\bibitem[Medeiros 2004]{medeiros}
+\abntrefinfo{Medeiros}{MEDEIROS}{2004}
+{MEDEIROS, V. C.~d.
+\textbf{Evolu{\c{c}}{\~a}o geodin{\^a}mica e condicionamento estrutural dos
+  terrenos Pianc{\'o}-Alto Br{\'\i}gida e Alto Paje{\'u}, Dom{\'\i}nio da zona
+  transversal, NE do Brasil}.
+Tese (Doutorado) --- Brasil. Universidade Federal do Rio Grande do Norte
+  (UFRN), 2004.}
+
 \bibitem[MTnet 2018]{mtnet}
 \abntrefinfo{MTnet}{MTNET}{2018}
 {MTNET. 2018.
@@ -95,6 +124,13 @@ Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
 {OPENGL. 2018.
 OpenGL.
 Dispon{\'\i}vel em: \url{https://www.opengl.org/}. Acesso em: 23 out. 2018.}
+
+\bibitem[Padilha et al. 2016]{padilha}
+\abntrefinfo{Padilha et al.}{PADILHA et al.}{2016}
+{PADILHA, A.~L. et al. Deep magnetotelluric signatures of the early
+  neoproterozoic cariris velhos tectonic event within the transversal
+  sub-province of the borborema province, ne brazil.
+\textbf{Precambrian Research}, Elsevier, v.~275, p. 70--83, 2016.}
 
 \bibitem[P{\'a}dua 2004]{padua2004estudos}
 \abntrefinfo{P{\'a}dua}{P{\'A}DUA}{2004}
@@ -123,6 +159,26 @@ Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
 \abntrefinfo{Parkinson}{PARKINSON}{1983}
 {PARKINSON, W.~D. \textbf{Introduction to Geomagnetism}. Edinburgh: Scotish
   Academic Press, 1983.}
+
+\bibitem[Santos et al. 2014]{santos2014deep}
+\abntrefinfo{Santos et al.}{SANTOS et al.}{2014}
+{SANTOS, A.~C. et al. Deep structure of a stretched lithosphere:
+  Magnetotelluric imaging of the southeastern borborema province, ne brazil.
+\textbf{Tectonophysics}, Elsevier, v.~610, p. 39--50, 2014.}
+
+\bibitem[Santos 2012]{teseandrea}
+\abntrefinfo{Santos}{SANTOS}{2012}
+{SANTOS, A. C. L.~d.
+\textbf{Imageamento magnetotel{\'u}rico de estruturas da litosfera na
+  por{\c{c}}{\~a}o SE da Prov{\'\i}ncia Borborema}.
+Tese (Doutorado) --- Brasil. Universidade de Brasília (UNB), 2012.}
+
+\bibitem[Schmus et al. 2008]{van}
+\abntrefinfo{Schmus et al.}{SCHMUS et al.}{2008}
+{SCHMUS, W. V. et al. Proterozoic links between the borborema province, ne
+  brazil, and the central african fold belt.
+\textbf{Geological Society, London, Special Publications}, Geological Society
+  of London, v.~294, n.~1, p. 69--99, 2008.}
 
 \bibitem[Telford, Geldart e Sheriff 1990]{telford}
 \abntrefinfo{Telford, Geldart e Sheriff}{TELFORD; GELDART; SHERIFF}{1990}
