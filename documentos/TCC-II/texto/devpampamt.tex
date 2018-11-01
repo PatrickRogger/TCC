@@ -6,7 +6,7 @@
     
     O PampaMT foi dividido em duas etapas de processamento: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. A segunda parte foi destinada a escolha das melhores rodadas e períodos, esse processo destina a maior interação com o usuário e representa a principal justificativa para o desenvolvimento do \en{software}. 
     
-    A figura \ref{tela_inicial} mostra a primeira tela ao executar o PampaMT, nela pode-se escolher criar um novo projeto ou abrir um já existente.
+    A Figura \ref{tela_inicial} mostra a primeira tela ao executar o PampaMT, nela pode-se escolher criar um novo projeto ou abrir um já existente.
     
     \begin{figure}[H]
         \caption{Tela Inicial PampaMT}
@@ -17,7 +17,7 @@
         \label{tela_inicial}
     \end{figure}
     
-     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}, nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e LiMS, a seleção pode ser automática ou adicionada cada estação individualmente (figura \ref{tela_sel_site}). 
+     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}, nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e LiMS, a seleção pode ser automática ou adicionada cada estação individualmente (Figura \ref{tela_sel_site}). 
     
     \begin{figure}[H]
         \caption{Seleção das Estações}
@@ -30,7 +30,7 @@
     
     Os dados após a seleção, são copiados para o diretório: \textbf{DADOS\_MT/projeto}, esse processo é realizado para prever eventuais perdas dos arquivos. Os dados então são convertidos e salvos no diretório: \textbf{PROC\_MT/projeto} 
     
-    O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrão, entretanto o usuário pode alterar qualquer configuração, tais como, escolher uma nova janela ou alterar o horário do relógio dos dados (figura \ref{conf-procZ}).
+    O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrão, entretanto o usuário pode alterar qualquer configuração, tais como, escolher uma nova janela ou alterar o horário do relógio dos dados (Figura \ref{conf-procZ}).
     
     \begin{figure}[H]
         \caption{Tela de Configuração para o EMTF}
@@ -53,7 +53,7 @@
     \end{figure}
     
     
-    Na tela principal contem todas as funcionalidades do PampaMT, incluindo a etapa de criação de um novo projeto. O carácter modular do PampaMT ajuda na adição de novas funcionalidades, como por exemplo, integração por programas SIG, integração com visualizados de dados, como o GMT, dentre outros. Um exemplo notável é a adição do programa RhoplusGUI em desenvolvido pelo autor, para o projeto PIBIC/INPE/CNPq ``Desenvolvimento de Interface Gráfica Amigável para Validação de Dados Magnetotelúrico a Partir do Processamento Rho+''. Esse programa auxilia na manipulação de dados para o processamento Rho+ \cite{parker1996optimal}, onde foi necessário adicionar poucas linhas de código para inclui-lo no PampaMT (figura \ref{rhoplusGUI}).
+    Na tela principal contem todas as funcionalidades do PampaMT, incluindo a etapa de criação de um novo projeto. O carácter modular do PampaMT ajuda na adição de novas funcionalidades, como por exemplo, integração por programas SIG, integração com visualizados de dados, como o GMT, dentre outros. Um exemplo notável é a adição do programa RhoplusGUI em desenvolvido pelo autor, para o projeto PIBIC/INPE/CNPq ``Desenvolvimento de Interface Gráfica Amigável para Validação de Dados Magnetotelúrico a Partir do Processamento Rho+''. Esse programa auxilia na manipulação de dados para o processamento Rho+ \cite{parker1996optimal}, onde foi necessário adicionar poucas linhas de código para inclui-lo no PampaMT (Figura \ref{rhoplusGUI}).
     
     \begin{figure}[H]
         \caption{Integração com Outros Programas}
@@ -66,7 +66,7 @@
     
     A principal função que o usuário utilizará, será a escolha dos melhores períodos e rodadas. Esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos. Então, após a contagem, o usuário deve anotar os pontos que indicam os períodos, e finalmente executar o \en{script}: \en{ToJones}. Esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
     
-    Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção, e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (figura \ref{selc-perio}).
+    Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção, e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (Figura \ref{selc-perio}).
     
     \begin{landscape}
     \begin{figure}[h]

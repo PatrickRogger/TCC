@@ -2,11 +2,11 @@
     
     Nesse capítulo será demonstrado a aplicação do programa desenvolvido utilizando dados reais. Onde os dados foram processados utilizando o PampaMT e também a forma tradicional que vinha sendo realizada. Essa forma tradicional compreende processar utilizando os \en{scripts} e programas desenvolvidos pelo GEOMA, como comentado anteriormente.
     
-    A realização dos processamentos utilizando as duas técnicas simultâneas, foi realizada visando comparar o tempo e os períodos escolhidas para cada técnica.  
+    A realização dos processamentos utilizando as duas técnicas simultâneas, foi realizada visando comparar o tempo e os períodos escolhidos para cada técnica.  
     
     \section{Área de Estudo}
         
-        A área de estudo escolhida para esse teste de comparação são 12 estações magnetotelúricas de banda larga, localizadas no nordeste brasileiro dentro da provícia borborema (Figura \ref{local-bor}). As estações MT fazem parte do projeto ``Estudos geofísicos e tectônicos na Província Borborema, Nordeste do Brasil” /CNPQ (Projeto Milênio) e “Estudo da estrutura da litosfera do Nordeste do Brasil” /CNPQ (INCT – Tectônica), levantadas nos anos de 2007 e 2009.
+        A área de estudo escolhida para esse teste de comparação são 12 estações magnetotelúricas de banda larga, localizadas no nordeste brasileiro dentro do contexto da Província Borborema (Figura \ref{local-bor}). As estações MT fazem parte do projeto ``Estudos geofísicos e tectônicos na Província Borborema, Nordeste do Brasil” /CNPQ (Projeto Milênio) e “Estudo da estrutura da litosfera do Nordeste do Brasil” /CNPQ (INCT – Tectônica), levantadas nos anos de 2007 e 2009.
         
     \begin{figure}[H]
         \caption{Mapa de Localização}
@@ -26,12 +26,175 @@
             \begin{center}
                 \includegraphics[width=15cm]{texto/figura/mapa_geo.png}
             \end{center}
-        \legend{\Fonte{O Autor -- Base de dados \cite{cprm}, 2018.}}
+        \legend{\Fonte{Adaptado -- Base de dados \cite{cprm}}}
         \label{local-bor}
     \end{figure}
         
     \section{Processamento dos Dados}
+    
+        O processamento das 12 estações tem o carácter de comparar a eficiência do PampaMT na sua execução e o tempo de processamento necessários para todo o pré-processamento.
         
+        Como discutido anteriormente, o modo tradicional utiliza os \en{scripts} e programas desenvolvidos pelo grupo GEOMA. Esses \en{scripts} já foram desenvolvidos para melhorar a eficiência do pré-processamento de dados MT, isso significa que os resultados obtidos, comparados a um usuário que não possui esses \en{scripts}, sejam ainda maiores.  
+        
+        O processamento tradicional utiliza cinco programas principais, são eles:
+        
+        \begin{itemize}
+         \item \textbf{ats2asc} $\rightarrow$ Converte os dados binários para ASCII;
+         \item \textbf{processamentoZ} $\rightarrow$ API de comunicação com EMTF, escrita em \en{shell};
+         \item \textbf{plot-cmp-tf} $\rightarrow$ Plota os dados MT: $\rho_a$, $\phi$, $Z_{xx}$, $Z_{xy}$, $Z_{yx}$, $Z_{yy}$, $T_{xz}$ e $T_{yz}$ em função do período; 
+         \item \textbf{ats\_coord\_tojones} $\rightarrow$ Extrai as coordenadas geográficas dos arquivos binários;
+         \item \textbf{tojones} $\rightarrow$ Converte os arquivos \en{Z-file} (\en{.zss}) em \en{J-format} (\en{.dat}).
+        \end{itemize}
+
+        O processamento foi realizado por dois usuários distintos, sendo os dois experientes no processamento na forma tradicional, os computadores utilizadores apresentam a mesma configuração de \en{hardware} e \en{software}, sendo compostos, basicamente, de um processador de quatro núcleos com 2,4 GHz cada e 8 Gb de memória ram. Nos apêndices \ref{ap-trad} e \ref{ap-pampamt}, podem ser entrados os períodos selecionados para cada estação utilizando o método tradicional e com o PampaMT, respectivamente para um dos usuários.
+        
+    Como discutido anteriormente a primeira etapa consiste em converter os dados de binários para ASCII, portanto foi utilizado o programa \textbf{ast2asc}, a forma tradicional procedeu da seguinte forma via terminal \en{shell}:
+    
+    \begin{footnotesize}        
+\begin{verbatim}
+        $PROJETO:$ ats2asc --site-name bor603b $DADOS_ATS_bor603b
+        $PROJETO:$ ats2asc --site-name bor604a $DADOS_ATS_bor604a
+        $PROJETO:$ ats2asc --site-name bor604b $DADOS_ATS_bor604b
+        $PROJETO:$ ats2asc --site-name bor605a $DADOS_ATS_bor605a
+        $PROJETO:$ ats2asc --site-name bor605b $DADOS_ATS_bor605b
+        $PROJETO:$ ats2asc --site-name bor606a $DADOS_ATS_bor606a
+        $PROJETO:$ ats2asc --site-name bor606b $DADOS_ATS_bor606b
+        $PROJETO:$ ats2asc --site-name bor607a $DADOS_ATS_bor607a
+        $PROJETO:$ ats2asc --site-name bor607b $DADOS_ATS_bor607b
+        $PROJETO:$ ats2asc --site-name bor608a $DADOS_ATS_bor608a
+        $PROJETO:$ ats2asc --site-name bor608b $DADOS_ATS_bor608b
+        $PROJETO:$ ats2asc --site-name bor608c $DADOS_ATS_bor608c
+\end{verbatim}
+\end{footnotesize}
+
+    Utilizando o PampaMT para a conversão (Figura \ref{ats2asc-pampa}):
+    
+    \begin{figure}[H]
+        \caption{Conversão de Dados Utilizando o PampaMT}
+            \begin{center}
+                \includegraphics[width=15cm]{texto/figura/ats2asc-pampa.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{ats2asc-pampa}
+    \end{figure}
+    
+    A proxima etapa foi a preparação dos dados para o processamento EMTF, na forma tradicional prepara-se um arquivo com as configurações necessárias para a execução do EMTF pela API \textbf{processamentoZ}.
+    
+    Arquivo de preparação:
+    
+\begin{footnotesize}        
+\begin{verbatim}
+        *A.asc 65536 ss;bs1
+        *B.asc 65536 ss
+        *B.asc  8192 ss
+        *C.asc   256 ss
+        *C.asc   128 ss
+        *D.asc   128 ss
+        *D.asc    64 ss
+\end{verbatim}
+\end{footnotesize}
+    
+    No arquivo de preparação são adicionados os arquivos a serem processados e qual janela aplicada para cada arquivo ASCII. Na utilização do PampaMT a configuração dos arquivos é realizada pela seguinte tela (Figura \ref{procZ-pampa}):
+    
+    \begin{figure}[H]
+        \caption{Preparação das Configurações Utilizando o PampaMT}
+            \begin{center}
+                \includegraphics[width=12cm]{texto/figura/procZ-pampa.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{procZ-pampa}
+    \end{figure}
+    
+    Posteriormente é executado o comando \begin{footnotesize}\verb|:$ processamentoZ arquivo_selecao|\end{footnotesize} para a forma tradicional e para o PampaMT é realizado o processamento ao pressionar o botão \textbf{ProcessingZ} (Figura \ref{carr-pampa}).
+    
+    \begin{figure}[H]
+        \caption{Criação e Processamento EMTF -- PampaMT}
+            \begin{center}
+                \includegraphics[width=12cm]{texto/figura/carr-pampa.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{carr-pampa}
+    \end{figure}
+    
+    As etapas apresentadas anteriormente não apresentaram mudanças de tempo de processamento entre o método tradicional e o PampaMT, pois os tempos envolvidos dependem exclusivamente do poder de processamento do computador em que esta sendo rodado. A mudança significativa foi a aprendizagem por parte de novos usuários sem conhecimento prévio de \en{shell script}, onde os mesmo não necessitaram recorrer a nenhum manual ou documentação, validando, assim, a amigabilidade da GUI. 
+    
+    A etapa seguinte é a escolha das melhores rodadas, para uma estação e os melhores períodos dentro dessas rodadas. Para concluir esse processo, primeiro é extraído as coordenadas geográficas e armazenada em um arquivo que receberá também a seleção dos períodos, com o comando:
+    
+        \begin{footnotesize}        
+\begin{verbatim}
+        $PROJETO:$ ats_coord_tojones $DADOS_ATS_bor6030b > selecao_bor603b
+\end{verbatim}
+\end{footnotesize}
+
+    \noindent Em seguida são plotados cada arquivo \en{Z-file} e contados os melhores períodos (Figura \ref{plot-cmp-trad}), com o comando:
+    
+    \begin{footnotesize}        
+\begin{verbatim}
+        $PROJETO:$ plot-cmp-tf MT65536/bor603b054_03Abs1.zss,[1-7] MT08192/
+        bor603b054_03B.zss,[1-12] MT00128/bor603b054_05C.zss,[1-10] MT00064
+        /bor603b054_05D.zss,[1-16] MT00128/bor603b054_03D.zss,[17-24] NDT=8
+\end{verbatim}
+\end{footnotesize}
+    
+    \begin{figure}[H]
+        \caption{Plotagem utilizando o \en{script} \textbf{plot-cmp-tf} para a estação bor603b com a seleção dos melhores períodos}
+            \begin{center}
+                \includegraphics[width=16cm]{texto/figura/cmp-3b.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{plot-cmp-trad}
+    \end{figure}
+        
+        Portanto no final desse processo o arquivo de seleção assume o seguinte formato:
+        
+        \begin{footnotesize}        
+\begin{verbatim}
+        # coord -37.69384 -9.61962 186
+        MT65536/bor603b054_03Abs1.zss [1-7]
+        MT08192/bor603b054_03B.zss [1-12]
+        MT00128/bor603b054_05C.zss [1-10]
+        MT00064/bor603b054_05D.zss [1-16]
+        MT00128/bor603b054_03D.zss [17-24]
+\end{verbatim}
+\end{footnotesize}
+
+        Ao final é executado o \en{script} \textbf{tojones} que converte todos os arquivos \en{Z-file} selecionados para um único arquivo \en{J-format}, com o comando: \begin{footnotesize}\verb|tojones selecao_bor603b > bor603b.dat|\end{footnotesize}.                                                                                                                                                                                                                      Assim é efetuado essas etapas para todas as estações e finalizado o pré-processamento no método tradicional.
+        
+    A escolha dos períodos pelo PampaMT é realizada de forma interativa com cursor no mouse, o usuário inicia selecionando os arquivos \en{Z-file} através das abas de banda na parte inferior da tela. Após selecionar o usuário pressiona o botão \textbf{Select Period} e pode selecionar os períodos com uma caixa de seleção (Figura \ref{selc-perio}), por fim pressiona o botão \en{Tojones} para finalizar o processo. As coordenadas estão armazenas no objeto do projeto e podem serem modificadas através da aba de ajustes da estação. Realiza-se então essas etapas de seleção para todas as estações, finalizando assim o pré-processamento com o PampaMT.
+    
+    Comparando os dois processos, obteve-se uma grande diferença entre os tempo de processamento, como pode ser visto na Figura \ref{tempo-pa} e na Figura \ref{tempo-pau}, também ocorreu a prevenção de vários erros comuns cometidos por usuários iniciantes no processamento de dados MT, como o erro na escolha de períodos duplicados para o \textbf{tojones} ou arquivos sem registro de coordenadas geográficas. O processo mais dinâmico benificia a exaustão do pré-processamento, focando os esforços do usuário nas próximas etapas, como: inversão e modelamento lito-geofísico. 
+        
+    
+    \begin{figure}[H]
+        \caption{Tempo Comparando o Tempo de Pré-processamento -- Usuário 1}
+            \begin{center}
+                \includegraphics[width=9.5cm]{texto/figura/patrick.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{tempo-pa}
+    \end{figure}
+    
+    \begin{figure}[H]
+        \caption{Tempo Comparando o Tempo de Pré-processamento -- Usuário 2}
+            \begin{center}
+                \includegraphics[width=6cm]{texto/figura/paulo.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{tempo-pau}
+    \end{figure}
+    
+    
+    Utilizando um modelo de regressão simples (Figura \ref{modelo-reg}) a partir dos dados obtidos de tempo, pode-se concluir que para grandes projetos, cerca de 100 estações magnetotelúricas, o tempo de pré-processamento pode ser reduzido de \citar{20} horas para \citar{5} horas utilizando o PampaMT.   
+    
+    \begin{figure}[H]
+        \caption{Modelo de Regressão para Tempo de Processamento}
+            \begin{center}
+                \includegraphics[width=6cm]{texto/figura/modelo-reg.png}
+            \end{center}
+        \legend{\Fonte{\oautor}}
+        \label{modelo-reg}
+    \end{figure}
+    
     \section{Resultados e Interpretação Geofísica}
         
         

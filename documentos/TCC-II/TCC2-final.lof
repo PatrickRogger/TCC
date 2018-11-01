@@ -16,27 +16,34 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Tempo de Processamento -- Teste Alfa\relax }}{36}{figure.caption.27}
 \contentsline {figure}{\numberline {16}{\ignorespaces Mapa de Localiza\IeC {\c c}\IeC {\~a}o\relax }}{37}{figure.caption.28}
 \contentsline {figure}{\numberline {17}{\ignorespaces Mapa Geol\IeC {\'o}gico\relax }}{38}{figure.caption.29}
-\contentsline {figure}{\numberline {18}{\ignorespaces Manual -- bor603b\relax }}{45}{figure.caption.35}
-\contentsline {figure}{\numberline {19}{\ignorespaces Manual -- bor604a\relax }}{45}{figure.caption.36}
-\contentsline {figure}{\numberline {20}{\ignorespaces Manual -- bor604b\relax }}{46}{figure.caption.37}
-\contentsline {figure}{\numberline {21}{\ignorespaces Manual -- bor605a\relax }}{46}{figure.caption.38}
-\contentsline {figure}{\numberline {22}{\ignorespaces Manual -- bor605b\relax }}{47}{figure.caption.39}
-\contentsline {figure}{\numberline {23}{\ignorespaces Manual -- bor606a\relax }}{47}{figure.caption.40}
-\contentsline {figure}{\numberline {24}{\ignorespaces Manual -- bor606b\relax }}{48}{figure.caption.41}
-\contentsline {figure}{\numberline {25}{\ignorespaces Manual -- bor607a\relax }}{48}{figure.caption.42}
-\contentsline {figure}{\numberline {26}{\ignorespaces Manual -- bor607b\relax }}{49}{figure.caption.43}
-\contentsline {figure}{\numberline {27}{\ignorespaces Manual -- bor608a\relax }}{49}{figure.caption.44}
-\contentsline {figure}{\numberline {28}{\ignorespaces Manual -- bor608b\relax }}{50}{figure.caption.45}
-\contentsline {figure}{\numberline {29}{\ignorespaces Manual -- bor608c\relax }}{50}{figure.caption.46}
-\contentsline {figure}{\numberline {30}{\ignorespaces PampaMT -- bor603b\relax }}{51}{figure.caption.47}
-\contentsline {figure}{\numberline {31}{\ignorespaces PampaMT -- bor604a\relax }}{51}{figure.caption.48}
-\contentsline {figure}{\numberline {32}{\ignorespaces PampaMT -- bor604b\relax }}{52}{figure.caption.49}
-\contentsline {figure}{\numberline {33}{\ignorespaces PampaMT -- bor605a\relax }}{52}{figure.caption.50}
-\contentsline {figure}{\numberline {34}{\ignorespaces PampaMT -- bor605b\relax }}{53}{figure.caption.51}
-\contentsline {figure}{\numberline {35}{\ignorespaces PampaMT -- bor606a\relax }}{53}{figure.caption.52}
-\contentsline {figure}{\numberline {36}{\ignorespaces PampaMT -- bor606b\relax }}{54}{figure.caption.53}
-\contentsline {figure}{\numberline {37}{\ignorespaces PampaMT -- bor607a\relax }}{54}{figure.caption.54}
-\contentsline {figure}{\numberline {38}{\ignorespaces PampaMT -- bor607b\relax }}{55}{figure.caption.55}
-\contentsline {figure}{\numberline {39}{\ignorespaces PampaMT -- bor608a\relax }}{55}{figure.caption.56}
-\contentsline {figure}{\numberline {40}{\ignorespaces PampaMT -- bor608b\relax }}{56}{figure.caption.57}
-\contentsline {figure}{\numberline {41}{\ignorespaces PampaMT -- bor608c\relax }}{56}{figure.caption.58}
+\contentsline {figure}{\numberline {18}{\ignorespaces Convers\IeC {\~a}o de Dados Utilizando o PampaMT\relax }}{40}{figure.caption.30}
+\contentsline {figure}{\numberline {19}{\ignorespaces Prepara\IeC {\c c}\IeC {\~a}o das Configura\IeC {\c c}\IeC {\~o}es Utilizando o PampaMT\relax }}{41}{figure.caption.31}
+\contentsline {figure}{\numberline {20}{\ignorespaces Cria\IeC {\c c}\IeC {\~a}o e Processamento EMTF -- PampaMT\relax }}{41}{figure.caption.32}
+\contentsline {figure}{\numberline {21}{\ignorespaces Plotagem utilizando o \textit {script} \textbf {plot-cmp-tf} para a esta\IeC {\c c}\IeC {\~a}o bor603b com a sele\IeC {\c c}\IeC {\~a}o dos melhores per\IeC {\'\i }odos\relax }}{42}{figure.caption.33}
+\contentsline {figure}{\numberline {22}{\ignorespaces Tempo Comparando o Tempo de Pr\IeC {\'e}-processamento -- Usu\IeC {\'a}rio 1\relax }}{43}{figure.caption.34}
+\contentsline {figure}{\numberline {23}{\ignorespaces Tempo Comparando o Tempo de Pr\IeC {\'e}-processamento -- Usu\IeC {\'a}rio 2\relax }}{44}{figure.caption.35}
+\contentsline {figure}{\numberline {24}{\ignorespaces Modelo de Regress\IeC {\~a}o para Tempo de Processamento\relax }}{44}{figure.caption.36}
+\contentsline {figure}{\numberline {25}{\ignorespaces Manual -- bor603b\relax }}{51}{figure.caption.42}
+\contentsline {figure}{\numberline {26}{\ignorespaces Manual -- bor604a\relax }}{51}{figure.caption.43}
+\contentsline {figure}{\numberline {27}{\ignorespaces Manual -- bor604b\relax }}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {28}{\ignorespaces Manual -- bor605a\relax }}{52}{figure.caption.45}
+\contentsline {figure}{\numberline {29}{\ignorespaces Manual -- bor605b\relax }}{53}{figure.caption.46}
+\contentsline {figure}{\numberline {30}{\ignorespaces Manual -- bor606a\relax }}{53}{figure.caption.47}
+\contentsline {figure}{\numberline {31}{\ignorespaces Manual -- bor606b\relax }}{54}{figure.caption.48}
+\contentsline {figure}{\numberline {32}{\ignorespaces Manual -- bor607a\relax }}{54}{figure.caption.49}
+\contentsline {figure}{\numberline {33}{\ignorespaces Manual -- bor607b\relax }}{55}{figure.caption.50}
+\contentsline {figure}{\numberline {34}{\ignorespaces Manual -- bor608a\relax }}{55}{figure.caption.51}
+\contentsline {figure}{\numberline {35}{\ignorespaces Manual -- bor608b\relax }}{56}{figure.caption.52}
+\contentsline {figure}{\numberline {36}{\ignorespaces Manual -- bor608c\relax }}{56}{figure.caption.53}
+\contentsline {figure}{\numberline {37}{\ignorespaces PampaMT -- bor603b\relax }}{57}{figure.caption.54}
+\contentsline {figure}{\numberline {38}{\ignorespaces PampaMT -- bor604a\relax }}{57}{figure.caption.55}
+\contentsline {figure}{\numberline {39}{\ignorespaces PampaMT -- bor604b\relax }}{58}{figure.caption.56}
+\contentsline {figure}{\numberline {40}{\ignorespaces PampaMT -- bor605a\relax }}{58}{figure.caption.57}
+\contentsline {figure}{\numberline {41}{\ignorespaces PampaMT -- bor605b\relax }}{59}{figure.caption.58}
+\contentsline {figure}{\numberline {42}{\ignorespaces PampaMT -- bor606a\relax }}{59}{figure.caption.59}
+\contentsline {figure}{\numberline {43}{\ignorespaces PampaMT -- bor606b\relax }}{60}{figure.caption.60}
+\contentsline {figure}{\numberline {44}{\ignorespaces PampaMT -- bor607a\relax }}{60}{figure.caption.61}
+\contentsline {figure}{\numberline {45}{\ignorespaces PampaMT -- bor607b\relax }}{61}{figure.caption.62}
+\contentsline {figure}{\numberline {46}{\ignorespaces PampaMT -- bor608a\relax }}{61}{figure.caption.63}
+\contentsline {figure}{\numberline {47}{\ignorespaces PampaMT -- bor608b\relax }}{62}{figure.caption.64}
+\contentsline {figure}{\numberline {48}{\ignorespaces PampaMT -- bor608c\relax }}{62}{figure.caption.65}
