@@ -2,7 +2,7 @@
     
     Nesse capítulo será demonstrado a aplicação do programa desenvolvido utilizando dados reais. Onde os dados foram processados utilizando o PampaMT e também a forma tradicional que vinha sendo realizada. Essa forma tradicional compreende processar utilizando os \en{scripts} e programas desenvolvidos pelo GEOMA, como comentado anteriormente.
     
-    A realização dos processamentos utilizando as duas técnicas simultâneas, foi realizada visando comparar o tempo e os períodos escolhidos para cada técnica.  
+    A realização dos processamentos utilizando as duas técnicas simultâneas, foi realizada visando comparar o tempo e a dinâmica de processamento, bem como a influência sobre os períodos escolhidos para cada técnica.  
     
     \section{Área de Estudo}
         
@@ -160,9 +160,9 @@
 
         Ao final é executado o \en{script} \textbf{tojones} que converte todos os arquivos \en{Z-file} selecionados para um único arquivo \en{J-format}, com o comando: \begin{footnotesize}\verb|tojones selecao_bor603b > bor603b.dat|\end{footnotesize}.                                                                                                                                                                                                                      Assim é efetuado essas etapas para todas as estações e finalizado o pré-processamento no método tradicional.
         
-    A escolha dos períodos pelo PampaMT é realizada de forma interativa com cursor no mouse, o usuário inicia selecionando os arquivos \en{Z-file} através das abas de banda na parte inferior da tela. Após selecionar o usuário pressiona o botão \textbf{Select Period} e pode selecionar os períodos com uma caixa de seleção (Figura \ref{selc-perio}), por fim pressiona o botão \en{Tojones} para finalizar o processo. As coordenadas estão armazenas no objeto do projeto e podem serem modificadas através da aba de ajustes da estação. Realiza-se então essas etapas de seleção para todas as estações, finalizando assim o pré-processamento com o PampaMT.
+    A escolha dos períodos pelo PampaMT é realizada de forma interativa com cursor no mouse, o usuário inicia selecionando os arquivos \en{Z-file} através das abas de banda na parte inferior da tela. Após selecionar o usuário pressiona o botão \textbf{Select Period} e pode selecionar os períodos com uma caixa de seleção (Figura \ref{selc-perio}), por fim pressiona o botão \textbf{Tojones} para finalizar o processo. As coordenadas estão armazenas no objeto do projeto e podem serem modificadas através da aba de ajustes da estação. Realiza-se então essas etapas de seleção para todas as estações, finalizando assim o pré-processamento com o PampaMT.
     
-    Comparando os dois processos, obteve-se uma grande diferença entre os tempo de processamento, como pode ser visto na Figura \ref{tempo-pa} e na Figura \ref{tempo-pau}, também ocorreu a prevenção de vários erros comuns cometidos por usuários iniciantes no processamento de dados MT, como o erro na escolha de períodos duplicados para o \textbf{tojones} ou arquivos sem registro de coordenadas geográficas. O processo mais dinâmico benificia a exaustão do pré-processamento, focando os esforços do usuário nas próximas etapas, como: inversão e modelamento lito-geofísico. 
+    Comparando os dois processos, obteve-se uma grande diferença entre os tempo de processamento, como pode ser visto na Figura \ref{tempo-pa} e na Figura \ref{tempo-pau}, também ocorreu a prevenção de vários erros comuns cometidos por usuários iniciantes no processamento de dados MT, como o erro na escolha de períodos duplicados para o \textbf{tojones} ou arquivos sem registro de coordenadas geográficas. O processo mais dinâmico benificia a exaustão do pré-processamento, focando os esforços do usuário nas próximas etapas, como: inversão e modelagem lito-geofísico. 
         
     
     \begin{figure}[H]
@@ -184,7 +184,7 @@
     \end{figure}
     
     
-    Utilizando um modelo de regressão simples (Figura \ref{modelo-reg}) a partir dos dados obtidos de tempo, pode-se concluir que para grandes projetos, cerca de 100 estações magnetotelúricas, o tempo de pré-processamento pode ser reduzido de \citar{20} horas para \citar{5} horas utilizando o PampaMT.   
+    Utilizando um modelo de regressão simples (Figura \ref{modelo-reg}) a partir dos dados obtidos de tempo, pode-se concluir que para grandes projetos, cerca de 100 estações magnetotelúricas, o tempo de pré-processamento pode ser reduzido de \citar{20} horas para \citar{5} horas utilizando o PampaMT, reforçando a eficiência no que diz respeito ao tempo do pré-processamento.   
     
     \begin{figure}[H]
         \caption{Modelo de Regressão para Tempo de Processamento}
@@ -193,8 +193,5 @@
             \end{center}
         \legend{\Fonte{\oautor}}
         \label{modelo-reg}
-    \end{figure}
-    
-    \section{Resultados e Interpretação Geofísica}
-        
+    \end{figure}      
         

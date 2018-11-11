@@ -2,9 +2,9 @@
 
     O \en{software} desenvolvido recebeu o nome de PampaMT, em homenagem a Universidade Federal do Pampa. O desenvolvimento iniciou-se em janeiro de 2018, com o primeiro protótipo de codinome RiMT, vizando testar os conceitos e a viabilidade das funções para o programa. Em junho de 2018 o código foi reestruturado e reescrito, atentando para os problemas e adicionando novas funções baseando no protótipo. A principal mudança foi a construção do \en{software} em módulos, facilitando a adição e manutenção de novas funções.
     
-    No apêndice A pode ser encontrado o caminho para o código fonte do programa, junto com as informações para a instalação. O PampaMT foi desenvolvido para ambiente Linux rodando em base Debian. O código foi escrito em \Python, com alguns trechos escritos em \Shell{} para instalação e comunicação da interface com os executáveis dos programas Dnff e TranMT.
+    No apêndice A pode ser encontrado o caminho para o código fonte do programa, junto com as informações para a instalação. O PampaMT foi desenvolvido para ambiente Linux rodando em base Debian. O código foi escrito em \Python, com alguns trechos escritos em \Shell{} para instalação e comunicação da interface com os executáveis dos programas \textbf{Dnff} e \textbf{TranMT}.
     
-    O PampaMT foi dividido em duas etapas de processamento: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. A segunda parte foi destinada a escolha das melhores rodadas e períodos, esse processo destina a maior interação com o usuário e representa a principal justificativa para o desenvolvimento do \en{software}. 
+    O PampaMT foi dividido em duas etapas de processamento: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. Já segunda parte foi destinada a escolha das melhores rodadas e períodos, esse processo destina a maior interação com o usuário e representa a principal justificativa para o desenvolvimento do \en{software}. 
     
     A Figura \ref{tela_inicial} mostra a primeira tela ao executar o PampaMT, nela pode-se escolher criar um novo projeto ou abrir um já existente.
     
@@ -64,7 +64,7 @@
         \label{rhoplusGUI}
     \end{figure}
     
-    A principal função que o usuário utilizará, será a escolha dos melhores períodos e rodadas. Esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos. Então, após a contagem, o usuário deve anotar os pontos que indicam os períodos, e finalmente executar o \en{script}: \en{ToJones}. Esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
+    A principal função que o usuário utilizará, será a escolha dos melhores períodos e rodadas. Esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos. Então, após a contagem, o usuário deve anotar os pontos que indicam os períodos, e finalmente executar o \en{script}: \textbf{ToJones}. Esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
     
     Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção, e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (Figura \ref{selc-perio}).
     
@@ -79,7 +79,7 @@
     \end{figure}
     \end{landscape}
     
-    Após escolher os melhor períodos o usuário pode executar o \en{script}: \en{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo, o PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{script}, finalizando a ultima etapa do pré-processamento.
+    Após escolher os melhor períodos o usuário pode executar o \en{script}: \textbf{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo, o PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{script}, finalizando a ultima etapa do pré-processamento.
     
     A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente. Para efeitos de comparação, ao utilizar o programa em fase alfa, usuários que nunca tiveram contato com o terminal \Shell, puderam executar e processar os dados com sucesso.
     

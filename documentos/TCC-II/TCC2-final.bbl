@@ -141,6 +141,11 @@ Dispon{\'\i}vel em: \url{https://www.opengl.org/}. Acesso em: 23 out. 2018.}
 Tese (Doutorado) --- Brasil. Minist{\'e}rio da Ci{\^e}ncia e Tecnologia.
   Instituto Nacional de Pesquisas Espaciais (INPE), 2004.}
 
+\bibitem[P{\'a}dua e P{\'a}dua 2018]{geoma-proc}
+\abntrefinfo{P{\'a}dua e P{\'a}dua}{P{\'A}DUA; P{\'A}DUA}{2018}
+{P{\'A}DUA, M. B.~d.; P{\'A}DUA, M. B.~d. \textbf{Programas do Grupo GEOMA}.
+[S.l.], 2018. (Obtido sob comunicação privada).}
+
 \bibitem[Palacky e West 1991]{palacky}
 \abntrefinfo{Palacky e West}{PALACKY; WEST}{1991}
 {PALACKY, G.; WEST, G. Airborne electromagnetic methods. In:
@@ -190,5 +195,19 @@ Tese (Doutorado) --- Brasil. Universidade de Brasília (UNB), 2012.}
 {TIKHONOV, A. On determining electric characteristics of the deep layers of the
   earth's crust.
 \textbf{Dolk. Acad. Nauk. SSSR}, v.~73, p. 295--297, 1950.}
+
+\bibitem[Wight e Bostick 1980]{wight1980cascade}
+\abntrefinfo{Wight e Bostick}{WIGHT; BOSTICK}{1980}
+{WIGHT, D.; BOSTICK, F. Cascade decimation--a technique for real time
+  estimation of power spectra. In:  IEEE. \textbf{Acoustics, Speech, and Signal
+  Processing, IEEE International Conference on ICASSP'80.} [S.l.], 1980. v.~5,
+  p. 626--629.}
+
+\bibitem[Wight 1988]{edi-format}
+\abntrefinfo{Wight}{WIGHT}{1988}
+{WIGHT, D.~E. \textbf{The SEG Standard for Magnetotelluric Data}.
+[S.l.], 1988. Dispon{\'\i}vel em:
+  \url{http://www.complete-mt-solutions.com/mtnet/docs/ediformat.txt}. Acesso
+  em: 10 nov. 2018.}
 
 \end{thebibliography}
