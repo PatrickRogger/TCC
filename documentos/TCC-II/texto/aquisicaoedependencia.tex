@@ -32,9 +32,9 @@
             \label{serie-temporal}
         \end{figure}
         
-        Devido ao grande intervalo do espectro eletromagnético que abrange as sondagens MT ($10^{-4}\, Hz$ a $10^{4}\, Hz$), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências angulares diferentes, se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
+        Devido ao grande intervalo do espectro eletromagnético que abrange as sondagens MT (10\textsuperscript{-4} Hz a 10\textsuperscript{4} Hz), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências angulares diferentes, se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
         
-        A Figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, no exemplo é mostrado a composição de um onda com 10 frequências diferentes ($f_{\omega(t)}$), variando de $1$ a $10\, Hz$, se atribuirmos à ela uma taxa de aquisição de $10\,Hz$ pode-se perceber que a frequência de $6\,Hz$ não é representada corretamento, já percebe-se que para a frequência de $1\,Hz$ é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar na melhor forma possível esses dois fatos.
+        A Figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, no exemplo é mostrado a composição de um onda com 10 frequências diferentes ($f_{\omega(t)}$), variando de 1 a 10 Hz, se atribuirmos à ela uma taxa de aquisição de 10 Hz pode-se perceber que a frequência de 6 Hz não é representada corretamento, já percebe-se que para a frequência de 1 Hz é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar na melhor forma possível esses dois fatos.
         
         \begin{figure}[H]
             \caption{Aquisição de Dados Discretos.}
@@ -50,9 +50,7 @@
     \section{Processamento de Dados MT}
         Tradicionalmente o grande processamento de dados geofísicos é chamado de inversão, onde esse tenta ajustar um modelo físico que melhor represente o conjunto de dados. Porém para dados MT faz-se necessário antes das técnicas de inversão, o pré-processamento.
         
-        O pré-processamento consiste, sucintamente, em realizar processamentos de filtragem, tratamentos estatísticos, conversão de dados, mudança de domínios e mesclagem de arquivos.
-    
-        A primeira etapa do pré-processamento é a conversão dos arquivos de binários para ASCII, esse processo é opcional, porem como boa prática é realizado para melhorar a legibilidade por parte dos usuários sobre os dados.
+        O pré-processamento consiste, sucintamente, em realizar processamentos de filtragem, tratamentos estatísticos, conversão de dados, mudança de domínios e mesclagem de arquivos. A primeira etapa do pré-processamento é a conversão dos arquivos de binários para ASCII. Emboraseja um processo opcional, a boa prática é realizada para melhorar a legibilidade por parte dos usuários sobre os dados.
         
         Após a conversão são realizados técnicas de filtragem, a mudança do domínio dos dados de tempo para frequência angular, e cálculo do tensor impedância ($Z$). Esse processo será demonstrado mais detalhadamente no seção \ref{sec-robusto}, cuja a técnica recebe o nome de processamento Robusto, EMTF \cite{robusto-egbert}. Atualmente é a técnica mais confiável e amplamente utilizadas no meio acadêmico para tratamento dos dados.
         

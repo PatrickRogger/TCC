@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  11 NOV 2018 00:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  16 NOV 2018 00:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1243,10 +1243,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 137--137
 
 
 ])
-[16] [17] [18
-
-
-]
+[16]
 Overfull \hbox (2.87895pt too wide) in paragraph at lines 244--244
 []|\OT1/ptm/m/n/12 ASCII| 
  []
@@ -1276,35 +1273,37 @@ Overfull \hbox (462.79132pt too wide) in alignment at lines 243--276
 [][][] 
  []
 
-[19] [20] [21
+[17
+
+] [18] [19
 
 
-] [22
+] [20
 
 ] (./TCC2-final.toc
 Overfull \hbox (17.85101pt too wide) in paragraph at lines 46--46
  [][] [][]\OT1/ptm/b/n/12 PR[]E-PROCESSAMENTO USANDO O M[]ETODO TRA- 
  []
 
-) [23] (./texto/introducao.texpdfTeX warning (ext4): destination with the same 
-identifier (name{page.10}) has been already used, duplicate ignored
+) [21] (./texto/introducao.texpdfTeX warning (ext4): destination with the same 
+identifier (name{page.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.2 \chapter
-            {INTRODUÇÃO} [10]) (./texto/objetivos.texpdfTeX warning (ext4): d
-estination with the same identifier (name{page.11}) has been already used, dupl
+            {INTRODUÇÃO} [14]) (./texto/objetivos.texpdfTeX warning (ext4): d
+estination with the same identifier (name{page.15}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {OBJETIVOS} [11
+            {OBJETIVOS} [15
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.12}) ha
+]pdfTeX warning (ext4): destination with the same identifier (name{page.16}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {OBJETIVOS} [12
+            {OBJETIVOS} [16
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 11.
@@ -1316,17 +1315,17 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
 )
 (./texto/ometodomt.texpdfTeX warning (ext4): destination with the same identifi
-er (name{page.13}) has been already used, duplicate ignored
+er (name{page.17}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [13]pdfTeX warning (ext4)
-: destination with the same identifier (name{page.14}) has been already used, d
+            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [17]pdfTeX warning (ext4)
+: destination with the same identifier (name{page.18}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [14
+            {FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO} [18
 
 ]
 Overfull \hbox (4.87047pt too wide) in paragraph at lines 32--32
@@ -1373,35 +1372,35 @@ Overfull \hbox (296.34297pt too wide) in alignment at lines 46--49
 [][][] 
  []
 
-<texto/figura/resisti_telford.png, id=317, 184.99112pt x 284.56313pt>
+<texto/figura/resisti_telford.png, id=308, 184.99112pt x 284.56313pt>
 File: texto/figura/resisti_telford.png Graphic file (type png)
 <use texto/figura/resisti_telford.png>
 Package pdftex.def Info: texto/figura/resisti_telford.png  used on input line 6
 5.
 (pdftex.def)             Requested size: 113.81102pt x 175.07257pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.69         \end{figure}
-                          [15]
+                          [19]
 Overfull \hbox (0.79558pt too wide) in paragraph at lines 71--72
 []\OT1/ptm/m/n/12 Devido a com-ple-xi-dade f[]^^Psico-qu[]^^Pmicas dos ma-te-ri
 -ais geol[]ogicos, a re-sis-ti-vi-dade el[]etrica
  []
 
-<texto/figura/resistividade_tabela.png, id=340, 322.3242pt x 183.3249pt>
+<texto/figura/resistividade_tabela.png, id=328, 322.3242pt x 183.3249pt>
 File: texto/figura/resistividade_tabela.png Graphic file (type png)
 <use texto/figura/resistividade_tabela.png>
 Package pdftex.def Info: texto/figura/resistividade_tabela.png  used on input l
 ine 76.
 (pdftex.def)             Requested size: 369.88582pt x 210.38281pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.85 
-      [16 <./texto/figura/resisti_telford.png> <./texto/figura/resistividade_ta
+      [20 <./texto/figura/resisti_telford.png> <./texto/figura/resistividade_ta
 bela.png>]
 Package epstopdf Info: Source file: <texto/figura/padua04.eps>
 (epstopdf)                    date: 2018-10-21 00:42:45
@@ -1419,7 +1418,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/padua04-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<texto/figura/padua04-eps-converted-to.pdf, id=353, 433.62pt x 317.185pt>
+<texto/figura/padua04-eps-converted-to.pdf, id=342, 433.62pt x 317.185pt>
 File: texto/figura/padua04-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/padua04-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/padua04-eps-converted-to.pdf  used on inp
@@ -1431,12 +1430,12 @@ Overfull \hbox (15.31517pt too wide) in paragraph at lines 108--109
 Psicos ele-tro-magn[]eticos, fundamentam-
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.113         \end{equation}
-                             [17 <./texto/figura/padua04-eps-converted-to.pdf>]
+                             [21 <./texto/figura/padua04-eps-converted-to.pdf>]
 
 Overfull \hbox (4.68727pt too wide) in paragraph at lines 134--134
 []|$[]$| 
@@ -1553,44 +1552,24 @@ Overfull \hbox (296.34297pt too wide) in alignment at lines 165--169
  []
 
 
+Overfull \hbox (5.28407pt too wide) in paragraph at lines 172--173
+[]\OT1/ptm/m/n/12 Cada co-e-fi-ci-ente das rela[][]oes cons-ti-tu-ti-vas fun-ci
+-o-nam como ten-so-res, va-ri-an-tes no tempo,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 174--180
 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.180 
-       [18]pdfTeX warning (ext4): destination with the same identifier (name{pa
-ge.19}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.237         P
-               ode-se expressar a equação \ref{preHk} usando a seguinte id...
-[19]pdfTeX warning (ext4): destination with the same identifier (name{page.20})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.284 
-       [20]
-<texto/figura/skin-depth.png, id=418, 4098.31125pt x 3108.61375pt>
+[22] [23] [24]
+<texto/figura/skin-depth.png, id=413, 4098.31125pt x 3108.61375pt>
 File: texto/figura/skin-depth.png Graphic file (type png)
 <use texto/figura/skin-depth.png>
 Package pdftex.def Info: texto/figura/skin-depth.png  used on input line 288.
 (pdftex.def)             Requested size: 284.52756pt x 215.77528pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.313         \begin{eqnarray}
-                               [21 <./texto/figura/skin-depth.png>])
-(./texto/aquisicaoedependencia.texpdfTeX warning (ext4): destination with the s
-ame identifier (name{page.22}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {AQUISIÇÃO DE DADOS E DEPENDÊNCIAS} [22]
+ [25 <./texto/figura/skin-depth.png>])
+(./texto/aquisicaoedependencia.tex [26]
 Overfull \hbox (13.03658pt too wide) in paragraph at lines 7--8
 []\OT1/ptm/m/n/12 A aquisi[][]ao de da-dos MT con-siste na obten[][]ao dos cam-
 pos el[]etricos ($[][]$ e $[][]$) e magn[]eticos
@@ -1607,7 +1586,7 @@ df>
 s-converted-to.pdf texto/figura/arranjo-mt.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
-<texto/figura/arranjo-mt-eps-converted-to.pdf, id=444, 845.1575pt x 598.235pt>
+<texto/figura/arranjo-mt-eps-converted-to.pdf, id=440, 845.1575pt x 598.235pt>
 File: texto/figura/arranjo-mt-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/arranjo-mt-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/arranjo-mt-eps-converted-to.pdf  used on 
@@ -1616,18 +1595,13 @@ input line 18.
 
 Underfull \vbox (badness 1038) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.23}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25 
-      [23
+ [27
 
  <./texto/figura/arranjo-mt-eps-converted-to.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/bor604a091_04D.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<texto/figura/bor604a091_04D.pdf, id=458, 845.1575pt x 597.23125pt>
+<texto/figura/bor604a091_04D.pdf, id=456, 845.1575pt x 597.23125pt>
 File: texto/figura/bor604a091_04D.pdf Graphic file (type pdf)
 <use texto/figura/bor604a091_04D.pdf>
 Package pdftex.def Info: texto/figura/bor604a091_04D.pdf  used on input line 29
@@ -1644,13 +1618,13 @@ Package epstopdf Info: Source file: <texto/figura/fourier2.eps>
 converted-to.pdf texto/figura/fourier2.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<texto/figura/fourier2-eps-converted-to.pdf, id=462, 1186.4325pt x 835.12pt>
+<texto/figura/fourier2-eps-converted-to.pdf, id=460, 1186.4325pt x 835.12pt>
 File: texto/figura/fourier2-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/fourier2-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/fourier2-eps-converted-to.pdf  used on in
 put line 42.
 (pdftex.def)             Requested size: 369.88582pt x 260.36269pt.
-[24 <./texto/figura/bor604a091_04D.pdf>] [25 <./texto/figura/fourier2-eps-conve
+[28 <./texto/figura/bor604a091_04D.pdf>] [29 <./texto/figura/fourier2-eps-conve
 rted-to.pdf>]
 Package epstopdf Info: Source file: <texto/figura/fluxo_preprocessamento.eps>
 (epstopdf)                    date: 2018-10-05 14:39:32
@@ -1661,115 +1635,115 @@ nverted-to.pdf>
 (epstopdf)                    size: 156852 bytes
 (epstopdf)             Command: <repstopdf --outfile=texto/figura/fluxo_preproc
 essamento-eps-converted-to.pdf texto/figura/fluxo_preprocessamento.eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/fluxo_preprocessamento-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<texto/figura/fluxo_preprocessamento-eps-converted-to.pdf, id=485, 555.07375pt 
+<texto/figura/fluxo_preprocessamento-eps-converted-to.pdf, id=483, 555.07375pt 
 x 152.57pt>
 File: texto/figura/fluxo_preprocessamento-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use texto/figura/fluxo_preprocessamento-eps-converted-to.pdf>
 Package pdftex.def Info: texto/figura/fluxo_preprocessamento-eps-converted-to.p
-df  used on input line 70.
+df  used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 117.31165pt.
 
-Overfull \hbox (364.62941pt too wide) in alignment at lines 82--87
+Overfull \hbox (364.62941pt too wide) in alignment at lines 80--85
 [][][] 
  []
 
-[26 <./texto/figura/fluxo_preprocessamento-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 99.
+[30 <./texto/figura/fluxo_preprocessamento-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (3.00398pt too wide) in paragraph at lines 125--126
+Overfull \hbox (3.00398pt too wide) in paragraph at lines 123--124
 []\OT1/ptm/m/n/12 Obtidos os ten-so-res im-ped[]ancia, atrav[]es do \OT1/ptm/b/
 n/12 TranMT \OT1/ptm/m/n/12 (Pro-grama ado-tado para os c[]alculos
  []
 
-[27]
-Overfull \hbox (7.0pt too wide) in paragraph at lines 156--156
+[31]
+Overfull \hbox (7.0pt too wide) in paragraph at lines 154--154
 []       \OT1/pcr/m/n/10 1.2952E-10  2.3198E-10 -7.8350E-07 -1.5203E-07  1.3332
 E-04  0.0000E+00[] 
  []
 
 
-Overfull \hbox (5.80994pt too wide) in paragraph at lines 169--169
+Overfull \hbox (5.80994pt too wide) in paragraph at lines 167--167
 []|$\OML/cmm/m/it/10 T$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 169--169
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 167--167
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (12.44653pt too wide) in paragraph at lines 170--170
+Overfull \hbox (12.44653pt too wide) in paragraph at lines 168--168
 []|$\OML/cmm/m/it/10 Z[]$| 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 170--170
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 168--168
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (296.34297pt too wide) in alignment at lines 168--171
+Overfull \hbox (296.34297pt too wide) in alignment at lines 166--169
 [][][] 
  []
 
 
-Overfull \hbox (3.26198pt too wide) in paragraph at lines 183--183
+Overfull \hbox (3.26198pt too wide) in paragraph at lines 181--181
 []|$\OMS/cmsy/m/n/10 =\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z[]\OT1/cmr/m/n/10 )$| 
 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 183--183
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 181--181
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (3.26198pt too wide) in paragraph at lines 184--184
+Overfull \hbox (3.26198pt too wide) in paragraph at lines 182--182
 []|$\OMS/cmsy/m/n/10 <\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Z[]\OT1/cmr/m/n/10 )$| 
 
  []
 
 
-Overfull \hbox (7.15457pt too wide) in paragraph at lines 184--184
+Overfull \hbox (7.15457pt too wide) in paragraph at lines 182--182
 []|$\OMS/cmsy/m/n/10 !$| 
  []
 
 
-Overfull \hbox (206.71652pt too wide) in alignment at lines 182--185
+Overfull \hbox (206.71652pt too wide) in alignment at lines 180--183
 [][][] 
  []
 
-[28]
+[32]
 Underfull \vbox (badness 4518) has occurred while \output is active []
 
- [29]
-<texto/figura/plot-cmp-tf.png, id=549, 759.3168pt x 474.8139pt>
+ [33]
+<texto/figura/plot-cmp-tf.png, id=547, 759.3168pt x 474.8139pt>
 File: texto/figura/plot-cmp-tf.png Graphic file (type png)
 <use texto/figura/plot-cmp-tf.png>
-Package pdftex.def Info: texto/figura/plot-cmp-tf.png  used on input line 268.
+Package pdftex.def Info: texto/figura/plot-cmp-tf.png  used on input line 266.
 (pdftex.def)             Requested size: 426.79134pt x 266.8793pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30])
+ [34])
 (./texto/devpampamt.tex
-Overfull \hbox (1.79945pt too wide) in paragraph at lines 281--1
+Overfull \hbox (1.79945pt too wide) in paragraph at lines 279--1
 \OT1/ptm/m/n/12 ([]KIVY OR-GA-NI-ZA-TION[], []2018b[]). Essa lin-gua-gem per-mi
 te a constru[][]ao dos ele-men-tos, atrav[]es
  []
 
-[31 <./texto/figura/plot-cmp-tf.png>] [32
+[35 <./texto/figura/plot-cmp-tf.png>] [36
 
 ]
 Package epstopdf Info: Source file: <texto/figura/tela1_com_fluxograma.eps>
@@ -1788,7 +1762,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/tela1_com_fluxograma-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<texto/figura/tela1_com_fluxograma-eps-converted-to.pdf, id=582, 830.10126pt x 
+<texto/figura/tela1_com_fluxograma-eps-converted-to.pdf, id=580, 830.10126pt x 
 332.24126pt>
 File: texto/figura/tela1_com_fluxograma-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1812,7 +1786,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/tela2_com_fluxograma-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<texto/figura/tela2_com_fluxograma-eps-converted-to.pdf, id=584, 835.12pt x 329
+<texto/figura/tela2_com_fluxograma-eps-converted-to.pdf, id=582, 835.12pt x 329
 .23pt>
 File: texto/figura/tela2_com_fluxograma-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1823,7 +1797,7 @@ Package pdftex.def Info: texto/figura/tela2_com_fluxograma-eps-converted-to.pdf
 
 Underfull \vbox (badness 3260) has occurred while \output is active []
 
- [33 <./texto/figura/tela1_com_fluxograma-eps-converted-to.pdf>]
+ [37 <./texto/figura/tela1_com_fluxograma-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <texto/figura/tela3_com_fluxograma.eps>
 (epstopdf)                    date: 2018-10-08 11:51:15
 (epstopdf)                    size: 84840 bytes
@@ -1840,7 +1814,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/tela3_com_fluxograma-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<texto/figura/tela3_com_fluxograma-eps-converted-to.pdf, id=598, 706.64pt x 335
+<texto/figura/tela3_com_fluxograma-eps-converted-to.pdf, id=595, 706.64pt x 335
 .2525pt>
 File: texto/figura/tela3_com_fluxograma-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1848,9 +1822,9 @@ File: texto/figura/tela3_com_fluxograma-eps-converted-to.pdf Graphic file (type
 Package pdftex.def Info: texto/figura/tela3_com_fluxograma-eps-converted-to.pdf
   used on input line 38.
 (pdftex.def)             Requested size: 455.24408pt x 215.98299pt.
-[34 <./texto/figura/tela2_com_fluxograma-eps-converted-to.pdf> <./texto/figura/
+[38 <./texto/figura/tela2_com_fluxograma-eps-converted-to.pdf> <./texto/figura/
 tela3_com_fluxograma-eps-converted-to.pdf>]
-<texto/figura/tela4.png, id=618, 1327.96124pt x 743.77875pt>
+<texto/figura/tela4.png, id=615, 1327.96124pt x 743.77875pt>
 File: texto/figura/tela4.png Graphic file (type png)
 <use texto/figura/tela4.png>
 Package pdftex.def Info: texto/figura/tela4.png  used on input line 49.
@@ -1871,7 +1845,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/rhoplusGUI-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<texto/figura/rhoplusGUI-eps-converted-to.pdf, id=622, 708.6475pt x 339.2675pt>
+<texto/figura/rhoplusGUI-eps-converted-to.pdf, id=619, 708.6475pt x 339.2675pt>
 
 File: texto/figura/rhoplusGUI-eps-converted-to.pdf Graphic file (type pdf)
 <use texto/figura/rhoplusGUI-eps-converted-to.pdf>
@@ -1881,9 +1855,9 @@ input line 61.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <./texto/figura/tela4.png>] [36 <./texto/figura/rhoplusGUI-eps-converted-t
+ [39 <./texto/figura/tela4.png>] [40 <./texto/figura/rhoplusGUI-eps-converted-t
 o.pdf>]
-<texto/figura/tela3_selecionando.png, id=641, 1327.96124pt x 744.7825pt>
+<texto/figura/tela3_selecionando.png, id=639, 1327.96124pt x 744.7825pt>
 File: texto/figura/tela3_selecionando.png Graphic file (type png)
 <use texto/figura/tela3_selecionando.png>
 Package pdftex.def Info: texto/figura/tela3_selecionando.png  used on input lin
@@ -1893,53 +1867,44 @@ e 75.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37 <./texto/figura/tela3_selecionando.png>]
-<texto/figura/tempoLWM.png, id=647, 462.528pt x 346.896pt>
+[41 <./texto/figura/tela3_selecionando.png>]
+<texto/figura/tempoLWM.png, id=645, 462.528pt x 346.896pt>
 File: texto/figura/tempoLWM.png Graphic file (type png)
 <use texto/figura/tempoLWM.png>
-Package pdftex.def Info: texto/figura/tempoLWM.png  used on input line 91.
+Package pdftex.def Info: texto/figura/tempoLWM.png  used on input line 89.
 (pdftex.def)             Requested size: 369.88582pt x 277.42719pt.
-) (./texto/resultados.tex [38
+) (./texto/resultados.tex [42
 
 
  <./texto/figura/tempoLWM.png>]
-<texto/figura/local-bor.png, id=654, 352.1155pt x 325.6165pt>
+<texto/figura/local-bor.png, id=652, 352.1155pt x 325.6165pt>
 File: texto/figura/local-bor.png Graphic file (type png)
 <use texto/figura/local-bor.png>
 Package pdftex.def Info: texto/figura/local-bor.png  used on input line 14.
-(pdftex.def)             Requested size: 341.43306pt x 315.7532pt.
+(pdftex.def)             Requested size: 312.9803pt x 289.44003pt.
+ [43
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39
-
-]
-<texto/figura/mapa_geo.png, id=674, 845.0772pt x 597.432pt>
+ <./texto/figura/local-bor.png (PNG copy)>]
+<texto/figura/mapa_geo.png, id=671, 845.0772pt x 597.432pt>
 File: texto/figura/mapa_geo.png Graphic file (type png)
 <use texto/figura/mapa_geo.png>
 Package pdftex.def Info: texto/figura/mapa_geo.png  used on input line 27.
 (pdftex.def)             Requested size: 426.79134pt x 301.72357pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40 <./texto/figura/local-bor.png (PNG copy)>] [41 <./texto/figura/mapa_geo.pn
-g>]
+[44 <./texto/figura/mapa_geo.png>]
 Overfull \hbox (7.27641pt too wide) in paragraph at lines 51--52
 []\OT1/ptm/m/n/12 Como dis-cu-tido an-te-ri-or-mente a pri-meira etapa con-sist
 e em con-ver-ter os da-dos de bin[]arios
  []
 
-<texto/figura/ats2asc-pampa.png, id=697, 803.0pt x 531.9875pt>
+<texto/figura/ats2asc-pampa.png, id=690, 803.0pt x 531.9875pt>
 File: texto/figura/ats2asc-pampa.png Graphic file (type png)
 <use texto/figura/ats2asc-pampa.png>
 Package pdftex.def Info: texto/figura/ats2asc-pampa.png  used on input line 75.
 
 (pdftex.def)             Requested size: 426.79134pt x 282.75566pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-<texto/figura/procZ-pampa.png, id=703, 803.0pt x 531.9875pt>
+[45]
+<texto/figura/procZ-pampa.png, id=697, 803.0pt x 531.9875pt>
 File: texto/figura/procZ-pampa.png Graphic file (type png)
 <use texto/figura/procZ-pampa.png>
 Package pdftex.def Info: texto/figura/procZ-pampa.png  used on input line 102.
@@ -1947,51 +1912,51 @@ Package pdftex.def Info: texto/figura/procZ-pampa.png  used on input line 102.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43 <./texto/figura/ats2asc-pampa.png>]
-<texto/figura/carr-pampa.png, id=709, 799.98875pt x 529.98pt>
+ [46 <./texto/figura/ats2asc-pampa.png>]
+<texto/figura/carr-pampa.png, id=703, 799.98875pt x 529.98pt>
 File: texto/figura/carr-pampa.png Graphic file (type png)
 <use texto/figura/carr-pampa.png>
 Package pdftex.def Info: texto/figura/carr-pampa.png  used on input line 113.
 (pdftex.def)             Requested size: 341.43306pt x 226.1968pt.
- [44 <./texto/figura/procZ-pampa.png> <./texto/figura/carr-pampa.png>]
-<texto/figura/cmp-3b.png, id=716, 766.3029pt x 425.4294pt>
+ [47 <./texto/figura/procZ-pampa.png> <./texto/figura/carr-pampa.png>]
+<texto/figura/cmp-3b.png, id=710, 766.3029pt x 425.4294pt>
 File: texto/figura/cmp-3b.png Graphic file (type png)
 <use texto/figura/cmp-3b.png>
 Package pdftex.def Info: texto/figura/cmp-3b.png  used on input line 142.
 (pdftex.def)             Requested size: 455.24408pt x 252.74089pt.
- [45 <./texto/figura/cmp-3b.png>]
+ [48 <./texto/figura/cmp-3b.png>]
 Overfull \hbox (6.55437pt too wide) in paragraph at lines 161--162
 \OT1/ptm/m/n/12 para um []unico ar-quivo \OT1/ptm/m/it/12 J-format\OT1/ptm/m/n/
 12 , com o co-mando: [][]\OT1/pcr/m/n/10 tojones selecao_bor603b > bor603b.dat[
 ]\OT1/ptm/m/n/12 .
  []
 
-<texto/figura/patrick.png, id=725, 462.528pt x 346.896pt>
+<texto/figura/patrick.png, id=718, 462.528pt x 346.896pt>
 File: texto/figura/patrick.png Graphic file (type png)
 <use texto/figura/patrick.png>
 Package pdftex.def Info: texto/figura/patrick.png  used on input line 171.
 (pdftex.def)             Requested size: 270.30118pt x 202.73483pt.
-<texto/figura/paulo.png, id=726, 462.528pt x 346.896pt>
+<texto/figura/paulo.png, id=719, 462.528pt x 346.896pt>
 File: texto/figura/paulo.png Graphic file (type png)
 <use texto/figura/paulo.png>
 Package pdftex.def Info: texto/figura/paulo.png  used on input line 180.
-(pdftex.def)             Requested size: 270.30118pt x 202.73483pt.
-[46 <./texto/figura/patrick.png>]
-<texto/figura/modelo-reg.png, id=733, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
+[49 <./texto/figura/patrick.png>]
+<texto/figura/modelo-reg.png, id=726, 462.528pt x 346.896pt>
 File: texto/figura/modelo-reg.png Graphic file (type png)
 <use texto/figura/modelo-reg.png>
 Package pdftex.def Info: texto/figura/modelo-reg.png  used on input line 192.
-(pdftex.def)             Requested size: 270.30118pt x 202.73483pt.
-) (./texto/consideracao.tex [47 <./texto/figura/paulo.png> <./texto/figura/mode
-lo-reg.png>] [48
-
-]
+(pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
+) (./texto/consideracao.tex [50 <./texto/figura/paulo.png> <./texto/figura/mode
+lo-reg.png>]
 Overfull \hbox (10.64833pt too wide) in paragraph at lines 7--8
 []\OT1/ptm/m/n/12 Ap[]os o de-sen-vol-vi-mento do Pam-paMT para o pre-sente tra
 -ba-lho e tamb[]em ap[]os a utiliza[][]ao
  []
 
-) (./TCC2-final.bbl [49] [50
+) (./TCC2-final.bbl [51
+
+] [52
 
 ]
 
@@ -1999,7 +1964,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[51]) (./texto/apendice.tex [52]
+[53]) (./texto/apendice.tex [54]
 Package epstopdf Info: Source file: <texto/figura/qr-code-pampamt.eps>
 (epstopdf)                    date: 2018-10-05 19:23:54
 (epstopdf)                    size: 24081 bytes
@@ -2016,7 +1981,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/qr-code-pampamt-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<texto/figura/qr-code-pampamt-eps-converted-to.pdf, id=774, 266.9975pt x 266.99
+<texto/figura/qr-code-pampamt-eps-converted-to.pdf, id=763, 266.9975pt x 266.99
 75pt>
 File: texto/figura/qr-code-pampamt-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2040,7 +2005,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./texto/figura/qr-code-git-pampamt-eps-
 converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
 <1.5> allowed
-<texto/figura/qr-code-git-pampamt-eps-converted-to.pdf, id=776, 124.465pt x 124
+<texto/figura/qr-code-git-pampamt-eps-converted-to.pdf, id=765, 124.465pt x 124
 .465pt>
 File: texto/figura/qr-code-git-pampamt-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -2048,51 +2013,51 @@ pdf)
 Package pdftex.def Info: texto/figura/qr-code-git-pampamt-eps-converted-to.pdf 
  used on input line 28.
 (pdftex.def)             Requested size: 142.26378pt x 142.27519pt.
-[53
+[55
 
  <./texto/figura/qr-code-pampamt-eps-converted-to.pdf> <./texto/figura/qr-code-
-git-pampamt-eps-converted-to.pdf>] [54
+git-pampamt-eps-converted-to.pdf>] [56
 
 ]
-<texto/figura/sites/M-bor603b.png, id=792, 759.5577pt x 425.1885pt>
+<texto/figura/sites/M-bor603b.png, id=781, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor603b.png Graphic file (type png)
 <use texto/figura/sites/M-bor603b.png>
 Package pdftex.def Info: texto/figura/sites/M-bor603b.png  used on input line 4
 2.
 (pdftex.def)             Requested size: 426.79134pt x 238.91492pt.
-<texto/figura/sites/M-bor604a.png, id=793, 759.5577pt x 425.1885pt>
+<texto/figura/sites/M-bor604a.png, id=782, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor604a.png Graphic file (type png)
 <use texto/figura/sites/M-bor604a.png>
 Package pdftex.def Info: texto/figura/sites/M-bor604a.png  used on input line 5
 0.
 (pdftex.def)             Requested size: 426.79134pt x 238.91492pt.
-<texto/figura/sites/M-bor604b.png, id=794, 759.5577pt x 425.1885pt>
+<texto/figura/sites/M-bor604b.png, id=783, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor604b.png Graphic file (type png)
 <use texto/figura/sites/M-bor604b.png>
 Package pdftex.def Info: texto/figura/sites/M-bor604b.png  used on input line 5
 8.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
- [55 <./texto/figura/sites/M-bor603b.png> <./texto/figura/sites/M-bor604a.png>]
-<texto/figura/sites/M-bor605a.png, id=800, 759.5577pt x 425.1885pt>
+ [57 <./texto/figura/sites/M-bor603b.png> <./texto/figura/sites/M-bor604a.png>]
+<texto/figura/sites/M-bor605a.png, id=789, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor605a.png Graphic file (type png)
 <use texto/figura/sites/M-bor605a.png>
 Package pdftex.def Info: texto/figura/sites/M-bor605a.png  used on input line 6
 6.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
-<texto/figura/sites/M-bor605b.png, id=801, 759.3168pt x 474.8139pt>
+<texto/figura/sites/M-bor605b.png, id=790, 759.3168pt x 474.8139pt>
 File: texto/figura/sites/M-bor605b.png Graphic file (type png)
 <use texto/figura/sites/M-bor605b.png>
 Package pdftex.def Info: texto/figura/sites/M-bor605b.png  used on input line 7
 4.
 (pdftex.def)             Requested size: 426.79134pt x 266.8793pt.
- [56 <./texto/figura/sites/M-bor604b.png> <./texto/figura/sites/M-bor605a.png>]
-<texto/figura/sites/M-bor606a.png, id=806, 759.5577pt x 425.1885pt>
+ [58 <./texto/figura/sites/M-bor604b.png> <./texto/figura/sites/M-bor605a.png>]
+<texto/figura/sites/M-bor606a.png, id=796, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor606a.png Graphic file (type png)
 <use texto/figura/sites/M-bor606a.png>
 Package pdftex.def Info: texto/figura/sites/M-bor606a.png  used on input line 8
 2.
 (pdftex.def)             Requested size: 426.79134pt x 238.91492pt.
-<texto/figura/sites/M-bor606b.png, id=807, 759.5577pt x 425.1885pt>
+<texto/figura/sites/M-bor606b.png, id=797, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor606b.png Graphic file (type png)
 <use texto/figura/sites/M-bor606b.png>
 Package pdftex.def Info: texto/figura/sites/M-bor606b.png  used on input line 9
@@ -2101,53 +2066,53 @@ Package pdftex.def Info: texto/figura/sites/M-bor606b.png  used on input line 9
 
 Underfull \vbox (badness 1087) has occurred while \output is active []
 
- [57 <./texto/figura/sites/M-bor605b.png> <./texto/figura/sites/M-bor606a.png>]
-<texto/figura/sites/M-bor607a.png, id=813, 759.5577pt x 425.1885pt>
+ [59 <./texto/figura/sites/M-bor605b.png> <./texto/figura/sites/M-bor606a.png>]
+<texto/figura/sites/M-bor607a.png, id=802, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor607a.png Graphic file (type png)
 <use texto/figura/sites/M-bor607a.png>
 Package pdftex.def Info: texto/figura/sites/M-bor607a.png  used on input line 9
 8.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
-<texto/figura/sites/M-bor607b.png, id=814, 759.5577pt x 425.1885pt>
+<texto/figura/sites/M-bor607b.png, id=803, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor607b.png Graphic file (type png)
 <use texto/figura/sites/M-bor607b.png>
 Package pdftex.def Info: texto/figura/sites/M-bor607b.png  used on input line 1
 06.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
- [58 <./texto/figura/sites/M-bor606b.png> <./texto/figura/sites/M-bor607a.png>]
-<texto/figura/sites/M-bor608a.png, id=819, 759.5577pt x 425.1885pt>
+ [60 <./texto/figura/sites/M-bor606b.png> <./texto/figura/sites/M-bor607a.png>]
+<texto/figura/sites/M-bor608a.png, id=808, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor608a.png Graphic file (type png)
 <use texto/figura/sites/M-bor608a.png>
 Package pdftex.def Info: texto/figura/sites/M-bor608a.png  used on input line 1
 14.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
-<texto/figura/sites/M-bor608b.png, id=820, 759.5577pt x 425.1885pt>
+<texto/figura/sites/M-bor608b.png, id=809, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor608b.png Graphic file (type png)
 <use texto/figura/sites/M-bor608b.png>
 Package pdftex.def Info: texto/figura/sites/M-bor608b.png  used on input line 1
 22.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
- [59 <./texto/figura/sites/M-bor607b.png> <./texto/figura/sites/M-bor608a.png>]
-<texto/figura/sites/M-bor608c.png, id=825, 759.5577pt x 425.1885pt>
+ [61 <./texto/figura/sites/M-bor607b.png> <./texto/figura/sites/M-bor608a.png>]
+<texto/figura/sites/M-bor608c.png, id=814, 759.5577pt x 425.1885pt>
 File: texto/figura/sites/M-bor608c.png Graphic file (type png)
 <use texto/figura/sites/M-bor608c.png>
 Package pdftex.def Info: texto/figura/sites/M-bor608c.png  used on input line 1
 30.
 (pdftex.def)             Requested size: 455.24408pt x 254.84258pt.
- [60 <./texto/figura/sites/M-bor608b.png> <./texto/figura/sites/M-bor608c.png>]
-<texto/figura/sites/P-bor603b.png, id=830, 1373.13pt x 758.835pt>
+ [62 <./texto/figura/sites/M-bor608b.png> <./texto/figura/sites/M-bor608c.png>]
+<texto/figura/sites/P-bor603b.png, id=819, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor603b.png Graphic file (type png)
 <use texto/figura/sites/P-bor603b.png>
 Package pdftex.def Info: texto/figura/sites/P-bor603b.png  used on input line 1
 40.
 (pdftex.def)             Requested size: 426.79134pt x 235.8501pt.
-<texto/figura/sites/P-bor604a.png, id=831, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor604a.png, id=820, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor604a.png Graphic file (type png)
 <use texto/figura/sites/P-bor604a.png>
 Package pdftex.def Info: texto/figura/sites/P-bor604a.png  used on input line 1
 48.
 (pdftex.def)             Requested size: 426.79134pt x 235.8501pt.
-<texto/figura/sites/P-bor604b.png, id=832, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor604b.png, id=821, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor604b.png Graphic file (type png)
 <use texto/figura/sites/P-bor604b.png>
 Package pdftex.def Info: texto/figura/sites/P-bor604b.png  used on input line 1
@@ -2158,10 +2123,10 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 156--157
  [] 
  []
 
-[61
+[63
 
  <./texto/figura/sites/P-bor603b.png> <./texto/figura/sites/P-bor604a.png>]
-<texto/figura/sites/P-bor605a.png, id=839, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor605a.png, id=829, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor605a.png Graphic file (type png)
 <use texto/figura/sites/P-bor605a.png>
 Package pdftex.def Info: texto/figura/sites/P-bor605a.png  used on input line 1
@@ -2172,7 +2137,7 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 164--165
  [] 
  []
 
-<texto/figura/sites/P-bor605b.png, id=840, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor605b.png, id=830, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor605b.png Graphic file (type png)
 <use texto/figura/sites/P-bor605b.png>
 Package pdftex.def Info: texto/figura/sites/P-bor605b.png  used on input line 1
@@ -2183,8 +2148,8 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 172--173
  [] 
  []
 
-[62 <./texto/figura/sites/P-bor604b.png> <./texto/figura/sites/P-bor605a.png>]
-<texto/figura/sites/P-bor606a.png, id=847, 1373.13pt x 758.835pt>
+[64 <./texto/figura/sites/P-bor604b.png> <./texto/figura/sites/P-bor605a.png>]
+<texto/figura/sites/P-bor606a.png, id=837, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor606a.png Graphic file (type png)
 <use texto/figura/sites/P-bor606a.png>
 Package pdftex.def Info: texto/figura/sites/P-bor606a.png  used on input line 1
@@ -2195,7 +2160,7 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 180--181
  [] 
  []
 
-<texto/figura/sites/P-bor606b.png, id=848, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor606b.png, id=838, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor606b.png Graphic file (type png)
 <use texto/figura/sites/P-bor606b.png>
 Package pdftex.def Info: texto/figura/sites/P-bor606b.png  used on input line 1
@@ -2206,8 +2171,8 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 188--189
  [] 
  []
 
-[63 <./texto/figura/sites/P-bor605b.png> <./texto/figura/sites/P-bor606a.png>]
-<texto/figura/sites/P-bor607a.png, id=856, 1373.13pt x 758.835pt>
+[65 <./texto/figura/sites/P-bor605b.png> <./texto/figura/sites/P-bor606a.png>]
+<texto/figura/sites/P-bor607a.png, id=845, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor607a.png Graphic file (type png)
 <use texto/figura/sites/P-bor607a.png>
 Package pdftex.def Info: texto/figura/sites/P-bor607a.png  used on input line 1
@@ -2218,7 +2183,7 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 196--197
  [] 
  []
 
-<texto/figura/sites/P-bor607b.png, id=857, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor607b.png, id=846, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor607b.png Graphic file (type png)
 <use texto/figura/sites/P-bor607b.png>
 Package pdftex.def Info: texto/figura/sites/P-bor607b.png  used on input line 2
@@ -2229,8 +2194,8 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 204--205
  [] 
  []
 
-[64 <./texto/figura/sites/P-bor606b.png> <./texto/figura/sites/P-bor607a.png>]
-<texto/figura/sites/P-bor608a.png, id=864, 1373.13pt x 758.835pt>
+[66 <./texto/figura/sites/P-bor606b.png> <./texto/figura/sites/P-bor607a.png>]
+<texto/figura/sites/P-bor608a.png, id=853, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor608a.png Graphic file (type png)
 <use texto/figura/sites/P-bor608a.png>
 Package pdftex.def Info: texto/figura/sites/P-bor608a.png  used on input line 2
@@ -2241,7 +2206,7 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 212--213
  [] 
  []
 
-<texto/figura/sites/P-bor608b.png, id=865, 1373.13pt x 758.835pt>
+<texto/figura/sites/P-bor608b.png, id=854, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor608b.png Graphic file (type png)
 <use texto/figura/sites/P-bor608b.png>
 Package pdftex.def Info: texto/figura/sites/P-bor608b.png  used on input line 2
@@ -2252,8 +2217,8 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 220--221
  [] 
  []
 
-[65 <./texto/figura/sites/P-bor607b.png> <./texto/figura/sites/P-bor608a.png>]
-<texto/figura/sites/P-bor608c.png, id=872, 1373.13pt x 758.835pt>
+[67 <./texto/figura/sites/P-bor607b.png> <./texto/figura/sites/P-bor608a.png>]
+<texto/figura/sites/P-bor608c.png, id=861, 1373.13pt x 758.835pt>
 File: texto/figura/sites/P-bor608c.png Graphic file (type png)
 <use texto/figura/sites/P-bor608c.png>
 Package pdftex.def Info: texto/figura/sites/P-bor608c.png  used on input line 2
@@ -2266,7 +2231,7 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 228--229
 
 ) 
 AED: lastpage setting LastPage
-[66 <./texto/figura/sites/P-bor608b.png> <./texto/figura/sites/P-bor608c.png>]
+[68 <./texto/figura/sites/P-bor608b.png> <./texto/figura/sites/P-bor608c.png>]
 \tf@lof=\write6
 \openout6 = `TCC2-final.lof'.
 
@@ -2286,13 +2251,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 394.
  ) 
 Here is how much of TeX's memory you used:
- 13883 strings out of 492982
- 205613 string characters out of 6134895
- 348904 words of memory out of 5000000
+ 13885 strings out of 492982
+ 205627 string characters out of 6134895
+ 348901 words of memory out of 5000000
  16948 multiletter control sequences out of 15000+600000
  20667 words of font info for 47 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 45i,17n,42p,1607b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,17n,42p,1633b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -2311,10 +2276,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TCC2-final.pdf (82 pages, 16210272 bytes).
+Output written on TCC2-final.pdf (78 pages, 16206828 bytes).
 PDF statistics:
- 1082 PDF objects out of 1200 (max. 8388607)
- 877 compressed objects within 9 object streams
- 230 named destinations out of 1000 (max. 500000)
+ 1071 PDF objects out of 1200 (max. 8388607)
+ 870 compressed objects within 9 object streams
+ 232 named destinations out of 1000 (max. 500000)
  488 words of extra memory for PDF output out of 10000 (max. 10000000)
 
