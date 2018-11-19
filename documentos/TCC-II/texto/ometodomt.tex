@@ -1,6 +1,6 @@
 \chapter{FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO}
 
-    Proposto com \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa as fontes passivas\footnote{São fontes de sinal que não dependem de instrumentos artificiais para gerá-la, ou seja, sinais naturais do planeta.} eletromagnéticas do planeta Terra para estudar e mapear a subsuperfície.
+    Proposto por \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa fontes passivas\footnote{São fontes de sinal que não dependem de instrumentos artificiais para gerá-la, ou seja, sinais naturais do planeta.} eletromagnéticas do planeta Terra para estudar e mapear a distribuição de condutividade elétrica em subsuperfície.
     
     Nesta secção será mostrado sucintamente a origem do sinal MT. Entretanto, antes de demonstrar as bases teóricas do método, será descrito brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
         
@@ -94,7 +94,7 @@
             \label{sinalmt}
         \end{figure}
         
-        As ressonâncias de Schumann tem sua origem principalmente nas tempestades equatoriais contribuindo para a fonte do sinal MT acima de 1 Hz, as frequências a baixo desse valor, tem origem na interação do vento solar com a magnetosfera, que geram ressonâncias Terra-ionosfera. A contribuição de parte do espectro MT, tambem pode ser explicada pela distorção do formato do campo magnético terrestre causada pelo Sol durante o dia, esse processo é chamado de variação diurna e contribui com a faixa de frequência de 10\textsuperscript{-5} a 10\textsuperscript{-4} Hz. 
+        As ressonâncias de Schumann tem sua origem principalmente nas tempestades equatoriais contribuindo para a fonte do sinal MT acima de 1 Hz. Frequências a baixo desse valor, tem origem na interação do vento solar com a magnetosfera, que geram ressonâncias Terra-ionosfera. A contribuição de parte do espectro MT, tambem pode ser explicada pela distorção do formato do campo magnético terrestre causada pelo Sol durante o dia, esse processo é chamado de variação diurna e contribui com a faixa de frequência de 10\textsuperscript{-5} a 10\textsuperscript{-4} Hz. 
         
         
         %\subsection{Ressonâncias de Schumann}
@@ -280,7 +280,7 @@
         A equação \ref{shin-depth} é chamada de \en{skin-depth} (Espessura pelicular), ela representa a profundidade de penetração da onda eletromagnética em um meio condutor.
         A partir da equação são mapeadas as litologias em subsuperfície. Porém a resistividade ($\rho$) representa todo o pacote de rochas em subsuperfície, portanto, adota-se o termo resistividade aparente ($\rho_a$) para a mesma. A resistividade efetiva ($\rho$) pode ser obtida a partir do processo de inversão geofísica (não tratado neste trabalho).        
 
-        O meio geológico influencia diretamente a profundidade de investigação, a figura \ref{fig-skin-depth} mostra que para uma mesma frequência, ela pode representar valores diferentes de profundidade, variando o meio em subsuperfície, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante porque, ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares (meio condutivo) em contado com contextos cristalinos (meio resistivo), a atenção deve-se voltar para o fato de que um mesmo período em função de $\rho$ pode representar duas profundidades diferentes, estando a estação em cima do contexto sedimentar ou em cima do contexto cristalino. 
+        O meio geológico influencia diretamente a profundidade de investigação. A Figura \ref{fig-skin-depth} mostra que para uma mesma frequência, pode representar valores diferentes de profundidade, variando o meio em subsuperfície, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante porque, ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares (meio condutivo) em contado com contextos cristalinos (meio resistivo), a atenção deve-se voltar para o fato de que um mesmo período em função de $\rho$ pode representar duas profundidades diferentes, estando a estação em cima do contexto sedimentar ou em cima do contexto cristalino. 
         
         \begin{figure}[H]
             \caption[Gráfico do \en{skin-depth}]{Gráfico do \en{skin-depth} em função da frequência [Hz], variando a resistividade do meio}
@@ -293,7 +293,7 @@
         
     \section{Impedância Eletromagnética}
         
-        Baseado na fundamentação teórica apresentada a seção anterior, o MT busca obter a resistividade aparente em função da profundidade. A partir da solução da equação \ref{difH} e da sua análoga para o campo $\vetor{E}$, onde são dadas por:
+        Baseado na fundamentação teórica apresentada na seção anterior, o MT busca obter a resistividade aparente em função da profundidade. A partir da solução da equação \ref{difH} e da sua análoga para o campo $\vetor{E}$, onde são dadas por:
         
         \begin{equation}
             \label{soluH}
@@ -365,4 +365,4 @@
                     \end{array}\right)
 	    \end{equation}
 	    
-	    O método MT, então, obtém a resistividade aparente a partir da impedância eletromagnética, e atribui a ela uma profundidade, onde pode ser definida pela função de \en{skin-depth} (equação \ref{shin-depth}).          
+	    O método MT, então, obtém a resistividade aparente a partir da impedância eletromagnética e atribui a ela uma profundidade, onde pode ser definida pela função de \en{skin-depth} (Equação \ref{shin-depth}).          

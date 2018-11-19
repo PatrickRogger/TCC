@@ -26,15 +26,14 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO PampaMT}}{37}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {APLICA\IeC {\c C}\IeC {\~A}O DO PAMPAMT}}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}\IeC {\'A}rea de Estudo}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Contexto Geol\IeC {\'o}gico}{44}{section.6.2}
-\contentsline {section}{\numberline {6.3}Processamento dos Dados}{44}{section.6.3}
+\contentsline {section}{\numberline {6.1}\IeC {\'A}rea de Estudo e Contexto Geol\IeC {\'o}gico}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Processamento dos Dados}{43}{section.6.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{51}{chapter.7}
 \contentsline {section}{\numberline {7.1}Desenvolvimentos Futuros para o PampaMT}{51}{section.7.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{53}{section*.40}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{53}{section*.39}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

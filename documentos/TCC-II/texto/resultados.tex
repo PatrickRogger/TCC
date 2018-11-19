@@ -1,27 +1,16 @@
 \chapter{APLICAÇÃO DO PAMPAMT}
     
-    Nesse capítulo será demonstrado a aplicação do programa desenvolvido utilizando dados reais. Onde os dados foram processados utilizando o PampaMT e também a forma tradicional que vinha sendo realizada. Essa forma tradicional compreende processar utilizando os \en{scripts} e programas desenvolvidos pelo GEOMA, como comentado anteriormente.
+    Nesse capítulo será demonstrado a aplicação do programa desenvolvido utilizando dados reais. Os dados foram processados utilizando o PampaMT e também a forma tradicional que vinha sendo realizada. Essa forma tradicional compreende processar utilizando os \en{scripts} e programas desenvolvidos pelo GEOMA, como comentado anteriormente.
     
     A realização dos processamentos utilizando as duas técnicas simultâneas, foi realizada visando comparar o tempo e a dinâmica de processamento, bem como a influência sobre os períodos escolhidos para cada técnica.  
     
-    \section{Área de Estudo}
+    \section{Área de Estudo e Contexto Geológico}
         
         A área de estudo escolhida para esse teste de comparação são 12 estações magnetotelúricas de banda larga, localizadas no nordeste brasileiro dentro do contexto da Província Borborema (Figura \ref{local-bor}). As estações MT fazem parte do projeto ``Estudos geofísicos e tectônicos na Província Borborema, Nordeste do Brasil” /CNPQ (Projeto Milênio) e “Estudo da estrutura da litosfera do Nordeste do Brasil” /CNPQ (INCT – Tectônica), levantadas nos anos de 2007 e 2009.
-        
-    \begin{figure}[H]
-        \caption{Mapa de Localização}
-            \begin{center}
-                \includegraphics[width=11cm]{texto/figura/local-bor.png}
-            \end{center}
-        \legend{\Fonte{\oautor.}}
-        \label{local-bor}
-    \end{figure}        
-        
-    \section{Contexto Geológico}
     
     Segundo \cite{almeida}, a Província Borborema caracteriza-se como um complexo conjunto de blocos crustais reunidos por causa de processos geológicos que finalizaram na Orogenia Brasiliana/Pan-africana (700 a 450 Ma). Devido à complexidade tectônica, diferentes estudos vêm sendo apresentados por distintos pesquisadores para explicar as características dessa estrutura \cite{van}; \cite{teseandrea}; \cite{santos2014deep}; \cite{padilha}; \cite{barbosa}. A Província Borborema limita-se a sul com o Cráton São Francisco; a oeste com a Bacia do Parnaíba (sedimentos Fanerozóicos); a norte e a leste com as bacias sedimentares costeiras e interiores do Nordeste do Brasil (bacias Potiguar, Pernambuco-Paraíba e Sergipe-Alagoas, além da bacia Tucano-Jatobá que transpassa o limite da província com o Cráton São Francisco) -- \cite{medeiros}.    
     
-    \begin{figure}[H]
+    \begin{figure}[h]
         \caption{Mapa Geológico}
             \begin{center}
                 \includegraphics[width=15cm]{texto/figura/mapa_geo.png}
@@ -46,24 +35,20 @@
          \item \textbf{tojones} $\rightarrow$ Converte os arquivos \en{Z-file} (\en{.zss}) em \en{J-format} (\en{.dat}).
         \end{itemize}
 
-        O processamento foi realizado por dois usuários distintos, sendo os dois experientes no processamento na forma tradicional, os computadores utilizadores apresentam a mesma configuração de \en{hardware} e \en{software}, sendo compostos, basicamente, de um processador de quatro núcleos com 2,4 GHz cada e 8 Gb de memória ram. Nos apêndices \ref{ap-trad} e \ref{ap-pampamt}, podem ser encontrados os períodos selecionados para cada estação utilizando o método tradicional e com o PampaMT, respectivamente para um dos usuários.
+        O processamento foi realizado por dois usuários distintos, sendo os dois experientes no processamento na forma tradicional, os computadores utilizados apresentam a mesma configuração de \en{hardware} e \en{software}, sendo compostos, basicamente, de um processador de quatro núcleos com 2,4 GHz cada e 8 Gb de memória ram. Nos apêndices \ref{ap-trad} e \ref{ap-pampamt}, podem ser encontrados os períodos selecionados para cada estação utilizando o método tradicional e com o PampaMT, respectivamente para um dos usuários.
         
     Como discutido anteriormente a primeira etapa consiste em converter os dados de binários para ASCII, portanto foi utilizado o programa \textbf{ast2asc}, a forma tradicional procedeu da seguinte forma via terminal \en{shell}:
     
     \begin{footnotesize}        
 \begin{verbatim}
+
         $PROJETO:$ ats2asc --site-name bor603b $DADOS_ATS_bor603b
         $PROJETO:$ ats2asc --site-name bor604a $DADOS_ATS_bor604a
         $PROJETO:$ ats2asc --site-name bor604b $DADOS_ATS_bor604b
         $PROJETO:$ ats2asc --site-name bor605a $DADOS_ATS_bor605a
         $PROJETO:$ ats2asc --site-name bor605b $DADOS_ATS_bor605b
         $PROJETO:$ ats2asc --site-name bor606a $DADOS_ATS_bor606a
-        $PROJETO:$ ats2asc --site-name bor606b $DADOS_ATS_bor606b
-        $PROJETO:$ ats2asc --site-name bor607a $DADOS_ATS_bor607a
-        $PROJETO:$ ats2asc --site-name bor607b $DADOS_ATS_bor607b
-        $PROJETO:$ ats2asc --site-name bor608a $DADOS_ATS_bor608a
-        $PROJETO:$ ats2asc --site-name bor608b $DADOS_ATS_bor608b
-        $PROJETO:$ ats2asc --site-name bor608c $DADOS_ATS_bor608c
+        ...
 \end{verbatim}
 \end{footnotesize}
 
@@ -99,7 +84,7 @@
     \begin{figure}[H]
         \caption{Preparação das Configurações Utilizando o PampaMT}
             \begin{center}
-                \includegraphics[width=12cm]{texto/figura/procZ-pampa.png}
+                \includegraphics[width=11.5cm]{texto/figura/procZ-pampa.png}
             \end{center}
         \legend{\Fonte{\oautor}}
         \label{procZ-pampa}
@@ -110,7 +95,7 @@
     \begin{figure}[H]
         \caption{Criação e Processamento EMTF -- PampaMT}
             \begin{center}
-                \includegraphics[width=12cm]{texto/figura/carr-pampa.png}
+                \includegraphics[width=10cm]{texto/figura/carr-pampa.png}
             \end{center}
         \legend{\Fonte{\oautor}}
         \label{carr-pampa}

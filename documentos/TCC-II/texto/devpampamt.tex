@@ -4,7 +4,7 @@
     
     No apêndice A pode ser encontrado o caminho para o código fonte do programa, junto com as informações para a instalação. O PampaMT foi desenvolvido para ambiente Linux rodando em base Debian. O código foi escrito em \Python, com alguns trechos escritos em \Shell{} para instalação e comunicação da interface com os executáveis dos programas \textbf{Dnff} e \textbf{TranMT}.
     
-    O PampaMT foi dividido em duas etapas de processamento: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. Já segunda parte foi destinada a escolha das melhores rodadas e períodos, esse processo destina a maior interação com o usuário e representa a principal justificativa para o desenvolvimento do \en{software}. 
+    O PampaMT foi dividido em duas etapas de processamento: a primeira destinada a criação do projeto; escolha dos arquivos a serem processados e a processamento EMTF. Já a segunda parte foi destinada a escolha das melhores rodadas e períodos. Esse processo destina a maior interação com o usuário e representa a principal justificativa para o desenvolvimento do \en{software}. 
     
     A Figura \ref{tela_inicial} mostra a primeira tela ao executar o PampaMT, nela pode-se escolher criar um novo projeto ou abrir um já existente.
     
@@ -17,7 +17,7 @@
         \label{tela_inicial}
     \end{figure}
     
-     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}, nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e LiMS, a seleção pode ser automática ou adicionada cada estação individualmente (Figura \ref{tela_sel_site}). 
+     Após a escolha do diretório para um novo projeto, o usuário é direcionado a escolha dos arquivos \en{TS}. Nele o usuário pode escolher entre três equipamentos: ADU-06, ADU-07 e LiMS, a seleção pode ser automática ou adicionada cada estação individualmente (Figura \ref{tela_sel_site}). 
     
     \begin{figure}[H]
         \caption{Seleção das Estações}
@@ -28,9 +28,9 @@
         \label{tela_sel_site}
     \end{figure}
     
-    Os dados após a seleção, são copiados para o diretório: \textbf{DADOS\_MT/projeto}, esse processo é realizado para prever eventuais perdas dos arquivos. Os dados então são convertidos e salvos no diretório: \textbf{PROC\_MT/projeto} 
+    Os dados após a seleção são copiados para o diretório: \textbf{DADOS\_MT/projeto}. Esse processo é realizado para prever eventuais perdas dos arquivos. Os dados então são convertidos e salvos no diretório: \textbf{PROC\_MT/projeto} 
     
-    O usuário será levado a tela do processamento EMTF, esse processo já estabelece algumas configurações padrão, entretanto o usuário pode alterar qualquer configuração, tais como, escolher uma nova janela ou alterar o horário do relógio dos dados (Figura \ref{conf-procZ}).
+    O usuário será levado a tela do processamento EMTF. O processo já estabelece algumas configurações padrão, entretanto o usuário pode alterar qualquer configuração, tais como, escolher uma nova janela ou alterar o horário do relógio dos dados (Figura \ref{conf-procZ}).
     
     \begin{figure}[H]
         \caption{Tela de Configuração para o EMTF}
@@ -41,7 +41,7 @@
         \label{conf-procZ}
     \end{figure}
     
-    O processo EMTF tende a demorar um tempo considerável, cerca de 1 a 2 minutos para cada estação, para um levantamento típico de 30 estações por perfil esse processo pode demorar de 20 a 30 minutos, visto a grande quantidade de recursos do computador que ele consome. Finalizado o processo EMTF a janela é fechada e inicia-se o tela principal do PampaMT (figura \ref{tela-prin}).
+    O processo EMTF tende a demorar um tempo considerável, cerca de 1 a 2 minutos para cada estação. Para um levantamento típico de 30 estações por perfil esse processo pode demorar de 20 a 30 minutos, visto a grande quantidade de recursos do computador que ele consome. Finalizado o processo EMTF a janela é fechada e inicia-se o tela principal do PampaMT (figura \ref{tela-prin}).
     
     \begin{figure}[H]
         \caption{Tela Principal PampaMT}
@@ -53,7 +53,7 @@
     \end{figure}
     
     
-    Na tela principal contem todas as funcionalidades do PampaMT, incluindo a etapa de criação de um novo projeto. O carácter modular do PampaMT ajuda na adição de novas funcionalidades, como por exemplo, integração por programas SIG, integração com visualizados de dados, como o GMT, dentre outros. Um exemplo notável é a adição do programa RhoplusGUI em desenvolvido pelo autor, para o projeto PIBIC/INPE/CNPq ``Desenvolvimento de Interface Gráfica Amigável para Validação de Dados Magnetotelúrico a Partir do Processamento Rho+''. Esse programa auxilia na manipulação de dados para o processamento Rho+ \cite{parker1996optimal}, onde foi necessário adicionar poucas linhas de código para inclui-lo no PampaMT (Figura \ref{rhoplusGUI}).
+    A tela principal contem todas as funcionalidades do PampaMT, incluindo a etapa de criação de um novo projeto. O carácter modular do PampaMT ajuda na adição de novas funcionalidades, como por exemplo, integração por programas SIG, integração com visualizados de dados, como o GMT, dentre outros. Um exemplo notável é a adição do programa RhoplusGUI em desenvolvido pelo autor, para o projeto PIBIC/INPE/CNPq ``Desenvolvimento de Interface Gráfica Amigável para Validação de Dados Magnetotelúrico a Partir do Processamento Rho+''. Esse programa auxilia na manipulação de dados para o processamento Rho+ \cite{parker1996optimal}, onde foi necessário adicionar poucas linhas de código para inclui-lo no PampaMT (Figura \ref{rhoplusGUI}).
     
     \begin{figure}[H]
         \caption{Integração com Outros Programas}
@@ -64,9 +64,7 @@
         \label{rhoplusGUI}
     \end{figure}
     
-    A principal função que o usuário utilizará, será a escolha dos melhores períodos e rodadas. Esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos. Então, após a contagem, o usuário deve anotar os pontos que indicam os períodos, e finalmente executar o \en{script}: \textbf{ToJones}. Esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}).
-    
-    Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção, e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (Figura \ref{selc-perio}).
+    A principal função que o usuário utilizará, será a escolha dos melhores períodos e rodadas. Esse processo vinha sendo executado, plotando cada arquivo \en{.zss} e contando manualmente a posição dos melhores períodos. Então, após a contagem, o usuário deve anotar os pontos que indicam os períodos, e finalmente executar o \en{script}: \textbf{ToJones}. Esse \en{script} mescla os arquivos \en{.zss} com os períodos escolhidos e converte-os para o formato \en{J} (\en{.dat}). Esse processo foi incorporado no PampaMT com a escolha dos períodos sendo realizada com o cursor. O usuário habilita a função de seleção, e o programa plota todos os pontos possíveis para a rodada escolhida, por fim o usuário arrasta uma janela de seleção e todos os períodos contidos nessa janela são selecionados (Figura \ref{selc-perio}).
     
     \begin{landscape}
     \begin{figure}[h]
@@ -79,9 +77,9 @@
     \end{figure}
     \end{landscape}
     
-    Após escolher os melhor períodos o usuário pode executar o \en{script}: \textbf{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo, o PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{script}, finalizando a ultima etapa do pré-processamento.
+    Após escolher os melhor períodos o usuário pode executar o \en{script}: \textbf{ToJones}, onde esse é realizado ao pressionar o botão no canto inferior esquerdo. O PampaMT abre uma caixa de diálogo para nomear o arquivo de saída, e executa o \en{script}, finalizando a ultima etapa do pré-processamento.
     
-    A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente. Para efeitos de comparação, ao utilizar o programa em fase alfa, usuários que nunca tiveram contato com o terminal \Shell, puderam executar e processar os dados com sucesso. A Figura \ref{teste1} mostra o tempo que três usuários geofísicos, onde não possuem familiaridade com o terminal \en{shell}, utilizaram para concluir o pré-processamento de duas estações teste: ufb104a e ufb105a.
+    A utilização do PampaMT para o pré-processamento elimina completamente o uso de linhas de comando, assim o tempo de processamento e aprendizagem é diminuído drasticamente. Para efeitos de comparação, ao utilizar o programa em fase alfa, usuários que nunca tiveram contato com o terminal \Shell, puderam executar e processar os dados com sucesso. A Figura \ref{teste1} mostra o tempo que três usuários geofísicos, que não possuem familiaridade com o terminal \en{shell}, utilizaram para concluir o pré-processamento de duas estações teste: ufb104a e ufb105a utilizando o PampaMT.
     
     \begin{figure}[H]
         \caption{Tempo de Processamento -- Teste Alfa}
