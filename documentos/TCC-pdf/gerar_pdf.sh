@@ -7,24 +7,28 @@ cp ../TCC-II/TCC2-final.pdf TCC2-final.pdf
 capa=1
 folharosto=3
 ficha=4
-#aprovacao=5
-resumo=5
-#abstract=9
-listafi=7
-listasi=9
-listasim=11
-sumario=13
-intro=15
-objetivos=17
-fundamentos=19-24
-aquisi=25-32
-desenvol=33-38
-#resultados=37
-conside=39
-referencias=41
-apendiceA=43
+aprovacao=5
+dedicatoria=7
+agradecimentos=9
+epigrafe=11
+resumo=13
+abstract=15
+listafi=17-18
+listasi=19
+listasim=21
+sumario=23
+intro=25
+objetivos=27
+fundamentos=29-36
+aquisi=37-45
+desenvol=47-52
+resultados=53-59
+conside=61
+referencias=63-64
+codigo=65
+apendiceA=67-78
 
-pdftk A=TCC2-final.pdf cat A$capa A$folharosto A$ficha A$resumo A$listafi A$listasi A$listasim A$sumario A$intro A$objetivos A$fundamentos A$aquisi A$desenvol A$conside A$referencias A$apendiceA output TCC2-Garcia-Santos.P.R.pdf 
+pdftk A=TCC2-final.pdf cat A$capa A$folharosto A$ficha A$aprovacao A$dedicatoria A$agradecimentos A$epigrafe A$resumo A$abstract A$listafi A$listasi A$listasim A$sumario A$intro A$objetivos A$fundamentos A$aquisi A$desenvol A$resultados A$conside A$referencias A$codigo A$apendiceA output TCC2-Garcia-Santos.P.R.pdf 
 
 pdftk TCC2-final.pdf dump_data_utf8 output info_dump_original.info
 

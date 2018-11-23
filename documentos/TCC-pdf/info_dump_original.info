@@ -1,97 +1,133 @@
 InfoBegin
 InfoKey: ModDate
-InfoValue: D:20181010212919-03'00'
+InfoValue: D:20181121091539-02'00'
 InfoBegin
 InfoKey: PTEX.Fullbanner
 InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) kpathsea version 6.2.3
 InfoBegin
 InfoKey: CreationDate
-InfoValue: D:20181010212919-03'00'
+InfoValue: D:20181121091539-02'00'
 InfoBegin
 InfoKey: Creator
 InfoValue: LaTeX with hyperref package
 InfoBegin
 InfoKey: Producer
 InfoValue: pdfTeX-1.40.18
-PdfID0: 16acf27901788fe5896efa75f56831ed
-PdfID1: 16acf27901788fe5896efa75f56831ed
-NumberOfPages: 43
+PdfID0: 76db78a35661cd1f7662e0ff92702c26
+PdfID1: 76db78a35661cd1f7662e0ff92702c26
+NumberOfPages: 78
 BookmarkBegin
 BookmarkTitle: Folha de rosto
 BookmarkLevel: 1
 BookmarkPageNumber: 3
 BookmarkBegin
+BookmarkTitle: Folha de aprovação
+BookmarkLevel: 1
+BookmarkPageNumber: 5
+BookmarkBegin
 BookmarkTitle: INTRODUÇÃO
 BookmarkLevel: 1
-BookmarkPageNumber: 15
+BookmarkPageNumber: 25
 BookmarkBegin
 BookmarkTitle: OBJETIVOS
 BookmarkLevel: 1
-BookmarkPageNumber: 17
+BookmarkPageNumber: 27
 BookmarkBegin
 BookmarkTitle: Objetivo Geral
 BookmarkLevel: 2
-BookmarkPageNumber: 17
+BookmarkPageNumber: 27
 BookmarkBegin
 BookmarkTitle: Objetivos Específicos
 BookmarkLevel: 2
-BookmarkPageNumber: 17
+BookmarkPageNumber: 27
 BookmarkBegin
 BookmarkTitle: FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO
 BookmarkLevel: 1
-BookmarkPageNumber: 19
+BookmarkPageNumber: 29
+BookmarkBegin
+BookmarkTitle: Resistividade Elétrica dos Materiais
+BookmarkLevel: 2
+BookmarkPageNumber: 29
 BookmarkBegin
 BookmarkTitle: Origem das Correntes Telúricas
 BookmarkLevel: 2
-BookmarkPageNumber: 19
+BookmarkPageNumber: 31
 BookmarkBegin
 BookmarkTitle: Resposta do Método Magnetotelúrico
 BookmarkLevel: 2
-BookmarkPageNumber: 20
+BookmarkPageNumber: 31
 BookmarkBegin
 BookmarkTitle: Impedância Eletromagnética
 BookmarkLevel: 2
-BookmarkPageNumber: 23
+BookmarkPageNumber: 35
 BookmarkBegin
 BookmarkTitle: AQUISIÇÃO DE DADOS E DEPENDÊNCIAS
 BookmarkLevel: 1
-BookmarkPageNumber: 25
+BookmarkPageNumber: 37
 BookmarkBegin
 BookmarkTitle: Aquisição de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 25
+BookmarkPageNumber: 37
 BookmarkBegin
 BookmarkTitle: Processamento de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 27
+BookmarkPageNumber: 39
 BookmarkBegin
 BookmarkTitle: Formatos de Arquivos de Dados MT
 BookmarkLevel: 2
-BookmarkPageNumber: 28
+BookmarkPageNumber: 40
 BookmarkBegin
 BookmarkTitle: Processamento Robusto – EMTF
 BookmarkLevel: 2
-BookmarkPageNumber: 31
+BookmarkPageNumber: 44
 BookmarkBegin
 BookmarkTitle: Pacotes de Processamento do Grupo Geoma – INPE
 BookmarkLevel: 2
-BookmarkPageNumber: 31
+BookmarkPageNumber: 44
+BookmarkBegin
+BookmarkTitle: Construtor Gráfico – Kivy
+BookmarkLevel: 2
+BookmarkPageNumber: 45
 BookmarkBegin
 BookmarkTitle: DESENVOLVIMENTO E RESULTADOS DO PampaMT
 BookmarkLevel: 1
-BookmarkPageNumber: 33
+BookmarkPageNumber: 47
+BookmarkBegin
+BookmarkTitle: APLICAÇÃO DO PAMPAMT
+BookmarkLevel: 1
+BookmarkPageNumber: 53
+BookmarkBegin
+BookmarkTitle: Área de Estudo e Contexto Geológico
+BookmarkLevel: 2
+BookmarkPageNumber: 53
+BookmarkBegin
+BookmarkTitle: Processamento dos Dados
+BookmarkLevel: 2
+BookmarkPageNumber: 53
 BookmarkBegin
 BookmarkTitle: CONSIDERAÇÕES FINAIS
 BookmarkLevel: 1
-BookmarkPageNumber: 39
+BookmarkPageNumber: 61
+BookmarkBegin
+BookmarkTitle: Desenvolvimentos Futuros para o PampaMT
+BookmarkLevel: 2
+BookmarkPageNumber: 61
 BookmarkBegin
 BookmarkTitle: Referências
 BookmarkLevel: 1
-BookmarkPageNumber: 41
+BookmarkPageNumber: 63
 BookmarkBegin
 BookmarkTitle: Código Fonte PampaMT
 BookmarkLevel: 1
-BookmarkPageNumber: 43
+BookmarkPageNumber: 65
+BookmarkBegin
+BookmarkTitle: Pré-processamento Usando o Método Tradicional
+BookmarkLevel: 1
+BookmarkPageNumber: 67
+BookmarkBegin
+BookmarkTitle: Pré-processamento Usando o PampaMT
+BookmarkLevel: 1
+BookmarkPageNumber: 73
 PageMediaBegin
 PageMediaNumber: 1
 PageMediaRotation: 0
@@ -274,7 +310,7 @@ PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
 PageMediaNumber: 37
-PageMediaRotation: 90
+PageMediaRotation: 0
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
 PageMediaBegin
@@ -307,6 +343,181 @@ PageMediaNumber: 43
 PageMediaRotation: 0
 PageMediaRect: 0 0 595.276 841.89
 PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 44
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 45
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 46
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 47
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 48
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 49
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 50
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 51
+PageMediaRotation: 90
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 52
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 53
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 54
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 55
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 56
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 57
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 58
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 59
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 60
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 61
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 62
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 63
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 64
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 65
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 66
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 67
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 68
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 69
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 70
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 71
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 72
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 73
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 74
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 75
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 76
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 77
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 78
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
 PageLabelBegin
 PageLabelNewIndex: 1
 PageLabelStart: 1
@@ -316,6 +527,6 @@ PageLabelNewIndex: 3
 PageLabelStart: 1
 PageLabelNumStyle: DecimalArabicNumerals
 PageLabelBegin
-PageLabelNewIndex: 14
-PageLabelStart: 8
+PageLabelNewIndex: 24
+PageLabelStart: 14
 PageLabelNumStyle: DecimalArabicNumerals
