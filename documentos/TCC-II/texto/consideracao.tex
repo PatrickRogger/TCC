@@ -1,6 +1,20 @@
 \chapter{CONSIDERAÇÕES FINAIS}
     
-    Rodando a versão de teste interno (versão alfa), a utilização do PampaMT para processamentos sugere que o principal fator, o tempo, foi reduzido. O que tornou o processamento de dados magnetotelúricos mais dinâmico. Esse fator permite que o pré-processamento sejá realizado até mesmo em campo aumentando ainda mais a produtividade de grandes projetos. Outro fator que vale ressaltar é a diminuição do tempo de treinamento para novos usuários, onde pelos testes provou-se que mesmo usuário que não possuem familiaridade com o terminal realizaram o pré-processamento de dados MT  satisfatoriamente.     
+    Expandindo os testes alfa do programa foi proposto o teste com usuários, que diferentes dos primeiros, não possem nenhuma familiaridade com o terminal \en{shell} implicando em não possuírem familiaridade com o processamento de dados MT. Os testes aplicados sobre esses usuários procedeu, partindo de uma explicação de como é a metodologia de processamento de dados. Concluído a explanação de como é realizado o processamento, os usuários foram instruídos a processar duas estações magnetotelúricas reais contando apenas com a intuitividade da interface do PampaMT, os mesmos usuários foram avaliados no quesito de tempo e dificuldade para realizar tais processos.
+    
+    Os resultados obtidos nesse segundo teste pode ser visto na figura \ref{teste1}, os três usuários testados obtiveram exito no processamento com um tempo hábio de em média 10 minutos para cada estação. No quesito de intuitividade os primeiros processos, como: conversão dos dados e o cálculo do tensor impedância, todos os usuários executaram sem qualquer dificuldade. Entretanto para a segunda parte, que consiste na escolha dos melhores períodos, os usuários necessitaram de uma segunda explicação de como procedia o processo. Esse fato pode ser resolvido com a implementação de tutoriais na seção de ajuda no programa, onde já está prevista tal implementação em versões futuras do programa.     
+    
+    \begin{figure}[H]
+        \caption{Tempo de Processamento -- Teste Alfa}
+            \begin{center}
+                \includegraphics[width=10cm]{texto/figura/tempoLWM.png}
+            \end{center}
+        \legend{\Fonte{\oautor.}}
+        \label{teste1}
+    \end{figure}
+    
+    A partir dos resultados do segundo teste, provou-se que novos usuários que desejam trabalhar com dados MT consigam executar tal tarefa de forma fácil. Ao mesmo passo podem aprender como deve ser feito o processamento dos dados via terminal, habilitando a janela de visualização, onde são mostrados como são realizados os comandos internos no programa. Esse fato propicia que o PampaMT sejá aplicado para novos alunos de graduação, mestrado ou até mesmo doutorado, expandindo também para minicursos e pequenos treinamentos.
+    
     
     \section{Desenvolvimentos Futuros para o PampaMT}
         

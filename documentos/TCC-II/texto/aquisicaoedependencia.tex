@@ -1,16 +1,16 @@
-\chapter{AQUISIÇÃO DE DADOS E DEPENDÊNCIAS}
+\chapter{AQUISIÇÃO DE DADOS, DEPENDÊNCIAS E PROCESSAMENTO MT}
     
     Neste capítulo será discutido como é realizada a aquisição de dados MT e quais as técnicas atualmente utilizadas para o processamento dos dados. Também será mostrado quais as dependências que foram necessárias para a construção do \software, dentre elas estão: Kivy, EMTF (Dnff e TranMT) e conversores de dados.
         
     \section{Aquisição de Dados MT}        
     
-        A aquisição de dados MT consiste na obtenção dos campos elétricos ($\campo{E}_x$ e $\campo{E}_y$) e magnéticos por meio dos campos magnetizantes ($\campo{H}_x$, $\campo{H}_y$ e $\campo{H}_z$), onde esses são os parâmetros essenciais para o cálculo da impedância ($Z$), Equações \ref{EZHvetor} e \ref{tensor-impe}.
+        A aquisição de dados MT consiste na obtenção dos campos elétricos ($\campo{E}_x$ e $\campo{E}_y$) e magnéticos por meio dos campos magnetizantes ($\campo{H}_x$, $\campo{H}_y$ e $\campo{H}_z$), esses são os parâmetros essenciais para o cálculo da impedância ($Z$), Equações \ref{EZHvetor} e \ref{tensor-impe}.
         
         Devido a sensibilidade do sinal das sondagens MT, os sensores devem proporcionar uma alta relação sinal/ruído e alta capacidade de ampliar o sinal medido.
         
-        O arranjo amplamente adotado para aquisição são três magnetômetros distribuídos cada um paralelo a um eixo cartesiano, responsáveis pelos campos magnéticos. Para os campos elétricos são distribuídos dois arranjos de eletrodos não polarizados, acoplados horizontalmente, no sentido $x$ e $y$. A Figura \ref{fig-arranjo-mt} mostra a disposição dos sensores na superfícies.
+        O arranjo amplamente adotado para aquisição consiste de três magnetômetros distribuídos cada um paralelo a um eixo cartesiano, responsáveis pelas medidas dos campos magnéticos. Para os campos elétricos são distribuídos dois arranjos de eletrodos não polarizados, acoplados horizontalmente, no sentido $x$ e $y$. A Figura \ref{fig-arranjo-mt} mostra a disposição dos sensores na superfície.
         
-        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção do fluxo magnético terrestre, ou seja, direcionado ao polo geomagnético terrestre\footnote{Ponto na superfícies terrestre, onde, a inclinação magnética do modelo matemático para o campo magnético é $+90^\circ$}. 
+        Vale ressaltar que o eixo $x$ da composição cartesiana deve estar paralelo a direção do fluxo magnético terrestre, ou seja, direcionado ao polo magnético terrestre\footnote{Ponto na superfícies terrestre, onde, a inclinação magnética do modelo matemático para o campo geomagnético é $+90^\circ$}. 
         
         \begin{figure}[H]
             \caption{Arranjo para Aquisição de dados MT.}
@@ -21,7 +21,7 @@
             \label{fig-arranjo-mt}
         \end{figure}
         
-        Os sensores registram a variação da amplitude do sinal em função do tempo, esses registros são chamados de series temporais e são considerados os dados brutos do método (Figura \ref{serie-temporal}).
+        Os sensores registram a variação da amplitude do sinal em função do tempo. Esses registros são chamados de series temporais e são considerados os dados brutos do método (Figura \ref{serie-temporal}).
         
         \begin{figure}[H]
             \caption{Exemplo de Série Temporal dos Dados MT.}
@@ -32,9 +32,9 @@
             \label{serie-temporal}
         \end{figure}
         
-        Devido ao grande intervalo do espectro eletromagnético que abrange as sondagens MT (10\textsuperscript{-4} Hz a 10\textsuperscript{4} Hz), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências angulares diferentes. Se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
+        Devido ao grande intervalo do espectro eletromagnético que é coletado nas sondagens MT (10\textsuperscript{-4} Hz a 10\textsuperscript{4} Hz), são configuradas varias taxas de aquisições diferentes. Para cada escolha de taxa de aquisição é considerada a representatividade do sinal respeitando a frequência de Nyquist \cite{nyquist28}. A representatividade é muito importante, pois, o sinal medido pelos sensores é a composição de várias ondas com frequências angulares diferentes. Se a taxa de aquisição for menor que duas vezes a frequência da onda, ela não pode ser representada fielmente.  
         
-        A Figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, no exemplo é mostrado a composição de um onda com 10 frequências diferentes ($f_{\omega(t)}$), variando de 1 a 10 Hz, se atribuirmos à ela uma taxa de aquisição de 10 Hz pode-se perceber que a frequência de 6 Hz não é representada corretamente. Já para a frequência de 1 Hz ela é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar da melhor forma possível esses dois fatos.
+        A Figura \ref{fig-aquisicao} exemplifica o conceito apresentado no paragrafo anterior, No exemplo é mostrado a composição de um onda com 10 frequências diferentes ($f_{\omega(t)}$), variando de 1 a 10 Hz. Se atribuirmos à ela uma taxa de aquisição de 10 Hz pode-se perceber que a frequência de 6 Hz não é representada corretamente. Já para a frequência de 1 Hz ela é super representada, isso acaba aumentando o tamanho dos arquivos de aquisição. A escolha da taxa de aquisição deve conciliar da melhor forma possível esses dois fatores.
         
         \begin{figure}[H]
             \caption{Aquisição de Dados Discretos.}
@@ -45,20 +45,21 @@
             \label{fig-aquisicao}
         \end{figure}
     
-        As taxas de aquisições comumente utilizadas são valores estimados por potências de 2, isso facilita na decomposição das frequências pela transformada de Fourier. Cada taxa de aquisição é chamada de \en{Banda} e varia de nome para cada equipamento utilizado. 
+        As taxas de aquisições comumente utilizadas são estimadas por potências de 2, o que facilita na decomposição das frequências pela transformada de Fourier. Cada taxa de aquisição é chamada de \en{Banda} e varia de nome para cada equipamento utilizado. 
     
     \section{Processamento de Dados MT}
-        Tradicionalmente o grande processamento de dados geofísicos é chamado de inversão, onde esse tenta ajustar um modelo físico que melhor represente o conjunto de dados. Porém para dados MT faz-se necessário antes das técnicas de inversão, o pré-processamento.
+    
+        Assim como outros métodos geofísicos, para relacionar o parâmetro físico estudado em função da profundidade, é realizado o processo de inversão. Porém para dados MT faz-se necessário antes das técnicas de inversão, uma primeira etapa de processamento.
         
-        O pré-processamento consiste, sucintamente, em realizar processamentos de filtragem, tratamentos estatísticos, conversão de dados, mudança de domínios e mesclagem de arquivos. A primeira etapa do pré-processamento é a conversão dos arquivos de binários para ASCII. Embora seja um processo opcional para alguns equipamentos suportados nativamente pelo pacote EMTF, a boa prática é realizada para melhorar a legibilidade por parte dos usuários sobre os dados ou para tornar compatível com a entrada de dados do pacote EMTF.
+        A primeira etapa do processamento consiste, sucintamente, em realizar processamentos de filtragem, tratamentos estatísticos, conversão de dados, mudança de domínios e mesclagem de arquivos. Inicia-se o processamento com a conversão dos arquivos de binários para ASCII. Embora seja um processo opcional para alguns equipamentos suportados nativamente pelo pacote EMTF, a boa prática é realizada para melhorar a legibilidade por parte dos usuários sobre os dados ou para tornar compatível com a entrada de dados do pacote EMTF.
         
-        Após a conversão são realizados técnicas de filtragem, mudança do domínio dos dados de tempo para frequência angular, e cálculo do tensor impedância ($Z$). Esse processo será demonstrado mais detalhadamente no seção \ref{sec-robusto}, cuja a técnica recebe o nome de processamento Robusto, EMTF \cite{robusto-egbert}. Atualmente é a técnica mais confiável e amplamente utilizadas no meio acadêmico para tratamento dos dados.
+        Após a conversão são utilizadas técnicas de filtragem, mudança do domínio dos dados de tempo para frequência angular, e cálculo do tensor impedância ($Z$). Esse processo será demonstrado mais detalhadamente no seção \ref{sec-robusto}, cuja a técnica recebe o nome de processamento Robusto, EMTF \cite{robusto-egbert}. Atualmente, esta é a técnica mais confiável e amplamente utilizadas no meio acadêmico para tratamento dos dados.
         
-        Como comentado na seção anterior, devido as limitações dos equipamentos, os dados são coletados separadamente para cada banda. Utilizando o processamento Robusto, esse gera um arquivo com extensão \en{.zss}. Nesses arquivos estão armazenados os tensores de impedância, ou seja, cada componente da matriz $Z$ para cada período.
+        Como comentado na seção anterior, devido as limitações dos equipamentos, os dados são coletados separadamente para cada banda. Utilizando o processamento Robusto, é gerado um arquivo com extensão \en{.zss}, \en{.zrr} ou \en{.zmm}. Nesses arquivos estão armazenados os tensores de impedância, ou seja, cada componente da matriz $Z$ para cada período.
         
-        A etapa seguinte do processamento consiste em escolher, dentro de todos arquivos, a melhor composição dos períodos para todo o espectro de estudo, esse processo é minucioso e depende da experiência do usuário. Nessa etapa deve-se plotar cada arquivo e verificar a sua coerência dentro do conjunto total dos dados.
+        A etapa seguinte do processamento consiste em escolher, dentro de todos arquivos, a melhor composição dos períodos para todo o espectro de estudo. Esse processo é minucioso e depende da experiência do usuário. Nesta etapa, deve-se plotar cada arquivo e verificar a sua coerência dentro do conjunto total dos dados.
         
-        A última etapa do pré-processamento é mesclar os períodos escolhidos em um único arquivo, esses arquivos contem todas as informações necessárias para realizar os processos de inversão.
+        O último estágio do processamento antecessor a inversão é mesclagem dos períodos escolhidos em um único arquivo, que irão conter todas as informações necessárias para realizar os processos de inversão.
         
         A Figura \ref{fluxo-preprocessamento} ilustra as etapas do pré-processamento.
         
@@ -78,7 +79,6 @@
         {\footnotesize \noindent
             \begin{table}[H]
                 \begin{tabular*}{1cm}{p{2.05cm}p{0.5cm}p{10cm}}
-                    \en{TS-format}       & {\footnotesize $\rightarrow$} & \en{Time Series Format (.ats)} \\
                     \en{Z-file}          & {\footnotesize $\rightarrow$} & \en{Z (Impedance Tensor) File (.zss)} \\
                     \en{J-format}        & {\footnotesize $\rightarrow$} & \en{Jones Format (.dat)} \\
                     %\en{EDI-format}      & {\footnotesize $\rightarrow$} & \en{Eletrical Data Interchange Format (.edi)} \\
@@ -87,40 +87,11 @@
         
        
         
-        Os arquivos \en{TS} são utilizados para registrar as series temporais, onde são armazenadas as amplitudes registradas pelos sensores em função do tempo. A grande parte dos equipamentos tem como saída padrão a forma binária dos arquivos \en{TS}, porém cada fabricante de equipamentos pode deter o sua própria estrutura para os arquivos \en{TS}. Os arquivos binários podem  posteriormente serem convertidos para o formato ASCII, usando uma rotina específica -- \textbf{ats2asc} -- \cite{geoma-proc}.
+        Os arquivos gerados pelos equipamentos variam de formato dependendo do fabricante do equipamento, os arquivos são utilizados para registrar as series temporais, nos quais são armazenadas as amplitudes registradas pelos sensores em função do tempo. A grande parte dos equipamentos tem como saída padrão arquivos em formato ASCII, porém para a série de equipamentos ADU, desenvolvidas pela Metronix faz uso de um formato binário para tais arquivos. Esses arquivos podem ser convertidos para ASCII e em um formato compatível com o EMTF através do comando -- \textbf{ats2asc} -- \cite{geoma-proc}.
         
-        O arquivo \en{TS} é composto por dois blocos, o primeiro é destinado a comentários e configurações da aquisição. O segundo compõe o bloco de dados, distribuídos em cinco colunas, cada uma registra a amplitude do sinal dos sensores $H_x$, $H_y$, $H_z$, $E_x$ e $E_y$. O tempo associado a cada registro pode ser estimado pela hora de inicio e a taxa de aquisição da rodada.   
+        Os arquivos contendo as séries temporais após realizar a transformada de Fourier e o cálculo do tensor impedância, não são mais necessário. Os arquivos gerados após esse processo contem todas as informações das series temporais, associadas aos tensores de impedância. A partir do tensor impedância é possível estimar todos os parâmetros associados a cada período, tais como: $\rho_a$, $\phi$ e as componentes do próprio tensor: $Z_{xx}$, $Z_{xy}$, $Z_{yx}$ e $Z_{yy}$, as componentes do tensor são importantes para a interpretação da adimensionalidade dos dados.
         
-        Exemplo de arquivo \en{TS} (ASCII):
-
-        \begin{footnotesize}        
-\begin{verbatim}
-        # time series file from mp2ts 
-        # date: Mon May 12 10:15:57 1997
-        # input file: sno101/sno101as.1mp
-        # site description: KM 222.5
-        # Latitude   :062:39:47 N
-        # Longitude  :116:12:32 W
-        # LiMS         number :           52
-        # Magnetometer number :           52
-        # Ex line length (m):     100.0000000
-        # Ey line length (m):     100.0000000
-        # Azimuths relative to: MAGNETIC NORTH 
-        # Ex azimuth;          -17
-        # Ey azimuth;           73 
-        # Hx azimuth;          -17 
-        # Hy azimuth;           73 
-        1.98250   0.878400    3.64780    1.10889    2.02644                                  
-        1.93980   0.976000    3.65390    1.15682    2.01610                                     
-\end{verbatim}
-\end{footnotesize}
-            \begin{flushright}
-                \cite{ts-format}
-            \end{flushright}
-        
-        Após realizar a transformada de Fourier e o cálculo do tensor impedância, não são mais necessários carregar todas as informações das series temporais, pois a partir do tensor impedância é possível estimar todos os parâmetros associados a cada período, tais como: $\rho_a$, $\phi$ e as componentes do próprio tensor: $Z_{xx}$, $Z_{xy}$, $Z_{yx}$ e $Z_{yy}$, as componentes do tensor são importantes para a interpretação da adimensionalidade dos dados.
-        
-        Obtidos os tensores impedância, através do \textbf{TranMT} (Programa adotado para os cálculos do tensor impedância -- EMTF), são gerados os arquivos \en{.zss}. Esses arquivos são estruturados na forma de blocos, onde, cada bloco representa um período e nele contém o próprio tensor impedância, a matriz de covariância inversa e a matriz de covariância residual.
+        Obtidos os tensores impedância, através do \textbf{TranMT} (Programa adotado para os cálculos do tensor impedância -- EMTF), são gerados os arquivos \en{.zss}, \en{.zrr} ou {.zmm} dependendo do tipo de processo escolhido, mas todos seguem a mesma estrutura principal. Esses arquivos são estruturados na forma de blocos, onde, cada bloco representa um período e nele contém o próprio tensor impedância, a matriz de covariância inversa e a matriz de covariância residual.
         
         Exemplo de arquivo \en{Z}:
         
@@ -169,7 +140,7 @@
                 \end{tabular*}
             \end{table}}
         
-        \noindent e para se obter a fase ($\phi$) pode-se calcular, a partir:
+        \noindent e para se obter a fase ($\phi$), é utilizada as seguinte relação:
         
         \begin{equation}
          \phi = \dfrac{180}{\pi} \textrm{arctan}\left [\dfrac{\Im(Z_{ij})}{\Re(Z_{ij})} \right ]
@@ -185,9 +156,9 @@
         
         Os erros associados a cada componente podem ser obtidos a partir das matrizes de covariância, assim como os erros para $\rho_a$ e $\phi$.
         
-        Os arquivos \en{J}, análogo aos arquivos \en{Z}, armazenam as informações do tensor, porém, a estrutura é mais sintetizada. Os arquivos são estruturados em dois blocos, um destinado as configurações, tais como: localização, elevação, nome da estação e azimute. O segundo bloco é destinado aos dados \cite{j-format}.
+        Os arquivos \en{J}, análogo aos arquivos \en{Z}, armazenam as informações do tensor, porém, a estrutura é mais sintetizada. Os arquivos são estruturados em dois blocos, um destinado as informações da estação MT, tais como: localização, elevação, nome da estação e azimute. O segundo bloco é destinado aos dados \cite{j-format}.
         
-        A estrutura base utilizada para os dados é composta por seis sub-blocos. Quatro representam cada uma das componentes do tensor e dois sub-blocos destinados ao \en{Tipper}. O sub-bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
+        Uma das versões de estrutura base utilizada para dados é a composição de seis sub-blocos. Quatro representam cada uma das componentes do tensor e dois sub-blocos destinados ao \en{Tipper} \cite{padua2004estudos}. O sub-bloco é divido em cinco colunas, onde assumem respectivamente a seguinte ordem: 
         
 \begin{footnotesize}        
 \begin{verbatim}
@@ -197,7 +168,7 @@
 \end{verbatim}
 \end{footnotesize}
                
-        Os arquivos \en{J} recebem a extensão \en{.dat}, e são os arquivos necessários para as etapas de inversão, a adoção desse formato para essa etapa, se dá pela fácil leitura dos períodos e por armazenar toda a sondagem em um único arquivo. Ele armazena a mesclagem de todas as diferentes janelas resultantes do processamento EMTF.
+        Os arquivos \en{J} recebem a extensão \en{.dat}, e comumente utilizados para as etapas de inversão, podendo ser convertidos facilmente para o formato EDI. A adoção deste formato para esta etapa, se dá pela fácil leitura dos períodos e por armazenar toda a sondagem em um único arquivo. Ele armazena a mesclagem de todas as diferentes janelas resultantes do processamento EMTF.
         
         Exemplo de arquivo \en{J}:
         
@@ -232,20 +203,18 @@
         TZY
         2
             1.1161e-04    1.3879e-02    1.7406e-02    9.1885e-04   1
-            1.5625e-04    5.1640e-03    1.9010e-02    1.4921e-03   1
-            
-            
-            
-            
+            1.5625e-04    5.1640e-03    1.9010e-02    1.4921e-03   1            
 \end{verbatim}
 \end{footnotesize}
     
     \section{Processamento Robusto -- EMTF}
         \label{sec-robusto}
-        
-            O processamento dos dados parte primeiramente da análise espectral, onde primeiro faz-se necessário a mudança do domínio do tempo para a frequência angular e em seguida a filtragem, remoção de tendências e de dados ruins.
             
-            O pacote EMTF \cite{egbert-emtf} desenvolvido por Gary D. Egbert, é um conjunto de programas escrito em \en{Fortran 77} que realizam processamento tais como: mudança de domínio, cálculo do tensor impedância, plotagem e alguns tipos de conversores de dados. 
+            %O processamento Robusto -- EMTF -- é responsável por obter os tensores impedância através das analises das séries temporais, oriundas das aquisições de campo.
+            
+            O pacote EMTF \cite{egbert-emtf} desenvolvido por Gary D. Egbert, é um conjunto de programas escrito em \en{Fortran 77} que realizam processamentos tais como: mudança de domínio, cálculo do tensor impedância, plotagem e alguns tipos de conversores de dados. 
+            
+            O processamento dos dados parte primeiramente da análise espectral das séries temporais, na qual primeiro faz-se necessário a mudança do domínio do tempo para a frequência angular e em seguida a filtragem, remoção de tendências e de dados ruins.
             
             A mudança do domínio do tempo para frequência angular é realizado pelo programa \textbf{Dnff}, contido no pacote. Esse programa realiza a troca do domínio través da FFT (\en{Fast Fourier Transform}) mesclando com processos de \en{Cascade Decimation} \apud{wight1980cascade}{padua2004estudos}. Antes de realizar os processos da transformada de Fourier discreta, são aplicados as series temporais janelas. Limitando as séries temporais, esse processo previne o vazamento da energia da serie durante o processo.
             
@@ -254,11 +223,34 @@
            
     \section{Pacotes de Processamento do Grupo Geoma -- INPE}
     
-        O grupo GEOMA do INPE (Institudo Nacional de Pesquisas Espaciais) oferece treinamentos para alunos e colaboradores. O grupo dispõe de um série de \en{scripts} e programas para auxiliar na manipulação do processamento MT.
+        O grupo GEOMA do INPE (Institudo Nacional de Pesquisas Espaciais) oferece treinamentos para alunos e colaboradores. O grupo dispõe de um série de \en{scripts} e programas para auxiliar na manipulação do processamento MT \cite{geomadge}.
 
-        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Me. Marcos Banik de Pádua. O programa aqui desenvolvido faz uso dos \en{scripts} como ``ponte'' entre a interface e o programa EMTF, como também para os conversores de dados. Um exemplo é a API \en{processamentoZ} que prepara os dados e extraí os parâmetros necessários para as rotinas \textbf{Dnff} e \textbf{TranMT}. 
+        Os \en{scripts} oferecidos para o processamento MT foram desenvolvidos, em grande parte, pelo Dr. Marcelo Banik de Pádua e pelo Me. Marcos Banik de Pádua. Tais programas foram idealizados como a primeira interface de uso com os usuários, facilitando a utilização dos programas contidos no MTnet. 
         
-        Para as plotagens dos gráficos é utilizado o programa GMT \cite{gmt}, Figura \ref{plot-cmp-tf}. Embora o programa aqui desenvolvido tenha a sua própria saída gráfica, foi desenvolvida uma extensão que exporta as figuras utilizando o \en{Kernel} do GMT. Essa extensão visa aumentar a familiaridade de usuários já experientes no processamento MT e também ampliar as possibilidades de exportação de imagens.  
+        Os programas desenvolvidos pelo GEOMA vão desde conversores de dados até interfaces avançadas de processamento, como inversão geofísica por diversos tipos de programas. Visando a produtividade, pela alta demanda de processamento e a metodologia ja utilizada, os programas foram desenvolvidos para o ambiente Linux rodando em base Debian, e utilizados via linhas de comando. 
+        
+        O grupo Geoma é a maior referencia no Brasil nos trabalhos com magnetotelúrico, portanto a base de desconstrução do programa usará  as metodologias adotadas pelo grupo, bem como o apoio teórico para o desenvolvimento. 
+        
+        O programa desenvolvido faz uso dos \en{scripts} do grupo GEOMA, como ``ponte'' entre a interface e o programa EMTF, como também os \en{scripts} para os conversores de dados. Um exemplo de uso é a API \en{processamentoZ} que prepara os dados e extraí os parâmetros necessários para as rotinas \textbf{Dnff} e \textbf{TranMT}. 
+        
+        Para as plotagens dos dados o grupo usa o programa GMT \cite{gmt}, Figura \ref{plot-cmp-tf}. Embora o programa aqui desenvolvido tenha a sua própria saída gráfica, foi desenvolvida uma extensão que exporta as figuras utilizando o \en{Kernel} do GMT. Essa extensão visa aumentar a familiaridade de usuários já experientes no processamento MT e também ampliar as possibilidades de exportação de imagens. 
+        
+        Os programas do grupo GEOMA podem ser encontrados em \citeauthor{gitgeoma} (\citeyear{gitgeoma}) e são necessários como requisito para a instalação do programa desenvolvido.
+    
+    
+        \begin{verbatim}
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        \end{verbatim}
+
     
         \begin{figure}[H]
             \caption{Saída Gráfica Gerada pelo \en{script}: \en{plot-cmp-tf} \cite{geoma-proc}, utilizando o GMT.}
@@ -272,8 +264,8 @@
     
     \section{Construtor Gráfico -- Kivy}
 
-        Kivy é um \en{framework} desenvolvido em Python com trechos escritos em Cython\footnote{Linguagem que permite  a conversão de códigos escritos com a mesma sintaxe do Python para códigos nativos em C \cite{cython}}, utilizado para o desenvolvimento da interface gráfica do programa \cite{kivy}.
+        O Kivy é um \en{framework} desenvolvido em Python com trechos escritos em Cython\footnote{Linguagem que permite  a conversão de códigos escritos com a mesma sintaxe do Python para códigos nativos em C \cite{cython}}, utilizado para o desenvolvimento da interface gráfica do programa \cite{kivy}.
         
-        Kivy é um construtor gráfico que utiliza a API OpenGL \cite{opengl} para o processamento dos elementos visuais impressos na tela. Isso significa que todo o processamento dos elementos são executados nativamente no chip gráfico do computador.
+        O Kivy é um construtor gráfico que utiliza a API OpenGL \cite{opengl} para o processamento dos elementos visuais impressos na tela. Isso significa que todo o processamento dos elementos são executados nativamente no chip gráfico do computador.
         
-        A escolha do Kivy também pode ser explicada pela simplicidade de implementação, visto que o mesmo permite o desenvolvimento através de uma linguagem própria, a \en{Kvlang} \cite{kvlang}. Essa linguagem permite a construção dos elementos, através de uma linguagem de marcação e indentada, ou seja, a hierarquia dos elementos estão sempre na identação mais a direita. A linguagem \en{Kvlang} é integrada ao código Python, isso permite o acesso do mesmo elemento nas duas estruturas de código.
+        A escolha do Kivy também pode ser justificada pela simplicidade de implementação, visto que o mesmo permite o desenvolvimento através de uma linguagem própria, a \en{Kvlang} \cite{kvlang}. Essa linguagem permite a construção dos elementos, através de uma linguagem de marcação e indentada, ou seja, a hierarquia dos elementos estão sempre na identação mais a direita. A linguagem \en{Kvlang} é integrada ao código Python, isso permite o acesso do mesmo elemento nas duas estruturas de código.

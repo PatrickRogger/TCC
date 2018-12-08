@@ -15,22 +15,22 @@
 \contentsline {section}{\numberline {3.3}Resposta do M\IeC {\'e}todo Magnetotel\IeC {\'u}rico}{21}{section.3.3}
 \contentsline {section}{\numberline {3.4}Imped\IeC {\^a}ncia Eletromagn\IeC {\'e}tica}{25}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {AQUISI\IeC {\c C}\IeC {\~A}O DE DADOS E DEPEND\IeC {\^E}NCIAS}}{27}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {AQUISI\IeC {\c C}\IeC {\~A}O DE DADOS, DEPEND\IeC {\^E}NCIAS E PROCESSAMENTO MT}}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Aquisi\IeC {\c c}\IeC {\~a}o de Dados MT}{27}{section.4.1}
 \contentsline {section}{\numberline {4.2}Processamento de Dados MT}{29}{section.4.2}
 \contentsline {section}{\numberline {4.3}Formatos de Arquivos de Dados MT}{30}{section.4.3}
-\contentsline {section}{\numberline {4.4}Processamento Robusto -- EMTF}{34}{section.4.4}
+\contentsline {section}{\numberline {4.4}Processamento Robusto -- EMTF}{33}{section.4.4}
 \contentsline {section}{\numberline {4.5}Pacotes de Processamento do Grupo Geoma -- INPE}{34}{section.4.5}
 \contentsline {section}{\numberline {4.6}Construtor Gr\IeC {\'a}fico -- Kivy}{35}{section.4.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO PampaMT}}{37}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {DESENVOLVIMENTO E RESULTADOS DO {PampaMT}}}{37}{chapter.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {APLICA\IeC {\c C}\IeC {\~A}O DO PAMPAMT}}{43}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {EXEMPLO DE APLICA\IeC {\c C}\IeC {\~A}O DO {PampaMT}}}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}\IeC {\'A}rea de Estudo e Contexto Geol\IeC {\'o}gico}{43}{section.6.1}
 \contentsline {section}{\numberline {6.2}Processamento dos Dados}{43}{section.6.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}}{51}{chapter.7}
-\contentsline {section}{\numberline {7.1}Desenvolvimentos Futuros para o PampaMT}{51}{section.7.1}
+\contentsline {section}{\numberline {7.1}Desenvolvimentos Futuros para o PampaMT}{52}{section.7.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\uppercase {Refer\^encias}}{53}{section*.39}
@@ -38,12 +38,12 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {C\IeC {\'o}digo Fonte PampaMT}}{55}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {C\IeC {\'o}digo Fonte {PampaMT}}}{55}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Pr\IeC {\'e}-processamento Usando o M\IeC {\'e}todo Tradicional}}{57}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Processamento Usando o M\IeC {\'e}todo Tradicional}}{57}{appendix.B}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Pr\IeC {\'e}-processamento Usando o PampaMT}}{63}{appendix.C}
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Processamento Usando o {PampaMT}}}{63}{appendix.C}

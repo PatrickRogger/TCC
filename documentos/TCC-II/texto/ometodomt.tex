@@ -1,8 +1,11 @@
 \chapter{FUNDAMENTOS DO MÉTODO MAGNETOTELÚRICO}
 
-    Proposto por \cite{tikhonov1950determining} e \cite{cagniard1953basic} o método magnetotelúrico usa fontes passivas\footnote{São fontes de sinal que não dependem de instrumentos artificiais para gerá-la, ou seja, sinais naturais do planeta.} eletromagnéticas do planeta Terra para estudar e mapear a distribuição de condutividade elétrica em subsuperfície.
+    Proposto por \citeauthor{tikhonov1950determining} (\citeyear{tikhonov1950determining}) e \citeauthor{cagniard1953basic} (\citeyear{cagniard1953basic}) o método magnetotelúrico usa fontes passivas\footnote{São fontes de sinal que não dependem de instrumentos artificiais para gerá-la, ou seja, sinais naturais do planeta.} eletromagnéticas do planeta Terra para estudar e mapear a distribuição de condutividade elétrica em subsuperfície.
     
-    Nesta secção será mostrado sucintamente a origem do sinal MT. Entretanto, antes de demonstrar as bases teóricas do método, será descrito brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
+    Nesta secção será mostrado sucintamente a origem do sinal MT. Entretando, antes de demonstrar as bases teóricas do método, será descrito brevemente os conceitos de resistividade elétrica aplicada para o meio geológico. O estudo da resstividade elétrica no meio geológico é essencial para as interpretações dos dados resultantes do método MT.
+    
+    
+    %Nesta secção será mostrado sucintamente a origem do sinal MT. Entretanto, antes de demonstrar as bases teóricas do método, será descrito brevemente sobre a resistividade elétrica, sendo esse o elemento fundamental para as interpretações lito-geofísicas com base no magnetotelúrico.
         
 
     \section{Resistividade Elétrica dos Materiais}
@@ -17,9 +20,9 @@
             \rho = \dfrac{E}{J}
         \end{equation}
 
-        \noindent Onde, $E$ é a magnitude do campo elétrico em [V/m] e $J$ é a densidade de corrente em [A/m\textsuperscript{2}].
+        \noindent onde, $E$ é a magnitude do campo elétrico em [V/m] e $J$ é a magnetude da densidade de corrente em [A/m\textsuperscript{2}].
         
-        Se o campo elétrico e a corrente elétrica forem constantes, eles podem assumir os seguintes valores:
+        Se o campo elétrico e a densidade de corrente elétrica forem constantes, eles podem assumir os seguintes valores:
         
         \begin{equation}
             \label{campo-eletrico}
@@ -62,18 +65,18 @@
         \begin{figure}[H]
             \caption[Arranjo para obter a resistividade elétrica]{Arranjo para obter experimentalmente a resistividade elétrica de um material geológico.}
                 \begin{center}
-                    \includegraphics[width=4cm]{texto/figura/resisti_telford.png}
+                    \includegraphics[width=3cm]{texto/figura/resisti_telford.png}
                 \end{center}
             \legend{\Fonte{Adaptado \cite{telford}.}}
             \label{arranjo-resistividade}
         \end{figure}
         
-        Devido a complexidade físico-químicas dos materiais geológicos, a resistividade elétrica é representada por um intervalo de valores. A Figura \ref{tabela-resis} mostra esses intervalos de valores para alguns tipos de rochas. Entretanto vale ressaltar que os valores podem serem alterados dependendo do contexto geológico. 
+        Devido a complexidade físico-química dos materiais geológicos, a resistividade elétrica é representada por um intervalo de valores. A Figura \ref{tabela-resis} mostra esses intervalos de valores para alguns tipos de materiais geológicos. Entretanto vale ressaltar que os valores podem serem alterados dependendo do contexto geológico. 
         
         \begin{figure}[H]
             \caption{Tabela de resistividade elétrica para materiais geológicos.}
                 \begin{center}
-                    \includegraphics[width=13cm]{texto/figura/resistividade_tabela.png}
+                    \includegraphics[width=10cm]{texto/figura/resistividade_tabela.png}
                 \end{center}
             \legend{\Fonte{Adaptado \cite{palacky}.}}
             \label{tabela-resis}
@@ -94,7 +97,7 @@
             \label{sinalmt}
         \end{figure}
         
-        As ressonâncias de Schumann tem sua origem principalmente nas tempestades equatoriais contribuindo para a fonte do sinal MT acima de 1 Hz. Frequências a baixo desse valor, tem origem na interação do vento solar com a magnetosfera, que geram ressonâncias Terra-ionosfera. A contribuição de parte do espectro MT, tambem pode ser explicada pela distorção do formato do campo magnético terrestre causada pelo Sol durante o dia, esse processo é chamado de variação diurna e contribui com a faixa de frequência de 10\textsuperscript{-5} a 10\textsuperscript{-4} Hz. 
+        As ressonâncias de Schumann tem sua origem principalmente nas tempestades equatoriais contribuindo para a fonte do sinal MT acima de 1 Hz. Frequências a baixo desse valor, tem origem na interação do vento solar com a magnetosfera, que geram ressonâncias Terra-Ionosfera. A contribuição de parte do espectro MT, tambem pode ser explicada pela distorção do formato do campo magnético terrestre causado pelo Sol durante o dia, no processo denominado variação diurna que contribui com a faixa de frequência de 10\textsuperscript{-5} a 10\textsuperscript{-4} Hz. 
         
         
         %\subsection{Ressonâncias de Schumann}
@@ -105,7 +108,7 @@
         
     \section{Resposta do Método Magnetotelúrico}
 
-        O \mt{} assim como outros métodos geofísicos eletromagnéticos, fundamentam-se nas Leis de Maxwell [\ref{lei-max-rotE} -- \ref{lei-max-divD}], pode-se partir das equações estimar os parâmetros físicos para a investigação MT, assim:
+        No caso do \mt{} assim como nos casos de outros métodos geofísicos eletromagnéticos, que fundamentam-se nas Leis de Maxwell [Equações \ref{lei-max-rotE} -- \ref{lei-max-divD}], pode-se partir das equações: 
         
         \begin{equation}
             \label{lei-max-rotE}
@@ -140,14 +143,15 @@
                     {\footnotesize $t$ }                & {\footnotesize $\rightarrow$} & {\footnotesize Tempo [s]}
                 \end{tabular*}
             \end{table}}
-
+        \noindent estimar os parâmetros físicos para a investigação MT.
+        
         Para os estudos \mt s são feitas as seguintes afirmações, que auxiliam e simplificam o desenvolvimento:
        
         \begin{quote}
-            A Terra comporta-se como um condutor ôhmico e um semi-espaço isotrópico.
+            I) A Terra comporta-se como um condutor ôhmico e um semi-espaço isotrópico.
         \end{quote}
         
-        Podemos utilizar, partindo dessas característica e atrelado a um campo eletromagnético pouco intenso as seguintes relações constitutivas:
+        Podemos utilizar, partindo dessas características e atrelado a um campo eletromagnético pouco intenso, as seguintes relações constitutivas:
         \begin{equation}
          \vetor{B} = \mu \vetor{H}
         \end{equation}
@@ -277,7 +281,7 @@
             \delta_\omega = \sqrt{\dfrac{2 \rho}{\omega \mu}} \longrightarrow \delta_f \approx 500  \sqrt{\frac{\rho_a}{f}}
         \end{equation}
         
-        A equação \ref{shin-depth} é chamada de \en{skin-depth} (Espessura pelicular), ela representa a profundidade de penetração da onda eletromagnética em um meio condutor.
+        A equação \ref{shin-depth} é chamada de \en{skin-depth} (espessura pelicular), e representa a profundidade de penetração da onda eletromagnética em um meio condutor.
         A partir da equação são mapeadas as litologias em subsuperfície. Porém a resistividade ($\rho$) representa todo o pacote de rochas em subsuperfície, portanto, adota-se o termo resistividade aparente ($\rho_a$) para a mesma. A resistividade efetiva ($\rho$) pode ser obtida a partir do processo de inversão geofísica (não tratado neste trabalho).        
 
         O meio geológico influencia diretamente a profundidade de investigação. A Figura \ref{fig-skin-depth} mostra que para uma mesma frequência, pode representar valores diferentes de profundidade, variando o meio em subsuperfície, isso é representado por $\rho$. Os meios mais resistivos geram profundidade maiores, já meios condutivos diminuem a profundidade. Esse fenômeno é importante porque, ao interpretar as seções lito-geofísicas, é comum estudar contextos de bacias sedimentares (meio condutivo) em contado com contextos cristalinos (meio resistivo), a atenção deve-se voltar para o fato de que um mesmo período em função de $\rho$ pode representar duas profundidades diferentes, estando a estação em cima do contexto sedimentar ou em cima do contexto cristalino. 
@@ -292,7 +296,7 @@
         \end{figure}
         
     \section{Impedância Eletromagnética}
-        
+        \label{sec-impedancia}
         Baseado na fundamentação teórica apresentada na seção anterior, o MT busca obter a resistividade aparente em função da profundidade. A partir da solução da equação \ref{difH} e da sua análoga para o campo $\vetor{E}$, onde são dadas por:
         
         \begin{equation}
@@ -365,4 +369,4 @@
                     \end{array}\right)
 	    \end{equation}
 	    
-	    O método MT, então, obtém a resistividade aparente a partir da impedância eletromagnética e atribui a ela uma profundidade, onde pode ser definida pela função de \en{skin-depth} (Equação \ref{shin-depth}).          
+	    O método MT, então, obtém a resistividade aparente a partir da impedância eletromagnética e atribui a ela uma profundidade, que pode ser definida pela função de \en{skin-depth} (Equação \ref{shin-depth}).          

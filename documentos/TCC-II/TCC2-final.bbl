@@ -59,6 +59,20 @@ Dispon{\'\i}vel em: \url{http://docs.cython.org/en/latest/\#}. Acesso em: 23
 \textbf{Geophysical Journal of the Royal Astronomical Society}, Wiley Online
   Library, v.~87, n.~1, p. 173--194, 1986.}
 
+\bibitem[GEOMA 2018]{geomadge}
+\abntrefinfo{GEOMA}{GEOMA}{2018}
+{GEOMA. 2018.
+Grupo de Geomagnetismo.
+Dispon{\'\i}vel em: \url{http://www.dge.inpe.br/geoma/}. Acesso em: 9 dez.
+  2018.}
+
+\bibitem[GEOMAMT 2018]{gitgeoma}
+\abntrefinfo{GEOMAMT}{GEOMAMT}{2018}
+{GEOMAMT. 2018.
+Geomamt.
+Dispon{\'\i}vel em: \url{https://github.com/mtgeoma/geomamt}. Acesso em: 8 dez.
+  2018.}
+
 \bibitem[Hayt e Buck 2013]{eletromag8hayt}
 \abntrefinfo{Hayt e Buck}{HAYT; BUCK}{2013}
 {HAYT, W.~H.; BUCK, J.~A. \textbf{Eletromagnetismo}. 8. ed. Porto Alegre,
@@ -69,12 +83,6 @@ Dispon{\'\i}vel em: \url{http://docs.cython.org/en/latest/\#}. Acesso em: 23
 {JONES, A.~G. \textbf{Magnetotelluric data file J-format: v2.0}.
 [S.l.], 1994. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/jformat.txt}.
   Acesso em: 07 out. 2018.}
-
-\bibitem[Jones 1999]{ts-format}
-\abntrefinfo{Jones}{JONES}{1999}
-{JONES, A.~G. \textbf{TS Format v1.3}.
-Ottawa, 1999. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/ts\_format.txt}.
-  Acesso em: 02 out. 2018.}
 
 \bibitem[{KIVY ORGANIZATION} 2018]{kivy}
 \abntrefinfo{{KIVY ORGANIZATION}}{{KIVY ORGANIZATION}}{2018a}
@@ -99,10 +107,10 @@ Ottawa, 1999. Dispon{\'\i}vel em: \url{http://mtnet.info/docs/ts\_format.txt}.
 Tese (Doutorado) --- Brasil. Universidade Federal do Rio Grande do Norte
   (UFRN), 2004.}
 
-\bibitem[MTnet 2018]{mtnet}
-\abntrefinfo{MTnet}{MTNET}{2018}
-{MTNET. 2018.
-MTNet.
+\bibitem[{MTnet} 2018]{mtnet}
+\abntrefinfo{{MTnet}}{{MTnet}}{2018}
+{{MTnet}. 2018.
+{MTNet}.
 Dispon{\'\i}vel em: \url{http://mtnet.info/main/index.html}. Acesso em: 19 set.
   2018.}
 
