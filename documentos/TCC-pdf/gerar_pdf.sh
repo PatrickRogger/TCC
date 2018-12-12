@@ -23,12 +23,12 @@ fundamentos=29-36
 aquisi=37-45
 desenvol=47-52
 resultados=53-59
-conside=61
+conside=61-62
 referencias=63-64
 codigo=65
 apendiceA=67-78
 
-pdftk A=TCC2-final.pdf cat A$capa A$folharosto A$ficha A$aprovacao A$dedicatoria A$agradecimentos A$epigrafe A$resumo A$abstract A$listafi A$listasi A$listasim A$sumario A$intro A$objetivos A$fundamentos A$aquisi A$desenvol A$resultados A$conside A$referencias A$codigo A$apendiceA output TCC2-Garcia-Santos.P.R.pdf 
+pdftk A=TCC2-final.pdf B=aprovacao.pdf cat A$capa A$folharosto A$ficha B1 A$dedicatoria A$agradecimentos A$epigrafe A$resumo A$abstract A$listafi A$listasi A$listasim A$sumario A$intro A$objetivos A$fundamentos A$aquisi A$desenvol A$resultados A$conside A$referencias A$codigo A$apendiceA output TCC2-Garcia-Santos.P.R.pdf 
 
 pdftk TCC2-final.pdf dump_data_utf8 output info_dump_original.info
 
